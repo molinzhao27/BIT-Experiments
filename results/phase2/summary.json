@@ -1,0 +1,203 @@
+{
+ "n_permutations": 1000,
+ "device": "cuda",
+ "runtime_s": 265.5,
+ "phase1_check": {
+  "within_cells": 70,
+  "identical_to_phase1": 70
+ },
+ "n_cells": 1000,
+ "n_significant": {
+  "interleaved|block": 31,
+  "interleaved|within": 25,
+  "isolated|block": 230,
+  "isolated|strict": 202,
+  "isolated|within": 54
+ },
+ "torch": "2.14.0+cu132",
+ "config": {
+  "phase1_config": "configs/phase1.yaml",
+  "seed": 42,
+  "n_permutations": 1000,
+  "perm_chunk": 250,
+  "inner_folds": 10,
+  "device": "auto",
+  "alpha": 0.05,
+  "arrays": [
+   [
+    "T12",
+    "i6v",
+    "T12-i6v",
+    true
+   ],
+   [
+    "T15",
+    "i6v",
+    "T15-i6v",
+    true
+   ],
+   [
+    "T16",
+    "i6v",
+    "T16-i6v",
+    true
+   ],
+   [
+    "T15",
+    "55b",
+    "T15-55b",
+    true
+   ],
+   [
+    "T17",
+    "55b",
+    "T17-55b",
+    true
+   ],
+   [
+    "T15",
+    "M1",
+    "T15-4",
+    false
+   ],
+   [
+    "T17",
+    "s6v-v",
+    "T17-s6v-A",
+    false
+   ],
+   [
+    "T17",
+    "s6v-d",
+    "T17-s6v-B",
+    false
+   ],
+   [
+    "T12",
+    "s6v",
+    "T12-s6v",
+    false
+   ],
+   [
+    "T15",
+    "s6v",
+    "T15-s6v",
+    false
+   ]
+  ],
+  "norm_modes": [
+   "block",
+   "strict"
+  ],
+  "inner_speech": [
+   "imagined1stMotor",
+   "imagined1stAuditory",
+   "imaginedListening"
+  ],
+  "key_pairs": [
+   [
+    "listening",
+    "imagined1stMotor"
+   ],
+   [
+    "listening",
+    "imagined1stAuditory"
+   ],
+   [
+    "listening",
+    "imaginedListening"
+   ],
+   [
+    "reading",
+    "imagined1stMotor"
+   ],
+   [
+    "reading",
+    "imagined1stAuditory"
+   ],
+   [
+    "reading",
+    "imaginedListening"
+   ],
+   [
+    "imagined1stMotor",
+    "listening"
+   ],
+   [
+    "imagined1stAuditory",
+    "listening"
+   ],
+   [
+    "imaginedListening",
+    "listening"
+   ],
+   [
+    "imagined1stMotor",
+    "reading"
+   ],
+   [
+    "imagined1stAuditory",
+    "reading"
+   ],
+   [
+    "imaginedListening",
+    "reading"
+   ],
+   [
+    "attempted",
+    "imagined1stMotor"
+   ],
+   [
+    "attempted",
+    "imagined1stAuditory"
+   ],
+   [
+    "attempted",
+    "imaginedListening"
+   ]
+  ],
+  "tgm": {
+   "arrays": [
+    "T12-i6v",
+    "T15-i6v",
+    "T16-i6v",
+    "T15-55b"
+   ],
+   "train": [
+    "listening",
+    "reading",
+    "attempted"
+   ],
+   "test": [
+    "imagined1stMotor",
+    "imagined1stAuditory",
+    "imaginedListening"
+   ]
+  },
+  "interleaved": {
+   "task": "interleavedVerbalBehaviors",
+   "sessions": {
+    "T12": {
+     "delay_s": 1.8,
+     "go_s": 3.0,
+     "listening_event": "delay"
+    },
+    "T15": {
+     "delay_s": 1.5,
+     "go_s": 3.0,
+     "listening_event": "go"
+    },
+    "T16": {
+     "delay_s": 2.0,
+     "go_s": 2.0,
+     "listening_event": "go"
+    },
+    "T17": {
+     "delay_s": 1.5,
+     "go_s": 3.0,
+     "listening_event": "go"
+    }
+   }
+  }
+ }
+}

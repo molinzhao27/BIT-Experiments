@@ -1,0 +1,33 @@
+{
+  "device": "cpu",
+  "ctc_blank_repeat": {
+    "actual": [
+      "AA"
+    ],
+    "correct": [
+      "AA",
+      "AA"
+    ]
+  },
+  "ctc_padded_validation": {
+    "actual_per": 0.3333333432674408,
+    "correct_per": 0.0
+  },
+  "evaluator_collision": {
+    "models_scored": 2,
+    "metric_rows": 1,
+    "per_trial_files": 1
+  },
+  "unrelated_nulls_accepted": {
+    "beats_all_nulls": true
+  },
+  "unverified_scores_accepted": {
+    "reported_word_errors": 0,
+    "correct_word_errors": 1
+  },
+  "stale_slim_checkpoint": {
+    "new_full_weight": 2,
+    "loaded_weight": 1.0,
+    "chosen_file": "slim.safetensors"
+  }
+}

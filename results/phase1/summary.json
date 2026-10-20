@@ -1,0 +1,243 @@
+{
+ "sanity_checks": [
+  {
+   "participant": "T16",
+   "array": "i6v",
+   "behavior": "listening",
+   "paper": 92.1,
+   "primary": 93.2,
+   "ci": [
+    87.8,
+    96.7
+   ],
+   "paper_within_ci": true
+  },
+  {
+   "participant": "T12",
+   "array": "i6v",
+   "behavior": "imagined1stMotor",
+   "paper": 72.6,
+   "primary": 75.0,
+   "ci": [
+    68.3,
+    80.9
+   ],
+   "paper_within_ci": true
+  },
+  {
+   "participant": "T12",
+   "array": "i6v",
+   "behavior": "attempted",
+   "paper": 97.9,
+   "primary": 97.3,
+   "ci": [
+    93.2,
+    99.3
+   ],
+   "paper_within_ci": true
+  }
+ ],
+ "n_significant": {
+  "primary": 54
+ },
+ "n_conditions": 84,
+ "variant_mean_accuracy": {
+  "primary": 0.3672
+ },
+ "config": {
+  "seed": 42,
+  "task": "isolatedVerbalBehaviors",
+  "preprocess": {
+   "smoothing_sigma_ms": 100,
+   "smoothing_truncate": 5
+  },
+  "window": {
+   "length_ms": 500,
+   "step_ms": 100,
+   "active_start_ms": -500,
+   "active_end_after_go_ms": 1000
+  },
+  "passive_behaviors": [
+   "listening",
+   "reading"
+  ],
+  "behavior_times": {
+   "T12": {
+    "default": [
+     2.0,
+     3.0
+    ],
+    "listening": [
+     1.5,
+     1.5
+    ],
+    "reading": [
+     2.0,
+     1.5
+    ]
+   },
+   "T15": {
+    "default": [
+     1.5,
+     3.0
+    ],
+    "listening": [
+     1.5,
+     0.5
+    ],
+    "reading": [
+     1.5,
+     0.5
+    ]
+   },
+   "T16": {
+    "default": [
+     2.0,
+     3.0
+    ],
+    "attempted": [
+     2.0,
+     4.0
+    ],
+    "listening": [
+     1.5,
+     1.0
+    ],
+    "reading": [
+     2.0,
+     1.0
+    ]
+   },
+   "T17": {
+    "default": [
+     1.5,
+     3.0
+    ],
+    "listening": [
+     1.5,
+     0.5
+    ],
+    "reading": [
+     1.5,
+     0.5
+    ]
+   }
+  },
+  "cv": {
+   "outer_folds": 10,
+   "inner_folds": 10
+  },
+  "classifier": "diag_lda",
+  "chance": 0.142857,
+  "ci_level": 0.95,
+  "behaviors": {
+   "attempted": "Attempted",
+   "mouthed": "Mimed",
+   "imagined1stMotor": "Motoric Inner Speech",
+   "imagined1stAuditory": "Auditory Inner Speech",
+   "imaginedListening": "Imagined Listening",
+   "listening": "Listening",
+   "reading": "Silent Reading"
+  },
+  "arrays": [
+   [
+    "T16",
+    "i6v",
+    "T16-i6v"
+   ],
+   [
+    "T12",
+    "i6v",
+    "T12-i6v"
+   ],
+   [
+    "T15",
+    "i6v",
+    "T15-i6v"
+   ],
+   [
+    "T15",
+    "M1",
+    "T15-4"
+   ],
+   [
+    "T17",
+    "s6v-v",
+    "T17-s6v-A"
+   ],
+   [
+    "T17",
+    "s6v-d",
+    "T17-s6v-B"
+   ],
+   [
+    "T12",
+    "s6v",
+    "T12-s6v"
+   ],
+   [
+    "T15",
+    "s6v",
+    "T15-s6v"
+   ],
+   [
+    "T15",
+    "55b",
+    "T15-55b"
+   ],
+   [
+    "T16",
+    "PEF",
+    "T16-PEF"
+   ],
+   [
+    "T16",
+    "6d",
+    "T16-6d"
+   ],
+   [
+    "T17",
+    "55b",
+    "T17-55b"
+   ]
+  ],
+  "n_paper_rows": 9,
+  "paper_targets": [
+   [
+    "T16",
+    "i6v",
+    "listening",
+    92.1
+   ],
+   [
+    "T12",
+    "i6v",
+    "imagined1stMotor",
+    72.6
+   ],
+   [
+    "T12",
+    "i6v",
+    "attempted",
+    97.9
+   ]
+  ],
+  "variants": {
+   "gnb_sigma100": {
+    "classifier": "gnb"
+   },
+   "diag_lda_sigma60": {
+    "smoothing_sigma_ms": 60
+   }
+  }
+ },
+ "runtime_s": 81.4,
+ "env": {
+  "python": "3.12.14",
+  "numpy": "2.5.2",
+  "scipy": "1.18.1",
+  "sklearn": "1.7.2",
+  "pandas": "3.0.6",
+  "machine": "1af807a3ab0f"
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "checkpoint": "checkpoints/ssl_human/BEST",
+ "split": "val",
+ "r2_masked_b2t25_T15": 0.052017243810378644,
+ "mse_masked_b2t25_T15": 0.9503559310064491,
+ "n_bins_b2t25_T15": 259090,
+ "bit_r2_b2t25_T15": 0.04549576958843956,
+ "r2_masked_b2t25_T15_trial_mean": -0.0007573304265626746,
+ "r2_masked_b2t25_T15_neighbors": -0.12317185359466731,
+ "r2_masked_b2t24_T12": 0.04956895522172511,
+ "mse_masked_b2t24_T12": 0.9487145791729488,
+ "n_bins_b2t24_T12": 50576,
+ "bit_r2_b2t24_T12": 0.05882561824549221,
+ "r2_masked_b2t24_T12_trial_mean": -0.015288913246421343,
+ "r2_masked_b2t24_T12_neighbors": -0.15394312635718066,
+ "r2_masked": 0.050793099516051876,
+ "selection_groups": [
+  "b2t24_T12",
+  "b2t25_T15"
+ ],
+ "bit_r2": 0.05040676646209054
+}

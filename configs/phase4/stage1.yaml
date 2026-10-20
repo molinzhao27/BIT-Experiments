@@ -1,0 +1,24 @@
+# Phase 4 Stage 1 (arms C and E): standalone alignment of encoder + projector to FIXED LLM sentence targets,
+# before any LLM training. No phoneme labels anywhere. Code: src/kunzdecoder/stage1.py, scripts/phase4/train_stage1.py.
+seed: 42
+data_dir: data/raw/brandman_2024_text      # BIT's loader, TX + SBP (as Stage 2), train / BIT-val / BIT-test
+init: checkpoints/ssl_human/BEST_core      # SSL encoder core (4b; read-in/out dropped); null = random-init control
+targets:
+  cache: data/processed/text_targets       # kunzdecoder.text_targets (content-hashed, verified on load)
+  name: layer14                            # default for C (middle layer of 28); control: emb (BIT's aligner target)
+loss: infonce                              # infonce (C) | cosine | mse (E)
+head: {proj_dim: 512, init_temp: 0.1, max_scale: 100.0}   # as BIT's ModalityAligner / ContrastiveLoss
+batch_size: 1024                           # InfoNCE denominator; sweep 64 / 256 / 1024 / 4096; ablation 8 (BIT)
+chunk_size: 128                            # GradCache sub-batch (memory only; gradients are exact)
+optimizer:
+  lr_encoder: 1.0e-4                       # encoder + projector
+  lr_head: 1.0e-3
+  weight_decay: 1.0e-5
+  warmup_steps: 50
+  grad_clip: 1.0
+training:
+  max_epochs: 300
+  eval_every_epochs: 1
+  patience_evals: 15                       # stop when val top-1 retrieval has not improved for this many evals
+  bf16: true
+selection: val_top1                        # retrieval among distinct BIT-val sentences (all val trials)

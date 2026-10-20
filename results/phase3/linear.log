@@ -1,0 +1,36 @@
+[lda_shrinkage] 840 outer-fold jobs on 24 workers
+[Parallel(n_jobs=24)]: Using backend LokyBackend with 24 concurrent workers.
+[Parallel(n_jobs=24)]: Done  24 out of 840 | elapsed:    6.5s
+[Parallel(n_jobs=24)]: Done 114 out of 840 | elapsed:   21.4s
+[Parallel(n_jobs=24)]: Done 240 out of 840 | elapsed:   35.0s
+[Parallel(n_jobs=24)]: Done 402 out of 840 | elapsed:   50.3s
+[Parallel(n_jobs=24)]: Done 600 out of 840 | elapsed:  1.1min
+[Parallel(n_jobs=24)]: Done 840 out of 840 | elapsed:  1.7min finished
+[lda_shrinkage] done in 115s; mean accuracy 40.5%
+[logreg] 840 outer-fold jobs on 24 workers
+[Parallel(n_jobs=24)]: Using backend LokyBackend with 24 concurrent workers.
+[Parallel(n_jobs=24)]: Done  24 out of 840 | elapsed:   10.6s
+[Parallel(n_jobs=24)]: Done 114 out of 840 | elapsed:   30.7s
+[Parallel(n_jobs=24)]: Done 240 out of 840 | elapsed:   53.8s
+[Parallel(n_jobs=24)]: Done 402 out of 840 | elapsed:  1.5min
+[Parallel(n_jobs=24)]: Done 600 out of 840 | elapsed:  2.4min
+[Parallel(n_jobs=24)]: Done 840 out of 840 | elapsed:  3.1min finished
+[logreg] done in 199s; mean accuracy 39.6%
+[svm] 840 outer-fold jobs on 24 workers
+[Parallel(n_jobs=24)]: Using backend LokyBackend with 24 concurrent workers.
+[Parallel(n_jobs=24)]: Done  24 out of 840 | elapsed:    9.5s
+[Parallel(n_jobs=24)]: Done 114 out of 840 | elapsed:   31.8s
+[Parallel(n_jobs=24)]: Done 240 out of 840 | elapsed:   59.1s
+[Parallel(n_jobs=24)]: Done 402 out of 840 | elapsed:  1.9min
+[Parallel(n_jobs=24)]: Done 600 out of 840 | elapsed:  3.6min
+[Parallel(n_jobs=24)]: Done 840 out of 840 | elapsed:  4.7min finished
+[svm] done in 298s; mean accuracy 39.8%
+Same 84 conditions, trials and nested 10×10 CV as Phase 1. Accuracy in %, chance 14.3%.
+Δ = mean per-condition accuracy difference vs the baseline [95% bootstrap CI over conditions]; better/worse = conditions where McNemar q < 0.05 (BH within model); Wilcoxon = signed-rank test of the 84 paired differences.
+
+| Model | Input | Mean acc. (84) | Paper's 9 arrays | Inner-speech conditions | Significant conditions | Δ vs baseline (pp) | Better / worse | Wilcoxon p |
+|---|---|---|---|---|---|---|---|---|
+| Gaussian NB, pooled variance (paper) | 500 ms window mean | 36.7 | 43.6 | 28.7 | 54/84 | — | — | — |
+| Shrinkage LDA (Ledoit-Wolf) | 500 ms window mean | 40.5 | 48.3 | 31.7 | 55/84 | +3.7 [+2.5, +5.0] | 8 / 0 | 1.4e-07 |
+| Logistic regression (L2) | 500 ms window mean | 39.6 | 47.4 | 30.7 | 52/84 | +2.9 [+1.8, +4.0] | 4 / 1 | 2.4e-06 |
+| Linear SVM (L2) | 500 ms window mean | 39.8 | 47.3 | 31.3 | 55/84 | +3.1 [+2.1, +4.2] | 4 / 0 | 3.5e-07 |

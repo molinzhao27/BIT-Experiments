@@ -1,0 +1,17 @@
+# Dryad dataset for Kunz et al. 2025, Cell — "Inner speech in motor cortex and
+# implications for speech neuroprostheses" (PMC12360486)
+dryad:
+  doi: "doi:10.5061/dryad.gf1vhhn1j"
+  api: "https://datadryad.org/api/v2"
+  # Written by `scripts/fetch_data.py list`; pins version id + per-file size/sha-256
+  manifest: "configs/dryad_manifest.json"
+
+paths:
+  raw: "data/raw"
+  processed: "data/processed"
+
+# Archives this project actually uses. The rest of the dataset (sentences,
+# sequence recall, counting, keyword) is downloaded for completeness only.
+required_files:
+  - isolatedVerbalBehaviors.zip    # Phases 1–3 (Figs 1–2)
+  - interleavedVerbalBehaviors.zip # Phase 2 drift control (Fig 6)

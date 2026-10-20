@@ -1,0 +1,21 @@
+model,participant,n_arrays,delta_pp
+Shrinkage LDA (Ledoit-Wolf),T12,2,2.0529640427999998
+Shrinkage LDA (Ledoit-Wolf),T15,4,7.2363945578
+Shrinkage LDA (Ledoit-Wolf),T16,3,3.547133139
+Shrinkage LDA (Ledoit-Wolf),T17,3,0.37414965990000004
+Logistic regression (L2),T12,2,1.4455782312999998
+Logistic regression (L2),T15,4,5.612244898
+Logistic regression (L2),T16,3,2.9640427600000003
+Logistic regression (L2),T17,3,0.0
+Linear SVM (L2),T12,2,-0.0607385811
+Linear SVM (L2),T15,4,6.3775510204
+Linear SVM (L2),T16,3,3.7091026887
+Linear SVM (L2),T17,3,0.306122449
+1D-CNN (time series),T12,2,3.7414965986
+1D-CNN (time series),T15,4,7.406462585
+1D-CNN (time series),T16,3,6.932296728200001
+1D-CNN (time series),T17,3,2.5510204082
+GRU (time series),T12,2,-3.4985422741
+GRU (time series),T15,4,2.3299319728
+GRU (time series),T16,3,1.1013929380999998
+GRU (time series),T17,3,-4.4897959184

@@ -1,0 +1,24 @@
+# Phase 4 shared evaluator (src/kunzdecoder/phase4_eval.py, scripts/phase4/evaluate_decodes.py).
+# Every arm / seed / null control is scored with exactly these settings; the BERTScore settings and
+# bert-score's hash of them are written next to every result, and `summarize` refuses mixed hashes.
+# WER is BIT's (textmetrics.py): total word edits / total reference words after BIT's normalization.
+bertscore:
+  model_type: roberta-large
+  num_layers: 17                # bert-score's default layer for roberta-large (bert_score.utils.model2layers)
+  idf: false
+  lang: en
+  rescale_with_baseline: true   # bert-score's bundled en baseline for roberta-large
+  batch_size: 64                # does not change the scores; override with --batch-size
+  device: auto                  # cuda > mps > cpu; override with --device
+
+error_analysis:
+  tau: 0.75                     # sentences with >=1 word error and rescaled F1 >= tau are "meaning-preserving"
+  tau_grid: [0.6, 0.7, 0.75, 0.8, 0.9]
+
+bootstrap:                      # null controls: paired bootstrap over trials
+  n_resamples: 10000
+  seed: 0
+
+examples:                       # side-by-side decodes
+  n: 20
+  seed: 0

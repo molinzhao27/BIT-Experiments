@@ -1,0 +1,714 @@
+trial,reference,decoded,word_errors,ref_words
+0,streaming season is opening boys,dring video is coming up,4,5
+1,i'm going to go to the grocery store,i'm going to go to the university store,1,8
+2,they was just bad side effects,they was just bad start of,2,6
+3,it could be used to hassle somebody,it could be used to hold somebody,1,7
+4,i studied environmental engineering in college,i said electronic engineering in college,2,6
+5,can we use this for something,can we use this for something,0,6
+6,this car is super expensive,this car is super expensive,0,5
+7,and if i'm so blessed by the gods i'll never have to kill again,and if i'm so plugged by the gods i'll never have to deal again,2,14
+8,i've been pretty successful with that,i've been pretty successful with that,0,6
+9,it really helps those people,it really helps those people,0,5
+10,this is the price paid for counting eggs rather than chicken embryos,this is the premier bit for cooking each rather than chicken eggs,5,12
+11,she can do it,she can do it,0,4
+12,it's not like he had a choice,it's not like he had a choice,0,7
+13,i would contemplate going on a cruise now,i would contemplate going in a cruise now,1,8
+14,i've got a two year old,i've got a two year old,0,6
+15,who would they ask for clarification,who went they ask for leadership,2,6
+16,they can if they want to,they can have they want to,1,6
+17,sometimes they're not very open,sometimes they're not very open,0,5
+18,not in terms of north and south,not in terms of north and south,0,7
+19,the grand canyon,the credit canyon,1,3
+20,he put up all of his ash trays,he put up all of his hats sticks,2,8
+21,like the old hank williams,like the old hawaiiesie,2,5
+22,that's what i was about to say,that's what i was about to say,0,7
+23,i feel that we should help them,i feel that we should help them,0,7
+24,i'm originally from maine,i'm originally from penne,1,4
+25,the two have since taken some steps toward a rapprochement,the two have six taken off steps towards a relationshipapprochement,4,10
+26,a house full of snow,a house full of children,1,5
+27,i have lived in illinois and dallas,i have lived in enginois for dallas,2,7
+28,my husband travels frequently,my husband trash frequently,1,4
+29,he wanted to walk for miles,he wanted to write for miles,1,6
+30,they are the detroit delegates,they are the eternalroit lions,2,5
+31,that's the only pollution that's been there,that's the only reference that's been there,1,7
+32,take a stash of books or small quiet toys,take a stash of books or small quiet toys,0,9
+33,it seems like you walk quicker,it seems like you work quicker,1,6
+34,i'm interested in having it in my office,i'm used in having that in my house,3,8
+35,they're not buying homes,they're not buying off,1,4
+36,his side of the family,he sound of the family,2,5
+37,what do you like to do this time of year,what do you like to do this time of year,0,10
+38,so that's got everybody excited,so that's got everybody excited,0,5
+39,were you calling me from texas,will you doing my for ut,5,6
+40,i hope everything works out up there,i hope everything works out up there,0,7
+41,they must think if they can live with this decision,they must think of they can live with this decision,1,10
+42,selling bottles of water,sal magazines of water,2,4
+43,it's kind of like drawing this line,it's kind of like cheese this line,1,7
+44,whatever they tell you is a lie,whatever may call you is true lie,3,7
+45,everything trump wants to do threatens everything trudeau wants to do,everything tip was to do doesn american democraticuman was to do,6,11
+46,and it also helps when they were winning,and it also helps when they are getting,2,8
+47,there are some awful places in that country,there are some awful problems in that country,1,8
+48,the acid rain situation or the ozone depletion,the assistant rain situation on the ozone problem,3,8
+49,a visual comparison of various distances,a visual comparison of varying species,2,6
+50,i can't believe this is true,i can't believe this is true,0,6
+51,crime is too much,tw is too much,1,4
+52,do you find yourself funny,do you find yourself feeling,1,5
+53,others said they were disappointed,others said they were disappointed,0,5
+54,so i made my own version,so i made my own version,0,6
+55,i am here for my friend's company,i am here for my friends's company,1,7
+56,we think it's good,we think it's good,0,4
+57,the rich people started leaving the city,the r people started running the city,2,7
+58,keeps to their own turf,catcheps doing their own stuff,3,5
+59,they make less money in this season with snow,they make less money in this city with snow,1,9
+60,i was raised in this area,i watch raised in ne area,2,6
+61,tax season is certainly interesting,tax season is certainly interesting,0,5
+62,i'm glad to hear that,i'm talking to hear that,1,5
+63,luxury does not have to be expensive,usuallyury does not have to be expensive,1,7
+64,pay and exhaustion and you know,pay an exemptions and you know,2,6
+65,i think it is a wonderful interim place,i think it is a wonderful idea solution,2,8
+66,i try not to use insecticides on my lawn,i try not to use anyicides at my plants,3,9
+67,to really challenge them,to really challenge them,0,4
+68,that will be a big thrill for them,that will be a big long for them,1,8
+69,will you spend all that time reading your book,will you spend all that time reading your book,0,9
+70,the military has a strong presence in the persian gulf,the politician has a well history in the businessian gulf,4,10
+71,you still need your mother's permission,you still read your mother's permission,1,6
+72,did they mail that to you,did they tell that to you,1,6
+73,that would be devastating i'm sure,that would be fantastic i'm sure,1,6
+74,luxury clothes these days are quite expensive,usuallyury places these days are quite expensive,2,7
+75,do not sell your free time or your peace of mind,do not sell your trees time or your peace of mind,1,11
+76,i know we've had this one lady that was attacked,i know we've had this one little that was addicted,2,10
+77,i have to go across the city to see her,i have to go across the city to see her,0,10
+78,in the mountains,in the porta,1,3
+79,i just can't do those types of puzzles,i just signed't do this type of chores,4,8
+80,she has had really good luck this year,she has had really good luck this year,0,8
+81,it's actually turning out to be even worse than we thought,it's actually started out to be even worse than we thought,1,11
+82,seven or something like that,se or something like that,1,5
+83,the lease ran out in sixteen weeks,the leaves will out in j weeks,3,7
+84,it's real easy to swing in there for breakfast,it's real easy to swing in there for breakfast,0,9
+85,the sticky slide rugs under the carpet,the city cl rolls onto the carpet,4,7
+86,i like it here,i like it here,0,4
+87,owning on them and making payments on them,onlying one them and making payments on them,2,8
+88,a fine profession,a fan fraction,2,3
+89,the view from here is not worth it,you food from here is not with it,3,8
+90,evening is the best time for reading,anythinging is the best time for reading,1,7
+91,that is why they're kind of behind on work,that is why they're right of difficult on tax,3,9
+92,and so we usually sit outside,and so we usually sit outside,0,6
+93,i think nursing homes can be good for some people,i think different homes can be good for the people,2,10
+94,it is fine,it is far,1,3
+95,it's like a joke i heard once,it's like a jet i heard once,1,7
+96,cars and busses stalled in snow drifts,cars and busesusses school in the ands,4,7
+97,we've had our way of life,we've had our share of life,1,6
+98,those words were the cue for the actor to leave,those words were the key for the attack to leave,2,10
+99,i've only seen him in funny stuff,i've only seen him in funny stuff,0,7
+100,when does school start,was does school start,1,4
+101,in the houston area,in the urbanouston area,1,4
+102,they will financially recover from the loan,there were voluntarily benefit from the loan,4,7
+103,when we bought it last year,when we made it new year,2,6
+104,remember to let other people through first,remember to let other people know first,1,7
+105,i will make it work,i will make it work,0,5
+106,the motivation isn't there for a lot of people,the mission isn't there for a lot of people,1,9
+107,how can i avoid being infected by a virus,how can i avoid being infected by a virus,0,9
+108,easiest way out maybe,anyasierest way out maybe,1,4
+109,i guess something has to go,i just something has to go,1,6
+110,he's going to be traveling to europe with a group of friends,it's going to be basically to europe and a group of friends,3,12
+111,check out ebay craigslist and other online sites for deals,check out any closetsigslist and other online sales for sales,4,10
+112,not too much soy sauce,not too much snow sauce,1,5
+113,what are the problems with public education,what are the problems with traditional education,1,7
+114,what should be done to avoid all these problems,what should be done to avoid all these problems,0,9
+115,yet the president is not wrong to be exasperated and enraged,get the president is not going to be ambitiousasperated and enraged,3,11
+116,employers have also voiced concerns,libers have also found concerns,2,5
+117,you have to pay the interest,you have to be the taxes,2,6
+118,bonsai meeting ghost mainly,belowai making acrossly,4,4
+119,in fact the first year we were married,in fact the first year we were married,0,8
+120,your birthday and age won't be visible to other users,your mother and each when't be visible to other users,3,10
+121,every time i do something,every time i do something,0,5
+122,go talk to her in the lobby i'll be right down,go talk to her in the public i'll be right down,1,11
+123,they gave variety of benefits to their employees,they may direction of benefits to their employees,2,8
+124,it came out i guess about a month,it came out i guess about a month,0,8
+125,the set of china hit the floor with a crash,the set of children it the floor with a crash,2,10
+126,he won a free trip or something along those lines,he would a few trip or something along those lines,2,10
+127,this will make somebody care for the situation,this will make everybody happy for the society,3,8
+128,then it's twice as hard,then it's just as hard,1,5
+129,it got too cold up there,it got to cold up there,1,6
+130,healthy vision,everything vision,1,2
+131,run bargains hopeless persists meals,one batchesains department because mines,5,5
+132,i guess i never heard the history of that,i guess i never heard the history of that,0,9
+133,this will fall down soon,this will fall down soon,0,5
+134,i don't know whether you did yours first,i don't know what you did yours first,1,8
+135,nevertheless i roll my eyes as i get up,bas gonna i will my eyes at i read up,5,9
+136,have their bellies rubbed and everything,have their bellies rubbed and everything,0,6
+137,you have to fly through,you have to really through,1,5
+138,i just got the new issue,i don got the new excel,2,6
+139,i drove a cadillac back then,i love a taxiillac band then,3,6
+140,my teachers exactly knew my mind,my teachers actually knew my mind,1,6
+141,your mother said this is enough,your mother said this is enough,0,6
+142,the clock struck to mark the third period,the young song two mark the start year,5,8
+143,eat your food it's getting cold,it your food it's getting cold,1,6
+144,the hercules and rainbow stag beetles are highlights here,the coronsules and cap sharks bullsles are actually here,5,9
+145,somebody's going to change it,sometimesbody's going to change it,1,5
+146,we're within walking distance,we're without walking distance,1,4
+147,mother team system amount texas,mostly gave city autom decision,5,5
+148,my mother was complaining last year about that,my mother was predominantly last year about that,1,8
+149,it didn't matter,it didn't matter,0,3
+150,light clothes are bad,let clothes are best,2,4
+151,i mean i've haven't had it that long,i mean i've never't had that long long,3,8
+152,do you still care about your job,do you still care about your job,0,7
+153,you can't get all of us,you can't get all of us,0,6
+154,they will take up recycling from now on,they will take up recycling of now on,1,8
+155,i don't know if you've tried it,i don't know if you've ever it,1,7
+156,i would work in the summer,i would work in the summer,0,6
+157,she came last june and watched a game in the sky dome,she came last yearune and watched a game in the state sport,3,12
+158,i grew up water skiing,i grew up painted skiing,1,5
+159,that does not seem quite fair,that may not seem quite fair,1,6
+160,social states give more benefits to employees,social change have more benefits to employees,2,7
+161,when you stop to think of it,when you stop to think of it,0,7
+162,pops against idol accurate crop steak,booksops and ill ak coup stick,6,6
+163,i absolutely loved it,i definitely loved it,1,4
+164,people from my college were already there,people from my college were already there,0,7
+165,i want them to come back up next year,i want them to come back up nice year,1,9
+166,it was given to you the minute you cast your ballot,it was given to you the minute you asked your vote,2,11
+167,i'm old fashioned,i'm old fashioned,0,3
+168,either savings or investment,either season or investment,1,4
+169,i like to work in this small room,i like to work in this small room,0,8
+170,do you have any friends with older children,do you have any pets with older children,1,8
+171,what happened to the sound,what happened to the sound,0,5
+172,i found that really helps,i felt that really helps,1,5
+173,i just want to enjoy myself a little bit,i just want to enjoy myself a little bit,0,9
+174,when you leave a job,when you live a child,2,5
+175,there were none left by the year two thousand,there were no left by the time's thousand,3,9
+176,i don't think it's quite as green,i don't think it's quite as great,1,7
+177,everybody is sitting here screaming,governmentbody is getting here watching,3,5
+178,the first demonstration of a touch screen display,the test demonstration of a touch screen display,1,8
+179,some people are quite good at this,some people are quite good at this,0,7
+180,it looks like it would be,it looks like it would be,0,6
+181,how large is williams,how long is hisiams,2,4
+182,it's not at all anything worth talking about,it's not at all anything worth talking about,0,8
+183,we decided to stay,we decided to stay,0,4
+184,i make a lot of my christmas presents,i work a lot of my own gifts myself,4,8
+185,i don't know what you think about that,i don't know what you do about that,1,8
+186,can you guess what's in this,can you take what's in this,1,6
+187,the two met while playing on the sand,the two main while playing on the side,2,8
+188,it's something that interests me,it's probably that interests me,1,5
+189,she is more famous since she did that,she is more comfortable since she did that,1,8
+190,my husband and all the men,my husband and all the men,0,6
+191,this policy mostly sounds right to me,this policy mostly affects great to me,2,7
+192,the old newspaper will have a report on this,the old couple will have a reference on this,2,9
+193,a producer of movies in baltimore called,a prescription of movies in televisionaltimore called,2,7
+194,i have a gold one,i have a garden line,2,5
+195,get arrested or what not,it around or what,3,5
+196,my real concern is this,my three success is this,2,5
+197,i am from argentina,i am from utentina,1,4
+198,it's really not too difficult,it's really not too difficult,0,5
+199,have some part of the law,have some part of the law,0,6
+200,see things like that,she things like that,1,4
+201,especially if you are coming this weekend,especially if you are coming this weekend,0,7
+202,it is estimated a total of three thousand properties were affected,it is important that total of three thousand people were affected,3,11
+203,what if you were in your kid's shoes,what if you were in your case's shoes,1,8
+204,but they have snakes over there,but there have friends everywhere there,3,6
+205,we didn't do it very much,we didn't do it it much,1,6
+206,it is impressive in more than just quantity,it is impossible in view than just quantity,2,8
+207,this room is quite neat,this room is quite neat,0,5
+208,they put it out in a video,they paid it out in a community,2,7
+209,details of this plot were reported two years ago,d of this plan were revealed to years ago,4,9
+210,we don't listen to any elevator music at my house,we don't listen to any radio music at my old,2,10
+211,you just gave it away,you just go it away,1,5
+212,the morning sun light is white,the money sun light is quite,2,6
+213,and that is the best book to go through,and that is the much food to read through,3,9
+214,pasquale thinks a similar argument should be made for search engines,twchalale thinks a civil argument could be made for each engines,4,11
+215,we should see to our own lives,we should see to our own lives,0,7
+216,the news was first reported by deadline hollywood,the news was fast reported by d unlimitedouston,3,8
+217,i don't want to do anything,i don't want to do anything,0,6
+218,i played a large role in that decision,i played a lot role in that decision,1,8
+219,he won't do that yet,he won't do that yet,0,5
+220,are you pleased with this decision,are you pleased with this decision,0,6
+221,check out the new sales items,check out the new sounds incentives,2,6
+222,you like pets and things,you look sports and things,2,5
+223,she was the division head in the college,she was the presidental in the college,2,8
+224,what was the exact line in the play,what was the exact line in the play,0,8
+225,i guess it's close enough,i guess it's close enough,0,5
+226,you probably wouldn't recognize me,you probably wouldn't recognize me,0,5
+227,they sent us a little booklet to read,they sent us a little bottle to read,1,8
+228,i think it would work out well,i think it would work out well,0,7
+229,it was about nine o'clock at night,it was between twenty hundred'clock at night,3,7
+230,where i go to church now,where i go to church now,0,6
+231,are you talking about the acid rain situation or the ozone depletion,are you talking about the second rain situation or the other depletion,2,12
+232,do you have any pets now,do you have any pets now,0,6
+233,what is the point of all this,what is the point of all this,0,7
+234,drunk drivers kill people,drugiving drivers kill people,1,4
+235,i'm not even disputing the results of the board,i'm not even subscribinging the results of the poll,2,9
+236,it's called reviewing my life,it's called viewing my life,1,5
+237,i was really working with the middle class,i was really worrying with the middle class,1,8
+238,how many casualties were there,how many countries were there,1,5
+239,it is totally ridiculous,he is totally ridiculous,1,4
+240,it's like we've lost our values in this country,it's like we've got our focus in this country,2,9
+241,business as usual for traders,b as usual for pirates,2,5
+242,a guy that i know just got a job there,a guy that i know just got a job,1,10
+243,i did not earn my degree until later on in my life,i did not own my degree until later in in my life,2,12
+244,especially with butter and honey on them,ess with middle and honey on them,2,7
+245,that is cheap compared to what i usually buy,that is because compared to what i usually buy,1,9
+246,that decision is expected early next week,that decision is expected soon this week,2,7
+247,i wouldn't say it's as bad as new york,i couldn't say it's as bad as the york,2,9
+248,the only other place i've ever vacationed,the only other place i've ever beened,1,7
+249,i did it all on the job,i kind it all the the phone,3,7
+250,elk diplomatic plates reimbursed names,helpk decl pleasure restrictursed taxes,5,5
+251,she has had really good luck this year,she is had pretty good luck this year,2,8
+252,it's easy to tell the depth of a well,it's easy to tell the twins of a well,1,9
+253,i'm mostly the easy cooker,i'm mostly the eating cook,2,5
+254,her purse was full of useless trash,her books was full of magazines cards,3,7
+255,employment income,explo increase,2,2
+256,the door bell rang,the new will rang,2,4
+257,students do not like this response,s do not like this reform,2,6
+258,my yard is very clean today,my yard is very clean today,0,6
+259,if you don't refute it,if you don't redirect it,1,5
+260,inside the jail there,ins the jail there,1,4
+261,it has been like fifteen years,it has been like fifteen years,0,6
+262,the court is yet to make its decision public,the court is not to make its decision,2,9
+263,there's no deductions,there's too taxes,2,3
+264,they gave us a special deal,they gave us a package deal,1,6
+265,what is the cost of each piece you sell,what is the cost of each piece you sell,0,9
+266,a few minutes ago,a few minutes ago,0,4
+267,and this gets back to capital punishment,and these gives back to capability punishment,3,7
+268,people are dropping out of school,people are dropping out of school,0,6
+269,the kids like to go out,the kids like to go out,0,6
+270,it doesn't seem that long,it doesn't seem that long,0,5
+271,my brother is five years younger than my sister is,my mother is full years old than my sister is,3,10
+272,then you find it again and lose it again,then you find it again and lose it again,0,9
+273,we have a long evening ahead of us,we have a long evening ahead of us,0,8
+274,i hope to see you there,i hope to see you there,0,6
+275,what kind of puppy you got,what kind of movie you got,1,6
+276,people donate more money,people don more money,1,4
+277,but it didn't get the upper part of my body,but it didn't get the upper part of my body,0,10
+278,how are you,how are you,0,3
+279,no easy choices,no easy choices,0,3
+280,how much is your card worth,how much is your garden worth,1,6
+281,it was a prime time football game,it was a prime time football game,0,7
+282,i can still read music,i can tell remember music,2,5
+283,he was a good player,he was a dog player,1,5
+284,now i remember it,now i remember it,0,4
+285,you don't have to be an expert to play this game,you don't have to be an expert to play this game,0,11
+286,did you have to do that,did you have to do that,0,6
+287,i love eating pecan pie,i love visiting peanutan pie,2,5
+288,for me i had no choice but to move,for me i had no choice but to move,0,9
+289,the decision was not even close,the decision was not even close,0,6
+290,here are my notes from the first draft of the paper,here are my notes from the first talk of the paper,1,11
+291,i really just started,i really do started,1,4
+292,we cannot go there without you,we cannot do there without you,1,6
+293,how often do you go for a walk with him,how often do you go for a walk with him,0,10
+294,they are now starting to make them,they are now starting to make them,0,7
+295,that's what they said,that's what they said,0,4
+296,your experience is very good for this job,your experience is his good for this job,1,8
+297,what should we do now,what should we do now,0,5
+298,this is headache powders revisited,this is hanging painlett rehabilitationited,3,5
+299,i would love to have more of these too,i would love to have more of these to,1,9
+300,they are here for a purpose,they are here for a vacation,1,6
+301,and you paint around it,and you pick around it,1,5
+302,i wanted him to win best actor on top of it,i wanted him to read most actor on type of it,3,11
+303,the joy of an early morning walk,the joy of a early morning walk,1,7
+304,i try to save that for the weekend,i try to skim that for the weekend,1,8
+305,what shall we do,what shall we do,0,4
+306,i think they already did that,i think they are did that,1,6
+307,i think that's a really interesting question,i think that's a very interesting idea,2,7
+308,my daughter is in kindergarten,my daughter is in kindergarten,0,5
+309,i guess there are a few things around still,i guess there are a few things around still,0,9
+310,a million dollars a year,a million different each year,2,5
+311,the nursing home,the nursing home,0,3
+312,we know what we can do,we know what we can do,0,6
+313,i really don't have any problem with it,i really don't have any problem with it,0,8
+314,on occasion i can wear jeans,on occasion i can wear jackets,1,6
+315,i will be visiting new england,i will be visiting new england,0,6
+316,how are you liking it,how are you doing it,1,5
+317,we went to go see the godfather part three,we went to an see the nationalfather part two,3,9
+318,wilkinson had no regrets about her decision,quson had no recourse about her decision,2,7
+319,i like being involved in things like this,i like being involved in things like this,0,8
+320,the juice of lemons makes fine punch,the choice of lomons makes fine punch,2,7
+321,that is horrible,that is horrible,0,3
+322,the frosty air passed through the coat,the restauranty air sent through the door,3,7
+323,not that she will remember them,not that she will remember them,0,6
+324,glue the sheet to the dark blue background,glow the sheet to the cardboard blue fabric,3,8
+325,because of a service that they could provide,because of a decision that they could perform,2,8
+326,you'll middle benefits education lives,you'll mainly part insurance comes,4,5
+327,your story is not clear anymore,your story is not clear enough,1,6
+328,let's play this new version of my favorite music,let's play this new version of my favorite music,0,9
+329,mix some cream sauce with it and pour it over rice,mix some cream sauce with it and pour it over rice,0,11
+330,grade nucleus arrive excess destroying,great differences around after density,5,5
+331,they send off emissaries to start new cancer colonies,they said off magazinesaries to start new countries clinics,4,9
+332,my dad is a potato farmer,my dad is a potato farmer,0,6
+333,i can't really think of anything else offhand,i can't really think of anything else after hand,2,8
+334,are you pleased with this decision,or you pleased with this decision,1,6
+335,what happened after i left,what amount after i left,1,5
+336,when i came back here,when i came back here,0,5
+337,i don't think the teachers are the problem,i don't think the teachers are the problem,0,8
+338,special to the detroit free press,so to the detroit free press,1,6
+339,while my oldest was a year old,well my daughters was a year old,2,7
+340,employees should do some field work when they join,always should do some light work that they go,4,9
+341,they were not really into sports,they were not really into sports,0,6
+342,it wasn't even funny,it wasn't even funny,0,4
+343,thank you for participating,thank you for participation,1,4
+344,it'll go through the slot,i'll go through the sky,2,5
+345,i would not mind it,i would not mind it,0,5
+346,yes i am talking to you,yes i am talking to you,0,6
+347,we have worked a lot on this,we have worked a lot on this,0,7
+348,put a cramp in your viewing,but a quartimp in your wallet,3,6
+349,and they really seem wise,at the really seem wise,2,5
+350,years have gone by,yes have gone by,1,4
+351,outside the building it's not bad,exercise the building it's not bad,1,6
+352,she will sit across the room,she will sit across the room,0,6
+353,i don't want any interruptions,i don't want any involvement,1,5
+354,she lives in the house right next to me,she lives in the house right next to me,0,9
+355,i think it's good that you see your cousins frequently,i think it's just to you use the teachers regularly,6,10
+356,i think the majority are in that,i think the money are in that,1,7
+357,what kind of things do you think can be done,what kind of things do you think can be done,0,10
+358,my son really wanted a pet bird,my son really wanted a pet mouse,1,7
+359,she handles it pretty well,she almost it pretty well,1,5
+360,it is like winning the lottery,it is like morning the lottery,1,6
+361,i saw all seven games of that,i saw all seven games of that,0,7
+362,it sounds like you have really strong views on it,it sounds like you have really short views on it,1,10
+363,fiction books that i really like,f books that i really like,1,6
+364,it is a fairly large liberal arts college as well,it is a very large local arts college as well,2,10
+365,they said it was really riveting,they said it was really difficulteting,1,6
+366,she jumped at the sound of the thunder storm,she kept at the sound of the high clap,3,9
+367,do you think this is right,do you think this is right,0,6
+368,how many books on law do you have,how many books on law do you have,0,8
+369,i went back to school and got my master's degree,i went back to school and got my master's degree,0,10
+370,she didn't announce that to you,she didn't admit that to you,1,6
+371,there are no more vehicle tokens spread across the map,there are no more invasive stations for out the book,5,10
+372,if you haven't slowed down,if you haven't looked down,1,5
+373,what part of this is hard,what part of this is hard,0,6
+374,it would be nice if they could get them together,it would be nice if they could get them together,0,10
+375,we're going to have to do something,we're going to have to do something,0,7
+376,wait a minute we know this thing isn't,what a minute we know this thing isn't,1,8
+377,what would you find if you just kept on going,what would you find if you just kept on going,0,10
+378,magnified vision able to see at night,matplotlibilitaryificent vision able to see at night,1,7
+379,i look at homemaking as a job also,i look at homemaking as a job also,0,8
+380,all the money,all the money,0,3
+381,they're grown now,they're green now,1,3
+382,i have a standard,i have a sister,1,4
+383,so what company do you work for,the what's do you work for,3,7
+384,do you still drive that old car,do you still drive that old car,0,7
+385,i'll get around to it,i'll get around to it,0,5
+386,it comes down to measuring,it helps down to revenue,2,5
+387,please give me a paramedic,please give me a brochureedian,1,5
+388,thank you for signing up,thank you for signing up,0,5
+389,snuggle up to you,sellail up to you,1,4
+390,an apartment or a home,in packet or a home,2,5
+391,water into this bowl,greater into this pool,2,4
+392,not all men pay their employees less,not all men believe their bills cash,3,7
+393,we ended up watching it for a couple of hours,we ended up watching it for a couple of hours,0,10
+394,a really good thing to do,a quick good thing to do,1,6
+395,they are going to get a gun no matter what,they are going to get a gun to matter what,1,10
+396,i am pretty aware of what goes on here,i am pretty aware of what goes on here,0,9
+397,i think there's about seventy five people here,i think there's about twenty five people here,1,8
+398,the walled town was seized without a fight,the oldald town was sealed without a fight,2,8
+399,american car companies,american car companies,0,3
+400,i have to balance work and life,i have to balance work and life,0,7
+401,the bermuda triangle,the businessaltuda triangle,1,3
+402,why is this such an unusual thing to do,why are the just a unfortunate thing to do,5,9
+403,that pleased me,that pleased me,0,3
+404,the ink stain dried on the finished page,the key soon dried on the picture paint,4,8
+405,we can't find a place that will take everything,we can't find a place that will take everyone,1,9
+406,we also set aside money for entertainment,we also set aside money for education,1,7
+407,of course,of course,0,2
+408,they don't kill the animals,they don't call the animals,1,5
+409,read verse out loud for pleasure,read miles out loud for pleasure,1,6
+410,that's a science in itself,that's a science in itself,0,5
+411,a cup of sugar makes sweet fudge,a couple of sugar makes white foodudge,3,7
+412,who do they need to trade before the deadline,who do they need to drag away the settlement,3,9
+413,you don't understand this,you don't understand this,0,4
+414,those games are fun to watch,those teams are fun to watch,1,6
+415,i think that could work as a toy,i think that could work as a toy,0,8
+416,according to the judicial system,according to the decision system,1,5
+417,it's actually just twelve years old,it's actually just cold years old,1,6
+418,things of that nature which made us feel good,things of that nature was might us feel good,2,9
+419,i'm sure you will find something,i'm sure you will find something,0,6
+420,our sleeping bags i guess,our small bags are guess,2,5
+421,place a rosebush near the porch steps,place a tablespoon nearurr near the porch steps,2,7
+422,losers all the way around,interest angles of the way around,3,5
+423,i heard this on a christian program,i heard this on a christmas program,1,7
+424,the air is always cool,the air is always cool,0,5
+425,a small creek cut across the field,a small group cut across the field,1,7
+426,having a job will keep you out of trouble,having a job will keep you out of trouble,0,9
+427,the colt reared and threw the tall rider,the cookogne branded and th the ball rabbit,5,8
+428,the quantity you chose exceeds the quantity available,the purpose you use is the quantity allowable,4,8
+429,i have many a time called him to come get me,i have been a time called him to come get me,1,11
+430,there's so much noise in the capital city,that's so much noise in the capital city,1,8
+431,they're moving to florida,they're moving to florida,0,4
+432,we talked of the side show in the circus,we camp of the sound show in the restaurant,3,9
+433,especially if he's a repeat offender,actually if it's a pretty offender,3,6
+434,i was tired during that whole month,i was tired during that whole month,0,7
+435,i can't think of his name now,i can't think of his name now,0,7
+436,this house looks very big,this house looks very big,0,5
+437,the show was a flop from the very start,the show was a lif from the very start,1,9
+438,he's just so tall,he's just so darn,1,4
+439,this will not matter much in the long run,this will not matter much in the long run,0,9
+440,but you have friends that have children,but you have friends that have children,0,7
+441,american teams are clear this season,american teams are clear this season,0,6
+442,america is losing it,america is looking it,1,4
+443,my american friends are from texas,my computer friends are from texas,1,6
+444,it's already done for you,it's already done for you,0,5
+445,i don't think they're in a conspiracy,i don't think they're in a situation,1,7
+446,the vines are really taking over,the first are really getting over,2,6
+447,you'd think that it was a private school,used'd think that it was a waste school,2,8
+448,i took care of the children,i took care of the children,0,6
+449,i love all the windows that they have out now too,i love all the restaurants that they have out now too,1,11
+450,march the soldiers past the next hill,march the fourth must the next hill,2,7
+451,terms news earning by commitment,tw news airing my company,4,5
+452,well that sounds pretty good,well that sounds pretty good,0,5
+453,this policy is important for social interest,this policy is important for social equality,1,7
+454,i had to change the water in that,i have to change the water in that,1,8
+455,you don't feel super cold,you don't feel comfortable cold,1,5
+456,ninety seven cents a week,littleety seven years a week,2,5
+457,it is strange enough,it is absolutely enough,1,4
+458,my mom lives like i do,my mom lives like i do,0,6
+459,its too valuable to just let people stay in sorry,it two funny to just let people steal in s,5,10
+460,i miss the intellectual stimulation of taking classes in college,i miss the traditional stimulation of going classes in college,2,10
+461,keeping things concise is usually the way to go,remember things concise is usually the way to go,1,9
+462,in may it will be five years since i met him,in may it will be five years since i met him,0,11
+463,she got this from me,she got this from me,0,5
+464,my son just adopted a cat,well son just won a cat,2,6
+465,television service is awful here,collegelevision services is awful here,2,5
+466,join the gang,join the gang,0,3
+467,you'll have one or two that are good,you'll have one or two that are good,0,8
+468,i'm getting a gut feeling here,i'm getting a good feeling here,1,6
+469,the past few weeks are a case in point,the b few weeks are a case in point,1,9
+470,the fish twisted and turned on the bent hook,the first wrapped and turned on the pitch hook,3,9
+471,is this noise from the tv,he this choice from the city,3,6
+472,i got it right after high school,i got it right after i school,1,7
+473,i try to embrace it,i try to exercise it,1,5
+474,that's a good way to get started,that's a good way to get to,1,7
+475,kept touring shallows hang everyone,it doing north we he hamm,6,5
+476,there's not a whole lot,there's not a whole lot,0,5
+477,i never quite found a new york fan,i never quite found a new yard fan,1,8
+478,not everyone can exercise in the morning,not every can access in the morning,2,7
+479,not too long ago,not too long ago,0,4
+480,that's a good option to consider,that's a good option to consider,0,6
+481,thank you and please enjoy your stay,thank you and please enjoy your stay,0,7
+482,first terror slips done,first year attack down,3,4
+483,that was the point,that was the point,0,4
+484,which one is the tourist area,which group is the youngest area,2,6
+485,pets can be a lot of trouble,p can be a lot of trouble,1,7
+486,hoist the load to your left shoulder,onceise the load to your left shoulder,1,7
+487,it used to cost six bucks,it needs to cost six bucks,1,6
+488,getting married is not a crime,getting married is not a fun,1,6
+489,grassley grew up on a family farm where he still works,d growing grew up on a farming farm where he still works,3,11
+490,people will do humiliating grotesque things for ambition,people will do anything thingsque things for acceptance,3,8
+491,the town is just over the hill here,he man is seven over the hill here,3,8
+492,you just gave it away,you're join it away,3,5
+493,you don't need a personal one,you don't need a paper line,2,6
+494,the blue sky looks so pretty,the small sky looks so pretty,1,6
+495,i paid all my taxes the night before,i paid all my taxes the next before,1,8
+496,if their skirts are above the knee they are too short,if there choice were over their knee are short short,7,11
+497,we need to buy more and more of them,we need to buy more and more of them,0,9
+498,that's really funny but also disturbing,that's really funny but also disturbing,0,6
+499,teach children to love reading for pleasure,eachlevision something to live learning and pleasure,5,7
+500,she was always a little bit leery of her,she was always a little bit leery of her,0,9
+501,sort of like an exchange program,sort of like an italian program,1,6
+502,the choice is yours,the choice is yours,0,4
+503,i have been working on this since early morning,i have been working on this since high morning,1,9
+504,both lost their lives in the raging storm,both lot their lives in the recent storm,2,8
+505,we all know that unfortunately schools are not always the safest places,we all know that money crimes are not always the safest places,2,12
+506,that sort of stuff,that sort of stuff,0,4
+507,barbecues and mexican food,portbiesues and grican food,2,4
+508,they needed a smaller setting,they didn a small setting,2,5
+509,it was written many years ago,it was twenty many years ago,1,6
+510,you know i don't know,you know i don't know,0,5
+511,we need to work more on the social part,we went to work hard on the social part,2,9
+512,one thing or the other,what thing or the other,1,5
+513,i try to make sure,i try to make sure,0,5
+514,it's not anything like kansas,it's not anything like campansas,1,5
+515,i think it could affect the outcome,i think it could affect the outcome,0,7
+516,nothing is more important to him than power,nothing is more important to him than power,0,8
+517,i do not talk to many people in the military,i do not want to people people in the university,3,10
+518,he's never gone away,he's never gone away,0,4
+519,it's a quick growing industry,it's a package way tree,3,5
+520,we are good people,we are good people,0,4
+521,my baby grew a lot in the first six months,my baby will a lot in the first six months,1,10
+522,what will be a luxury in the future,what will be a luxury in the future,0,8
+523,it was his decision and you have to respect it,it was his decision and you have to respect it,0,10
+524,it's depressing too,it's depressing too,0,3
+525,a saw is a tool used for making boards,a saw is a tool used for cutting parts,2,9
+526,i never go to the fiction section,i never go to the french section,1,7
+527,but bringing the party together will be easier said than done,but measuring the parents together will be easier said than done,2,11
+528,the thing that should be,the thing that should be,0,5
+529,recycling law depends on your city,usuallyycling falls depends on your city,2,6
+530,keep this with you for now,keep this with you for now,0,6
+531,especially for repeat offenders,ess for women offenders,2,4
+532,i hope everything works out up there,a hope everything works out for there,2,7
+533,we talked about this the other day,we talked about this the other day,0,7
+534,vote for your top choice,f for your favorite choice,2,5
+535,it seems like you get hit the worst,it seems like you get it the worst,1,8
+536,variety yours originally check second,everyoneety shows independently came something,5,5
+537,the jury and a judge work together on it,the jury in a judge work together on it,1,9
+538,what's different about this,what's different about this,0,4
+539,basically the guy commits,basically the guy commands,1,4
+540,i have my own policy on freeloaders,i have my own opinions on penaltiesancersers,2,7
+541,he said the decision to part ways was mutual,he said the decision to start ways was final,2,9
+542,my wife and i both like it,my wife and i both like it,0,7
+543,i hope you enjoyed this article,i hope you enjoyed this article,0,6
+544,employee benefits,avoid benefits,1,2
+545,the small pup gnawed a hole in the sock,the small group snawed a small in the fence,4,9
+546,zoology department,unological department,1,2
+547,you live in garland,you live in colorland,1,4
+548,i hope you all enjoy this,i hope you all enjoy this,0,6
+549,her friend will thank her for the card,her friend will thank her for the card,0,8
+550,this is easy for me,this is easy for me,0,5
+551,that does not seem quite fair,that does not seem quite fair,0,6
+552,a natural gas explosion,a natural gas explosion,0,4
+553,not in a civilized society,not in a civilized society,0,5
+554,nothing will change my heart on this matter,nothing will change my heart on this matter,0,8
+555,when i had my magazines at home,when i had my daughters sent home,2,7
+556,he can consistently score the damage you need to prowl your hand into play,he can sometimes show the same you need to killcreate your enemy play,6,14
+557,i don't water them or anything,i don't want them or anything,1,6
+558,never miss a moment,never miss a moment,0,4
+559,congratulations on that,conclusionsatulations on that,1,3
+560,i wonder where they learned to do that,i wonder where they learned to do that,0,8
+561,parents of small children care about this,parents of school children care about this,1,7
+562,what kind of dog do you have,what kind of talk do you have,1,7
+563,a vegetable garden,he perfect garden,2,3
+564,children do not like punishment,children do not like punishment,0,5
+565,thank york catch along set,they youshire only that,5,5
+566,it's kind of funny,it's kind of funny,0,4
+567,they're not owning homes,they're not opening homes,1,4
+568,it's nothing like what it used to be,it's nothing like what it used to be,0,8
+569,the measure passed the house by a landslide vote,the money passed the house by a large vote,2,9
+570,there is a very serious situation across the street,there is a very serious situation also the street,1,9
+571,when they fall over,with they fall over,1,4
+572,i am also doing this,i am also doing this,0,5
+573,none of your business,none of your business,0,4
+574,there were thousands of cows on the farm,there were lots of choices on the farm,2,8
+575,i would like to see a little bit more of that,i would like to see a little bit more of that,0,11
+576,we always seem to,we always seem to,0,4
+577,wayne state university is in detroit michigan,when state university is in detroit mexicoigan,2,7
+578,this does not appeal to me at all,this is not appeal to me at all,1,8
+579,these days a chicken leg is a rare dish,he days a chicken leg is a real dish,2,9
+580,show me what you have got,show me what you have got,0,6
+581,we have a dog too so that adds to it,we have a dog too that that is to it,2,10
+582,do you get cable,do you get cable,0,4
+583,we seem to agree on that,we seem to agree on that,0,6
+584,of course it's real convenient for you,of course it's going convenient for you,1,7
+585,when was it,when was it,0,3
+586,are you involved in any other things,are you ever in any other things,1,7
+587,get the recipe from them,get the recipe from them,0,5
+588,what do you think,what do you think,0,4
+589,it was a prime time football game,it was a prime time football game,0,7
+590,where is that awful noise coming from,where is that awful noise coming from,0,7
+591,here in indiana we pay,here it indiaiana we pay,2,5
+592,my vision does not amount to anything,my vision does not allow to anything,1,7
+593,my three year old,my faith year old,1,4
+594,not too controversial,not too difficult,1,3
+595,in fact this morning when they were talking,it fact this morning when they were talking,1,8
+596,that's what the different types are,that's what the different types are,0,6
+597,are you a computer hacker,are you a computer hacker,0,5
+598,you have to look around at the school,you have to look around at the school,0,8
+599,who did they play,who did they play,0,4
+600,they have a lot of cattle in the area,they have a lot of candy in the area,1,9
+601,large number of employees will miss this,large number of employees will miss this,0,7
+602,bacon and all that good stuff,budgetiley and all that kind stuff,2,6
+603,they are so small,they are so small,0,4
+604,it's a personal decision,it's a casual decision,1,4
+605,it's not hard to find a job that's part time,it's not hard to find a job that's close time,1,10
+606,the state and the city are contradicting each other,the state of the federal are cooperatinging itself other,4,9
+607,when you decide to make the step,when you decide to make the step,0,7
+608,avoid capital punishment,avoid capital punishment,0,3
+609,he's an indoor cat,he's an indoor cat,0,4
+610,i'm trying to think,i'm trying to think,0,4
+611,a dog is featured below the text,a dog is f along the next,3,7
+612,i think we've got to do more with recycling,i think we've got to do more with recycling,0,9
+613,where'd you get the car,i you you get the car,2,5
+614,i have some neighbors across the field,i have some tips across the field,1,7
+615,i was on crutches,i was on vacationutches,1,4
+616,i couldn't even think of what you call them,i couldn't even think of what you call them,0,9
+617,a medical problem,he natural program,3,3
+618,tactical decision,traditionalatto decision,1,2
+619,things are free enough,there are very independent,3,4
+620,i filed my taxes early this year,i filed my taxes early this year,0,7
+621,we should at least try this out,we should at least try this out,0,7
+622,was it third of december,was it worth of j,2,5
+623,he says he was paid today,he says he was paid today,0,6
+624,be nice to each other,be nice to each other,0,5
+625,good to hear from you,good to hear from you,0,5
+626,i can understand their viewpoint,i can understand their point,1,5
+627,we are absolutely as excited about this as you,we are obviously as excited about this as you,1,9
+628,this is a growing company with many employees,this is a growing company with many employees,0,8
+629,this is teacher's favourite topic,this is a fifty favorite topic,3,5
+630,she was talking her time to do the work,she was telling her cat to do the work,2,9
+631,the birch canoe slid on the smooth planks,the matchch tree slide on the smooth lakesanks,4,8
+632,the other thing to do,the other thing to do,0,5
+633,it is time we made that decision together,it is time we made that decision together,0,8
+634,the movie had a lot of nudity and curse words,the movie had a lot of violence and gore words,2,10
+635,it was on the news every night,it was on the news every night,0,7
+636,this program will help our growing team,this program will help our growing team,0,7
+637,you live right across the street from my daughter,you live quite across the street from my daughter,1,9
+638,there was no word on casualties,there was no word on casualties,0,6
+639,their economy's a little bit weak,there influence's a little bit weak,2,6
+640,my wife and daughter were kidnapped,my wife and daughter were kidnapped,0,6
+641,can't give up on it,can't give up on it,0,5
+642,was this his entire family,was this his entire family,0,5
+643,for a different section,for a different reason,1,4
+644,vancouver teacher faces disciplinary action for harassing gay student,meom texas fus criminal action for raising students students,7,9
+645,in the district,in the testing,1,3
+646,i always wanted to go to school for nursing,i was wanted to go to new for social,3,9
+647,however there is one key point to keep in mind,however there is one key point to keep in mind,0,10
+648,i'm doing all right,i'm doing all right,0,4
+649,you have a choice of which car to buy,they have a place as eating to to buy,5,9
+650,seventy awful years,someventy two years,2,3
+651,i think the newsmen,i think the ghost oneag,2,4
+652,second generation,system direction,2,2
+653,the experience,the insurance,1,2
+654,the swan dive was far short of perfect,the samean dance was far short of perfect,2,8
+655,there seems to be some confusion about this,there set to be some confusion about this,1,8
+656,my wife thinks this is not worth the time,my wife thinks this is not worth the time,0,9
+657,you go on outside and play,you go on vacation and play,1,6
+658,yeah i really mean that,you i really did that,2,5
+659,it's working up to a year now,it's working up to a year now,0,7
+660,anything on that,anything on that,0,3
+661,the coastline was just incredible,the co was just incredible,1,5
+662,that kind of gas mileage,that kind of goes mileage,1,5
+663,the brand new company is making a lot of money,the brand new computer is starting a lot of money,2,10
+664,but i haven't told my husband,but i haven't done my husband,1,6
+665,four hours of steady work faced us,four hours of city work each out,3,7
+666,store somewhere unusual helps miss,two something unusual has me,4,5
+667,grandparents engagement throw stage,criminalparents enjoy through six,4,4
+668,i can't believe they can,i can't believe they can,0,5
+669,all my aunts and uncles,all my aunts and uncles,0,5
+670,i really enjoy that team,i really enjoy that team,0,5
+671,once they have children over here,what they have children over there,2,6
+672,will you be around next week,will you be around next week,0,6
+673,we decided to ask them,we decided to ask them,0,5
+674,afford the payments on a used car,avoidord the privileges on a used car,2,7
+675,it could be recycled,it could be recycling,1,4
+676,first of all remember to be nice,cars of all remember to be nice,1,7
+677,we went to colorado springs,we went to californiaado springs,1,5
+678,several correspondents had their notebooks searched,several alternativesents asked their tongues stolen,4,6
+679,some of them are our problems,some of them are our problems,0,6
+680,that's one good thing about having a cat though,that's what thing thing about having a lot indoors,4,9
+681,do you have your credit card,do you have your credit card,0,6
+682,about the same i dress for school,about the same i dress for school,0,7
+683,make him feel like he wasn't wanted,make him feel like he was't worried,2,7
+684,some of them did say that,some of them did say that,0,6
+685,but they're planning on doing it very soon,but they're calling on doing it very soon,1,8
+686,target and difficulty calculations,turned and retail levels,3,4
+687,he plays pretty regularly,he plays pretty pretty,1,4
+688,i couldn't believe how much it cost,i couldn't believe how much it cost,0,7
+689,the government offers financial services,the woman offers financial services,1,5
+690,i don't like administration,i don't like masturbation,1,4
+691,i think because it costs less,i think because it comes less,1,6
+692,decisions that are being made by world leaders,conisions that are being made by world leaders,1,8
+693,someone thought this show was very bad,someone thought this show was very bad,0,7
+694,a restaurant that employs minorities,a reciprocal that offers minimum,3,5
+695,it's hard for me to admit,it's hard for me to admit,0,6
+696,professors from other universities will present their research,pessors from other universities will present their research,1,8
+697,in the previous version,in the average version,1,4
+698,i really feel bad for the people i see there,i really feel bad for the people i see there,0,10
+699,not too long ago,not to long ago,1,4
+700,i can't really complain,i can't really comment,1,4
+701,i've got a two year old and a four year old,i've got a two year old and a four year old,0,11
+702,to ask automakers for more jobs won't work,to ask unauthorizedakers for more parts what't work,3,8
+703,i didn't buy a kit,i didn't buy a cat,1,5
+704,don't you hate that,don't you hate that,0,4
+705,we've got these ones,we've got these forts,1,4
+706,my teachers are very helpful,my teachers are very helpful,0,5
+707,you came out on top,you came out as top,1,5
+708,he had a hot pad,he had a hard time,2,5
+709,do you go by the ads when you look at them,do you go by the amount when you look at them,1,11
+710,i am taking my car to check this out in the evening,i am taking my car to check this out in the evening,0,12
+711,i mean it's dying now,i mean it's taking now,1,5
+712,we're living longer and people are less trusting,we're living close and better are living stiff,4,8

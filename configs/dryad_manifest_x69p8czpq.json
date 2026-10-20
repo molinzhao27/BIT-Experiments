@@ -1,0 +1,107 @@
+{
+  "doi": "doi:10.5061/dryad.x69p8czpq",
+  "versionId": 253293,
+  "versionNumber": 9,
+  "publicationDate": "2023-09-01",
+  "storageSize": 80440635830,
+  "files": [
+    {
+      "id": 2547377,
+      "path": "README.md",
+      "size": 4413,
+      "digest": "678841c9f31ac185d3f8e6a0881c31e520bcd7019767ba1faa80b64ad419d38d",
+      "digestType": "sha-256"
+    },
+    {
+      "id": 2547369,
+      "path": "competitionData.tar.gz",
+      "size": 3669638707,
+      "digest": "5b5c9784d80d5286e69352621366be2e4ff468e043e082e7aa7cbc90d18336b3",
+      "digestType": "sha-256"
+    },
+    {
+      "id": 2547362,
+      "path": "competitionData_readme.txt",
+      "size": 6247,
+      "digest": "63d9da90bddd2403c84ff7beff846de63b0db853639686440cdfa72efea4603e",
+      "digestType": "sha-256"
+    },
+    {
+      "id": 2547370,
+      "path": "derived.tar.gz",
+      "size": 8062039321,
+      "digest": "44d31076a68969738a72475d3dc708fd91c3d6c2f9adcadba7496f48b3e31117",
+      "digestType": "sha-256"
+    },
+    {
+      "id": 2547357,
+      "path": "derived_readme.txt",
+      "size": 4957,
+      "digest": "aa90051845d335f0a1769247aa4281f3803540f5884ab53da781e0f76bd60337",
+      "digestType": "sha-256"
+    },
+    {
+      "id": 2547371,
+      "path": "diagnosticBlocks.tar.gz",
+      "size": 612391492,
+      "digest": "dc204dda6a67f25824f6f9b7a7cb6b83ca8142376a9787ebb66fa223402882e7",
+      "digestType": "sha-256"
+    },
+    {
+      "id": 2547358,
+      "path": "diagnosticBlocks_readme.txt",
+      "size": 6126,
+      "digest": "d0821b9950c18d5cbf6308732c63c30636b2072949b2d48f0a8c63cb3b513275",
+      "digestType": "sha-256"
+    },
+    {
+      "id": 2547356,
+      "path": "languageModel.tar.gz",
+      "size": 14106240558,
+      "digest": "7b64d36c64765dc0a5e890bb0cc795657c827b7d314fbf5ed5dc8778bd166d7e",
+      "digestType": "sha-256"
+    },
+    {
+      "id": 2547359,
+      "path": "languageModel_5gram.tar.gz",
+      "size": 38245502441,
+      "digest": "bb2b15cc13d40e484359ffe0afe74580cdbad02440c27586074bfe2e51e7867e",
+      "digestType": "sha-256"
+    },
+    {
+      "id": 2547360,
+      "path": "languageModel_readme.txt",
+      "size": 1816,
+      "digest": "d4d29bbcd83b5549374e3651f72964d3d1d56aef98156e5c3169efe1bc4d37cc",
+      "digestType": "sha-256"
+    },
+    {
+      "id": 2547372,
+      "path": "sentences.tar.gz",
+      "size": 14803440418,
+      "digest": "d354c97d3fa5e4684adb7046de73e5a21fde805824954490e34cb042d1c948da",
+      "digestType": "sha-256"
+    },
+    {
+      "id": 2547361,
+      "path": "sentences_readme.txt",
+      "size": 8416,
+      "digest": "89a78456dbac4ca970498bafb35823666436faf85c9a9bf96c3612f2772d984e",
+      "digestType": "sha-256"
+    },
+    {
+      "id": 2547373,
+      "path": "tuningTasks.tar.gz",
+      "size": 941344404,
+      "digest": "8e245a00391f7d6558e6846effdfb29d0c145872864b110a85523a6a2a40fcbf",
+      "digestType": "sha-256"
+    },
+    {
+      "id": 2547363,
+      "path": "tuningTasks_readme.txt",
+      "size": 6514,
+      "digest": "22ab4d03ae92881b67704626fd7518653494c7cfe2f17f2277affda3ae96bbf9",
+      "digestType": "sha-256"
+    }
+  ]
+}

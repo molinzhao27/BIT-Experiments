@@ -1,0 +1,22 @@
+# Raw + processed data (Dryad doi:10.5061/dryad.gf1vhhn1j, ~10.8 GB) never goes in git
+data/
+
+# Model checkpoints, training logs (Phase 4)
+checkpoints/
+logs/
+
+# Official analysis repo, cloned read-only for reference (see docs/DATA_NOTES.md)
+# external/ holds pinned upstream submodules (bit, inner_speech)
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# OS
+.DS_Store
+
+# Python bytecode inside submodules
+**/__pycache__/

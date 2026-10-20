@@ -1,0 +1,23 @@
+# BIT env.yaml pip section (github.com/yzhang511/bit @ f107ae9), minus torch/torchvision (installed separately
+# for Blackwell, see bit_baseline.yaml). Resolved versions are frozen to bit_env_freeze.txt after install.
+numpy==1.24
+pandas
+tqdm
+matplotlib
+scikit-learn
+scipy==1.10
+wandb
+einops
+torcheval==0.0.7
+timm==0.9.16
+datasets==2.17.1
+transformers==4.48.2
+tokenizers
+accelerate==1.3.0
+peft==0.11.1
+h5py==3.12.1
+g2p_en
+editdistance
+pynwb
+pyyaml
+huggingface_hub

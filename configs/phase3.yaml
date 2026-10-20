@@ -1,0 +1,35 @@
+# Phase 3: can better decoders beat the paper's baseline? Same task, trials and nested CV as Phase 1
+# (same outer/inner folds and seed); every model picks its own settings in the inner folds only.
+phase1_config: configs/phase1.yaml
+seed: 42
+baseline: results/phase1/predictions_primary.csv.gz   # pooled-variance Gaussian NB (paper)
+
+# Window-average models: 500 ms window chosen jointly with the hyperparameter (Phase 1 grid).
+# Grids are ordered strongest regularization first (ties go to the first).
+window_models:
+  lda_shrinkage: {label: "Shrinkage LDA (Ledoit-Wolf)", grid: [null]}
+  logreg: {label: "Logistic regression (L2)", grid: [0.001, 0.01, 0.1, 1.0]}
+  svm: {label: "Linear SVM (L2)", grid: [0.0001, 0.001, 0.01, 0.1]}
+n_jobs: 24            # CPU workers on the host (32 cores, shared)
+
+# Sequence models on the binned time series. Input = the span covered by Phase 1's candidate
+# windows (first start .. last start + 500 ms), in 80 ms bins (features are already smoothed with
+# sigma = 100 ms), ±2 bins of training-time jitter.
+# History: a 4-condition smoke run (40 ms bins, 300 steps max, weight decay {0.5, 0.05}) showed the
+# inner-CV choice sitting at the edge of the grid (most folds picked 300 steps and the strongest
+# weight decay), so the grid was widened below; 80 ms bins keep the wider GRU search affordable.
+sequence_models:
+  cnn: {label: "1D-CNN (time series)", arch: {channels: 16, kernel: 5, kernel2: 5, dilation2: 2, dropout: 0.3},
+        models_per_batch: 300}
+  gru: {label: "GRU (time series)", arch: {proj: 32, hidden: 32, dropout: 0.3}, models_per_batch: 300}
+seq_train:
+  bin_ms: 80
+  jitter_bins: 2
+  input_noise: 0.2
+  lr: 0.003
+  weight_decay: [2.0, 0.5, 0.05]                # strongest first
+  checkpoints: [25, 50, 100, 200, 400, 800]     # epochs (full-batch steps); chosen in the inner folds
+
+compare:
+  bootstrap: 10000
+  alpha: 0.05

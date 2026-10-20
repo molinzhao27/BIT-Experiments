@@ -1,0 +1,3 @@
+model,arm,seed,split,decoding,n_trials,wer,per
+BIT released pipeline (sentence stage does not load the phoneme encoder),bit_baseline,42,brandman_2024_text:val,"teacher-forced argmax (BIT eval_llm.py default, --nbest 0; not free generation)",713,0.1905882352941176,0.0891
+BIT released pipeline (sentence stage does not load the phoneme encoder),bit_baseline,42,brandman_2024_text:test,"teacher-forced argmax (BIT eval_llm.py default, --nbest 0; not free generation)",713,0.2020964360587002,0.0901

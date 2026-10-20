@@ -1,0 +1,33 @@
+{
+ "llm": {
+  "repo_id": "lmms-lab/Aero-1-Audio",
+  "revision": "2efba6e9de291fa30e11075849631ae410b8485a",
+  "local_dir": "checkpoints/hf/Aero-1-Audio"
+ },
+ "bit_commit": "f107ae988d782609b78d1d7488490cca9fb7a103",
+ "stages": {
+  "eval_phoneme_val": {
+   "wall_h": 0.021,
+   "peak_gpu_mib": 7403,
+   "rc": 0
+  },
+  "eval_llm_val": {
+   "wall_h": 0.03,
+   "peak_gpu_mib": 17047,
+   "rc": 0
+  }
+ },
+ "metrics": [
+  {
+   "model": "BIT phoneme-first (train from scratch)",
+   "arm": "bit_baseline",
+   "seed": 42,
+   "split": "brandman_2024_text:val",
+   "decoding": "greedy (BIT eval_llm.py default, <=20 tokens)",
+   "n_trials": 713,
+   "wer": 0.866524064171123,
+   "per": 0.8378
+  }
+ ],
+ "time": "2026-10-19 02:59:33"
+}

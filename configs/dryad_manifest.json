@@ -1,0 +1,93 @@
+{
+  "doi": "doi:10.5061/dryad.gf1vhhn1j",
+  "versionId": 379376,
+  "versionNumber": 2,
+  "publicationDate": "2025-07-30",
+  "storageSize": 10798645685,
+  "files": [
+    {
+      "id": 4203880,
+      "path": "README.md",
+      "size": 7035,
+      "digest": "cece9d44f903789194c108b19bceeb203707b103ada0d6bc3502915ab5b688fd",
+      "digestType": "sha-256"
+    },
+    {
+      "id": 4203845,
+      "path": "chittychittybangbang.zip",
+      "size": 1106682880,
+      "digest": "67d62e3c2b7c9ac722f62e68ffe0d86887f1bde220def87d17b83570eb3bdbfa",
+      "digestType": "sha-256"
+    },
+    {
+      "id": 4203854,
+      "path": "conjunctiveCounting.zip",
+      "size": 322390416,
+      "digest": "be5fa91b8a8f934dd0678971445c4bee0c07beddf638eeecec0dcc8c074eebf3",
+      "digestType": "sha-256"
+    },
+    {
+      "id": 4203846,
+      "path": "interleavedVerbalBehaviors.zip",
+      "size": 777419058,
+      "digest": "19f90f09f2ea32f1428b7cc1c7dd8c0606dfbc988c57fcaf64aea03e77b9d409",
+      "digestType": "sha-256"
+    },
+    {
+      "id": 4203848,
+      "path": "isolatedVerbalBehaviors.zip",
+      "size": 3525037526,
+      "digest": "40bf63f0b8245be8ab787270f9b13b62dd40ee40f6169d182aecfba0f848bf9b",
+      "digestType": "sha-256"
+    },
+    {
+      "id": 4203855,
+      "path": "sentenceData.zip",
+      "size": 3932159336,
+      "digest": "a92c1e47f87858c1f17f9175c474eefaf78b2988ec513c8376eb1adfd26945c6",
+      "digestType": "sha-256"
+    },
+    {
+      "id": 4203849,
+      "path": "seqRecallSpeech.zip",
+      "size": 79443728,
+      "digest": "077f44c2ffcd27a75472a01a34a044004832233d88895d768ba08a3f5af48173",
+      "digestType": "sha-256"
+    },
+    {
+      "id": 4203850,
+      "path": "seqRecallUninstructed3ElementArrow.zip",
+      "size": 364978730,
+      "digest": "4be73e065ad8ee62d30c03053eb5212c5707d20fc9b0a1e0a2460b68d5955bb7",
+      "digestType": "sha-256"
+    },
+    {
+      "id": 4203852,
+      "path": "seqRecallUninstructed3ElementLines.zip",
+      "size": 371089478,
+      "digest": "524e144b3e9074a402a5e7a3605da94185dfae76a674c6b0096aa8132d0fe0b8",
+      "digestType": "sha-256"
+    },
+    {
+      "id": 4203847,
+      "path": "seqRecallUninstructedSingleArrow.zip",
+      "size": 38768898,
+      "digest": "27f56c7a6edcc9273dcc582357557d0eacd18697e893b7e6b8bc0c57cbf3e321",
+      "digestType": "sha-256"
+    },
+    {
+      "id": 4203853,
+      "path": "seqRecallVerbalMemory.zip",
+      "size": 175492315,
+      "digest": "f5aca99cb74a4883a2b515ffcf5fa350c7810b4ddabc2254f4865673189ec3ef",
+      "digestType": "sha-256"
+    },
+    {
+      "id": 4203851,
+      "path": "seqRecallVisualMemory.zip",
+      "size": 105176285,
+      "digest": "1d5a9fddd830aabb309fec847f4ce277e7ddb3f6e8cdd0253b19096cfb8901d7",
+      "digestType": "sha-256"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+# Phase 4 LLM-swap side question (DESIGN.md §0 tier 2, §8): decoder LLMs selectable with train_stage2.py --llm.
+# Without --llm, Stage 2 uses BIT's configured Aero-1-Audio (configs/phase4/bit_baseline.yaml) and nothing changes.
+# Every entry is pinned. `loader: text` = kunzdecoder.text_llm.BCI_TextLLM (AutoModelForCausalLM, no audio tower),
+# `loader: diffusion` = kunzdecoder.diffusion_llm.BCI_DiffusionLLM (block diffusion; never runs the snapshot's own code);
+# BIT never routes neural tokens through Aero's audio tower (project_to_audio: false), so only the LM differs.
+# Download: <bit env>/python scripts/phase4/fetch_llms.py [names...]
+qwen2.5-1.5b-instruct:        # Aero-1-Audio's own base model (its model card's base_model): same tokenizer, 1536-d, 28 layers
+  repo_id: Qwen/Qwen2.5-1.5B-Instruct
+  revision: 989aa7980e4cf806f80c7fef2b1adb7bc71aa306
+  local_dir: checkpoints/hf/Qwen2.5-1.5B-Instruct
+  loader: text
+qwen2.5-1.5b:                 # the pretrained base before Alibaba's instruction tuning
+  repo_id: Qwen/Qwen2.5-1.5B
+  revision: 8faed761d45a263340a0528343f099c05c9a4323
+  local_dir: checkpoints/hf/Qwen2.5-1.5B
+  loader: text
+fast-dllm-v2-1.5b:            # run 3: block-diffusion LM converted from Qwen2.5-1.5B-Instruct (~1B tokens); same dims
+  repo_id: Efficient-Large-Model/Fast_dLLM_v2_1.5B
+  revision: 25093b6f63300adfd57f72145083c8a528fe4f16
+  local_dir: checkpoints/hf/Fast_dLLM_v2_1.5B
+  loader: diffusion           # kunzdecoder.diffusion_llm.BCI_DiffusionLLM (vendored decoder: src/kunzdecoder/fast_dllm_v2)
+  sampler: {block_size: 32, small_block_size: 8, threshold: 0.9}   # the model card's generate settings

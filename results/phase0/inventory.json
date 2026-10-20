@@ -1,0 +1,6604 @@
+{
+ "sessions": [
+  {
+   "file": "data/raw/isolatedVerbalBehaviors/t12.2023.08.15_allBehaviors_raw.mat",
+   "participant": "T12",
+   "date": "2023.08.15",
+   "behavior": "allBehaviors",
+   "bin_ms": 20,
+   "n_bins": 323048,
+   "minutes": 107.7,
+   "n_channels": 128,
+   "arrays": {
+    "i6v": [
+     0,
+     63,
+     64
+    ],
+    "s6v": [
+     64,
+     127,
+     64
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 56,
+   "cue_names": [
+    "DO_NOTHING-attempted",
+    "ban-attempted",
+    "choice-attempted",
+    "day-attempted",
+    "feel-attempted",
+    "kite-attempted",
+    "though-attempted",
+    "were-attempted",
+    "DO_NOTHING-mouthed",
+    "ban-mouthed",
+    "choice-mouthed",
+    "day-mouthed",
+    "feel-mouthed",
+    "kite-mouthed",
+    "though-mouthed",
+    "were-mouthed",
+    "DO_NOTHING-imagined1stMotor",
+    "ban-imagined1stMotor",
+    "choice-imagined1stMotor",
+    "day-imagined1stMotor",
+    "feel-imagined1stMotor",
+    "kite-imagined1stMotor",
+    "though-imagined1stMotor",
+    "were-imagined1stMotor",
+    "DO_NOTHING-imagined1stAuditory",
+    "ban-imagined1stAuditory",
+    "choice-imagined1stAuditory",
+    "day-imagined1stAuditory",
+    "feel-imagined1stAuditory",
+    "kite-imagined1stAuditory",
+    "though-imagined1stAuditory",
+    "were-imagined1stAuditory",
+    "DO_NOTHING-imaginedListening",
+    "ban-imaginedListening",
+    "choice-imaginedListening",
+    "day-imaginedListening",
+    "feel-imaginedListening",
+    "kite-imaginedListening",
+    "though-imaginedListening",
+    "were-imaginedListening",
+    "DO_NOTHING-listening",
+    "ban-listening",
+    "choice-listening",
+    "day-listening",
+    "feel-listening",
+    "kite-listening",
+    "though-listening",
+    "were-listening",
+    "-reading",
+    "ban-reading",
+    "choice-reading",
+    "day-reading",
+    "feel-reading",
+    "kite-reading",
+    "though-reading",
+    "were-reading"
+   ],
+   "n_trials": 1344,
+   "trials_per_cue": {
+    "DO_NOTHING-attempted": 21,
+    "ban-attempted": 21,
+    "choice-attempted": 21,
+    "day-attempted": 21,
+    "feel-attempted": 21,
+    "kite-attempted": 21,
+    "though-attempted": 21,
+    "were-attempted": 21,
+    "DO_NOTHING-mouthed": 21,
+    "ban-mouthed": 21,
+    "choice-mouthed": 21,
+    "day-mouthed": 21,
+    "feel-mouthed": 21,
+    "kite-mouthed": 21,
+    "though-mouthed": 21,
+    "were-mouthed": 21,
+    "DO_NOTHING-imagined1stMotor": 28,
+    "ban-imagined1stMotor": 28,
+    "choice-imagined1stMotor": 28,
+    "day-imagined1stMotor": 28,
+    "feel-imagined1stMotor": 28,
+    "kite-imagined1stMotor": 28,
+    "though-imagined1stMotor": 28,
+    "were-imagined1stMotor": 28,
+    "DO_NOTHING-imagined1stAuditory": 28,
+    "ban-imagined1stAuditory": 28,
+    "choice-imagined1stAuditory": 28,
+    "day-imagined1stAuditory": 28,
+    "feel-imagined1stAuditory": 28,
+    "kite-imagined1stAuditory": 28,
+    "though-imagined1stAuditory": 28,
+    "were-imagined1stAuditory": 28,
+    "DO_NOTHING-imaginedListening": 28,
+    "ban-imaginedListening": 28,
+    "choice-imaginedListening": 28,
+    "day-imaginedListening": 28,
+    "feel-imaginedListening": 28,
+    "kite-imaginedListening": 28,
+    "though-imaginedListening": 28,
+    "were-imaginedListening": 28,
+    "DO_NOTHING-listening": 21,
+    "ban-listening": 21,
+    "choice-listening": 21,
+    "day-listening": 21,
+    "feel-listening": 21,
+    "kite-listening": 21,
+    "though-listening": 21,
+    "were-listening": 21,
+    "-reading": 21,
+    "ban-reading": 21,
+    "choice-reading": 21,
+    "day-reading": 21,
+    "feel-reading": 21,
+    "kite-reading": 21,
+    "though-reading": 21,
+    "were-reading": 21
+   },
+   "blocks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+   ],
+   "trials_per_block": {
+    "1": 56,
+    "2": 56,
+    "3": 56,
+    "4": 56,
+    "5": 56,
+    "6": 56,
+    "7": 56,
+    "8": 56,
+    "9": 56,
+    "10": 56,
+    "12": 56,
+    "13": 56,
+    "14": 56,
+    "15": 56,
+    "16": 56,
+    "17": 56,
+    "18": 56,
+    "20": 56,
+    "21": 56,
+    "22": 56,
+    "23": 56,
+    "24": 56,
+    "25": 56,
+    "26": 56
+   },
+   "cues_per_block": {
+    "1": {
+     "day-reading": 7,
+     "were-reading": 7,
+     "kite-reading": 7,
+     "-reading": 7,
+     "feel-reading": 7,
+     "choice-reading": 7,
+     "though-reading": 7,
+     "ban-reading": 7
+    },
+    "2": {
+     "though-imagined1stAuditory": 7,
+     "DO_NOTHING-imagined1stAuditory": 7,
+     "feel-imagined1stAuditory": 7,
+     "kite-imagined1stAuditory": 7,
+     "ban-imagined1stAuditory": 7,
+     "choice-imagined1stAuditory": 7,
+     "were-imagined1stAuditory": 7,
+     "day-imagined1stAuditory": 7
+    },
+    "3": {
+     "ban-imagined1stAuditory": 7,
+     "day-imagined1stAuditory": 7,
+     "feel-imagined1stAuditory": 7,
+     "kite-imagined1stAuditory": 7,
+     "were-imagined1stAuditory": 7,
+     "DO_NOTHING-imagined1stAuditory": 7,
+     "choice-imagined1stAuditory": 7,
+     "though-imagined1stAuditory": 7
+    },
+    "4": {
+     "DO_NOTHING-listening": 7,
+     "ban-listening": 7,
+     "day-listening": 7,
+     "though-listening": 7,
+     "were-listening": 7,
+     "kite-listening": 7,
+     "feel-listening": 7,
+     "choice-listening": 7
+    },
+    "5": {
+     "choice-imaginedListening": 7,
+     "day-imaginedListening": 7,
+     "were-imaginedListening": 7,
+     "feel-imaginedListening": 7,
+     "though-imaginedListening": 7,
+     "DO_NOTHING-imaginedListening": 7,
+     "ban-imaginedListening": 7,
+     "kite-imaginedListening": 7
+    },
+    "6": {
+     "kite-imaginedListening": 7,
+     "choice-imaginedListening": 7,
+     "DO_NOTHING-imaginedListening": 7,
+     "day-imaginedListening": 7,
+     "feel-imaginedListening": 7,
+     "were-imaginedListening": 7,
+     "ban-imaginedListening": 7,
+     "though-imaginedListening": 7
+    },
+    "7": {
+     "DO_NOTHING-mouthed": 7,
+     "kite-mouthed": 7,
+     "feel-mouthed": 7,
+     "ban-mouthed": 7,
+     "though-mouthed": 7,
+     "were-mouthed": 7,
+     "day-mouthed": 7,
+     "choice-mouthed": 7
+    },
+    "8": {
+     "feel-imagined1stMotor": 7,
+     "were-imagined1stMotor": 7,
+     "kite-imagined1stMotor": 7,
+     "ban-imagined1stMotor": 7,
+     "choice-imagined1stMotor": 7,
+     "DO_NOTHING-imagined1stMotor": 7,
+     "day-imagined1stMotor": 7,
+     "though-imagined1stMotor": 7
+    },
+    "9": {
+     "ban-imagined1stMotor": 7,
+     "were-imagined1stMotor": 7,
+     "feel-imagined1stMotor": 7,
+     "though-imagined1stMotor": 7,
+     "kite-imagined1stMotor": 7,
+     "choice-imagined1stMotor": 7,
+     "day-imagined1stMotor": 7,
+     "DO_NOTHING-imagined1stMotor": 7
+    },
+    "10": {
+     "choice-attempted": 7,
+     "though-attempted": 7,
+     "were-attempted": 7,
+     "day-attempted": 7,
+     "kite-attempted": 7,
+     "feel-attempted": 7,
+     "ban-attempted": 7,
+     "DO_NOTHING-attempted": 7
+    },
+    "12": {
+     "were-reading": 7,
+     "choice-reading": 7,
+     "feel-reading": 7,
+     "-reading": 7,
+     "though-reading": 7,
+     "day-reading": 7,
+     "ban-reading": 7,
+     "kite-reading": 7
+    },
+    "13": {
+     "choice-imagined1stAuditory": 7,
+     "day-imagined1stAuditory": 7,
+     "ban-imagined1stAuditory": 7,
+     "though-imagined1stAuditory": 7,
+     "DO_NOTHING-imagined1stAuditory": 7,
+     "feel-imagined1stAuditory": 7,
+     "kite-imagined1stAuditory": 7,
+     "were-imagined1stAuditory": 7
+    },
+    "14": {
+     "feel-listening": 7,
+     "kite-listening": 7,
+     "though-listening": 7,
+     "DO_NOTHING-listening": 7,
+     "choice-listening": 7,
+     "day-listening": 7,
+     "were-listening": 7,
+     "ban-listening": 7
+    },
+    "15": {
+     "choice-imaginedListening": 7,
+     "DO_NOTHING-imaginedListening": 7,
+     "day-imaginedListening": 7,
+     "though-imaginedListening": 7,
+     "ban-imaginedListening": 7,
+     "were-imaginedListening": 7,
+     "kite-imaginedListening": 7,
+     "feel-imaginedListening": 7
+    },
+    "16": {
+     "DO_NOTHING-mouthed": 7,
+     "kite-mouthed": 7,
+     "though-mouthed": 7,
+     "ban-mouthed": 7,
+     "were-mouthed": 7,
+     "choice-mouthed": 7,
+     "day-mouthed": 7,
+     "feel-mouthed": 7
+    },
+    "17": {
+     "kite-imagined1stMotor": 7,
+     "ban-imagined1stMotor": 7,
+     "were-imagined1stMotor": 7,
+     "though-imagined1stMotor": 7,
+     "feel-imagined1stMotor": 7,
+     "DO_NOTHING-imagined1stMotor": 7,
+     "day-imagined1stMotor": 7,
+     "choice-imagined1stMotor": 7
+    },
+    "18": {
+     "DO_NOTHING-attempted": 7,
+     "ban-attempted": 7,
+     "choice-attempted": 7,
+     "though-attempted": 7,
+     "feel-attempted": 7,
+     "kite-attempted": 7,
+     "were-attempted": 7,
+     "day-attempted": 7
+    },
+    "20": {
+     "choice-reading": 7,
+     "-reading": 7,
+     "though-reading": 7,
+     "ban-reading": 7,
+     "were-reading": 7,
+     "day-reading": 7,
+     "kite-reading": 7,
+     "feel-reading": 7
+    },
+    "21": {
+     "kite-imagined1stAuditory": 7,
+     "ban-imagined1stAuditory": 7,
+     "feel-imagined1stAuditory": 7,
+     "day-imagined1stAuditory": 7,
+     "choice-imagined1stAuditory": 7,
+     "were-imagined1stAuditory": 7,
+     "though-imagined1stAuditory": 7,
+     "DO_NOTHING-imagined1stAuditory": 7
+    },
+    "22": {
+     "DO_NOTHING-listening": 7,
+     "day-listening": 7,
+     "ban-listening": 7,
+     "choice-listening": 7,
+     "though-listening": 7,
+     "kite-listening": 7,
+     "feel-listening": 7,
+     "were-listening": 7
+    },
+    "23": {
+     "DO_NOTHING-imaginedListening": 7,
+     "day-imaginedListening": 7,
+     "though-imaginedListening": 7,
+     "kite-imaginedListening": 7,
+     "were-imaginedListening": 7,
+     "ban-imaginedListening": 7,
+     "choice-imaginedListening": 7,
+     "feel-imaginedListening": 7
+    },
+    "24": {
+     "kite-mouthed": 7,
+     "DO_NOTHING-mouthed": 7,
+     "ban-mouthed": 7,
+     "day-mouthed": 7,
+     "feel-mouthed": 7,
+     "choice-mouthed": 7,
+     "though-mouthed": 7,
+     "were-mouthed": 7
+    },
+    "25": {
+     "day-imagined1stMotor": 7,
+     "choice-imagined1stMotor": 7,
+     "ban-imagined1stMotor": 7,
+     "kite-imagined1stMotor": 7,
+     "feel-imagined1stMotor": 7,
+     "were-imagined1stMotor": 7,
+     "though-imagined1stMotor": 7,
+     "DO_NOTHING-imagined1stMotor": 7
+    },
+    "26": {
+     "DO_NOTHING-attempted": 7,
+     "day-attempted": 7,
+     "kite-attempted": 7,
+     "feel-attempted": 7,
+     "choice-attempted": 7,
+     "though-attempted": 7,
+     "were-attempted": 7,
+     "ban-attempted": 7
+    }
+   },
+   "block_changes_in_time_series": 23,
+   "delay_ms_median": 2020.0,
+   "go_ms_median": 3000.0,
+   "delay_ms_range": [
+    1500,
+    11900
+   ],
+   "go_ms_range": [
+    1460,
+    6820
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     0,
+     1343
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 19,
+   "tx_mean_per_bin": 1.9919,
+   "sbp_median": 249.03,
+   "sbp_p99": 783.83,
+   "task": "isolatedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/isolatedVerbalBehaviors/t12.2023.08.15_attempted_raw.mat",
+   "participant": "T12",
+   "date": "2023.08.15",
+   "behavior": "attempted",
+   "bin_ms": 20,
+   "n_bins": 44029,
+   "minutes": 14.7,
+   "n_channels": 128,
+   "arrays": {
+    "i6v": [
+     0,
+     63,
+     64
+    ],
+    "s6v": [
+     64,
+     127,
+     64
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 8,
+   "cue_names": [
+    "DO_NOTHING",
+    "ban",
+    "choice",
+    "day",
+    "feel",
+    "kite",
+    "though",
+    "were"
+   ],
+   "n_trials": 168,
+   "trials_per_cue": {
+    "DO_NOTHING": 21,
+    "ban": 21,
+    "choice": 21,
+    "day": 21,
+    "feel": 21,
+    "kite": 21,
+    "though": 21,
+    "were": 21
+   },
+   "blocks": [
+    10,
+    18,
+    26
+   ],
+   "trials_per_block": {
+    "10": 56,
+    "18": 56,
+    "26": 56
+   },
+   "cues_per_block": {
+    "10": {
+     "choice": 7,
+     "though": 7,
+     "were": 7,
+     "day": 7,
+     "kite": 7,
+     "feel": 7,
+     "ban": 7,
+     "DO_NOTHING": 7
+    },
+    "18": {
+     "DO_NOTHING": 7,
+     "ban": 7,
+     "choice": 7,
+     "though": 7,
+     "feel": 7,
+     "kite": 7,
+     "were": 7,
+     "day": 7
+    },
+    "26": {
+     "DO_NOTHING": 7,
+     "day": 7,
+     "kite": 7,
+     "feel": 7,
+     "choice": 7,
+     "though": 7,
+     "were": 7,
+     "ban": 7
+    }
+   },
+   "block_changes_in_time_series": 2,
+   "delay_ms_median": 2020.0,
+   "go_ms_median": 3000.0,
+   "delay_ms_range": [
+    2000,
+    11800
+   ],
+   "go_ms_range": [
+    3000,
+    6700
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     0,
+     167
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 14,
+   "tx_mean_per_bin": 2.0765,
+   "sbp_median": 253.94,
+   "sbp_p99": 841.66,
+   "task": "isolatedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/isolatedVerbalBehaviors/t12.2023.08.15_imagined1stAuditory_raw.mat",
+   "participant": "T12",
+   "date": "2023.08.15",
+   "behavior": "imagined1stAuditory",
+   "bin_ms": 20,
+   "n_bins": 58902,
+   "minutes": 19.6,
+   "n_channels": 128,
+   "arrays": {
+    "i6v": [
+     0,
+     63,
+     64
+    ],
+    "s6v": [
+     64,
+     127,
+     64
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 8,
+   "cue_names": [
+    "DO_NOTHING",
+    "ban",
+    "choice",
+    "day",
+    "feel",
+    "kite",
+    "though",
+    "were"
+   ],
+   "n_trials": 224,
+   "trials_per_cue": {
+    "DO_NOTHING": 28,
+    "ban": 28,
+    "choice": 28,
+    "day": 28,
+    "feel": 28,
+    "kite": 28,
+    "though": 28,
+    "were": 28
+   },
+   "blocks": [
+    2,
+    3,
+    13,
+    21
+   ],
+   "trials_per_block": {
+    "2": 56,
+    "3": 56,
+    "13": 56,
+    "21": 56
+   },
+   "cues_per_block": {
+    "2": {
+     "though": 7,
+     "DO_NOTHING": 7,
+     "feel": 7,
+     "kite": 7,
+     "ban": 7,
+     "choice": 7,
+     "were": 7,
+     "day": 7
+    },
+    "3": {
+     "ban": 7,
+     "day": 7,
+     "feel": 7,
+     "kite": 7,
+     "were": 7,
+     "DO_NOTHING": 7,
+     "choice": 7,
+     "though": 7
+    },
+    "13": {
+     "choice": 7,
+     "day": 7,
+     "ban": 7,
+     "though": 7,
+     "DO_NOTHING": 7,
+     "feel": 7,
+     "kite": 7,
+     "were": 7
+    },
+    "21": {
+     "kite": 7,
+     "ban": 7,
+     "feel": 7,
+     "day": 7,
+     "choice": 7,
+     "were": 7,
+     "though": 7,
+     "DO_NOTHING": 7
+    }
+   },
+   "block_changes_in_time_series": 3,
+   "delay_ms_median": 2020.0,
+   "go_ms_median": 3020.0,
+   "delay_ms_range": [
+    2000,
+    11760
+   ],
+   "go_ms_range": [
+    3000,
+    6820
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     0,
+     223
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 15,
+   "tx_mean_per_bin": 1.9744,
+   "sbp_median": 247.99,
+   "sbp_p99": 765.95,
+   "task": "isolatedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/isolatedVerbalBehaviors/t12.2023.08.15_imagined1stMotor_raw.mat",
+   "participant": "T12",
+   "date": "2023.08.15",
+   "behavior": "imagined1stMotor",
+   "bin_ms": 20,
+   "n_bins": 58623,
+   "minutes": 19.5,
+   "n_channels": 128,
+   "arrays": {
+    "i6v": [
+     0,
+     63,
+     64
+    ],
+    "s6v": [
+     64,
+     127,
+     64
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 8,
+   "cue_names": [
+    "DO_NOTHING",
+    "ban",
+    "choice",
+    "day",
+    "feel",
+    "kite",
+    "though",
+    "were"
+   ],
+   "n_trials": 224,
+   "trials_per_cue": {
+    "DO_NOTHING": 28,
+    "ban": 28,
+    "choice": 28,
+    "day": 28,
+    "feel": 28,
+    "kite": 28,
+    "though": 28,
+    "were": 28
+   },
+   "blocks": [
+    8,
+    9,
+    17,
+    25
+   ],
+   "trials_per_block": {
+    "8": 56,
+    "9": 56,
+    "17": 56,
+    "25": 56
+   },
+   "cues_per_block": {
+    "8": {
+     "feel": 7,
+     "were": 7,
+     "kite": 7,
+     "ban": 7,
+     "choice": 7,
+     "DO_NOTHING": 7,
+     "day": 7,
+     "though": 7
+    },
+    "9": {
+     "ban": 7,
+     "were": 7,
+     "feel": 7,
+     "though": 7,
+     "kite": 7,
+     "choice": 7,
+     "day": 7,
+     "DO_NOTHING": 7
+    },
+    "17": {
+     "kite": 7,
+     "ban": 7,
+     "were": 7,
+     "though": 7,
+     "feel": 7,
+     "DO_NOTHING": 7,
+     "day": 7,
+     "choice": 7
+    },
+    "25": {
+     "day": 7,
+     "choice": 7,
+     "ban": 7,
+     "kite": 7,
+     "feel": 7,
+     "were": 7,
+     "though": 7,
+     "DO_NOTHING": 7
+    }
+   },
+   "block_changes_in_time_series": 3,
+   "delay_ms_median": 2000.0,
+   "go_ms_median": 3000.0,
+   "delay_ms_range": [
+    1980,
+    11880
+   ],
+   "go_ms_range": [
+    2980,
+    5760
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     0,
+     223
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 15,
+   "tx_mean_per_bin": 1.9687,
+   "sbp_median": 247.6,
+   "sbp_p99": 772.46,
+   "task": "isolatedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/isolatedVerbalBehaviors/t12.2023.08.15_imaginedListening_raw.mat",
+   "participant": "T12",
+   "date": "2023.08.15",
+   "behavior": "imaginedListening",
+   "bin_ms": 20,
+   "n_bins": 58783,
+   "minutes": 19.6,
+   "n_channels": 128,
+   "arrays": {
+    "i6v": [
+     0,
+     63,
+     64
+    ],
+    "s6v": [
+     64,
+     127,
+     64
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 8,
+   "cue_names": [
+    "DO_NOTHING",
+    "ban",
+    "choice",
+    "day",
+    "feel",
+    "kite",
+    "though",
+    "were"
+   ],
+   "n_trials": 224,
+   "trials_per_cue": {
+    "DO_NOTHING": 28,
+    "ban": 28,
+    "choice": 28,
+    "day": 28,
+    "feel": 28,
+    "kite": 28,
+    "though": 28,
+    "were": 28
+   },
+   "blocks": [
+    5,
+    6,
+    15,
+    23
+   ],
+   "trials_per_block": {
+    "5": 56,
+    "6": 56,
+    "15": 56,
+    "23": 56
+   },
+   "cues_per_block": {
+    "5": {
+     "choice": 7,
+     "day": 7,
+     "were": 7,
+     "feel": 7,
+     "though": 7,
+     "DO_NOTHING": 7,
+     "ban": 7,
+     "kite": 7
+    },
+    "6": {
+     "kite": 7,
+     "choice": 7,
+     "DO_NOTHING": 7,
+     "day": 7,
+     "feel": 7,
+     "were": 7,
+     "ban": 7,
+     "though": 7
+    },
+    "15": {
+     "choice": 7,
+     "DO_NOTHING": 7,
+     "day": 7,
+     "though": 7,
+     "ban": 7,
+     "were": 7,
+     "kite": 7,
+     "feel": 7
+    },
+    "23": {
+     "DO_NOTHING": 7,
+     "day": 7,
+     "though": 7,
+     "kite": 7,
+     "were": 7,
+     "ban": 7,
+     "choice": 7,
+     "feel": 7
+    }
+   },
+   "block_changes_in_time_series": 3,
+   "delay_ms_median": 2020.0,
+   "go_ms_median": 3020.0,
+   "delay_ms_range": [
+    2000,
+    11800
+   ],
+   "go_ms_range": [
+    3000,
+    6520
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     0,
+     223
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 15,
+   "tx_mean_per_bin": 1.9449,
+   "sbp_median": 246.27,
+   "sbp_p99": 755.81,
+   "task": "isolatedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/isolatedVerbalBehaviors/t12.2023.08.15_listening_raw.mat",
+   "participant": "T12",
+   "date": "2023.08.15",
+   "behavior": "listening",
+   "bin_ms": 20,
+   "n_bins": 27152,
+   "minutes": 9.1,
+   "n_channels": 128,
+   "arrays": {
+    "i6v": [
+     0,
+     63,
+     64
+    ],
+    "s6v": [
+     64,
+     127,
+     64
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 8,
+   "cue_names": [
+    "DO_NOTHING",
+    "ban",
+    "choice",
+    "day",
+    "feel",
+    "kite",
+    "though",
+    "were"
+   ],
+   "n_trials": 168,
+   "trials_per_cue": {
+    "DO_NOTHING": 21,
+    "ban": 21,
+    "choice": 21,
+    "day": 21,
+    "feel": 21,
+    "kite": 21,
+    "though": 21,
+    "were": 21
+   },
+   "blocks": [
+    4,
+    14,
+    22
+   ],
+   "trials_per_block": {
+    "4": 56,
+    "14": 56,
+    "22": 56
+   },
+   "cues_per_block": {
+    "4": {
+     "DO_NOTHING": 7,
+     "ban": 7,
+     "day": 7,
+     "though": 7,
+     "were": 7,
+     "kite": 7,
+     "feel": 7,
+     "choice": 7
+    },
+    "14": {
+     "feel": 7,
+     "kite": 7,
+     "though": 7,
+     "DO_NOTHING": 7,
+     "choice": 7,
+     "day": 7,
+     "were": 7,
+     "ban": 7
+    },
+    "22": {
+     "DO_NOTHING": 7,
+     "day": 7,
+     "ban": 7,
+     "choice": 7,
+     "though": 7,
+     "kite": 7,
+     "feel": 7,
+     "were": 7
+    }
+   },
+   "block_changes_in_time_series": 2,
+   "delay_ms_median": 1520.0,
+   "go_ms_median": 1500.0,
+   "delay_ms_range": [
+    1500,
+    11560
+   ],
+   "go_ms_range": [
+    1460,
+    3780
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     0,
+     167
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 15,
+   "tx_mean_per_bin": 1.936,
+   "sbp_median": 245.91,
+   "sbp_p99": 746.44,
+   "task": "isolatedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/isolatedVerbalBehaviors/t12.2023.08.15_mouthed_raw.mat",
+   "participant": "T12",
+   "date": "2023.08.15",
+   "behavior": "mouthed",
+   "bin_ms": 20,
+   "n_bins": 44025,
+   "minutes": 14.7,
+   "n_channels": 128,
+   "arrays": {
+    "i6v": [
+     0,
+     63,
+     64
+    ],
+    "s6v": [
+     64,
+     127,
+     64
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 8,
+   "cue_names": [
+    "DO_NOTHING",
+    "ban",
+    "choice",
+    "day",
+    "feel",
+    "kite",
+    "though",
+    "were"
+   ],
+   "n_trials": 168,
+   "trials_per_cue": {
+    "DO_NOTHING": 21,
+    "ban": 21,
+    "choice": 21,
+    "day": 21,
+    "feel": 21,
+    "kite": 21,
+    "though": 21,
+    "were": 21
+   },
+   "blocks": [
+    7,
+    16,
+    24
+   ],
+   "trials_per_block": {
+    "7": 56,
+    "16": 56,
+    "24": 56
+   },
+   "cues_per_block": {
+    "7": {
+     "DO_NOTHING": 7,
+     "kite": 7,
+     "feel": 7,
+     "ban": 7,
+     "though": 7,
+     "were": 7,
+     "day": 7,
+     "choice": 7
+    },
+    "16": {
+     "DO_NOTHING": 7,
+     "kite": 7,
+     "though": 7,
+     "ban": 7,
+     "were": 7,
+     "choice": 7,
+     "day": 7,
+     "feel": 7
+    },
+    "24": {
+     "kite": 7,
+     "DO_NOTHING": 7,
+     "ban": 7,
+     "day": 7,
+     "feel": 7,
+     "choice": 7,
+     "though": 7,
+     "were": 7
+    }
+   },
+   "block_changes_in_time_series": 2,
+   "delay_ms_median": 2000.0,
+   "go_ms_median": 3020.0,
+   "delay_ms_range": [
+    2000,
+    11900
+   ],
+   "go_ms_range": [
+    3000,
+    6740
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     0,
+     167
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 19,
+   "tx_mean_per_bin": 2.0675,
+   "sbp_median": 253.7,
+   "sbp_p99": 837.21,
+   "task": "isolatedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/isolatedVerbalBehaviors/t12.2023.08.15_reading_raw.mat",
+   "participant": "T12",
+   "date": "2023.08.15",
+   "behavior": "reading",
+   "bin_ms": 20,
+   "n_bins": 31534,
+   "minutes": 10.5,
+   "n_channels": 128,
+   "arrays": {
+    "i6v": [
+     0,
+     63,
+     64
+    ],
+    "s6v": [
+     64,
+     127,
+     64
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 8,
+   "cue_names": [
+    "",
+    "ban",
+    "choice",
+    "day",
+    "feel",
+    "kite",
+    "though",
+    "were"
+   ],
+   "n_trials": 168,
+   "trials_per_cue": {
+    "": 21,
+    "ban": 21,
+    "choice": 21,
+    "day": 21,
+    "feel": 21,
+    "kite": 21,
+    "though": 21,
+    "were": 21
+   },
+   "blocks": [
+    1,
+    12,
+    20
+   ],
+   "trials_per_block": {
+    "1": 56,
+    "12": 56,
+    "20": 56
+   },
+   "cues_per_block": {
+    "1": {
+     "day": 7,
+     "were": 7,
+     "kite": 7,
+     "": 7,
+     "feel": 7,
+     "choice": 7,
+     "though": 7,
+     "ban": 7
+    },
+    "12": {
+     "were": 7,
+     "choice": 7,
+     "feel": 7,
+     "": 7,
+     "though": 7,
+     "day": 7,
+     "ban": 7,
+     "kite": 7
+    },
+    "20": {
+     "choice": 7,
+     "": 7,
+     "though": 7,
+     "ban": 7,
+     "were": 7,
+     "day": 7,
+     "kite": 7,
+     "feel": 7
+    }
+   },
+   "block_changes_in_time_series": 2,
+   "delay_ms_median": 2020.0,
+   "go_ms_median": 1520.0,
+   "delay_ms_range": [
+    2000,
+    11760
+   ],
+   "go_ms_range": [
+    1500,
+    5200
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     0,
+     167
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 15,
+   "tx_mean_per_bin": 1.9804,
+   "sbp_median": 248.27,
+   "sbp_p99": 764.67,
+   "task": "isolatedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/isolatedVerbalBehaviors/t15.2024.04.07_allBehaviors_raw.mat",
+   "participant": "T15",
+   "date": "2024.04.07",
+   "behavior": "allBehaviors",
+   "bin_ms": 10,
+   "n_bins": 599926,
+   "minutes": 100.0,
+   "n_channels": 256,
+   "arrays": {
+    "i6v": [
+     0,
+     63,
+     64
+    ],
+    "M1": [
+     64,
+     127,
+     64
+    ],
+    "55b": [
+     128,
+     191,
+     64
+    ],
+    "s6v": [
+     192,
+     255,
+     64
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 56,
+   "cue_names": [
+    "DO_NOTHING-attempted",
+    "ban-attempted",
+    "choice-attempted",
+    "day-attempted",
+    "feel-attempted",
+    "kite-attempted",
+    "though-attempted",
+    "were-attempted",
+    "DO_NOTHING-mouthed",
+    "ban-mouthed",
+    "choice-mouthed",
+    "day-mouthed",
+    "feel-mouthed",
+    "kite-mouthed",
+    "though-mouthed",
+    "were-mouthed",
+    "DO_NOTHING-imagined1stMotor",
+    "ban-imagined1stMotor",
+    "choice-imagined1stMotor",
+    "day-imagined1stMotor",
+    "feel-imagined1stMotor",
+    "kite-imagined1stMotor",
+    "though-imagined1stMotor",
+    "were-imagined1stMotor",
+    "DO_NOTHING-imagined1stAuditory",
+    "ban-imagined1stAuditory",
+    "choice-imagined1stAuditory",
+    "day-imagined1stAuditory",
+    "feel-imagined1stAuditory",
+    "kite-imagined1stAuditory",
+    "though-imagined1stAuditory",
+    "were-imagined1stAuditory",
+    "DO_NOTHING-imaginedListening",
+    "ban-imaginedListening",
+    "choice-imaginedListening",
+    "day-imaginedListening",
+    "feel-imaginedListening",
+    "kite-imaginedListening",
+    "though-imaginedListening",
+    "were-imaginedListening",
+    "DO_NOTHING-listening",
+    "ban-listening",
+    "choice-listening",
+    "day-listening",
+    "feel-listening",
+    "kite-listening",
+    "though-listening",
+    "were-listening",
+    "DO_NOTHING-reading",
+    "ban-reading",
+    "choice-reading",
+    "day-reading",
+    "feel-reading",
+    "kite-reading",
+    "though-reading",
+    "were-reading"
+   ],
+   "n_trials": 1360,
+   "trials_per_cue": {
+    "DO_NOTHING-attempted": 20,
+    "ban-attempted": 20,
+    "choice-attempted": 20,
+    "day-attempted": 20,
+    "feel-attempted": 20,
+    "kite-attempted": 20,
+    "though-attempted": 20,
+    "were-attempted": 20,
+    "DO_NOTHING-mouthed": 20,
+    "ban-mouthed": 20,
+    "choice-mouthed": 20,
+    "day-mouthed": 20,
+    "feel-mouthed": 20,
+    "kite-mouthed": 20,
+    "though-mouthed": 20,
+    "were-mouthed": 20,
+    "DO_NOTHING-imagined1stMotor": 30,
+    "ban-imagined1stMotor": 30,
+    "choice-imagined1stMotor": 30,
+    "day-imagined1stMotor": 30,
+    "feel-imagined1stMotor": 30,
+    "kite-imagined1stMotor": 30,
+    "though-imagined1stMotor": 30,
+    "were-imagined1stMotor": 30,
+    "DO_NOTHING-imagined1stAuditory": 30,
+    "ban-imagined1stAuditory": 30,
+    "choice-imagined1stAuditory": 30,
+    "day-imagined1stAuditory": 30,
+    "feel-imagined1stAuditory": 30,
+    "kite-imagined1stAuditory": 30,
+    "though-imagined1stAuditory": 30,
+    "were-imagined1stAuditory": 30,
+    "DO_NOTHING-imaginedListening": 30,
+    "ban-imaginedListening": 30,
+    "choice-imaginedListening": 30,
+    "day-imaginedListening": 30,
+    "feel-imaginedListening": 30,
+    "kite-imaginedListening": 30,
+    "though-imaginedListening": 30,
+    "were-imaginedListening": 30,
+    "DO_NOTHING-listening": 20,
+    "ban-listening": 20,
+    "choice-listening": 20,
+    "day-listening": 20,
+    "feel-listening": 20,
+    "kite-listening": 20,
+    "though-listening": 20,
+    "were-listening": 20,
+    "DO_NOTHING-reading": 20,
+    "ban-reading": 20,
+    "choice-reading": 20,
+    "day-reading": 20,
+    "feel-reading": 20,
+    "kite-reading": 20,
+    "though-reading": 20,
+    "were-reading": 20
+   },
+   "blocks": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+   ],
+   "trials_per_block": {
+    "3": 80,
+    "4": 80,
+    "5": 80,
+    "6": 80,
+    "7": 80,
+    "8": 80,
+    "9": 80,
+    "10": 80,
+    "11": 80,
+    "12": 80,
+    "13": 80,
+    "14": 80,
+    "15": 80,
+    "16": 80,
+    "17": 80,
+    "18": 80,
+    "19": 80
+   },
+   "cues_per_block": {
+    "3": {
+     "kite-reading": 10,
+     "choice-reading": 10,
+     "day-reading": 10,
+     "were-reading": 10,
+     "feel-reading": 10,
+     "DO_NOTHING-reading": 10,
+     "though-reading": 10,
+     "ban-reading": 10
+    },
+    "4": {
+     "were-imagined1stAuditory": 10,
+     "ban-imagined1stAuditory": 10,
+     "kite-imagined1stAuditory": 10,
+     "feel-imagined1stAuditory": 10,
+     "though-imagined1stAuditory": 10,
+     "choice-imagined1stAuditory": 10,
+     "DO_NOTHING-imagined1stAuditory": 10,
+     "day-imagined1stAuditory": 10
+    },
+    "5": {
+     "DO_NOTHING-imagined1stAuditory": 10,
+     "though-imagined1stAuditory": 10,
+     "kite-imagined1stAuditory": 10,
+     "feel-imagined1stAuditory": 10,
+     "day-imagined1stAuditory": 10,
+     "were-imagined1stAuditory": 10,
+     "ban-imagined1stAuditory": 10,
+     "choice-imagined1stAuditory": 10
+    },
+    "6": {
+     "DO_NOTHING-listening": 10,
+     "ban-listening": 10,
+     "feel-listening": 10,
+     "choice-listening": 10,
+     "were-listening": 10,
+     "kite-listening": 10,
+     "though-listening": 10,
+     "day-listening": 10
+    },
+    "7": {
+     "day-imaginedListening": 10,
+     "choice-imaginedListening": 10,
+     "kite-imaginedListening": 10,
+     "were-imaginedListening": 10,
+     "feel-imaginedListening": 10,
+     "though-imaginedListening": 10,
+     "ban-imaginedListening": 10,
+     "DO_NOTHING-imaginedListening": 10
+    },
+    "8": {
+     "kite-imaginedListening": 10,
+     "though-imaginedListening": 10,
+     "day-imaginedListening": 10,
+     "DO_NOTHING-imaginedListening": 10,
+     "ban-imaginedListening": 10,
+     "feel-imaginedListening": 10,
+     "choice-imaginedListening": 10,
+     "were-imaginedListening": 10
+    },
+    "9": {
+     "ban-mouthed": 10,
+     "kite-mouthed": 10,
+     "DO_NOTHING-mouthed": 10,
+     "though-mouthed": 10,
+     "day-mouthed": 10,
+     "were-mouthed": 10,
+     "feel-mouthed": 10,
+     "choice-mouthed": 10
+    },
+    "10": {
+     "ban-imagined1stMotor": 10,
+     "choice-imagined1stMotor": 10,
+     "kite-imagined1stMotor": 10,
+     "were-imagined1stMotor": 10,
+     "day-imagined1stMotor": 10,
+     "feel-imagined1stMotor": 10,
+     "DO_NOTHING-imagined1stMotor": 10,
+     "though-imagined1stMotor": 10
+    },
+    "11": {
+     "though-imagined1stMotor": 10,
+     "ban-imagined1stMotor": 10,
+     "were-imagined1stMotor": 10,
+     "choice-imagined1stMotor": 10,
+     "feel-imagined1stMotor": 10,
+     "day-imagined1stMotor": 10,
+     "DO_NOTHING-imagined1stMotor": 10,
+     "kite-imagined1stMotor": 10
+    },
+    "12": {
+     "though-attempted": 10,
+     "ban-attempted": 10,
+     "were-attempted": 10,
+     "kite-attempted": 10,
+     "choice-attempted": 10,
+     "feel-attempted": 10,
+     "DO_NOTHING-attempted": 10,
+     "day-attempted": 10
+    },
+    "13": {
+     "kite-reading": 10,
+     "DO_NOTHING-reading": 10,
+     "ban-reading": 10,
+     "feel-reading": 10,
+     "day-reading": 10,
+     "were-reading": 10,
+     "though-reading": 10,
+     "choice-reading": 10
+    },
+    "14": {
+     "kite-imagined1stAuditory": 10,
+     "DO_NOTHING-imagined1stAuditory": 10,
+     "though-imagined1stAuditory": 10,
+     "day-imagined1stAuditory": 10,
+     "ban-imagined1stAuditory": 10,
+     "feel-imagined1stAuditory": 10,
+     "were-imagined1stAuditory": 10,
+     "choice-imagined1stAuditory": 10
+    },
+    "15": {
+     "ban-listening": 10,
+     "kite-listening": 10,
+     "were-listening": 10,
+     "day-listening": 10,
+     "feel-listening": 10,
+     "though-listening": 10,
+     "choice-listening": 10,
+     "DO_NOTHING-listening": 10
+    },
+    "16": {
+     "though-imaginedListening": 10,
+     "day-imaginedListening": 10,
+     "were-imaginedListening": 10,
+     "feel-imaginedListening": 10,
+     "ban-imaginedListening": 10,
+     "DO_NOTHING-imaginedListening": 10,
+     "kite-imaginedListening": 10,
+     "choice-imaginedListening": 10
+    },
+    "17": {
+     "were-mouthed": 10,
+     "kite-mouthed": 10,
+     "DO_NOTHING-mouthed": 10,
+     "choice-mouthed": 10,
+     "feel-mouthed": 10,
+     "ban-mouthed": 10,
+     "though-mouthed": 10,
+     "day-mouthed": 10
+    },
+    "18": {
+     "were-imagined1stMotor": 10,
+     "DO_NOTHING-imagined1stMotor": 10,
+     "ban-imagined1stMotor": 10,
+     "day-imagined1stMotor": 10,
+     "choice-imagined1stMotor": 10,
+     "kite-imagined1stMotor": 10,
+     "feel-imagined1stMotor": 10,
+     "though-imagined1stMotor": 10
+    },
+    "19": {
+     "DO_NOTHING-attempted": 10,
+     "though-attempted": 10,
+     "were-attempted": 10,
+     "ban-attempted": 10,
+     "day-attempted": 10,
+     "feel-attempted": 10,
+     "kite-attempted": 10,
+     "choice-attempted": 10
+    }
+   },
+   "block_changes_in_time_series": 16,
+   "delay_ms_median": 1500.0,
+   "go_ms_median": 3010.0,
+   "delay_ms_range": [
+    1490,
+    1510
+   ],
+   "go_ms_range": [
+    510,
+    3020
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     0,
+     16
+    ],
+    [
+     49,
+     1081
+    ],
+    [
+     50,
+     262
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 10,
+   "tx_mean_per_bin": 0.1828,
+   "sbp_median": 614.01,
+   "sbp_p99": 7503.4,
+   "task": "isolatedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/isolatedVerbalBehaviors/t15.2024.04.07_attempted_raw.mat",
+   "participant": "T15",
+   "date": "2024.04.07",
+   "behavior": "attempted",
+   "bin_ms": 10,
+   "n_bins": 79997,
+   "minutes": 13.3,
+   "n_channels": 256,
+   "arrays": {
+    "i6v": [
+     0,
+     63,
+     64
+    ],
+    "M1": [
+     64,
+     127,
+     64
+    ],
+    "55b": [
+     128,
+     191,
+     64
+    ],
+    "s6v": [
+     192,
+     255,
+     64
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 8,
+   "cue_names": [
+    "DO_NOTHING",
+    "ban",
+    "choice",
+    "day",
+    "feel",
+    "kite",
+    "though",
+    "were"
+   ],
+   "n_trials": 160,
+   "trials_per_cue": {
+    "DO_NOTHING": 20,
+    "ban": 20,
+    "choice": 20,
+    "day": 20,
+    "feel": 20,
+    "kite": 20,
+    "though": 20,
+    "were": 20
+   },
+   "blocks": [
+    12,
+    19
+   ],
+   "trials_per_block": {
+    "12": 80,
+    "19": 80
+   },
+   "cues_per_block": {
+    "12": {
+     "though": 10,
+     "ban": 10,
+     "were": 10,
+     "kite": 10,
+     "choice": 10,
+     "feel": 10,
+     "DO_NOTHING": 10,
+     "day": 10
+    },
+    "19": {
+     "DO_NOTHING": 10,
+     "though": 10,
+     "were": 10,
+     "ban": 10,
+     "day": 10,
+     "feel": 10,
+     "kite": 10,
+     "choice": 10
+    }
+   },
+   "block_changes_in_time_series": 1,
+   "delay_ms_median": 1500.0,
+   "go_ms_median": 3010.0,
+   "delay_ms_range": [
+    1490,
+    1510
+   ],
+   "go_ms_range": [
+    3010,
+    3020
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     0,
+     1
+    ],
+    [
+     49,
+     122
+    ],
+    [
+     50,
+     36
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 7,
+   "tx_mean_per_bin": 0.186,
+   "sbp_median": 641.5,
+   "sbp_p99": 7530.22,
+   "task": "isolatedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/isolatedVerbalBehaviors/t15.2024.04.07_imagined1stAuditory_raw.mat",
+   "participant": "T15",
+   "date": "2024.04.07",
+   "behavior": "imagined1stAuditory",
+   "bin_ms": 10,
+   "n_bins": 119981,
+   "minutes": 20.0,
+   "n_channels": 256,
+   "arrays": {
+    "i6v": [
+     0,
+     63,
+     64
+    ],
+    "M1": [
+     64,
+     127,
+     64
+    ],
+    "55b": [
+     128,
+     191,
+     64
+    ],
+    "s6v": [
+     192,
+     255,
+     64
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 8,
+   "cue_names": [
+    "DO_NOTHING",
+    "ban",
+    "choice",
+    "day",
+    "feel",
+    "kite",
+    "though",
+    "were"
+   ],
+   "n_trials": 240,
+   "trials_per_cue": {
+    "DO_NOTHING": 30,
+    "ban": 30,
+    "choice": 30,
+    "day": 30,
+    "feel": 30,
+    "kite": 30,
+    "though": 30,
+    "were": 30
+   },
+   "blocks": [
+    4,
+    5,
+    14
+   ],
+   "trials_per_block": {
+    "4": 80,
+    "5": 80,
+    "14": 80
+   },
+   "cues_per_block": {
+    "4": {
+     "were": 10,
+     "ban": 10,
+     "kite": 10,
+     "feel": 10,
+     "though": 10,
+     "choice": 10,
+     "DO_NOTHING": 10,
+     "day": 10
+    },
+    "5": {
+     "DO_NOTHING": 10,
+     "though": 10,
+     "kite": 10,
+     "feel": 10,
+     "day": 10,
+     "were": 10,
+     "ban": 10,
+     "choice": 10
+    },
+    "14": {
+     "kite": 10,
+     "DO_NOTHING": 10,
+     "though": 10,
+     "day": 10,
+     "ban": 10,
+     "feel": 10,
+     "were": 10,
+     "choice": 10
+    }
+   },
+   "block_changes_in_time_series": 2,
+   "delay_ms_median": 1500.0,
+   "go_ms_median": 3010.0,
+   "delay_ms_range": [
+    1490,
+    1510
+   ],
+   "go_ms_range": [
+    3010,
+    3020
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     0,
+     2
+    ],
+    [
+     49,
+     193
+    ],
+    [
+     50,
+     44
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 10,
+   "tx_mean_per_bin": 0.1916,
+   "sbp_median": 629.31,
+   "sbp_p99": 7637.34,
+   "task": "isolatedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/isolatedVerbalBehaviors/t15.2024.04.07_imagined1stMotor_raw.mat",
+   "participant": "T15",
+   "date": "2024.04.07",
+   "behavior": "imagined1stMotor",
+   "bin_ms": 10,
+   "n_bins": 119995,
+   "minutes": 20.0,
+   "n_channels": 256,
+   "arrays": {
+    "i6v": [
+     0,
+     63,
+     64
+    ],
+    "M1": [
+     64,
+     127,
+     64
+    ],
+    "55b": [
+     128,
+     191,
+     64
+    ],
+    "s6v": [
+     192,
+     255,
+     64
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 8,
+   "cue_names": [
+    "DO_NOTHING",
+    "ban",
+    "choice",
+    "day",
+    "feel",
+    "kite",
+    "though",
+    "were"
+   ],
+   "n_trials": 240,
+   "trials_per_cue": {
+    "DO_NOTHING": 30,
+    "ban": 30,
+    "choice": 30,
+    "day": 30,
+    "feel": 30,
+    "kite": 30,
+    "though": 30,
+    "were": 30
+   },
+   "blocks": [
+    10,
+    11,
+    18
+   ],
+   "trials_per_block": {
+    "10": 80,
+    "11": 80,
+    "18": 80
+   },
+   "cues_per_block": {
+    "10": {
+     "ban": 10,
+     "choice": 10,
+     "kite": 10,
+     "were": 10,
+     "day": 10,
+     "feel": 10,
+     "DO_NOTHING": 10,
+     "though": 10
+    },
+    "11": {
+     "though": 10,
+     "ban": 10,
+     "were": 10,
+     "choice": 10,
+     "feel": 10,
+     "day": 10,
+     "DO_NOTHING": 10,
+     "kite": 10
+    },
+    "18": {
+     "were": 10,
+     "DO_NOTHING": 10,
+     "ban": 10,
+     "day": 10,
+     "choice": 10,
+     "kite": 10,
+     "feel": 10,
+     "though": 10
+    }
+   },
+   "block_changes_in_time_series": 2,
+   "delay_ms_median": 1500.0,
+   "go_ms_median": 3010.0,
+   "delay_ms_range": [
+    1490,
+    1510
+   ],
+   "go_ms_range": [
+    3010,
+    3020
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     0,
+     2
+    ],
+    [
+     49,
+     190
+    ],
+    [
+     50,
+     47
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 9,
+   "tx_mean_per_bin": 0.1783,
+   "sbp_median": 591.28,
+   "sbp_p99": 7269.98,
+   "task": "isolatedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/isolatedVerbalBehaviors/t15.2024.04.07_imaginedListening_raw.mat",
+   "participant": "T15",
+   "date": "2024.04.07",
+   "behavior": "imaginedListening",
+   "bin_ms": 10,
+   "n_bins": 119968,
+   "minutes": 20.0,
+   "n_channels": 256,
+   "arrays": {
+    "i6v": [
+     0,
+     63,
+     64
+    ],
+    "M1": [
+     64,
+     127,
+     64
+    ],
+    "55b": [
+     128,
+     191,
+     64
+    ],
+    "s6v": [
+     192,
+     255,
+     64
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 8,
+   "cue_names": [
+    "DO_NOTHING",
+    "ban",
+    "choice",
+    "day",
+    "feel",
+    "kite",
+    "though",
+    "were"
+   ],
+   "n_trials": 240,
+   "trials_per_cue": {
+    "DO_NOTHING": 30,
+    "ban": 30,
+    "choice": 30,
+    "day": 30,
+    "feel": 30,
+    "kite": 30,
+    "though": 30,
+    "were": 30
+   },
+   "blocks": [
+    7,
+    8,
+    16
+   ],
+   "trials_per_block": {
+    "7": 80,
+    "8": 80,
+    "16": 80
+   },
+   "cues_per_block": {
+    "7": {
+     "day": 10,
+     "choice": 10,
+     "kite": 10,
+     "were": 10,
+     "feel": 10,
+     "though": 10,
+     "ban": 10,
+     "DO_NOTHING": 10
+    },
+    "8": {
+     "kite": 10,
+     "though": 10,
+     "day": 10,
+     "DO_NOTHING": 10,
+     "ban": 10,
+     "feel": 10,
+     "choice": 10,
+     "were": 10
+    },
+    "16": {
+     "though": 10,
+     "day": 10,
+     "were": 10,
+     "feel": 10,
+     "ban": 10,
+     "DO_NOTHING": 10,
+     "kite": 10,
+     "choice": 10
+    }
+   },
+   "block_changes_in_time_series": 2,
+   "delay_ms_median": 1500.0,
+   "go_ms_median": 3010.0,
+   "delay_ms_range": [
+    1490,
+    1510
+   ],
+   "go_ms_range": [
+    3010,
+    3020
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     0,
+     2
+    ],
+    [
+     49,
+     200
+    ],
+    [
+     50,
+     37
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 8,
+   "tx_mean_per_bin": 0.1773,
+   "sbp_median": 586.2,
+   "sbp_p99": 7335.73,
+   "task": "isolatedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/isolatedVerbalBehaviors/t15.2024.04.07_listening_raw.mat",
+   "participant": "T15",
+   "date": "2024.04.07",
+   "behavior": "listening",
+   "bin_ms": 10,
+   "n_bins": 39993,
+   "minutes": 6.7,
+   "n_channels": 256,
+   "arrays": {
+    "i6v": [
+     0,
+     63,
+     64
+    ],
+    "M1": [
+     64,
+     127,
+     64
+    ],
+    "55b": [
+     128,
+     191,
+     64
+    ],
+    "s6v": [
+     192,
+     255,
+     64
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 8,
+   "cue_names": [
+    "DO_NOTHING",
+    "ban",
+    "choice",
+    "day",
+    "feel",
+    "kite",
+    "though",
+    "were"
+   ],
+   "n_trials": 160,
+   "trials_per_cue": {
+    "DO_NOTHING": 20,
+    "ban": 20,
+    "choice": 20,
+    "day": 20,
+    "feel": 20,
+    "kite": 20,
+    "though": 20,
+    "were": 20
+   },
+   "blocks": [
+    6,
+    15
+   ],
+   "trials_per_block": {
+    "6": 80,
+    "15": 80
+   },
+   "cues_per_block": {
+    "6": {
+     "DO_NOTHING": 10,
+     "ban": 10,
+     "feel": 10,
+     "choice": 10,
+     "were": 10,
+     "kite": 10,
+     "though": 10,
+     "day": 10
+    },
+    "15": {
+     "ban": 10,
+     "kite": 10,
+     "were": 10,
+     "day": 10,
+     "feel": 10,
+     "though": 10,
+     "choice": 10,
+     "DO_NOTHING": 10
+    }
+   },
+   "block_changes_in_time_series": 1,
+   "delay_ms_median": 1500.0,
+   "go_ms_median": 510.0,
+   "delay_ms_range": [
+    1490,
+    1510
+   ],
+   "go_ms_range": [
+    510,
+    520
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     0,
+     1
+    ],
+    [
+     49,
+     129
+    ],
+    [
+     50,
+     29
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 8,
+   "tx_mean_per_bin": 0.1655,
+   "sbp_median": 606.68,
+   "sbp_p99": 7440.9,
+   "task": "isolatedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/isolatedVerbalBehaviors/t15.2024.04.07_mouthed_raw.mat",
+   "participant": "T15",
+   "date": "2024.04.07",
+   "behavior": "mouthed",
+   "bin_ms": 10,
+   "n_bins": 79992,
+   "minutes": 13.3,
+   "n_channels": 256,
+   "arrays": {
+    "i6v": [
+     0,
+     63,
+     64
+    ],
+    "M1": [
+     64,
+     127,
+     64
+    ],
+    "55b": [
+     128,
+     191,
+     64
+    ],
+    "s6v": [
+     192,
+     255,
+     64
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 8,
+   "cue_names": [
+    "DO_NOTHING",
+    "ban",
+    "choice",
+    "day",
+    "feel",
+    "kite",
+    "though",
+    "were"
+   ],
+   "n_trials": 160,
+   "trials_per_cue": {
+    "DO_NOTHING": 20,
+    "ban": 20,
+    "choice": 20,
+    "day": 20,
+    "feel": 20,
+    "kite": 20,
+    "though": 20,
+    "were": 20
+   },
+   "blocks": [
+    9,
+    17
+   ],
+   "trials_per_block": {
+    "9": 80,
+    "17": 80
+   },
+   "cues_per_block": {
+    "9": {
+     "ban": 10,
+     "kite": 10,
+     "DO_NOTHING": 10,
+     "though": 10,
+     "day": 10,
+     "were": 10,
+     "feel": 10,
+     "choice": 10
+    },
+    "17": {
+     "were": 10,
+     "kite": 10,
+     "DO_NOTHING": 10,
+     "choice": 10,
+     "feel": 10,
+     "ban": 10,
+     "though": 10,
+     "day": 10
+    }
+   },
+   "block_changes_in_time_series": 1,
+   "delay_ms_median": 1500.0,
+   "go_ms_median": 3010.0,
+   "delay_ms_range": [
+    1490,
+    1510
+   ],
+   "go_ms_range": [
+    3010,
+    3020
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     0,
+     1
+    ],
+    [
+     49,
+     128
+    ],
+    [
+     50,
+     30
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 8,
+   "tx_mean_per_bin": 0.202,
+   "sbp_median": 639.65,
+   "sbp_p99": 7853.91,
+   "task": "isolatedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/isolatedVerbalBehaviors/t15.2024.04.07_reading_raw.mat",
+   "participant": "T15",
+   "date": "2024.04.07",
+   "behavior": "reading",
+   "bin_ms": 10,
+   "n_bins": 40000,
+   "minutes": 6.7,
+   "n_channels": 256,
+   "arrays": {
+    "i6v": [
+     0,
+     63,
+     64
+    ],
+    "M1": [
+     64,
+     127,
+     64
+    ],
+    "55b": [
+     128,
+     191,
+     64
+    ],
+    "s6v": [
+     192,
+     255,
+     64
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 8,
+   "cue_names": [
+    "DO_NOTHING",
+    "ban",
+    "choice",
+    "day",
+    "feel",
+    "kite",
+    "though",
+    "were"
+   ],
+   "n_trials": 160,
+   "trials_per_cue": {
+    "DO_NOTHING": 20,
+    "ban": 20,
+    "choice": 20,
+    "day": 20,
+    "feel": 20,
+    "kite": 20,
+    "though": 20,
+    "were": 20
+   },
+   "blocks": [
+    3,
+    13
+   ],
+   "trials_per_block": {
+    "3": 80,
+    "13": 80
+   },
+   "cues_per_block": {
+    "3": {
+     "kite": 10,
+     "choice": 10,
+     "day": 10,
+     "were": 10,
+     "feel": 10,
+     "DO_NOTHING": 10,
+     "though": 10,
+     "ban": 10
+    },
+    "13": {
+     "kite": 10,
+     "DO_NOTHING": 10,
+     "ban": 10,
+     "feel": 10,
+     "day": 10,
+     "were": 10,
+     "though": 10,
+     "choice": 10
+    }
+   },
+   "block_changes_in_time_series": 1,
+   "delay_ms_median": 1500.0,
+   "go_ms_median": 510.0,
+   "delay_ms_range": [
+    1490,
+    1510
+   ],
+   "go_ms_range": [
+    510,
+    520
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     0,
+     1
+    ],
+    [
+     49,
+     119
+    ],
+    [
+     50,
+     39
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 8,
+   "tx_mean_per_bin": 0.1583,
+   "sbp_median": 630.63,
+   "sbp_p99": 7592.55,
+   "task": "isolatedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/isolatedVerbalBehaviors/t16.2024.03.04_allBehaviors_raw.mat",
+   "participant": "T16",
+   "date": "2024.03.04",
+   "behavior": "allBehaviors",
+   "bin_ms": 10,
+   "n_bins": 380363,
+   "minutes": 63.4,
+   "n_channels": 256,
+   "arrays": {
+    "PEF": [
+     0,
+     63,
+     64
+    ],
+    "i6v": [
+     64,
+     127,
+     64
+    ],
+    "6d": [
+     128,
+     255,
+     128
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 56,
+   "cue_names": [
+    "DO_NOTHING-attempted",
+    "ban-attempted",
+    "choice-attempted",
+    "day-attempted",
+    "feel-attempted",
+    "kite-attempted",
+    "though-attempted",
+    "were-attempted",
+    "DO_NOTHING-mouthed",
+    "ban-mouthed",
+    "choice-mouthed",
+    "day-mouthed",
+    "feel-mouthed",
+    "kite-mouthed",
+    "though-mouthed",
+    "were-mouthed",
+    "DO_NOTHING-imagined1stMotor",
+    "ban-imagined1stMotor",
+    "choice-imagined1stMotor",
+    "day-imagined1stMotor",
+    "feel-imagined1stMotor",
+    "kite-imagined1stMotor",
+    "though-imagined1stMotor",
+    "were-imagined1stMotor",
+    "DO_NOTHING-imagined1stAuditory",
+    "ban-imagined1stAuditory",
+    "choice-imagined1stAuditory",
+    "day-imagined1stAuditory",
+    "feel-imagined1stAuditory",
+    "kite-imagined1stAuditory",
+    "though-imagined1stAuditory",
+    "were-imagined1stAuditory",
+    "DO_NOTHING-imaginedListening",
+    "ban-imaginedListening",
+    "choice-imaginedListening",
+    "day-imaginedListening",
+    "feel-imaginedListening",
+    "kite-imaginedListening",
+    "though-imaginedListening",
+    "were-imaginedListening",
+    "DO_NOTHING-listening",
+    "ban-listening",
+    "choice-listening",
+    "day-listening",
+    "feel-listening",
+    "kite-listening",
+    "though-listening",
+    "were-listening",
+    "DO_NOTHING-reading",
+    "ban-reading",
+    "choice-reading",
+    "day-reading",
+    "feel-reading",
+    "kite-reading",
+    "though-reading",
+    "were-reading"
+   ],
+   "n_trials": 840,
+   "trials_per_cue": {
+    "DO_NOTHING-attempted": 14,
+    "ban-attempted": 14,
+    "choice-attempted": 14,
+    "day-attempted": 14,
+    "feel-attempted": 14,
+    "kite-attempted": 14,
+    "though-attempted": 14,
+    "were-attempted": 14,
+    "DO_NOTHING-mouthed": 14,
+    "ban-mouthed": 14,
+    "choice-mouthed": 14,
+    "day-mouthed": 14,
+    "feel-mouthed": 14,
+    "kite-mouthed": 14,
+    "though-mouthed": 14,
+    "were-mouthed": 14,
+    "DO_NOTHING-imagined1stMotor": 14,
+    "ban-imagined1stMotor": 14,
+    "choice-imagined1stMotor": 14,
+    "day-imagined1stMotor": 14,
+    "feel-imagined1stMotor": 14,
+    "kite-imagined1stMotor": 14,
+    "though-imagined1stMotor": 14,
+    "were-imagined1stMotor": 14,
+    "DO_NOTHING-imagined1stAuditory": 14,
+    "ban-imagined1stAuditory": 14,
+    "choice-imagined1stAuditory": 14,
+    "day-imagined1stAuditory": 14,
+    "feel-imagined1stAuditory": 14,
+    "kite-imagined1stAuditory": 14,
+    "though-imagined1stAuditory": 14,
+    "were-imagined1stAuditory": 14,
+    "DO_NOTHING-imaginedListening": 14,
+    "ban-imaginedListening": 14,
+    "choice-imaginedListening": 14,
+    "day-imaginedListening": 14,
+    "feel-imaginedListening": 14,
+    "kite-imaginedListening": 14,
+    "though-imaginedListening": 14,
+    "were-imaginedListening": 14,
+    "DO_NOTHING-listening": 21,
+    "ban-listening": 21,
+    "choice-listening": 21,
+    "day-listening": 21,
+    "feel-listening": 21,
+    "kite-listening": 21,
+    "though-listening": 21,
+    "were-listening": 21,
+    "DO_NOTHING-reading": 14,
+    "ban-reading": 14,
+    "choice-reading": 14,
+    "day-reading": 14,
+    "feel-reading": 14,
+    "kite-reading": 14,
+    "though-reading": 14,
+    "were-reading": 14
+   },
+   "blocks": [
+    2,
+    3,
+    4,
+    5,
+    7,
+    9,
+    10,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+   ],
+   "trials_per_block": {
+    "2": 56,
+    "3": 56,
+    "4": 56,
+    "5": 56,
+    "7": 56,
+    "9": 56,
+    "10": 56,
+    "12": 56,
+    "13": 56,
+    "14": 56,
+    "15": 56,
+    "16": 56,
+    "17": 56,
+    "18": 56,
+    "19": 56
+   },
+   "cues_per_block": {
+    "2": {
+     "were-imagined1stAuditory": 7,
+     "kite-imagined1stAuditory": 7,
+     "choice-imagined1stAuditory": 7,
+     "DO_NOTHING-imagined1stAuditory": 7,
+     "day-imagined1stAuditory": 7,
+     "ban-imagined1stAuditory": 7,
+     "feel-imagined1stAuditory": 7,
+     "though-imagined1stAuditory": 7
+    },
+    "3": {
+     "day-attempted": 7,
+     "kite-attempted": 7,
+     "DO_NOTHING-attempted": 7,
+     "were-attempted": 7,
+     "feel-attempted": 7,
+     "ban-attempted": 7,
+     "though-attempted": 7,
+     "choice-attempted": 7
+    },
+    "4": {
+     "though-imaginedListening": 7,
+     "ban-imaginedListening": 7,
+     "were-imaginedListening": 7,
+     "choice-imaginedListening": 7,
+     "kite-imaginedListening": 7,
+     "feel-imaginedListening": 7,
+     "DO_NOTHING-imaginedListening": 7,
+     "day-imaginedListening": 7
+    },
+    "5": {
+     "choice-listening": 7,
+     "day-listening": 7,
+     "kite-listening": 7,
+     "feel-listening": 7,
+     "were-listening": 7,
+     "DO_NOTHING-listening": 7,
+     "though-listening": 7,
+     "ban-listening": 7
+    },
+    "7": {
+     "choice-reading": 7,
+     "feel-reading": 7,
+     "kite-reading": 7,
+     "day-reading": 7,
+     "were-reading": 7,
+     "ban-reading": 7,
+     "though-reading": 7,
+     "DO_NOTHING-reading": 7
+    },
+    "9": {
+     "were-imagined1stMotor": 7,
+     "day-imagined1stMotor": 7,
+     "though-imagined1stMotor": 7,
+     "feel-imagined1stMotor": 7,
+     "kite-imagined1stMotor": 7,
+     "DO_NOTHING-imagined1stMotor": 7,
+     "ban-imagined1stMotor": 7,
+     "choice-imagined1stMotor": 7
+    },
+    "10": {
+     "feel-mouthed": 7,
+     "day-mouthed": 7,
+     "DO_NOTHING-mouthed": 7,
+     "were-mouthed": 7,
+     "ban-mouthed": 7,
+     "kite-mouthed": 7,
+     "choice-mouthed": 7,
+     "though-mouthed": 7
+    },
+    "12": {
+     "choice-attempted": 7,
+     "DO_NOTHING-attempted": 7,
+     "kite-attempted": 7,
+     "feel-attempted": 7,
+     "day-attempted": 7,
+     "ban-attempted": 7,
+     "were-attempted": 7,
+     "though-attempted": 7
+    },
+    "13": {
+     "were-imaginedListening": 7,
+     "DO_NOTHING-imaginedListening": 7,
+     "feel-imaginedListening": 7,
+     "day-imaginedListening": 7,
+     "though-imaginedListening": 7,
+     "kite-imaginedListening": 7,
+     "choice-imaginedListening": 7,
+     "ban-imaginedListening": 7
+    },
+    "14": {
+     "day-listening": 7,
+     "kite-listening": 7,
+     "DO_NOTHING-listening": 7,
+     "feel-listening": 7,
+     "choice-listening": 7,
+     "ban-listening": 7,
+     "though-listening": 7,
+     "were-listening": 7
+    },
+    "15": {
+     "kite-mouthed": 7,
+     "feel-mouthed": 7,
+     "day-mouthed": 7,
+     "DO_NOTHING-mouthed": 7,
+     "ban-mouthed": 7,
+     "choice-mouthed": 7,
+     "though-mouthed": 7,
+     "were-mouthed": 7
+    },
+    "16": {
+     "though-reading": 7,
+     "choice-reading": 7,
+     "feel-reading": 7,
+     "DO_NOTHING-reading": 7,
+     "kite-reading": 7,
+     "were-reading": 7,
+     "day-reading": 7,
+     "ban-reading": 7
+    },
+    "17": {
+     "though-imagined1stMotor": 7,
+     "DO_NOTHING-imagined1stMotor": 7,
+     "ban-imagined1stMotor": 7,
+     "feel-imagined1stMotor": 7,
+     "kite-imagined1stMotor": 7,
+     "were-imagined1stMotor": 7,
+     "choice-imagined1stMotor": 7,
+     "day-imagined1stMotor": 7
+    },
+    "18": {
+     "kite-imagined1stAuditory": 7,
+     "DO_NOTHING-imagined1stAuditory": 7,
+     "ban-imagined1stAuditory": 7,
+     "were-imagined1stAuditory": 7,
+     "day-imagined1stAuditory": 7,
+     "choice-imagined1stAuditory": 7,
+     "though-imagined1stAuditory": 7,
+     "feel-imagined1stAuditory": 7
+    },
+    "19": {
+     "were-listening": 7,
+     "DO_NOTHING-listening": 7,
+     "ban-listening": 7,
+     "day-listening": 7,
+     "though-listening": 7,
+     "choice-listening": 7,
+     "kite-listening": 7,
+     "feel-listening": 7
+    }
+   },
+   "block_changes_in_time_series": 14,
+   "delay_ms_median": 2000.0,
+   "go_ms_median": 3010.0,
+   "delay_ms_range": [
+    1490,
+    2010
+   ],
+   "go_ms_range": [
+    10,
+    4020
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     -1,
+     449
+    ],
+    [
+     0,
+     106
+    ],
+    [
+     149,
+     225
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 10,
+   "tx_mean_per_bin": 0.1976,
+   "sbp_median": 512.42,
+   "sbp_p99": 5871.92,
+   "task": "isolatedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/isolatedVerbalBehaviors/t16.2024.03.04_attempted_raw.mat",
+   "participant": "T16",
+   "date": "2024.03.04",
+   "behavior": "attempted",
+   "bin_ms": 10,
+   "n_bins": 67243,
+   "minutes": 11.2,
+   "n_channels": 256,
+   "arrays": {
+    "PEF": [
+     0,
+     63,
+     64
+    ],
+    "ventral6v": [
+     64,
+     127,
+     64
+    ],
+    "6d": [
+     128,
+     255,
+     128
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 8,
+   "cue_names": [
+    "DO_NOTHING",
+    "ban",
+    "choice",
+    "day",
+    "feel",
+    "kite",
+    "though",
+    "were"
+   ],
+   "n_trials": 112,
+   "trials_per_cue": {
+    "DO_NOTHING": 14,
+    "ban": 14,
+    "choice": 14,
+    "day": 14,
+    "feel": 14,
+    "kite": 14,
+    "though": 14,
+    "were": 14
+   },
+   "blocks": [
+    3,
+    12
+   ],
+   "trials_per_block": {
+    "3": 56,
+    "12": 56
+   },
+   "cues_per_block": {
+    "3": {
+     "day": 7,
+     "kite": 7,
+     "DO_NOTHING": 7,
+     "were": 7,
+     "feel": 7,
+     "ban": 7,
+     "though": 7,
+     "choice": 7
+    },
+    "12": {
+     "choice": 7,
+     "DO_NOTHING": 7,
+     "kite": 7,
+     "feel": 7,
+     "day": 7,
+     "ban": 7,
+     "were": 7,
+     "though": 7
+    }
+   },
+   "block_changes_in_time_series": 1,
+   "delay_ms_median": 2000.0,
+   "go_ms_median": 4010.0,
+   "delay_ms_range": [
+    1990,
+    2010
+   ],
+   "go_ms_range": [
+    4010,
+    4020
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     -1,
+     91
+    ],
+    [
+     0,
+     19
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 8,
+   "tx_mean_per_bin": 0.2061,
+   "sbp_median": 518.92,
+   "sbp_p99": 6245.95,
+   "task": "isolatedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/isolatedVerbalBehaviors/t16.2024.03.04_imagined1stAuditory_raw.mat",
+   "participant": "T16",
+   "date": "2024.03.04",
+   "behavior": "imagined1stAuditory",
+   "bin_ms": 10,
+   "n_bins": 56041,
+   "minutes": 9.3,
+   "n_channels": 256,
+   "arrays": {
+    "PEF": [
+     0,
+     63,
+     64
+    ],
+    "ventral6v": [
+     64,
+     127,
+     64
+    ],
+    "6d": [
+     128,
+     255,
+     128
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 8,
+   "cue_names": [
+    "DO_NOTHING",
+    "ban",
+    "choice",
+    "day",
+    "feel",
+    "kite",
+    "though",
+    "were"
+   ],
+   "n_trials": 112,
+   "trials_per_cue": {
+    "DO_NOTHING": 14,
+    "ban": 14,
+    "choice": 14,
+    "day": 14,
+    "feel": 14,
+    "kite": 14,
+    "though": 14,
+    "were": 14
+   },
+   "blocks": [
+    2,
+    18
+   ],
+   "trials_per_block": {
+    "2": 56,
+    "18": 56
+   },
+   "cues_per_block": {
+    "2": {
+     "were": 7,
+     "kite": 7,
+     "choice": 7,
+     "DO_NOTHING": 7,
+     "day": 7,
+     "ban": 7,
+     "feel": 7,
+     "though": 7
+    },
+    "18": {
+     "kite": 7,
+     "DO_NOTHING": 7,
+     "ban": 7,
+     "were": 7,
+     "day": 7,
+     "choice": 7,
+     "though": 7,
+     "feel": 7
+    }
+   },
+   "block_changes_in_time_series": 1,
+   "delay_ms_median": 2000.0,
+   "go_ms_median": 3010.0,
+   "delay_ms_range": [
+    1980,
+    2010
+   ],
+   "go_ms_range": [
+    3010,
+    3020
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     -1,
+     90
+    ],
+    [
+     0,
+     21
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 8,
+   "tx_mean_per_bin": 0.1858,
+   "sbp_median": 511.92,
+   "sbp_p99": 5592.83,
+   "task": "isolatedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/isolatedVerbalBehaviors/t16.2024.03.04_imagined1stMotor_raw.mat",
+   "participant": "T16",
+   "date": "2024.03.04",
+   "behavior": "imagined1stMotor",
+   "bin_ms": 10,
+   "n_bins": 56041,
+   "minutes": 9.3,
+   "n_channels": 256,
+   "arrays": {
+    "PEF": [
+     0,
+     63,
+     64
+    ],
+    "ventral6v": [
+     64,
+     127,
+     64
+    ],
+    "6d": [
+     128,
+     255,
+     128
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 8,
+   "cue_names": [
+    "DO_NOTHING",
+    "ban",
+    "choice",
+    "day",
+    "feel",
+    "kite",
+    "though",
+    "were"
+   ],
+   "n_trials": 112,
+   "trials_per_cue": {
+    "DO_NOTHING": 14,
+    "ban": 14,
+    "choice": 14,
+    "day": 14,
+    "feel": 14,
+    "kite": 14,
+    "though": 14,
+    "were": 14
+   },
+   "blocks": [
+    9,
+    17
+   ],
+   "trials_per_block": {
+    "9": 56,
+    "17": 56
+   },
+   "cues_per_block": {
+    "9": {
+     "were": 7,
+     "day": 7,
+     "though": 7,
+     "feel": 7,
+     "kite": 7,
+     "DO_NOTHING": 7,
+     "ban": 7,
+     "choice": 7
+    },
+    "17": {
+     "though": 7,
+     "DO_NOTHING": 7,
+     "ban": 7,
+     "feel": 7,
+     "kite": 7,
+     "were": 7,
+     "choice": 7,
+     "day": 7
+    }
+   },
+   "block_changes_in_time_series": 1,
+   "delay_ms_median": 2000.0,
+   "go_ms_median": 3010.0,
+   "delay_ms_range": [
+    1990,
+    2010
+   ],
+   "go_ms_range": [
+    3010,
+    3020
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     -1,
+     92
+    ],
+    [
+     0,
+     18
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 9,
+   "tx_mean_per_bin": 0.198,
+   "sbp_median": 509.77,
+   "sbp_p99": 5665.35,
+   "task": "isolatedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/isolatedVerbalBehaviors/t16.2024.03.04_imaginedListening_raw.mat",
+   "participant": "T16",
+   "date": "2024.03.04",
+   "behavior": "imaginedListening",
+   "bin_ms": 10,
+   "n_bins": 56043,
+   "minutes": 9.3,
+   "n_channels": 256,
+   "arrays": {
+    "PEF": [
+     0,
+     63,
+     64
+    ],
+    "ventral6v": [
+     64,
+     127,
+     64
+    ],
+    "6d": [
+     128,
+     255,
+     128
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 8,
+   "cue_names": [
+    "DO_NOTHING",
+    "ban",
+    "choice",
+    "day",
+    "feel",
+    "kite",
+    "though",
+    "were"
+   ],
+   "n_trials": 112,
+   "trials_per_cue": {
+    "DO_NOTHING": 14,
+    "ban": 14,
+    "choice": 14,
+    "day": 14,
+    "feel": 14,
+    "kite": 14,
+    "though": 14,
+    "were": 14
+   },
+   "blocks": [
+    4,
+    13
+   ],
+   "trials_per_block": {
+    "4": 56,
+    "13": 56
+   },
+   "cues_per_block": {
+    "4": {
+     "though": 7,
+     "ban": 7,
+     "were": 7,
+     "choice": 7,
+     "kite": 7,
+     "feel": 7,
+     "DO_NOTHING": 7,
+     "day": 7
+    },
+    "13": {
+     "were": 7,
+     "DO_NOTHING": 7,
+     "feel": 7,
+     "day": 7,
+     "though": 7,
+     "kite": 7,
+     "choice": 7,
+     "ban": 7
+    }
+   },
+   "block_changes_in_time_series": 1,
+   "delay_ms_median": 2000.0,
+   "go_ms_median": 3010.0,
+   "delay_ms_range": [
+    1990,
+    2010
+   ],
+   "go_ms_range": [
+    3010,
+    3020
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     -1,
+     86
+    ],
+    [
+     0,
+     24
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 8,
+   "tx_mean_per_bin": 0.1847,
+   "sbp_median": 509.59,
+   "sbp_p99": 5632.36,
+   "task": "isolatedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/isolatedVerbalBehaviors/t16.2024.03.04_listening_raw.mat",
+   "participant": "T16",
+   "date": "2024.03.04",
+   "behavior": "listening",
+   "bin_ms": 10,
+   "n_bins": 50011,
+   "minutes": 8.3,
+   "n_channels": 256,
+   "arrays": {
+    "PEF": [
+     0,
+     63,
+     64
+    ],
+    "ventral6v": [
+     64,
+     127,
+     64
+    ],
+    "6d": [
+     128,
+     255,
+     128
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 8,
+   "cue_names": [
+    "DO_NOTHING",
+    "ban",
+    "choice",
+    "day",
+    "feel",
+    "kite",
+    "though",
+    "were"
+   ],
+   "n_trials": 168,
+   "trials_per_cue": {
+    "DO_NOTHING": 21,
+    "ban": 21,
+    "choice": 21,
+    "day": 21,
+    "feel": 21,
+    "kite": 21,
+    "though": 21,
+    "were": 21
+   },
+   "blocks": [
+    5,
+    14,
+    19
+   ],
+   "trials_per_block": {
+    "5": 56,
+    "14": 56,
+    "19": 56
+   },
+   "cues_per_block": {
+    "5": {
+     "choice": 7,
+     "day": 7,
+     "kite": 7,
+     "feel": 7,
+     "were": 7,
+     "DO_NOTHING": 7,
+     "though": 7,
+     "ban": 7
+    },
+    "14": {
+     "day": 7,
+     "kite": 7,
+     "DO_NOTHING": 7,
+     "feel": 7,
+     "choice": 7,
+     "ban": 7,
+     "though": 7,
+     "were": 7
+    },
+    "19": {
+     "were": 7,
+     "DO_NOTHING": 7,
+     "ban": 7,
+     "day": 7,
+     "though": 7,
+     "choice": 7,
+     "kite": 7,
+     "feel": 7
+    }
+   },
+   "block_changes_in_time_series": 2,
+   "delay_ms_median": 1500.0,
+   "go_ms_median": 10.0,
+   "delay_ms_range": [
+    1490,
+    1510
+   ],
+   "go_ms_range": [
+    10,
+    20
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     1,
+     1
+    ],
+    [
+     149,
+     138
+    ],
+    [
+     150,
+     27
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 9,
+   "tx_mean_per_bin": 0.192,
+   "sbp_median": 507.78,
+   "sbp_p99": 5811.17,
+   "task": "isolatedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/isolatedVerbalBehaviors/t16.2024.03.04_mouthed_raw.mat",
+   "participant": "T16",
+   "date": "2024.03.04",
+   "behavior": "mouthed",
+   "bin_ms": 10,
+   "n_bins": 56043,
+   "minutes": 9.3,
+   "n_channels": 256,
+   "arrays": {
+    "PEF": [
+     0,
+     63,
+     64
+    ],
+    "ventral6v": [
+     64,
+     127,
+     64
+    ],
+    "6d": [
+     128,
+     255,
+     128
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 8,
+   "cue_names": [
+    "DO_NOTHING",
+    "ban",
+    "choice",
+    "day",
+    "feel",
+    "kite",
+    "though",
+    "were"
+   ],
+   "n_trials": 112,
+   "trials_per_cue": {
+    "DO_NOTHING": 14,
+    "ban": 14,
+    "choice": 14,
+    "day": 14,
+    "feel": 14,
+    "kite": 14,
+    "though": 14,
+    "were": 14
+   },
+   "blocks": [
+    10,
+    15
+   ],
+   "trials_per_block": {
+    "10": 56,
+    "15": 56
+   },
+   "cues_per_block": {
+    "10": {
+     "feel": 7,
+     "day": 7,
+     "DO_NOTHING": 7,
+     "were": 7,
+     "ban": 7,
+     "kite": 7,
+     "choice": 7,
+     "though": 7
+    },
+    "15": {
+     "kite": 7,
+     "feel": 7,
+     "day": 7,
+     "DO_NOTHING": 7,
+     "ban": 7,
+     "choice": 7,
+     "though": 7,
+     "were": 7
+    }
+   },
+   "block_changes_in_time_series": 1,
+   "delay_ms_median": 2000.0,
+   "go_ms_median": 3010.0,
+   "delay_ms_range": [
+    1990,
+    2010
+   ],
+   "go_ms_range": [
+    3010,
+    3020
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     -1,
+     90
+    ],
+    [
+     0,
+     20
+    ],
+    [
+     1,
+     1
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 10,
+   "tx_mean_per_bin": 0.2129,
+   "sbp_median": 514.48,
+   "sbp_p99": 6224.05,
+   "task": "isolatedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/isolatedVerbalBehaviors/t16.2024.03.04_reading_raw.mat",
+   "participant": "T16",
+   "date": "2024.03.04",
+   "behavior": "reading",
+   "bin_ms": 10,
+   "n_bins": 38941,
+   "minutes": 6.5,
+   "n_channels": 256,
+   "arrays": {
+    "PEF": [
+     0,
+     63,
+     64
+    ],
+    "ventral6v": [
+     64,
+     127,
+     64
+    ],
+    "6d": [
+     128,
+     255,
+     128
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 8,
+   "cue_names": [
+    "DO_NOTHING",
+    "ban",
+    "choice",
+    "day",
+    "feel",
+    "kite",
+    "though",
+    "were"
+   ],
+   "n_trials": 112,
+   "trials_per_cue": {
+    "DO_NOTHING": 14,
+    "ban": 14,
+    "choice": 14,
+    "day": 14,
+    "feel": 14,
+    "kite": 14,
+    "though": 14,
+    "were": 14
+   },
+   "blocks": [
+    7,
+    16
+   ],
+   "trials_per_block": {
+    "7": 56,
+    "16": 56
+   },
+   "cues_per_block": {
+    "7": {
+     "choice": 7,
+     "feel": 7,
+     "kite": 7,
+     "day": 7,
+     "were": 7,
+     "ban": 7,
+     "though": 7,
+     "DO_NOTHING": 7
+    },
+    "16": {
+     "though": 7,
+     "choice": 7,
+     "feel": 7,
+     "DO_NOTHING": 7,
+     "kite": 7,
+     "were": 7,
+     "day": 7,
+     "ban": 7
+    }
+   },
+   "block_changes_in_time_series": 1,
+   "delay_ms_median": 2000.0,
+   "go_ms_median": 10.0,
+   "delay_ms_range": [
+    1990,
+    2010
+   ],
+   "go_ms_range": [
+    10,
+    20
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     1,
+     1
+    ],
+    [
+     149,
+     87
+    ],
+    [
+     150,
+     23
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 8,
+   "tx_mean_per_bin": 0.2034,
+   "sbp_median": 513.2,
+   "sbp_p99": 5851.69,
+   "task": "isolatedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/isolatedVerbalBehaviors/t17.2024.12.09_allBehaviors_raw.mat",
+   "participant": "T17",
+   "date": "2024.12.09",
+   "behavior": "allBehaviors",
+   "bin_ms": 10,
+   "n_bins": 479861,
+   "minutes": 80.0,
+   "n_channels": 256,
+   "arrays": {
+    "s6v-v": [
+     0,
+     63,
+     64
+    ],
+    "s6v-d": [
+     64,
+     127,
+     64
+    ],
+    "55b": [
+     128,
+     255,
+     128
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 56,
+   "cue_names": [
+    "DO_NOTHING-attempted",
+    "ban-attempted",
+    "choice-attempted",
+    "day-attempted",
+    "feel-attempted",
+    "kite-attempted",
+    "though-attempted",
+    "were-attempted",
+    "DO_NOTHING-mouthed",
+    "ban-mouthed",
+    "choice-mouthed",
+    "day-mouthed",
+    "feel-mouthed",
+    "kite-mouthed",
+    "though-mouthed",
+    "were-mouthed",
+    "DO_NOTHING-imagined1stMotor",
+    "ban-imagined1stMotor",
+    "choice-imagined1stMotor",
+    "day-imagined1stMotor",
+    "feel-imagined1stMotor",
+    "kite-imagined1stMotor",
+    "though-imagined1stMotor",
+    "were-imagined1stMotor",
+    "DO_NOTHING-imagined1stAuditory",
+    "ban-imagined1stAuditory",
+    "choice-imagined1stAuditory",
+    "day-imagined1stAuditory",
+    "feel-imagined1stAuditory",
+    "kite-imagined1stAuditory",
+    "though-imagined1stAuditory",
+    "were-imagined1stAuditory",
+    "DO_NOTHING-imaginedListening",
+    "ban-imaginedListening",
+    "choice-imaginedListening",
+    "day-imaginedListening",
+    "feel-imaginedListening",
+    "kite-imaginedListening",
+    "though-imaginedListening",
+    "were-imaginedListening",
+    "DO_NOTHING-listening",
+    "ban-listening",
+    "choice-listening",
+    "day-listening",
+    "feel-listening",
+    "kite-listening",
+    "though-listening",
+    "were-listening",
+    "DO_NOTHING-reading",
+    "ban-reading",
+    "choice-reading",
+    "day-reading",
+    "feel-reading",
+    "kite-reading",
+    "though-reading",
+    "were-reading"
+   ],
+   "n_trials": 1120,
+   "trials_per_cue": {
+    "DO_NOTHING-attempted": 20,
+    "ban-attempted": 20,
+    "choice-attempted": 20,
+    "day-attempted": 20,
+    "feel-attempted": 20,
+    "kite-attempted": 20,
+    "though-attempted": 20,
+    "were-attempted": 20,
+    "DO_NOTHING-mouthed": 20,
+    "ban-mouthed": 20,
+    "choice-mouthed": 20,
+    "day-mouthed": 20,
+    "feel-mouthed": 20,
+    "kite-mouthed": 20,
+    "though-mouthed": 20,
+    "were-mouthed": 20,
+    "DO_NOTHING-imagined1stMotor": 20,
+    "ban-imagined1stMotor": 20,
+    "choice-imagined1stMotor": 20,
+    "day-imagined1stMotor": 20,
+    "feel-imagined1stMotor": 20,
+    "kite-imagined1stMotor": 20,
+    "though-imagined1stMotor": 20,
+    "were-imagined1stMotor": 20,
+    "DO_NOTHING-imagined1stAuditory": 20,
+    "ban-imagined1stAuditory": 20,
+    "choice-imagined1stAuditory": 20,
+    "day-imagined1stAuditory": 20,
+    "feel-imagined1stAuditory": 20,
+    "kite-imagined1stAuditory": 20,
+    "though-imagined1stAuditory": 20,
+    "were-imagined1stAuditory": 20,
+    "DO_NOTHING-imaginedListening": 20,
+    "ban-imaginedListening": 20,
+    "choice-imaginedListening": 20,
+    "day-imaginedListening": 20,
+    "feel-imaginedListening": 20,
+    "kite-imaginedListening": 20,
+    "though-imaginedListening": 20,
+    "were-imaginedListening": 20,
+    "DO_NOTHING-listening": 20,
+    "ban-listening": 20,
+    "choice-listening": 20,
+    "day-listening": 20,
+    "feel-listening": 20,
+    "kite-listening": 20,
+    "though-listening": 20,
+    "were-listening": 20,
+    "DO_NOTHING-reading": 20,
+    "ban-reading": 20,
+    "choice-reading": 20,
+    "day-reading": 20,
+    "feel-reading": 20,
+    "kite-reading": 20,
+    "though-reading": 20,
+    "were-reading": 20
+   },
+   "blocks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+   ],
+   "trials_per_block": {
+    "1": 80,
+    "2": 80,
+    "3": 80,
+    "4": 80,
+    "5": 80,
+    "6": 80,
+    "7": 80,
+    "8": 80,
+    "9": 80,
+    "10": 80,
+    "11": 80,
+    "12": 80,
+    "13": 80,
+    "14": 80
+   },
+   "cues_per_block": {
+    "1": {
+     "were-imagined1stMotor": 10,
+     "though-imagined1stMotor": 10,
+     "ban-imagined1stMotor": 10,
+     "day-imagined1stMotor": 10,
+     "choice-imagined1stMotor": 10,
+     "kite-imagined1stMotor": 10,
+     "feel-imagined1stMotor": 10,
+     "DO_NOTHING-imagined1stMotor": 10
+    },
+    "2": {
+     "kite-attempted": 10,
+     "though-attempted": 10,
+     "were-attempted": 10,
+     "day-attempted": 10,
+     "choice-attempted": 10,
+     "DO_NOTHING-attempted": 10,
+     "ban-attempted": 10,
+     "feel-attempted": 10
+    },
+    "3": {
+     "feel-imaginedListening": 10,
+     "kite-imaginedListening": 10,
+     "were-imaginedListening": 10,
+     "though-imaginedListening": 10,
+     "DO_NOTHING-imaginedListening": 10,
+     "choice-imaginedListening": 10,
+     "day-imaginedListening": 10,
+     "ban-imaginedListening": 10
+    },
+    "4": {
+     "choice-listening": 10,
+     "were-listening": 10,
+     "feel-listening": 10,
+     "kite-listening": 10,
+     "day-listening": 10,
+     "DO_NOTHING-listening": 10,
+     "though-listening": 10,
+     "ban-listening": 10
+    },
+    "5": {
+     "DO_NOTHING-reading": 10,
+     "choice-reading": 10,
+     "were-reading": 10,
+     "ban-reading": 10,
+     "feel-reading": 10,
+     "kite-reading": 10,
+     "day-reading": 10,
+     "though-reading": 10
+    },
+    "6": {
+     "feel-imagined1stAuditory": 10,
+     "ban-imagined1stAuditory": 10,
+     "choice-imagined1stAuditory": 10,
+     "though-imagined1stAuditory": 10,
+     "day-imagined1stAuditory": 10,
+     "DO_NOTHING-imagined1stAuditory": 10,
+     "were-imagined1stAuditory": 10,
+     "kite-imagined1stAuditory": 10
+    },
+    "7": {
+     "DO_NOTHING-mouthed": 10,
+     "though-mouthed": 10,
+     "were-mouthed": 10,
+     "ban-mouthed": 10,
+     "kite-mouthed": 10,
+     "day-mouthed": 10,
+     "choice-mouthed": 10,
+     "feel-mouthed": 10
+    },
+    "8": {
+     "DO_NOTHING-imagined1stMotor": 10,
+     "choice-imagined1stMotor": 10,
+     "feel-imagined1stMotor": 10,
+     "were-imagined1stMotor": 10,
+     "though-imagined1stMotor": 10,
+     "ban-imagined1stMotor": 10,
+     "day-imagined1stMotor": 10,
+     "kite-imagined1stMotor": 10
+    },
+    "9": {
+     "choice-attempted": 10,
+     "were-attempted": 10,
+     "day-attempted": 10,
+     "kite-attempted": 10,
+     "feel-attempted": 10,
+     "DO_NOTHING-attempted": 10,
+     "though-attempted": 10,
+     "ban-attempted": 10
+    },
+    "10": {
+     "ban-imaginedListening": 10,
+     "though-imaginedListening": 10,
+     "choice-imaginedListening": 10,
+     "day-imaginedListening": 10,
+     "feel-imaginedListening": 10,
+     "were-imaginedListening": 10,
+     "kite-imaginedListening": 10,
+     "DO_NOTHING-imaginedListening": 10
+    },
+    "11": {
+     "kite-listening": 10,
+     "DO_NOTHING-listening": 10,
+     "feel-listening": 10,
+     "day-listening": 10,
+     "ban-listening": 10,
+     "were-listening": 10,
+     "choice-listening": 10,
+     "though-listening": 10
+    },
+    "12": {
+     "though-reading": 10,
+     "DO_NOTHING-reading": 10,
+     "were-reading": 10,
+     "day-reading": 10,
+     "kite-reading": 10,
+     "choice-reading": 10,
+     "feel-reading": 10,
+     "ban-reading": 10
+    },
+    "13": {
+     "ban-imagined1stAuditory": 10,
+     "were-imagined1stAuditory": 10,
+     "feel-imagined1stAuditory": 10,
+     "kite-imagined1stAuditory": 10,
+     "choice-imagined1stAuditory": 10,
+     "DO_NOTHING-imagined1stAuditory": 10,
+     "day-imagined1stAuditory": 10,
+     "though-imagined1stAuditory": 10
+    },
+    "14": {
+     "choice-mouthed": 10,
+     "DO_NOTHING-mouthed": 10,
+     "though-mouthed": 10,
+     "ban-mouthed": 10,
+     "day-mouthed": 10,
+     "feel-mouthed": 10,
+     "were-mouthed": 10,
+     "kite-mouthed": 10
+    }
+   },
+   "block_changes_in_time_series": 13,
+   "delay_ms_median": 1500.0,
+   "go_ms_median": 3010.0,
+   "delay_ms_range": [
+    1490,
+    1510
+   ],
+   "go_ms_range": [
+    510,
+    3020
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     0,
+     12
+    ],
+    [
+     49,
+     875
+    ],
+    [
+     50,
+     231
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 10,
+   "tx_mean_per_bin": 0.1227,
+   "sbp_median": 93.01,
+   "sbp_p99": 1453.89,
+   "task": "isolatedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/isolatedVerbalBehaviors/t17.2024.12.09_attempted_raw.mat",
+   "participant": "T17",
+   "date": "2024.12.09",
+   "behavior": "attempted",
+   "bin_ms": 10,
+   "n_bins": 79989,
+   "minutes": 13.3,
+   "n_channels": 256,
+   "arrays": {
+    "s6v-v": [
+     0,
+     63,
+     64
+    ],
+    "s6v-d": [
+     64,
+     127,
+     64
+    ],
+    "55b": [
+     128,
+     255,
+     128
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 8,
+   "cue_names": [
+    "DO_NOTHING",
+    "ban",
+    "choice",
+    "day",
+    "feel",
+    "kite",
+    "though",
+    "were"
+   ],
+   "n_trials": 160,
+   "trials_per_cue": {
+    "DO_NOTHING": 20,
+    "ban": 20,
+    "choice": 20,
+    "day": 20,
+    "feel": 20,
+    "kite": 20,
+    "though": 20,
+    "were": 20
+   },
+   "blocks": [
+    2,
+    9
+   ],
+   "trials_per_block": {
+    "2": 80,
+    "9": 80
+   },
+   "cues_per_block": {
+    "2": {
+     "kite": 10,
+     "though": 10,
+     "were": 10,
+     "day": 10,
+     "choice": 10,
+     "DO_NOTHING": 10,
+     "ban": 10,
+     "feel": 10
+    },
+    "9": {
+     "choice": 10,
+     "were": 10,
+     "day": 10,
+     "kite": 10,
+     "feel": 10,
+     "DO_NOTHING": 10,
+     "though": 10,
+     "ban": 10
+    }
+   },
+   "block_changes_in_time_series": 1,
+   "delay_ms_median": 1500.0,
+   "go_ms_median": 3010.0,
+   "delay_ms_range": [
+    1490,
+    1510
+   ],
+   "go_ms_range": [
+    3010,
+    3020
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     0,
+     1
+    ],
+    [
+     49,
+     118
+    ],
+    [
+     50,
+     40
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 9,
+   "tx_mean_per_bin": 0.1243,
+   "sbp_median": 93.23,
+   "sbp_p99": 1530.79,
+   "task": "isolatedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/isolatedVerbalBehaviors/t17.2024.12.09_imagined1stAuditory_raw.mat",
+   "participant": "T17",
+   "date": "2024.12.09",
+   "behavior": "imagined1stAuditory",
+   "bin_ms": 10,
+   "n_bins": 79987,
+   "minutes": 13.3,
+   "n_channels": 256,
+   "arrays": {
+    "s6v-v": [
+     0,
+     63,
+     64
+    ],
+    "s6v-d": [
+     64,
+     127,
+     64
+    ],
+    "55b": [
+     128,
+     255,
+     128
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 8,
+   "cue_names": [
+    "DO_NOTHING",
+    "ban",
+    "choice",
+    "day",
+    "feel",
+    "kite",
+    "though",
+    "were"
+   ],
+   "n_trials": 160,
+   "trials_per_cue": {
+    "DO_NOTHING": 20,
+    "ban": 20,
+    "choice": 20,
+    "day": 20,
+    "feel": 20,
+    "kite": 20,
+    "though": 20,
+    "were": 20
+   },
+   "blocks": [
+    6,
+    13
+   ],
+   "trials_per_block": {
+    "6": 80,
+    "13": 80
+   },
+   "cues_per_block": {
+    "6": {
+     "feel": 10,
+     "ban": 10,
+     "choice": 10,
+     "though": 10,
+     "day": 10,
+     "DO_NOTHING": 10,
+     "were": 10,
+     "kite": 10
+    },
+    "13": {
+     "ban": 10,
+     "were": 10,
+     "feel": 10,
+     "kite": 10,
+     "choice": 10,
+     "DO_NOTHING": 10,
+     "day": 10,
+     "though": 10
+    }
+   },
+   "block_changes_in_time_series": 1,
+   "delay_ms_median": 1500.0,
+   "go_ms_median": 3010.0,
+   "delay_ms_range": [
+    1490,
+    1510
+   ],
+   "go_ms_range": [
+    3010,
+    3020
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     0,
+     1
+    ],
+    [
+     49,
+     122
+    ],
+    [
+     50,
+     36
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 10,
+   "tx_mean_per_bin": 0.1208,
+   "sbp_median": 92.76,
+   "sbp_p99": 1373.46,
+   "task": "isolatedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/isolatedVerbalBehaviors/t17.2024.12.09_imagined1stMotor_raw.mat",
+   "participant": "T17",
+   "date": "2024.12.09",
+   "behavior": "imagined1stMotor",
+   "bin_ms": 10,
+   "n_bins": 79977,
+   "minutes": 13.3,
+   "n_channels": 256,
+   "arrays": {
+    "s6v-v": [
+     0,
+     63,
+     64
+    ],
+    "s6v-d": [
+     64,
+     127,
+     64
+    ],
+    "55b": [
+     128,
+     255,
+     128
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 8,
+   "cue_names": [
+    "DO_NOTHING",
+    "ban",
+    "choice",
+    "day",
+    "feel",
+    "kite",
+    "though",
+    "were"
+   ],
+   "n_trials": 160,
+   "trials_per_cue": {
+    "DO_NOTHING": 20,
+    "ban": 20,
+    "choice": 20,
+    "day": 20,
+    "feel": 20,
+    "kite": 20,
+    "though": 20,
+    "were": 20
+   },
+   "blocks": [
+    1,
+    8
+   ],
+   "trials_per_block": {
+    "1": 80,
+    "8": 80
+   },
+   "cues_per_block": {
+    "1": {
+     "were": 10,
+     "though": 10,
+     "ban": 10,
+     "day": 10,
+     "choice": 10,
+     "kite": 10,
+     "feel": 10,
+     "DO_NOTHING": 10
+    },
+    "8": {
+     "DO_NOTHING": 10,
+     "choice": 10,
+     "feel": 10,
+     "were": 10,
+     "though": 10,
+     "ban": 10,
+     "day": 10,
+     "kite": 10
+    }
+   },
+   "block_changes_in_time_series": 1,
+   "delay_ms_median": 1500.0,
+   "go_ms_median": 3010.0,
+   "delay_ms_range": [
+    1490,
+    1510
+   ],
+   "go_ms_range": [
+    3010,
+    3020
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     0,
+     1
+    ],
+    [
+     49,
+     127
+    ],
+    [
+     50,
+     31
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 9,
+   "tx_mean_per_bin": 0.1213,
+   "sbp_median": 93.07,
+   "sbp_p99": 1489.72,
+   "task": "isolatedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/isolatedVerbalBehaviors/t17.2024.12.09_imaginedListening_raw.mat",
+   "participant": "T17",
+   "date": "2024.12.09",
+   "behavior": "imaginedListening",
+   "bin_ms": 10,
+   "n_bins": 79977,
+   "minutes": 13.3,
+   "n_channels": 256,
+   "arrays": {
+    "s6v-v": [
+     0,
+     63,
+     64
+    ],
+    "s6v-d": [
+     64,
+     127,
+     64
+    ],
+    "55b": [
+     128,
+     255,
+     128
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 8,
+   "cue_names": [
+    "DO_NOTHING",
+    "ban",
+    "choice",
+    "day",
+    "feel",
+    "kite",
+    "though",
+    "were"
+   ],
+   "n_trials": 160,
+   "trials_per_cue": {
+    "DO_NOTHING": 20,
+    "ban": 20,
+    "choice": 20,
+    "day": 20,
+    "feel": 20,
+    "kite": 20,
+    "though": 20,
+    "were": 20
+   },
+   "blocks": [
+    3,
+    10
+   ],
+   "trials_per_block": {
+    "3": 80,
+    "10": 80
+   },
+   "cues_per_block": {
+    "3": {
+     "feel": 10,
+     "kite": 10,
+     "were": 10,
+     "though": 10,
+     "DO_NOTHING": 10,
+     "choice": 10,
+     "day": 10,
+     "ban": 10
+    },
+    "10": {
+     "ban": 10,
+     "though": 10,
+     "choice": 10,
+     "day": 10,
+     "feel": 10,
+     "were": 10,
+     "kite": 10,
+     "DO_NOTHING": 10
+    }
+   },
+   "block_changes_in_time_series": 1,
+   "delay_ms_median": 1500.0,
+   "go_ms_median": 3010.0,
+   "delay_ms_range": [
+    1490,
+    1510
+   ],
+   "go_ms_range": [
+    3010,
+    3020
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     0,
+     1
+    ],
+    [
+     49,
+     136
+    ],
+    [
+     50,
+     22
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 10,
+   "tx_mean_per_bin": 0.1204,
+   "sbp_median": 92.83,
+   "sbp_p99": 1411.48,
+   "task": "isolatedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/isolatedVerbalBehaviors/t17.2024.12.09_listening_raw.mat",
+   "participant": "T17",
+   "date": "2024.12.09",
+   "behavior": "listening",
+   "bin_ms": 10,
+   "n_bins": 39974,
+   "minutes": 6.7,
+   "n_channels": 256,
+   "arrays": {
+    "s6v-v": [
+     0,
+     63,
+     64
+    ],
+    "s6v-d": [
+     64,
+     127,
+     64
+    ],
+    "55b": [
+     128,
+     255,
+     128
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 8,
+   "cue_names": [
+    "DO_NOTHING",
+    "ban",
+    "choice",
+    "day",
+    "feel",
+    "kite",
+    "though",
+    "were"
+   ],
+   "n_trials": 160,
+   "trials_per_cue": {
+    "DO_NOTHING": 20,
+    "ban": 20,
+    "choice": 20,
+    "day": 20,
+    "feel": 20,
+    "kite": 20,
+    "though": 20,
+    "were": 20
+   },
+   "blocks": [
+    4,
+    11
+   ],
+   "trials_per_block": {
+    "4": 80,
+    "11": 80
+   },
+   "cues_per_block": {
+    "4": {
+     "choice": 10,
+     "were": 10,
+     "feel": 10,
+     "kite": 10,
+     "day": 10,
+     "DO_NOTHING": 10,
+     "though": 10,
+     "ban": 10
+    },
+    "11": {
+     "kite": 10,
+     "DO_NOTHING": 10,
+     "feel": 10,
+     "day": 10,
+     "ban": 10,
+     "were": 10,
+     "choice": 10,
+     "though": 10
+    }
+   },
+   "block_changes_in_time_series": 1,
+   "delay_ms_median": 1500.0,
+   "go_ms_median": 510.0,
+   "delay_ms_range": [
+    1500,
+    1510
+   ],
+   "go_ms_range": [
+    510,
+    520
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     0,
+     1
+    ],
+    [
+     49,
+     130
+    ],
+    [
+     50,
+     28
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 10,
+   "tx_mean_per_bin": 0.1213,
+   "sbp_median": 92.82,
+   "sbp_p99": 1468.06,
+   "task": "isolatedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/isolatedVerbalBehaviors/t17.2024.12.09_mouthed_raw.mat",
+   "participant": "T17",
+   "date": "2024.12.09",
+   "behavior": "mouthed",
+   "bin_ms": 10,
+   "n_bins": 79973,
+   "minutes": 13.3,
+   "n_channels": 256,
+   "arrays": {
+    "s6v-v": [
+     0,
+     63,
+     64
+    ],
+    "s6v-d": [
+     64,
+     127,
+     64
+    ],
+    "55b": [
+     128,
+     255,
+     128
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 8,
+   "cue_names": [
+    "DO_NOTHING",
+    "ban",
+    "choice",
+    "day",
+    "feel",
+    "kite",
+    "though",
+    "were"
+   ],
+   "n_trials": 160,
+   "trials_per_cue": {
+    "DO_NOTHING": 20,
+    "ban": 20,
+    "choice": 20,
+    "day": 20,
+    "feel": 20,
+    "kite": 20,
+    "though": 20,
+    "were": 20
+   },
+   "blocks": [
+    7,
+    14
+   ],
+   "trials_per_block": {
+    "7": 80,
+    "14": 80
+   },
+   "cues_per_block": {
+    "7": {
+     "DO_NOTHING": 10,
+     "though": 10,
+     "were": 10,
+     "ban": 10,
+     "kite": 10,
+     "day": 10,
+     "choice": 10,
+     "feel": 10
+    },
+    "14": {
+     "choice": 10,
+     "DO_NOTHING": 10,
+     "though": 10,
+     "ban": 10,
+     "day": 10,
+     "feel": 10,
+     "were": 10,
+     "kite": 10
+    }
+   },
+   "block_changes_in_time_series": 1,
+   "delay_ms_median": 1500.0,
+   "go_ms_median": 3010.0,
+   "delay_ms_range": [
+    1490,
+    1510
+   ],
+   "go_ms_range": [
+    3010,
+    3020
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     0,
+     1
+    ],
+    [
+     49,
+     127
+    ],
+    [
+     50,
+     31
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 9,
+   "tx_mean_per_bin": 0.1282,
+   "sbp_median": 93.31,
+   "sbp_p99": 1499.14,
+   "task": "isolatedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/isolatedVerbalBehaviors/t17.2024.12.09_reading_raw.mat",
+   "participant": "T17",
+   "date": "2024.12.09",
+   "behavior": "reading",
+   "bin_ms": 10,
+   "n_bins": 39984,
+   "minutes": 6.7,
+   "n_channels": 256,
+   "arrays": {
+    "s6v-v": [
+     0,
+     63,
+     64
+    ],
+    "s6v-d": [
+     64,
+     127,
+     64
+    ],
+    "55b": [
+     128,
+     255,
+     128
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 8,
+   "cue_names": [
+    "DO_NOTHING",
+    "ban",
+    "choice",
+    "day",
+    "feel",
+    "kite",
+    "though",
+    "were"
+   ],
+   "n_trials": 160,
+   "trials_per_cue": {
+    "DO_NOTHING": 20,
+    "ban": 20,
+    "choice": 20,
+    "day": 20,
+    "feel": 20,
+    "kite": 20,
+    "though": 20,
+    "were": 20
+   },
+   "blocks": [
+    5,
+    12
+   ],
+   "trials_per_block": {
+    "5": 80,
+    "12": 80
+   },
+   "cues_per_block": {
+    "5": {
+     "DO_NOTHING": 10,
+     "choice": 10,
+     "were": 10,
+     "ban": 10,
+     "feel": 10,
+     "kite": 10,
+     "day": 10,
+     "though": 10
+    },
+    "12": {
+     "though": 10,
+     "DO_NOTHING": 10,
+     "were": 10,
+     "day": 10,
+     "kite": 10,
+     "choice": 10,
+     "feel": 10,
+     "ban": 10
+    }
+   },
+   "block_changes_in_time_series": 1,
+   "delay_ms_median": 1500.0,
+   "go_ms_median": 510.0,
+   "delay_ms_range": [
+    1490,
+    1510
+   ],
+   "go_ms_range": [
+    510,
+    520
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     0,
+     1
+    ],
+    [
+     49,
+     115
+    ],
+    [
+     50,
+     43
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 9,
+   "tx_mean_per_bin": 0.1215,
+   "sbp_median": 92.93,
+   "sbp_p99": 1373.65,
+   "task": "isolatedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/interleavedVerbalBehaviors/t12.2024.04.11_interleavedVerbalBehaviors_raw.mat",
+   "participant": "T12",
+   "date": "2024.04.11",
+   "behavior": "interleavedVerbalBehaviors",
+   "bin_ms": 20,
+   "n_bins": 110414,
+   "minutes": 36.8,
+   "n_channels": 128,
+   "arrays": {
+    "i6v": [
+     0,
+     63,
+     64
+    ],
+    "s6v": [
+     64,
+     127,
+     64
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "uint8"
+   },
+   "n_cues": 22,
+   "cue_names": [
+    "DO_NOTHING$0",
+    "ban$0",
+    "ban\\n(attempted)$1",
+    "ban\\n(imagined)$1",
+    "choice$0",
+    "choice\\n(attempted)$1",
+    "choice\\n(imagined)$1",
+    "day$0",
+    "day\\n(attempted)$1",
+    "day\\n(imagined)$1",
+    "feel$0",
+    "feel\\n(attempted)$1",
+    "feel\\n(imagined)$1",
+    "kite$0",
+    "kite\\n(attempted)$1",
+    "kite\\n(imagined)$1",
+    "though$0",
+    "though\\n(attempted)$1",
+    "though\\n(imagined)$1",
+    "were$0",
+    "were\\n(attempted)$1",
+    "were\\n(imagined)$1"
+   ],
+   "n_trials": 440,
+   "trials_per_cue": {
+    "DO_NOTHING$0": 20,
+    "ban$0": 20,
+    "ban\\n(attempted)$1": 20,
+    "ban\\n(imagined)$1": 20,
+    "choice$0": 20,
+    "choice\\n(attempted)$1": 20,
+    "choice\\n(imagined)$1": 20,
+    "day$0": 20,
+    "day\\n(attempted)$1": 20,
+    "day\\n(imagined)$1": 20,
+    "feel$0": 20,
+    "feel\\n(attempted)$1": 20,
+    "feel\\n(imagined)$1": 20,
+    "kite$0": 20,
+    "kite\\n(attempted)$1": 20,
+    "kite\\n(imagined)$1": 20,
+    "though$0": 20,
+    "though\\n(attempted)$1": 20,
+    "though\\n(imagined)$1": 20,
+    "were$0": 20,
+    "were\\n(attempted)$1": 20,
+    "were\\n(imagined)$1": 20
+   },
+   "blocks": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+   ],
+   "trials_per_block": {
+    "5": 44,
+    "6": 44,
+    "7": 44,
+    "8": 44,
+    "9": 44,
+    "10": 44,
+    "11": 44,
+    "12": 44,
+    "13": 44,
+    "14": 44
+   },
+   "cues_per_block": {
+    "5": {
+     "ban\\n(attempted)$1": 2,
+     "though\\n(imagined)$1": 2,
+     "choice\\n(imagined)$1": 2,
+     "feel\\n(imagined)$1": 2,
+     "feel$0": 2,
+     "were\\n(imagined)$1": 2,
+     "kite$0": 2,
+     "day\\n(imagined)$1": 2,
+     "ban\\n(imagined)$1": 2,
+     "day$0": 2,
+     "ban$0": 2,
+     "choice$0": 2,
+     "kite\\n(attempted)$1": 2,
+     "DO_NOTHING$0": 2,
+     "choice\\n(attempted)$1": 2,
+     "feel\\n(attempted)$1": 2,
+     "day\\n(attempted)$1": 2,
+     "though\\n(attempted)$1": 2,
+     "were\\n(attempted)$1": 2,
+     "though$0": 2,
+     "kite\\n(imagined)$1": 2,
+     "were$0": 2
+    },
+    "6": {
+     "feel$0": 2,
+     "were\\n(attempted)$1": 2,
+     "kite$0": 2,
+     "ban\\n(imagined)$1": 2,
+     "day\\n(attempted)$1": 2,
+     "feel\\n(imagined)$1": 2,
+     "choice$0": 2,
+     "choice\\n(imagined)$1": 2,
+     "choice\\n(attempted)$1": 2,
+     "feel\\n(attempted)$1": 2,
+     "were$0": 2,
+     "though\\n(imagined)$1": 2,
+     "were\\n(imagined)$1": 2,
+     "though$0": 2,
+     "day\\n(imagined)$1": 2,
+     "ban\\n(attempted)$1": 2,
+     "kite\\n(imagined)$1": 2,
+     "day$0": 2,
+     "DO_NOTHING$0": 2,
+     "though\\n(attempted)$1": 2,
+     "kite\\n(attempted)$1": 2,
+     "ban$0": 2
+    },
+    "7": {
+     "though\\n(attempted)$1": 2,
+     "were\\n(imagined)$1": 2,
+     "ban\\n(imagined)$1": 2,
+     "ban$0": 2,
+     "feel$0": 2,
+     "choice\\n(imagined)$1": 2,
+     "day\\n(attempted)$1": 2,
+     "feel\\n(attempted)$1": 2,
+     "ban\\n(attempted)$1": 2,
+     "choice\\n(attempted)$1": 2,
+     "though\\n(imagined)$1": 2,
+     "DO_NOTHING$0": 2,
+     "feel\\n(imagined)$1": 2,
+     "day$0": 2,
+     "kite\\n(attempted)$1": 2,
+     "kite\\n(imagined)$1": 2,
+     "day\\n(imagined)$1": 2,
+     "were$0": 2,
+     "kite$0": 2,
+     "though$0": 2,
+     "choice$0": 2,
+     "were\\n(attempted)$1": 2
+    },
+    "8": {
+     "though$0": 2,
+     "choice\\n(imagined)$1": 2,
+     "DO_NOTHING$0": 2,
+     "were\\n(attempted)$1": 2,
+     "kite\\n(attempted)$1": 2,
+     "day$0": 2,
+     "ban$0": 2,
+     "though\\n(attempted)$1": 2,
+     "feel$0": 2,
+     "kite$0": 2,
+     "choice\\n(attempted)$1": 2,
+     "day\\n(attempted)$1": 2,
+     "were\\n(imagined)$1": 2,
+     "choice$0": 2,
+     "were$0": 2,
+     "day\\n(imagined)$1": 2,
+     "feel\\n(imagined)$1": 2,
+     "ban\\n(imagined)$1": 2,
+     "ban\\n(attempted)$1": 2,
+     "kite\\n(imagined)$1": 2,
+     "feel\\n(attempted)$1": 2,
+     "though\\n(imagined)$1": 2
+    },
+    "9": {
+     "ban$0": 2,
+     "were\\n(imagined)$1": 2,
+     "choice\\n(imagined)$1": 2,
+     "feel$0": 2,
+     "kite$0": 2,
+     "feel\\n(imagined)$1": 2,
+     "though$0": 2,
+     "kite\\n(imagined)$1": 2,
+     "though\\n(imagined)$1": 2,
+     "ban\\n(imagined)$1": 2,
+     "day\\n(imagined)$1": 2,
+     "day\\n(attempted)$1": 2,
+     "were\\n(attempted)$1": 2,
+     "were$0": 2,
+     "DO_NOTHING$0": 2,
+     "feel\\n(attempted)$1": 2,
+     "choice$0": 2,
+     "day$0": 2,
+     "though\\n(attempted)$1": 2,
+     "kite\\n(attempted)$1": 2,
+     "choice\\n(attempted)$1": 2,
+     "ban\\n(attempted)$1": 2
+    },
+    "10": {
+     "though\\n(imagined)$1": 2,
+     "choice$0": 2,
+     "day\\n(attempted)$1": 2,
+     "day\\n(imagined)$1": 2,
+     "ban\\n(attempted)$1": 2,
+     "DO_NOTHING$0": 2,
+     "choice\\n(imagined)$1": 2,
+     "were$0": 2,
+     "were\\n(attempted)$1": 2,
+     "though$0": 2,
+     "feel\\n(attempted)$1": 2,
+     "were\\n(imagined)$1": 2,
+     "kite\\n(imagined)$1": 2,
+     "ban$0": 2,
+     "feel$0": 2,
+     "day$0": 2,
+     "kite$0": 2,
+     "kite\\n(attempted)$1": 2,
+     "ban\\n(imagined)$1": 2,
+     "choice\\n(attempted)$1": 2,
+     "feel\\n(imagined)$1": 2,
+     "though\\n(attempted)$1": 2
+    },
+    "11": {
+     "were$0": 2,
+     "choice$0": 2,
+     "day\\n(attempted)$1": 2,
+     "kite\\n(attempted)$1": 2,
+     "were\\n(attempted)$1": 2,
+     "feel$0": 2,
+     "kite\\n(imagined)$1": 2,
+     "day$0": 2,
+     "feel\\n(attempted)$1": 2,
+     "though\\n(attempted)$1": 2,
+     "ban\\n(attempted)$1": 2,
+     "ban$0": 2,
+     "DO_NOTHING$0": 2,
+     "choice\\n(attempted)$1": 2,
+     "choice\\n(imagined)$1": 2,
+     "kite$0": 2,
+     "ban\\n(imagined)$1": 2,
+     "though$0": 2,
+     "though\\n(imagined)$1": 2,
+     "feel\\n(imagined)$1": 2,
+     "day\\n(imagined)$1": 2,
+     "were\\n(imagined)$1": 2
+    },
+    "12": {
+     "ban\\n(attempted)$1": 2,
+     "kite$0": 2,
+     "DO_NOTHING$0": 2,
+     "ban\\n(imagined)$1": 2,
+     "choice$0": 2,
+     "ban$0": 2,
+     "day\\n(imagined)$1": 2,
+     "though\\n(attempted)$1": 2,
+     "were\\n(attempted)$1": 2,
+     "day$0": 2,
+     "feel\\n(imagined)$1": 2,
+     "were$0": 2,
+     "kite\\n(attempted)$1": 2,
+     "day\\n(attempted)$1": 2,
+     "feel\\n(attempted)$1": 2,
+     "choice\\n(attempted)$1": 2,
+     "feel$0": 2,
+     "kite\\n(imagined)$1": 2,
+     "though\\n(imagined)$1": 2,
+     "choice\\n(imagined)$1": 2,
+     "though$0": 2,
+     "were\\n(imagined)$1": 2
+    },
+    "13": {
+     "ban\\n(attempted)$1": 2,
+     "were$0": 2,
+     "kite\\n(attempted)$1": 2,
+     "day$0": 2,
+     "feel\\n(imagined)$1": 2,
+     "though\\n(imagined)$1": 2,
+     "feel$0": 2,
+     "day\\n(imagined)$1": 2,
+     "DO_NOTHING$0": 2,
+     "choice$0": 2,
+     "choice\\n(attempted)$1": 2,
+     "day\\n(attempted)$1": 2,
+     "kite\\n(imagined)$1": 2,
+     "ban$0": 2,
+     "feel\\n(attempted)$1": 2,
+     "though\\n(attempted)$1": 2,
+     "though$0": 2,
+     "kite$0": 2,
+     "choice\\n(imagined)$1": 2,
+     "ban\\n(imagined)$1": 2,
+     "were\\n(imagined)$1": 2,
+     "were\\n(attempted)$1": 2
+    },
+    "14": {
+     "were\\n(imagined)$1": 2,
+     "feel$0": 2,
+     "DO_NOTHING$0": 2,
+     "kite\\n(imagined)$1": 2,
+     "day\\n(imagined)$1": 2,
+     "were$0": 2,
+     "feel\\n(attempted)$1": 2,
+     "choice\\n(attempted)$1": 2,
+     "ban$0": 2,
+     "kite$0": 2,
+     "ban\\n(imagined)$1": 2,
+     "kite\\n(attempted)$1": 2,
+     "were\\n(attempted)$1": 2,
+     "ban\\n(attempted)$1": 2,
+     "day\\n(attempted)$1": 2,
+     "choice$0": 2,
+     "though\\n(imagined)$1": 2,
+     "choice\\n(imagined)$1": 2,
+     "though$0": 2,
+     "day$0": 2,
+     "though\\n(attempted)$1": 2,
+     "feel\\n(imagined)$1": 2
+    }
+   },
+   "block_changes_in_time_series": 9,
+   "delay_ms_median": 1800.0,
+   "go_ms_median": 3000.0,
+   "delay_ms_range": [
+    1800,
+    8060
+   ],
+   "go_ms_range": [
+    3000,
+    6360
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     0,
+     439
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 20,
+   "tx_mean_per_bin": 0.2715,
+   "sbp_median": 0.0,
+   "sbp_p99": 2.0,
+   "task": "interleavedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/interleavedVerbalBehaviors/t15.2024.06.14_interleavedVerbalBehaviors_raw.mat",
+   "participant": "T15",
+   "date": "2024.06.14",
+   "behavior": "interleavedVerbalBehaviors",
+   "bin_ms": 10,
+   "n_bins": 319116,
+   "minutes": 53.2,
+   "n_channels": 256,
+   "arrays": {
+    "i6v": [
+     0,
+     63,
+     64
+    ],
+    "M1": [
+     64,
+     127,
+     64
+    ],
+    "55b": [
+     128,
+     191,
+     64
+    ],
+    "s6v": [
+     192,
+     255,
+     64
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 22,
+   "cue_names": [
+    "DO_NOTHING",
+    "ban (attempted)",
+    "ban (imaginedlistening)",
+    "ban (passivelistening)",
+    "choice (attempted)",
+    "choice (imaginedlistening)",
+    "choice (passivelistening)",
+    "day (attempted)",
+    "day (imaginedlistening)",
+    "day (passivelistening)",
+    "feel (attempted)",
+    "feel (imaginedlistening)",
+    "feel (passivelistening)",
+    "kite (attempted)",
+    "kite (imaginedlistening)",
+    "kite (passivelistening)",
+    "though (attempted)",
+    "though (imaginedlistening)",
+    "though (passivelistening)",
+    "were (attempted)",
+    "were (imaginedlistening)",
+    "were (passivelistening)"
+   ],
+   "n_trials": 638,
+   "trials_per_cue": {
+    "DO_NOTHING": 22,
+    "ban (attempted)": 22,
+    "ban (imaginedlistening)": 44,
+    "ban (passivelistening)": 22,
+    "choice (attempted)": 22,
+    "choice (imaginedlistening)": 44,
+    "choice (passivelistening)": 22,
+    "day (attempted)": 22,
+    "day (imaginedlistening)": 44,
+    "day (passivelistening)": 22,
+    "feel (attempted)": 22,
+    "feel (imaginedlistening)": 44,
+    "feel (passivelistening)": 22,
+    "kite (attempted)": 22,
+    "kite (imaginedlistening)": 44,
+    "kite (passivelistening)": 22,
+    "though (attempted)": 22,
+    "though (imaginedlistening)": 44,
+    "though (passivelistening)": 22,
+    "were (attempted)": 22,
+    "were (imaginedlistening)": 44,
+    "were (passivelistening)": 22
+   },
+   "blocks": [
+    3,
+    4,
+    5,
+    7,
+    8
+   ],
+   "trials_per_block": {
+    "3": 58,
+    "4": 145,
+    "5": 145,
+    "7": 145,
+    "8": 145
+   },
+   "cues_per_block": {
+    "3": {
+     "were (attempted)": 2,
+     "though (imaginedlistening)": 4,
+     "kite (imaginedlistening)": 4,
+     "ban (attempted)": 2,
+     "choice (imaginedlistening)": 4,
+     "day (imaginedlistening)": 4,
+     "ban (imaginedlistening)": 4,
+     "feel (passivelistening)": 2,
+     "kite (attempted)": 2,
+     "DO_NOTHING": 2,
+     "ban (passivelistening)": 2,
+     "were (imaginedlistening)": 4,
+     "feel (imaginedlistening)": 4,
+     "day (passivelistening)": 2,
+     "kite (passivelistening)": 2,
+     "were (passivelistening)": 2,
+     "though (attempted)": 2,
+     "choice (attempted)": 2,
+     "day (attempted)": 2,
+     "choice (passivelistening)": 2,
+     "feel (attempted)": 2,
+     "though (passivelistening)": 2
+    },
+    "4": {
+     "kite (attempted)": 5,
+     "DO_NOTHING": 5,
+     "choice (imaginedlistening)": 10,
+     "ban (imaginedlistening)": 10,
+     "day (attempted)": 5,
+     "kite (passivelistening)": 5,
+     "choice (passivelistening)": 5,
+     "though (passivelistening)": 5,
+     "choice (attempted)": 5,
+     "feel (imaginedlistening)": 10,
+     "day (imaginedlistening)": 10,
+     "kite (imaginedlistening)": 10,
+     "were (imaginedlistening)": 10,
+     "day (passivelistening)": 5,
+     "were (attempted)": 5,
+     "feel (attempted)": 5,
+     "ban (passivelistening)": 5,
+     "though (imaginedlistening)": 10,
+     "feel (passivelistening)": 5,
+     "though (attempted)": 5,
+     "were (passivelistening)": 5,
+     "ban (attempted)": 5
+    },
+    "5": {
+     "kite (imaginedlistening)": 10,
+     "feel (imaginedlistening)": 10,
+     "though (imaginedlistening)": 10,
+     "though (passivelistening)": 5,
+     "feel (attempted)": 5,
+     "DO_NOTHING": 5,
+     "ban (imaginedlistening)": 10,
+     "day (passivelistening)": 5,
+     "feel (passivelistening)": 5,
+     "choice (imaginedlistening)": 10,
+     "day (imaginedlistening)": 10,
+     "were (imaginedlistening)": 10,
+     "though (attempted)": 5,
+     "choice (passivelistening)": 5,
+     "kite (passivelistening)": 5,
+     "kite (attempted)": 5,
+     "ban (attempted)": 5,
+     "day (attempted)": 5,
+     "choice (attempted)": 5,
+     "ban (passivelistening)": 5,
+     "were (attempted)": 5,
+     "were (passivelistening)": 5
+    },
+    "7": {
+     "though (attempted)": 5,
+     "were (attempted)": 5,
+     "DO_NOTHING": 5,
+     "were (imaginedlistening)": 10,
+     "day (imaginedlistening)": 10,
+     "kite (imaginedlistening)": 10,
+     "ban (imaginedlistening)": 10,
+     "were (passivelistening)": 5,
+     "feel (attempted)": 5,
+     "ban (passivelistening)": 5,
+     "choice (passivelistening)": 5,
+     "kite (attempted)": 5,
+     "feel (imaginedlistening)": 10,
+     "choice (imaginedlistening)": 10,
+     "kite (passivelistening)": 5,
+     "day (attempted)": 5,
+     "feel (passivelistening)": 5,
+     "though (passivelistening)": 5,
+     "though (imaginedlistening)": 10,
+     "ban (attempted)": 5,
+     "day (passivelistening)": 5,
+     "choice (attempted)": 5
+    },
+    "8": {
+     "though (imaginedlistening)": 10,
+     "day (attempted)": 5,
+     "day (imaginedlistening)": 10,
+     "kite (passivelistening)": 5,
+     "kite (imaginedlistening)": 10,
+     "were (imaginedlistening)": 10,
+     "feel (imaginedlistening)": 10,
+     "choice (imaginedlistening)": 10,
+     "were (passivelistening)": 5,
+     "ban (passivelistening)": 5,
+     "ban (imaginedlistening)": 10,
+     "DO_NOTHING": 5,
+     "feel (passivelistening)": 5,
+     "though (passivelistening)": 5,
+     "kite (attempted)": 5,
+     "ban (attempted)": 5,
+     "feel (attempted)": 5,
+     "choice (attempted)": 5,
+     "though (attempted)": 5,
+     "choice (passivelistening)": 5,
+     "day (passivelistening)": 5,
+     "were (attempted)": 5
+    }
+   },
+   "block_changes_in_time_series": 4,
+   "delay_ms_median": 1500.0,
+   "go_ms_median": 3010.0,
+   "delay_ms_range": [
+    790,
+    1660
+   ],
+   "go_ms_range": [
+    3010,
+    3300
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     0,
+     4
+    ],
+    [
+     49,
+     465
+    ],
+    [
+     50,
+     167
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 8,
+   "tx_mean_per_bin": 0.1463,
+   "sbp_median": 559.25,
+   "sbp_p99": 6343.51,
+   "task": "interleavedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/interleavedVerbalBehaviors/t16.2024.07.17_interleavedVerbalBehaviors_raw.mat",
+   "participant": "T16",
+   "date": "2024.07.17",
+   "behavior": "interleavedVerbalBehaviors",
+   "bin_ms": 20,
+   "n_bins": 120339,
+   "minutes": 40.1,
+   "n_channels": 256,
+   "arrays": {
+    "PEF": [
+     0,
+     63,
+     64
+    ],
+    "ventral6v": [
+     64,
+     127,
+     64
+    ],
+    "6d": [
+     128,
+     255,
+     128
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 22,
+   "cue_names": [
+    "(DONOTHING),",
+    "ban,(imagined)",
+    "ban,(mimed)",
+    "ban,listen",
+    "choice,(imagined)",
+    "choice,(mimed)",
+    "choice,listen",
+    "day,(imagined)",
+    "day,(mimed)",
+    "day,listen",
+    "feel,(imagined)",
+    "feel,(mimed)",
+    "feel,listen",
+    "kite,(imagined)",
+    "kite,(mimed)",
+    "kite,listen",
+    "though,(imagined)",
+    "though,(mimed)",
+    "though,listen",
+    "were,(imagined)",
+    "were,(mimed)",
+    "were,listen"
+   ],
+   "n_trials": 440,
+   "trials_per_cue": {
+    "(DONOTHING),": 20,
+    "ban,(imagined)": 20,
+    "ban,(mimed)": 20,
+    "ban,listen": 20,
+    "choice,(imagined)": 20,
+    "choice,(mimed)": 20,
+    "choice,listen": 20,
+    "day,(imagined)": 20,
+    "day,(mimed)": 20,
+    "day,listen": 20,
+    "feel,(imagined)": 20,
+    "feel,(mimed)": 20,
+    "feel,listen": 20,
+    "kite,(imagined)": 20,
+    "kite,(mimed)": 20,
+    "kite,listen": 20,
+    "though,(imagined)": 20,
+    "though,(mimed)": 20,
+    "though,listen": 20,
+    "were,(imagined)": 20,
+    "were,(mimed)": 20,
+    "were,listen": 20
+   },
+   "blocks": [
+    3,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+   ],
+   "trials_per_block": {
+    "3": 44,
+    "6": 44,
+    "7": 44,
+    "8": 44,
+    "9": 44,
+    "10": 44,
+    "11": 44,
+    "12": 44,
+    "13": 44,
+    "14": 44
+   },
+   "cues_per_block": {
+    "3": {
+     "were,(imagined)": 2,
+     "kite,listen": 2,
+     "ban,(mimed)": 2,
+     "kite,(mimed)": 2,
+     "ban,(imagined)": 2,
+     "choice,listen": 2,
+     "feel,(mimed)": 2,
+     "though,(mimed)": 2,
+     "were,listen": 2,
+     "(DONOTHING),": 2,
+     "though,listen": 2,
+     "though,(imagined)": 2,
+     "feel,(imagined)": 2,
+     "ban,listen": 2,
+     "day,listen": 2,
+     "kite,(imagined)": 2,
+     "were,(mimed)": 2,
+     "day,(mimed)": 2,
+     "feel,listen": 2,
+     "choice,(mimed)": 2,
+     "choice,(imagined)": 2,
+     "day,(imagined)": 2
+    },
+    "6": {
+     "choice,(imagined)": 2,
+     "day,(imagined)": 2,
+     "were,listen": 2,
+     "though,(mimed)": 2,
+     "day,(mimed)": 2,
+     "though,(imagined)": 2,
+     "choice,listen": 2,
+     "choice,(mimed)": 2,
+     "ban,(mimed)": 2,
+     "feel,(imagined)": 2,
+     "kite,(mimed)": 2,
+     "feel,listen": 2,
+     "kite,(imagined)": 2,
+     "were,(imagined)": 2,
+     "ban,listen": 2,
+     "day,listen": 2,
+     "kite,listen": 2,
+     "were,(mimed)": 2,
+     "(DONOTHING),": 2,
+     "feel,(mimed)": 2,
+     "though,listen": 2,
+     "ban,(imagined)": 2
+    },
+    "7": {
+     "were,(mimed)": 2,
+     "feel,(mimed)": 2,
+     "choice,(mimed)": 2,
+     "kite,(imagined)": 2,
+     "though,(mimed)": 2,
+     "feel,listen": 2,
+     "ban,listen": 2,
+     "day,(mimed)": 2,
+     "kite,listen": 2,
+     "choice,listen": 2,
+     "kite,(mimed)": 2,
+     "were,(imagined)": 2,
+     "day,(imagined)": 2,
+     "though,(imagined)": 2,
+     "(DONOTHING),": 2,
+     "day,listen": 2,
+     "ban,(mimed)": 2,
+     "though,listen": 2,
+     "feel,(imagined)": 2,
+     "choice,(imagined)": 2,
+     "were,listen": 2,
+     "ban,(imagined)": 2
+    },
+    "8": {
+     "choice,listen": 2,
+     "feel,(mimed)": 2,
+     "though,(mimed)": 2,
+     "choice,(imagined)": 2,
+     "day,listen": 2,
+     "ban,(imagined)": 2,
+     "kite,(mimed)": 2,
+     "day,(imagined)": 2,
+     "were,(mimed)": 2,
+     "day,(mimed)": 2,
+     "kite,listen": 2,
+     "were,listen": 2,
+     "feel,(imagined)": 2,
+     "though,(imagined)": 2,
+     "ban,listen": 2,
+     "choice,(mimed)": 2,
+     "were,(imagined)": 2,
+     "though,listen": 2,
+     "ban,(mimed)": 2,
+     "(DONOTHING),": 2,
+     "feel,listen": 2,
+     "kite,(imagined)": 2
+    },
+    "9": {
+     "day,listen": 2,
+     "were,(mimed)": 2,
+     "ban,listen": 2,
+     "feel,(mimed)": 2,
+     "ban,(imagined)": 2,
+     "choice,listen": 2,
+     "choice,(mimed)": 2,
+     "were,(imagined)": 2,
+     "choice,(imagined)": 2,
+     "though,(imagined)": 2,
+     "though,listen": 2,
+     "feel,(imagined)": 2,
+     "though,(mimed)": 2,
+     "feel,listen": 2,
+     "kite,(mimed)": 2,
+     "kite,listen": 2,
+     "day,(imagined)": 2,
+     "ban,(mimed)": 2,
+     "day,(mimed)": 2,
+     "(DONOTHING),": 2,
+     "kite,(imagined)": 2,
+     "were,listen": 2
+    },
+    "10": {
+     "though,listen": 2,
+     "were,(mimed)": 2,
+     "day,listen": 2,
+     "though,(imagined)": 2,
+     "choice,listen": 2,
+     "feel,listen": 2,
+     "kite,(imagined)": 2,
+     "choice,(mimed)": 2,
+     "feel,(imagined)": 2,
+     "day,(mimed)": 2,
+     "were,listen": 2,
+     "ban,(mimed)": 2,
+     "(DONOTHING),": 2,
+     "feel,(mimed)": 2,
+     "day,(imagined)": 2,
+     "ban,listen": 2,
+     "kite,listen": 2,
+     "kite,(mimed)": 2,
+     "choice,(imagined)": 2,
+     "though,(mimed)": 2,
+     "were,(imagined)": 2,
+     "ban,(imagined)": 2
+    },
+    "11": {
+     "though,listen": 2,
+     "feel,(imagined)": 2,
+     "were,listen": 2,
+     "(DONOTHING),": 2,
+     "day,(mimed)": 2,
+     "kite,(imagined)": 2,
+     "choice,(mimed)": 2,
+     "day,listen": 2,
+     "kite,listen": 2,
+     "feel,listen": 2,
+     "kite,(mimed)": 2,
+     "choice,(imagined)": 2,
+     "day,(imagined)": 2,
+     "though,(mimed)": 2,
+     "choice,listen": 2,
+     "ban,listen": 2,
+     "though,(imagined)": 2,
+     "were,(imagined)": 2,
+     "ban,(imagined)": 2,
+     "were,(mimed)": 2,
+     "feel,(mimed)": 2,
+     "ban,(mimed)": 2
+    },
+    "12": {
+     "kite,listen": 2,
+     "were,(mimed)": 2,
+     "kite,(imagined)": 2,
+     "day,(mimed)": 2,
+     "choice,(mimed)": 2,
+     "feel,(mimed)": 2,
+     "ban,(imagined)": 2,
+     "choice,(imagined)": 2,
+     "ban,listen": 2,
+     "though,listen": 2,
+     "(DONOTHING),": 2,
+     "day,listen": 2,
+     "kite,(mimed)": 2,
+     "feel,listen": 2,
+     "were,(imagined)": 2,
+     "though,(imagined)": 2,
+     "ban,(mimed)": 2,
+     "feel,(imagined)": 2,
+     "were,listen": 2,
+     "though,(mimed)": 2,
+     "choice,listen": 2,
+     "day,(imagined)": 2
+    },
+    "13": {
+     "ban,listen": 2,
+     "kite,(imagined)": 2,
+     "kite,(mimed)": 2,
+     "feel,(imagined)": 2,
+     "feel,listen": 2,
+     "kite,listen": 2,
+     "ban,(imagined)": 2,
+     "day,(imagined)": 2,
+     "choice,(mimed)": 2,
+     "choice,(imagined)": 2,
+     "choice,listen": 2,
+     "were,listen": 2,
+     "day,listen": 2,
+     "ban,(mimed)": 2,
+     "feel,(mimed)": 2,
+     "though,(mimed)": 2,
+     "were,(mimed)": 2,
+     "day,(mimed)": 2,
+     "though,listen": 2,
+     "(DONOTHING),": 2,
+     "though,(imagined)": 2,
+     "were,(imagined)": 2
+    },
+    "14": {
+     "were,(imagined)": 2,
+     "were,listen": 2,
+     "though,(mimed)": 2,
+     "(DONOTHING),": 2,
+     "kite,(imagined)": 2,
+     "choice,(imagined)": 2,
+     "ban,(imagined)": 2,
+     "were,(mimed)": 2,
+     "kite,listen": 2,
+     "day,(imagined)": 2,
+     "feel,(imagined)": 2,
+     "day,listen": 2,
+     "day,(mimed)": 2,
+     "feel,(mimed)": 2,
+     "kite,(mimed)": 2,
+     "ban,listen": 2,
+     "though,(imagined)": 2,
+     "ban,(mimed)": 2,
+     "though,listen": 2,
+     "choice,listen": 2,
+     "choice,(mimed)": 2,
+     "feel,listen": 2
+    }
+   },
+   "block_changes_in_time_series": 9,
+   "delay_ms_median": 2000.0,
+   "go_ms_median": 2020.0,
+   "delay_ms_range": [
+    1960,
+    2020
+   ],
+   "go_ms_range": [
+    2020,
+    2040
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     0,
+     7
+    ],
+    [
+     74,
+     392
+    ],
+    [
+     75,
+     38
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 11,
+   "tx_mean_per_bin": 0.1631,
+   "sbp_median": 486.05,
+   "sbp_p99": 3867.51,
+   "task": "interleavedVerbalBehaviors"
+  },
+  {
+   "file": "data/raw/interleavedVerbalBehaviors/t17.2024.12.09_interleavedVerbalBehaviors_raw.mat",
+   "participant": "T17",
+   "date": "2024.12.09",
+   "behavior": "interleavedVerbalBehaviors",
+   "bin_ms": 10,
+   "n_bins": 275595,
+   "minutes": 45.9,
+   "n_channels": 256,
+   "arrays": {
+    "s6v-v": [
+     0,
+     63,
+     64
+    ],
+    "s6v-d": [
+     64,
+     127,
+     64
+    ],
+    "55b": [
+     128,
+     255,
+     128
+    ]
+   },
+   "dtypes": {
+    "binnedTX": "uint8",
+    "spikePow": "float64"
+   },
+   "n_cues": 22,
+   "cue_names": [
+    "DO_NOTHING",
+    "ban (attempted)",
+    "ban (imaginedlistening)",
+    "ban (passivelistening)",
+    "choice (attempted)",
+    "choice (imaginedlistening)",
+    "choice (passivelistening)",
+    "day (attempted)",
+    "day (imaginedlistening)",
+    "day (passivelistening)",
+    "feel (attempted)",
+    "feel (imaginedlistening)",
+    "feel (passivelistening)",
+    "kite (attempted)",
+    "kite (imaginedlistening)",
+    "kite (passivelistening)",
+    "though (attempted)",
+    "though (imaginedlistening)",
+    "though (passivelistening)",
+    "were (attempted)",
+    "were (imaginedlistening)",
+    "were (passivelistening)"
+   ],
+   "n_trials": 551,
+   "trials_per_cue": {
+    "DO_NOTHING": 19,
+    "ban (attempted)": 19,
+    "ban (imaginedlistening)": 38,
+    "ban (passivelistening)": 19,
+    "choice (attempted)": 19,
+    "choice (imaginedlistening)": 38,
+    "choice (passivelistening)": 19,
+    "day (attempted)": 19,
+    "day (imaginedlistening)": 38,
+    "day (passivelistening)": 19,
+    "feel (attempted)": 19,
+    "feel (imaginedlistening)": 38,
+    "feel (passivelistening)": 19,
+    "kite (attempted)": 19,
+    "kite (imaginedlistening)": 38,
+    "kite (passivelistening)": 19,
+    "though (attempted)": 19,
+    "though (imaginedlistening)": 38,
+    "though (passivelistening)": 19,
+    "were (attempted)": 19,
+    "were (imaginedlistening)": 38,
+    "were (passivelistening)": 19
+   },
+   "blocks": [
+    16,
+    17,
+    18,
+    19
+   ],
+   "trials_per_block": {
+    "16": 116,
+    "17": 145,
+    "18": 145,
+    "19": 145
+   },
+   "cues_per_block": {
+    "16": {
+     "kite (passivelistening)": 4,
+     "feel (attempted)": 4,
+     "choice (attempted)": 4,
+     "feel (imaginedlistening)": 8,
+     "ban (imaginedlistening)": 8,
+     "were (attempted)": 4,
+     "choice (passivelistening)": 4,
+     "were (imaginedlistening)": 8,
+     "choice (imaginedlistening)": 8,
+     "though (attempted)": 4,
+     "though (imaginedlistening)": 8,
+     "were (passivelistening)": 4,
+     "feel (passivelistening)": 4,
+     "kite (imaginedlistening)": 8,
+     "day (imaginedlistening)": 8,
+     "day (passivelistening)": 4,
+     "though (passivelistening)": 4,
+     "kite (attempted)": 4,
+     "ban (attempted)": 4,
+     "DO_NOTHING": 4,
+     "ban (passivelistening)": 4,
+     "day (attempted)": 4
+    },
+    "17": {
+     "were (imaginedlistening)": 10,
+     "DO_NOTHING": 5,
+     "feel (imaginedlistening)": 10,
+     "kite (passivelistening)": 5,
+     "ban (attempted)": 5,
+     "day (attempted)": 5,
+     "feel (passivelistening)": 5,
+     "kite (imaginedlistening)": 10,
+     "day (imaginedlistening)": 10,
+     "though (passivelistening)": 5,
+     "choice (attempted)": 5,
+     "ban (passivelistening)": 5,
+     "choice (passivelistening)": 5,
+     "choice (imaginedlistening)": 10,
+     "were (passivelistening)": 5,
+     "though (imaginedlistening)": 10,
+     "were (attempted)": 5,
+     "ban (imaginedlistening)": 10,
+     "though (attempted)": 5,
+     "kite (attempted)": 5,
+     "day (passivelistening)": 5,
+     "feel (attempted)": 5
+    },
+    "18": {
+     "kite (attempted)": 5,
+     "choice (attempted)": 5,
+     "were (attempted)": 5,
+     "though (passivelistening)": 5,
+     "feel (passivelistening)": 5,
+     "choice (imaginedlistening)": 10,
+     "were (imaginedlistening)": 10,
+     "day (attempted)": 5,
+     "kite (passivelistening)": 5,
+     "ban (imaginedlistening)": 10,
+     "ban (attempted)": 5,
+     "kite (imaginedlistening)": 10,
+     "choice (passivelistening)": 5,
+     "day (passivelistening)": 5,
+     "feel (imaginedlistening)": 10,
+     "were (passivelistening)": 5,
+     "feel (attempted)": 5,
+     "though (imaginedlistening)": 10,
+     "day (imaginedlistening)": 10,
+     "DO_NOTHING": 5,
+     "ban (passivelistening)": 5,
+     "though (attempted)": 5
+    },
+    "19": {
+     "day (imaginedlistening)": 10,
+     "choice (imaginedlistening)": 10,
+     "ban (imaginedlistening)": 10,
+     "choice (passivelistening)": 5,
+     "though (imaginedlistening)": 10,
+     "day (attempted)": 5,
+     "ban (passivelistening)": 5,
+     "kite (passivelistening)": 5,
+     "feel (passivelistening)": 5,
+     "were (passivelistening)": 5,
+     "DO_NOTHING": 5,
+     "ban (attempted)": 5,
+     "were (imaginedlistening)": 10,
+     "feel (imaginedlistening)": 10,
+     "though (attempted)": 5,
+     "though (passivelistening)": 5,
+     "day (passivelistening)": 5,
+     "kite (imaginedlistening)": 10,
+     "kite (attempted)": 5,
+     "feel (attempted)": 5,
+     "choice (attempted)": 5,
+     "were (attempted)": 5
+    }
+   },
+   "block_changes_in_time_series": 3,
+   "delay_ms_median": 1500.0,
+   "go_ms_median": 3010.0,
+   "delay_ms_range": [
+    1490,
+    1510
+   ],
+   "go_ms_range": [
+    3010,
+    3020
+   ],
+   "delay_then_go": true,
+   "go_end_to_next_delay_bins": [
+    [
+     0,
+     3
+    ],
+    [
+     49,
+     429
+    ],
+    [
+     50,
+     118
+    ]
+   ],
+   "trials_cross_block": 0,
+   "nan": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "zero_var_channels": {
+    "tx": 0,
+    "sbp": 0
+   },
+   "tx_max": 9,
+   "tx_mean_per_bin": 0.1138,
+   "sbp_median": 95.3,
+   "sbp_p99": 1119.42,
+   "task": "interleavedVerbalBehaviors"
+  }
+ ],
+ "allBehaviors_checks": {
+  "T12": {
+   "allBehaviors_trials": 1344,
+   "sum_single_trials": 1344,
+   "allBehaviors_bins": 323048,
+   "sum_single_bins": 323048,
+   "allBehaviors_blocks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+   ],
+   "single_blocks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+   ]
+  },
+  "T15": {
+   "allBehaviors_trials": 1360,
+   "sum_single_trials": 1360,
+   "allBehaviors_bins": 599926,
+   "sum_single_bins": 599926,
+   "allBehaviors_blocks": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+   ],
+   "single_blocks": [
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+   ]
+  },
+  "T16": {
+   "allBehaviors_trials": 840,
+   "sum_single_trials": 840,
+   "allBehaviors_bins": 380363,
+   "sum_single_bins": 380363,
+   "allBehaviors_blocks": [
+    2,
+    3,
+    4,
+    5,
+    7,
+    9,
+    10,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+   ],
+   "single_blocks": [
+    2,
+    3,
+    4,
+    5,
+    7,
+    9,
+    10,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+   ]
+  },
+  "T17": {
+   "allBehaviors_trials": 1120,
+   "sum_single_trials": 1120,
+   "allBehaviors_bins": 479861,
+   "sum_single_bins": 479861,
+   "allBehaviors_blocks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+   ],
+   "single_blocks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+   ]
+  }
+ }
+}

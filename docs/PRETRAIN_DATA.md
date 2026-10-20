@@ -164,7 +164,7 @@ DOI **10.5061/dryad.dncjsxm85**. Latest API version **5**, version id **374060**
 
 **Layout and variables.** `hdf5_data_final/<session>/data_{train,val,test}.hdf5` contains `trial_XXXX/input_features`, **time × 512 float32**: **256 TX + 256 SBP**. Trial attributes include `n_time_steps`, `session`, `block_num`, `trial_num`, and labels where available. This was checked in the smallest local member, `t15.2023.10.20/data_test.hdf5` (**12,704,320 bytes, 9 trial groups**, first feature shape **1109 × 512**), read in memory only. The feature ordering is confirmed by the BIT loader. ([T15_LOADER](https://github.com/yzhang511/bit/blob/main/data/brandman_2024_text/prepare_data.py); local ZIP/HDF5 metadata)
 
-**Acquisition.** **T15**, **4 × 64 = 256 electrodes**, left precentral gyrus (inferior 6v, M1/area 4, area 55b, superior 6v in local notes), **20 ms**, TX threshold **−4.5 × RMS**. Features are **already z-scored using the preceding 20 trials**, so neither rebinning nor a second presumed raw-data normalization is needed. ([card2024_README](https://datadryad.org/dataset/doi:10.5061/dryad.dncjsxm85); [KUNZ_NOTES](../../kunz/docs/DATA_NOTES.md))
+**Acquisition.** **T15**, **4 × 64 = 256 electrodes**, left precentral gyrus (inferior 6v, M1/area 4, area 55b, superior 6v in local notes), **20 ms**, TX threshold **−4.5 × RMS**. Features are **already z-scored using the preceding 20 trials**, so neither rebinning nor a second presumed raw-data normalization is needed. ([card2024_README](https://datadryad.org/dataset/doi:10.5061/dryad.dncjsxm85); [KUNZ_NOTES](https://github.com/molinzhao27/KunzInnerSpeechReproduction/blob/main/docs/DATA_NOTES.md))
 
 **Extent and splits.** **45 sessions spanning 20 months**, 2023-08-11 to 2025-04-13 by ZIP directory. There are separate train/val/test files, but not all sessions contain all three. Test trials omit labels. The official description CSV sums to **8,234 Train + 2,928 Val/Test = 11,162 sentences**; BIT §3.1 reports **10,948**, and Dryad says **11,000+**. These are unresolved source differences: **actual total HDF5 trial groups and recording hours are unverified**, not silently equated to either count. ([T15_CSV](https://github.com/Neuroprosthetics-Lab/nejm-brain-to-text/blob/main/data/t15_copyTaskData_description.csv); [card2024_README](https://datadryad.org/dataset/doi:10.5061/dryad.dncjsxm85); [BIT](https://arxiv.org/html/2511.21740v5))
 
@@ -214,7 +214,7 @@ For 10 ms raw recordings, aggregate adjacent TX counts by sum and SBP by mean to
 | Interleaved | 4 / 4 | 2,069 | 2.933936 |
 | Union of those subsets | 8 task-session records / 7 days | 6,733 | **8.784619** |
 
-Computed from existing [KUNZ_COUNTS]: `sum(n_bins * bin_ms) / 3_600_000`. This includes recorded within-block context, not only go epochs. T17's isolated and interleaved tasks share 2024-12-09 but use distinct blocks. The four `allBehaviors` files duplicate the 28 per-behavior files; use one representation. Full-release trials/hours, including the other archives below, are **unverified**. `*_eval.mat` marks real-time evaluation in sentence/keyword tasks; no release-wide official train/val/test partition is documented. ([KUNZ_NOTES](../../kunz/docs/DATA_NOTES.md); archive READMEs)
+Computed from existing [KUNZ_COUNTS]: `sum(n_bins * bin_ms) / 3_600_000`. This includes recorded within-block context, not only go epochs. T17's isolated and interleaved tasks share 2024-12-09 but use distinct blocks. The four `allBehaviors` files duplicate the 28 per-behavior files; use one representation. Full-release trials/hours, including the other archives below, are **unverified**. `*_eval.mat` marks real-time evaluation in sentence/keyword tasks; no release-wide official train/val/test partition is documented. ([KUNZ_NOTES](https://github.com/molinzhao27/KunzInnerSpeechReproduction/blob/main/docs/DATA_NOTES.md); archive READMEs)
 
 **Other archives: actual neural members and tasks.** Listed sizes below are uncompressed member sizes from ZIP central directories, with no large payload extraction. Each archive's internal README confirms `binnedTX` and `spikePow`. Counts are unique participant-date pairs within the archive; shared dates across archives must not be added as new days.
 
@@ -330,7 +330,7 @@ The sentence archive contains **T12, T15 and T16**, not just the T12/T15 subset 
 
 “Selected” means neural archive choices in `needed_for_ssl: true`: T15 neural ZIP, all Kunz ZIPs, T12 competition+tuning+diagnostic, Willett handwriting, Fan CORP, and only H2's five later calibration files after Fan. It excludes documentation bytes, redundant mini-validation, overlapping H2 held-in data, optional `sentences`, duplicate `derived`, language models and pretrained weights. It is still subject to block/trial deduplication, especially across studies sharing participants.
 
-**Hours are not a verified 98-hour sum.** The source-covered subtotal is 10.7 reported handwriting hours + 8.784619 locally inventoried Kunz hours. It is not a full-corpus estimate, and it mixes a repository-reported sentence duration with continuous within-block duration. BIT's **~98 h** is the best cited overall reference for its human pretraining corpus, but reproducing that total from these releases is **unverified**, particularly because Fan/H2 and multiple export formats overlap. Do not add the broad H2 duration bound to Fan. ([BIT](https://arxiv.org/html/2511.21740v5) §3.1; [willett2021_README](https://datadryad.org/dataset/doi:10.5061/dryad.wh70rxwmv); [KUNZ_COUNTS](../../kunz/results/phase0/inventory.json))
+**Hours are not a verified 98-hour sum.** The source-covered subtotal is 10.7 reported handwriting hours + 8.784619 locally inventoried Kunz hours. It is not a full-corpus estimate, and it mixes a repository-reported sentence duration with continuous within-block duration. BIT's **~98 h** is the best cited overall reference for its human pretraining corpus, but reproducing that total from these releases is **unverified**, particularly because Fan/H2 and multiple export formats overlap. Do not add the broad H2 duration bound to Fan. ([BIT](https://arxiv.org/html/2511.21740v5) §3.1; [willett2021_README](https://datadryad.org/dataset/doi:10.5061/dryad.wh70rxwmv); [KUNZ_COUNTS](https://github.com/molinzhao27/KunzInnerSpeechReproduction/blob/main/results/phase0/inventory.json))
 
 **Recommended order:**
 
@@ -349,7 +349,7 @@ The sentence archive contains **T12, T15 and T16**, not just the T12/T15 subset 
 
 Every remote source was accessed on 2026-10-18. Dryad `stash:version` was followed from each dataset API, then `/files?per_page=100` was read; all responses fit one page (2, 14, 2, 5 and 12 files respectively). DANDI returned all 47 assets in one page with metadata and SHA-256. The API version is authoritative when a README's release label differs.
 
-Local evidence: ZIP central-directory filenames and `file_size`; small internal README text; one small HDF5 member; complete streaming TAR listing and SHA-256 of the finished T12 archive; existing `kunz/docs/DATA_NOTES.md` and `kunz/results/phase0/inventory.json`. No local dataset files were rewritten. Full Kunz SHA values are source manifest values; local prior verification is attributed explicitly rather than rerun.
+Local evidence: ZIP central-directory filenames and `file_size`; small internal README text; one small HDF5 member; complete streaming TAR listing and SHA-256 of the finished T12 archive; existing `docs/DATA_NOTES.md` and `results/phase0/inventory.json` in KunzInnerSpeechReproduction. No local dataset files were rewritten. Full Kunz SHA values are source manifest values; local prior verification is attributed explicitly rather than rerun.
 
 The paired [YAML manifest](../../configs/pretrain_datasets.yaml) contains the full file list, full checksums, local availability, field names, split details, provenance IDs and unknown-value markers. Selected totals are computed by summing exact `size_bytes` where `needed_for_ssl` is true. The Markdown intentionally uses rounded GB in narrative; file tables retain bytes to six decimal MB digits.
 
@@ -381,9 +381,9 @@ The paired [YAML manifest](../../configs/pretrain_datasets.yaml) contains the fu
 
 [T15_LOADER]: https://github.com/yzhang511/bit/blob/main/data/brandman_2024_text/prepare_data.py
 
-[KUNZ_NOTES]: ../../kunz/docs/DATA_NOTES.md
+[KUNZ_NOTES]: https://github.com/molinzhao27/KunzInnerSpeechReproduction/blob/main/docs/DATA_NOTES.md
 
-[KUNZ_COUNTS]: ../../kunz/results/phase0/inventory.json
+[KUNZ_COUNTS]: https://github.com/molinzhao27/KunzInnerSpeechReproduction/blob/main/results/phase0/inventory.json
 
 [willett2021_API]: https://datadryad.org/api/v2/datasets/10.5061%2Fdryad.wh70rxwmv
 

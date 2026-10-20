@@ -29,8 +29,8 @@ sources:
   H2_PAPER: https://papers.nips.cc/paper_files/paper/2024/file/8c2e6bb15be1894b8fb4e0f9bcad1739-Paper-Datasets_and_Benchmarks_Track.pdf
   T15_CSV: https://github.com/Neuroprosthetics-Lab/nejm-brain-to-text/blob/main/data/t15_copyTaskData_description.csv
   T15_LOADER: https://github.com/yzhang511/bit/blob/main/data/brandman_2024_text/prepare_data.py
-  KUNZ_NOTES: kunz/docs/DATA_NOTES.md
-  KUNZ_COUNTS: kunz/results/phase0/inventory.json
+  KUNZ_NOTES: https://github.com/molinzhao27/KunzInnerSpeechReproduction/blob/main/docs/DATA_NOTES.md
+  KUNZ_COUNTS: https://github.com/molinzhao27/KunzInnerSpeechReproduction/blob/main/results/phase0/inventory.json
   willett2021_API: https://datadryad.org/api/v2/datasets/10.5061%2Fdryad.wh70rxwmv
   willett2021_FILES: https://datadryad.org/api/v2/versions/144934/files?per_page=100
   willett2021_README: https://datadryad.org/dataset/doi:10.5061/dryad.wh70rxwmv
@@ -2021,7 +2021,7 @@ datasets:
   - 'Isolated: 4 participant sessions, 4,664 trials, 5.8506833333 hours. Interleaved: 4 participant sessions,
     2,069 trials, 2.9339361111 hours. Union is 7 participant-days because T17 is the same date; neural blocks
     differ.'
-  - Known-subset duration is sum(n_bins*bin_ms)/3,600,000 from kunz/results/phase0/inventory.json, selecting allBehaviors
+  - Known-subset duration is sum(n_bins*bin_ms)/3,600,000 from KunzInnerSpeechReproduction results/phase0/inventory.json, selecting allBehaviors
     once and interleaved once. It includes continuous recorded within-block context, not just go periods.
   - All 11 ZIPs contain neural features usable for SSL, including cognitive/motor control tasks. Counts/hours
     for unopened MAT payloads remain unverified; no large MAT files were extracted.

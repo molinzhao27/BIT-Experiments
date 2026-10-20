@@ -74,29 +74,11 @@ Without any language model or phoneme labels, the encoder retrieves the correct 
 704 candidates 35.8% of the time on BIT-test (top-5: 65.2%; chance: 0.14%). It works equally
 well on sentences never seen during training (36.1%).
 
-## Kunz et al. 2025 — isolated-word decoding
+## Related: Kunz et al. 2025 isolated-word decoding
 
-A self-contained side project reproducing and extending the isolated-word analysis from Kunz et al.
-2025, "Inner speech in motor cortex and implications for speech neuroprostheses" (*Cell*,
-[PMC12360486](https://pmc.ncbi.nlm.nih.gov/articles/PMC12360486/)), using the public
-[Dryad dataset](https://doi.org/10.5061/dryad.gf1vhhn1j). Code and full results: [`kunz/README.md`](kunz/README.md).
-
-**Headline findings:**
-
-1. **Fig 1E reproduces.** Seven-word classification across 12 arrays and 7 behaviors. The paper's
-   three benchmark values (T16-i6v listening 92.1%, T12-i6v motoric inner speech 72.6%, T12-i6v
-   attempted 97.9%) all fall inside our 95% confidence intervals (ours: 93.2%, 75.0%, 97.3%).
-2. **Perception → inner speech transfers.** A decoder trained only on listening decodes inner speech
-   well above chance on several arrays. On the i6v arrays this survives strict normalization and
-   holds in interleaved sessions where drift cannot explain it.
-3. **A 1D-CNN on the binned time series beats the paper's baseline by +5.5 percentage points**
-   (mean accuracy 42.2% vs 36.7%, 84 conditions), significantly better in 15 conditions and
-   worse in none. The CNN sees the whole trial while the baseline sees one 500 ms window, so
-   part of the gain may be coverage rather than temporal dynamics.
-
-![Kunz Phase 1: isolated-word decoding heatmap](kunz/figures/phase1_fig1e_heatmap.png)
-
-![Kunz Phase 3: decoder comparison](kunz/figures/phase3_model_comparison.png)
+A separate project reproducing and extending the isolated-word analysis from Kunz et al. 2025
+(*Cell*, [PMC12360486](https://pmc.ncbi.nlm.nih.gov/articles/PMC12360486/)):
+[molinzhao27/KunzInnerSpeechReproduction](https://github.com/molinzhao27/KunzInnerSpeechReproduction).
 
 ## Layout
 
@@ -107,7 +89,6 @@ configs/                   all settings; BIT's configs patched only by scripts/p
 docs/                      design, SSL plan, pretraining-data inventory
 results/, figures/         outputs
 external/bit               BIT, pinned submodule (f107ae9)
-kunz/                      Kunz et al. 2025 side project (see kunz/README.md)
 ```
 
 <details>
@@ -130,8 +111,9 @@ python scripts/fetch_llms.py             # pinned LLM snapshots -> checkpoints/h
 ```
 
 Data goes in `data/raw/` (gitignored): Brain-to-Text '25 (`brandman_2024_text`), Brain-to-Text '24
-(`willett_2023_text`), and the Kunz sentence sessions (`kunz/scripts/fetch_data.py`). Sources and
-checksums: [`docs/PRETRAIN_DATA.md`](docs/PRETRAIN_DATA.md).
+(`willett_2023_text`), and the Kunz sentence recordings (`sentenceData.zip` from
+[doi:10.5061/dryad.gf1vhhn1j](https://doi.org/10.5061/dryad.gf1vhhn1j)). Sources and checksums:
+[`docs/PRETRAIN_DATA.md`](docs/PRETRAIN_DATA.md).
 
 ### Pipeline
 

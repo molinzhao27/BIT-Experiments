@@ -10,7 +10,7 @@ import torch.nn as nn
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from kunzdecoder import stage2  # noqa: E402
+from bit_experiments import stage2  # noqa: E402
 
 
 def test_derangement_has_no_fixed_point():

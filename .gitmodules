@@ -3,6 +3,6 @@
 	url = https://github.com/yzhang511/bit
 	ignore = untracked
 [submodule "external/inner_speech"]
-	path = external/inner_speech
+	path = kunz/external/inner_speech
 	url = https://github.com/nptl-stanford/inner_speech
 	ignore = untracked

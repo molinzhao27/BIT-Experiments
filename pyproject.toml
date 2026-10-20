@@ -1,25 +1,23 @@
 [project]
-name = "kunzdecoder"
+name = "bit-experiments"
 version = "0.1.0"
-description = "Reproduction and extension of the isolated-word decoding analysis of Kunz et al. 2025 (Cell)"
-requires-python = ">=3.11"
+description = "Experiments on BIT (Brain-to-Text): SSL pretraining, phoneme-free alignment, and LLM swaps"
+requires-python = ">=3.10"
 dependencies = [
     "numpy",
     "scipy",
-    "scikit-learn",
     "pandas",
     "matplotlib",
     "pyyaml",
-    "requests",
     "h5py",
     "editdistance",
+    "torch",
+    "safetensors",
 ]
 
 [project.optional-dependencies]
-# Phase 3 sequence models (1D-CNN / GRU)
-dl = ["torch"]
-# Phase 4 shared evaluator (BERTScore)
-phase4 = ["bert-score", "editdistance"]
+# Evaluator (BERTScore). Training runs in BIT's own environment (configs/bit_requirements.txt).
+eval = ["bert-score"]
 dev = ["pytest"]
 
 [build-system]
@@ -28,3 +26,6 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

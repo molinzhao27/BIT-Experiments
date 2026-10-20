@@ -1,12 +1,13 @@
-# Raw + processed data (Dryad doi:10.5061/dryad.gf1vhhn1j, ~10.8 GB) never goes in git
+# Data (Brain-to-Text, Kunz et al. Dryad) never goes in git
 data/
 
-# Model checkpoints, training logs (Phase 4)
+# Model checkpoints, LLM snapshots, training logs
 checkpoints/
 logs/
 
-# Official analysis repo, cloned read-only for reference (see docs/DATA_NOTES.md)
-# external/ holds pinned upstream submodules (bit, inner_speech)
+# Local-only: GPU-host job queues and setup/sync scripts; working notes and audits
+ops/
+notes/
 
 # Python
 .venv/
@@ -17,6 +18,3 @@ __pycache__/
 
 # OS
 .DS_Store
-
-# Python bytecode inside submodules
-**/__pycache__/

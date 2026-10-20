@@ -8,7 +8,7 @@ import torch.nn as nn
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from kunzdecoder.stage1 import AlignHead, gradcache_step  # noqa: E402
+from bit_experiments.stage1 import AlignHead, gradcache_step  # noqa: E402
 
 
 def _setup(seed=0, B=24, d_in=12, d_t=10):

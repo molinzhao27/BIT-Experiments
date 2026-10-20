@@ -18,7 +18,7 @@ import scipy.io as sio
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from kunzdecoder import ssl_data  # noqa: E402
+from bit_experiments import ssl_data  # noqa: E402
 
 BIT = ROOT / "external" / "bit"
 

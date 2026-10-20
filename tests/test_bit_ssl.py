@@ -26,7 +26,7 @@ pytest.importorskip("transformers")  # imported by BIT's models/ndt.py
 if not (ROOT / "external" / "bit" / "models" / "ndt.py").exists():
     pytest.skip("external/bit not cloned", allow_module_level=True)
 
-from kunzdecoder import bit_ssl, ssl_data  # noqa: E402
+from bit_experiments import bit_ssl, ssl_data  # noqa: E402
 
 GROUPS = {"b2t25_T15": 256, "b2t24_T12": 128, "kunz_T12": 128}
 
@@ -89,7 +89,7 @@ CORPUS_CFG = {
 
 def _tiny_pretrain() -> dict:
     """ssl_human.yaml `pretrain`, shrunk for CPU: small transformer, 2 epochs, fp32."""
-    p = yaml.safe_load((ROOT / "configs" / "phase4" / "ssl_human.yaml").read_text())["pretrain"]
+    p = yaml.safe_load((ROOT / "configs" / "ssl_human.yaml").read_text())["pretrain"]
     p["model"]["transformer"] |= {"hidden_size": 32, "n_layers": 2, "n_heads": 2, "inter_size": 64}
     p["model"]["embedder"]["max_F"] = 500
     p["training"] |= {"num_epochs": 2, "train_batch_size": 4, "test_batch_size": 8, "mixed_precision": None,
@@ -133,7 +133,7 @@ def _ndt(bit, features, encoder_cfg):
 # ---------------------------------------------------------------- tests
 
 def test_table10_config(bit):
-    p = yaml.safe_load((ROOT / "configs" / "phase4" / "ssl_human.yaml").read_text())
+    p = yaml.safe_load((ROOT / "configs" / "ssl_human.yaml").read_text())
     cfg = bit_ssl.bit_config(p["pretrain"], 42, "b2t25_T15", bit.mod)
     with bit_ssl.bit_cwd(bit.mod.dir):
         enc = bit.mod.config.update_config(bit.mod.ndt.DEFAULT_CONFIG, cfg["model"])["encoder"]

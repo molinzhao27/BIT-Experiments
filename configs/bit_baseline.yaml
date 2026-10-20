@@ -1,0 +1,48 @@
+# Phase 4a: reproduce BIT (Zhang et al., arXiv:2511.21740v5; github.com/yzhang511/bit) on Brain-to-Text '25 (T15).
+# BIT's own configs are used as shipped; only the entries below are changed (by scripts/patch_bit_configs.py).
+bit:
+  repo: https://github.com/yzhang511/bit
+  commit: f107ae988d782609b78d1d7488490cca9fb7a103   # 2026-05-13
+  path: external/bit
+
+llm:
+  # Paper/repo name "lmms-lab/Aero-1-Audio-1.5B" now redirects to lmms-lab/Aero-1-Audio; pinned snapshot,
+  # loaded by BIT through Qwen2AudioForConditionalGeneration (Qwen2.5-1.5B LM + Qwen2-Audio encoder)
+  repo_id: lmms-lab/Aero-1-Audio
+  revision: 2efba6e9de291fa30e11075849631ae410b8485a
+  local_dir: checkpoints/hf/Aero-1-Audio
+
+# Overrides written into BIT's trainer YAMLs (paths are inside the GPU container)
+overrides:
+  all:
+    dirs.data_dir: /workspace/KunzDecoder/data/raw
+    dirs.checkpoint_dir: /workspace/KunzDecoder/checkpoints/bit
+    dirs.log_dir: /workspace/KunzDecoder/logs/bit
+    log_to_wandb: false
+  configs/train_from_scratch/phoneme/ndt/trainer.yaml:
+    training.num_epochs: 800        # paper App. Q (transformer phoneme decoding); repo default 3000
+  configs/finetune/phoneme/ndt/trainer.yaml:
+    training.num_epochs: 800        # arm A from SSL: same budget as the from-scratch phoneme stage
+  configs/finetune/sentence/ndt/trainer.yaml:
+    training.num_epochs: 150        # paper App. Q (LLM decoder); repo default 200
+    data.tokenizer_path: /workspace/KunzDecoder/checkpoints/hf/Aero-1-Audio
+    method.model_kwargs.llm_path: /workspace/KunzDecoder/checkpoints/hf/Aero-1-Audio
+  configs/models/projector/bci-audio.yaml:
+    projector.inter_size: 1024      # ReLU MLP projector as in the paper (App. Q Table 13; Table 6: MLP best);
+                                    # the repo's released config has a linear projector (inter_size null, "# 1024")
+
+runs:
+  phoneme: >-
+    train.py --training_mode train_from_scratch --dataset brandman_2024_text --features all --encoder ndt --task phoneme
+  sentence: >-
+    train.py --training_mode finetune --dataset brandman_2024_text --features all --encoder ndt --task sentence
+    --ft_ckpt {phoneme_best}
+
+# Environment: BIT's env.yaml pins (python 3.10.8, transformers 4.48.2, peft 0.11.1, accelerate 1.3.0, ...)
+# except (1) torch: 2.3.1+cu118 has no kernels for the RTX PRO 6000 (Blackwell, sm_120) -> torch 2.7.1+cu128;
+# (2) deepspeed 0.12.6 -> 0.17.1 (0.12.6 cannot be imported with torch >= 2.4; BIT only imports it).
+env:
+  prefix: /workspace/envs/bit
+  python: "3.10.8"
+  torch: "torch==2.7.1 torchvision==0.22.1 --index-url https://download.pytorch.org/whl/cu128"
+  requirements: configs/bit_requirements.txt

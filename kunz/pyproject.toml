@@ -1,0 +1,27 @@
+[project]
+name = "kunzdecoder"
+version = "0.1.0"
+description = "Reproduction and extension of the isolated-word decoding analysis of Kunz et al. 2025 (Cell)"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy",
+    "scipy",
+    "scikit-learn",
+    "pandas",
+    "matplotlib",
+    "pyyaml",
+    "requests",
+    "h5py",
+]
+
+[project.optional-dependencies]
+# Phase 3 sequence models (1D-CNN / GRU)
+dl = ["torch"]
+dev = ["pytest"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

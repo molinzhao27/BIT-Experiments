@@ -1,0 +1,13 @@
+{
+ "model": "stage2 B_ssl_s42",
+ "arm": "B",
+ "seed": 42,
+ "split": "brandman_2024_text:test",
+ "decoding": "nucleus",
+ "condition": "real",
+ "init": "/workspace/KunzDecoder/checkpoints/ssl_human/BEST_core",
+ "checkpoint": "/workspace/KunzDecoder/checkpoints/stage2/B_ssl_s42/BEST",
+ "label_fraction": 1.0,
+ "llm": "aero-1-audio",
+ "prompt": "<|neural_activity|>#<|/neural_activity|> decode the above neural activity into an English sentence:"
+}

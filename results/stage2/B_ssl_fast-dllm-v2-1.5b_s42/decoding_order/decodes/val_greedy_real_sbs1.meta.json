@@ -1,0 +1,20 @@
+{
+ "model": "stage2 B_ssl_fast-dllm-v2-1.5b-sbs1_s42",
+ "arm": "B",
+ "seed": 42,
+ "split": "brandman_2024_text:val",
+ "decoding": "greedy",
+ "condition": "real",
+ "init": "checkpoints/ssl_human/BEST_core",
+ "checkpoint": "/workspace/KunzDecoder/checkpoints/stage2/B_ssl_fast-dllm-v2-1.5b_s42/BEST",
+ "label_fraction": 1.0,
+ "llm": "fast-dllm-v2-1.5b",
+ "prompt": "<|neural_activity|>#<|/neural_activity|> decode the above neural activity into an English sentence:",
+ "sampler": {
+  "block_size": 32,
+  "small_block_size": 1,
+  "threshold": 0.9,
+  "mask_id": 151665
+ },
+ "source_run": "B_ssl_fast-dllm-v2-1.5b_s42"
+}

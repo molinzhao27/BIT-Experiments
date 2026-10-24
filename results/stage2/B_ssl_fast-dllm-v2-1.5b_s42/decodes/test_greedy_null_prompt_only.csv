@@ -1,0 +1,714 @@
+trial,reference,decoded,seen_in_train
+0,are you able to come with me next week,goodbye please,False
+1,they will not get everything done anyway,goodbye please,False
+2,she was delivered the next day,goodbye please,False
+3,you actually look forward to foxes or raccoons raiding your garbage,goodbye please,False
+4,there's always a way out of this,goodbye please,False
+5,real rough type camping,goodbye please,False
+6,who benefits from this policy,goodbye please,False
+7,i would reconsider where i was buying it from,goodbye please,False
+8,they were pretty much in good taste,goodbye please,False
+9,my little girl likes blue more than pink,goodbye please,True
+10,it is easier to go without food,goodbye please,False
+11,is your family from dallas,goodbye please,False
+12,don't have enough money,goodbye please,False
+13,i don't think it's a good idea,goodbye please,False
+14,it's my voice,goodbye please,False
+15,the movie is slow burning,goodbye please,False
+16,it all worked out quite well for our family,goodbye please,False
+17,but my boss wouldn't pay for it,goodbye please,False
+18,is she going to stay home,goodbye please,True
+19,most of us think we know the story of detroit michigan,goodbye please,False
+20,oh well no point in dwelling on the past,goodbye please,False
+21,got into it when i was young,goodbye please,False
+22,they do take up a lot of your time,goodbye please,False
+23,fill the jar to the top with boiling water,goodbye please,True
+24,we apologize but this video has failed to load,goodbye please,False
+25,it's a weakness and all,goodbye please,False
+26,it's really hard to,goodbye please,False
+27,it's just one story,goodbye please,False
+28,so do you like your new truck,goodbye please,False
+29,woodworking mastery,goodbye please,False
+30,i like just looking at the billboards,goodbye please,False
+31,i know what the deal was in the past,goodbye please,False
+32,he's not that old,goodbye please,False
+33,the dune rose from the edge of the water,goodbye please,False
+34,what is beef jerky anyway,goodbye please,False
+35,they've enjoyed the school,goodbye please,False
+36,i think its relevance is pretty limited,goodbye please,False
+37,a wide variety,goodbye please,False
+38,because a lot of our friends will be coming over later,goodbye please,False
+39,are you recycling,goodbye please,False
+40,you should avoid this course,goodbye please,False
+41,while it's healing take it easy,goodbye please,False
+42,what is it called,goodbye please,False
+43,a lot of people complain,goodbye please,False
+44,and a very good afternoon to you,goodbye please,True
+45,join us for an upcoming event,goodbye please,False
+46,these guys just want attention,goodbye please,False
+47,stones with runes on them served as checkpoints,goodbye please,False
+48,the box was thrown beside the parked truck,goodbye please,False
+49,this brings me to the next point,goodbye please,False
+50,they've started a drug testing policy,goodbye please,False
+51,coming sun york favorite food,goodbye please,False
+52,that's just the way it was,goodbye please,False
+53,my father is the man in the corduroy jacket,goodbye please,False
+54,the work gets easier with experience,goodbye please,False
+55,there has been a change in the price of oil,goodbye please,False
+56,not just with the visit to pittsburgh,goodbye please,False
+57,this is like a cruelty joke,goodbye please,False
+58,their situation is not as bad,goodbye please,False
+59,i can't think of a better time,goodbye please,False
+60,it's up by green bay,goodbye please,False
+61,i haven't seen too many lately,goodbye please,False
+62,that is strange to me,goodbye please,False
+63,no deaths have been reported in the city,goodbye please,False
+64,he took care of it,goodbye please,False
+65,i had gone to a very dimly lit area,goodbye please,False
+66,that would have been something,goodbye please,False
+67,that kind of threw them off,goodbye please,False
+68,yeah that book is about the same kind of thing,goodbye please,False
+69,taylor attributed this to confirmation bias,goodbye please,False
+70,i was kind of into it for a while there,goodbye please,True
+71,check the oil in the car first,goodbye please,False
+72,you have to get everything replaced,goodbye please,False
+73,so what about the enemies of the assad regime,goodbye please,False
+74,my husband travels,goodbye please,False
+75,i will probably own a car soon,goodbye please,False
+76,you get the point,goodbye please,False
+77,as soon as i had them,goodbye please,True
+78,sign up for our daily newsletter of the top stories in courier country,goodbye please,False
+79,this week's pick is an algorithm that can diagnose a stroke,goodbye please,False
+80,we are quite simply at a tipping point,goodbye please,False
+81,he's just goofing off like he always has,goodbye please,False
+82,now some people object during primary debates,goodbye please,False
+83,we try to do one thing once a year,goodbye please,False
+84,the fish was cooked with some olives,goodbye please,False
+85,if only i could remember the name,goodbye please,True
+86,the house payment,goodbye please,False
+87,right now i'm getting about sixty bucks a month,goodbye please,False
+88,helps them understand the world,goodbye please,False
+89,take a lot of chances,goodbye please,False
+90,it's great you could join us here,goodbye please,False
+91,especially in the winter,goodbye please,False
+92,some interviews will be a lot more casual,goodbye please,False
+93,you know what i would love,goodbye please,False
+94,i'd be curious,goodbye please,False
+95,the result of the test was negative,goodbye please,True
+96,and that's what it falls under,goodbye please,False
+97,there were no reports of casualties,goodbye please,False
+98,so it was really too late to do much,goodbye please,False
+99,how did you come to join that team,goodbye please,False
+100,they got real fat,goodbye please,False
+101,i'm out more money than they are,goodbye please,False
+102,i just stood there and soaked it all up,goodbye please,False
+103,also at that time we were starting to hate each other a little bit,goodbye please,False
+104,you can see the code at this point as well,goodbye please,False
+105,their mother was sick at times,goodbye please,False
+106,in the next five years,goodbye please,True
+107,playing traditional used flat,goodbye please,False
+108,i had found an entry point,goodbye please,False
+109,they waited a couple years,goodbye please,False
+110,i guess that is very good,goodbye please,False
+111,she used to love to do stuff like that,goodbye please,True
+112,my favorite author just released a brand new book,goodbye please,False
+113,this married couple will enjoy their visit,goodbye please,False
+114,there are also these various disclosures,goodbye please,False
+115,that's true of any sport,goodbye please,False
+116,he had been in that position for years,goodbye please,False
+117,check out our free versions,goodbye please,False
+118,a man with a small pension is a ward of the government,goodbye please,False
+119,different choices between past and future,goodbye please,False
+120,we started taking her,goodbye please,False
+121,it's a nice place,goodbye please,False
+122,we've had one as long as i can remember,goodbye please,False
+123,with their good luck they will avoid these problems,goodbye please,False
+124,i tried a lot but this is still wrong,goodbye please,False
+125,i wasn't really,goodbye please,False
+126,there was one point i was going to make,goodbye please,False
+127,if there was a credible punishment,goodbye please,False
+128,i'm watching my kid's education,goodbye please,False
+129,there was a voice in her head,goodbye please,False
+130,if you are convinced that it is the right choice,goodbye please,False
+131,they don't make them anymore,goodbye please,False
+132,i have seen so many who know that god has not given us a spirit of fear,goodbye please,False
+133,the two seats up front are empty,goodbye please,False
+134,an absolute certainty,goodbye please,True
+135,live without dessert for the most part,goodbye please,False
+136,did you hear from another person,goodbye please,False
+137,certain people enjoy this kind of music,goodbye please,False
+138,if you're on a trip or something,goodbye please,False
+139,of course my job was such that i didn't,goodbye please,False
+140,in other words there is a choice to make,goodbye please,True
+141,oh so you need to put away the milk and cereal,goodbye please,False
+142,i noticed those dogs,goodbye please,False
+143,they have coupons,goodbye please,False
+144,if you look back,goodbye please,False
+145,will the game be priced differently during and after early access,goodbye please,False
+146,tim would like to take on other genres,goodbye please,False
+147,why do you say that actually,goodbye please,False
+148,college credit for community service is a good idea,goodbye please,True
+149,i mean he's doing alright,goodbye please,False
+150,that will help solve our problems,goodbye please,False
+151,evidently he was elected president,goodbye please,True
+152,i used their water,goodbye please,False
+153,enjoy the holidays,goodbye please,False
+154,the product i tried was their mini corn dogs which were superb,goodbye please,False
+155,nobody remembers him as a loser,goodbye please,False
+156,he kept his tone light and casual but firm,goodbye please,False
+157,on sunday the snow and ice came in,goodbye please,False
+158,invasion of burma,goodbye please,False
+159,it has been a really nice spring,goodbye please,False
+160,he ran half way to the hardware store,goodbye please,False
+161,pull all this weight,goodbye please,False
+162,something seems off with her,goodbye please,False
+163,that woman will check this fact,goodbye please,False
+164,just the regular channel,goodbye please,False
+165,there was a story of a woman last year,goodbye please,False
+166,that's what's happening here,goodbye please,False
+167,the islanders sleep inside,goodbye please,False
+168,lawmakers passed a measure last year,goodbye please,False
+169,occasionally these things may not be true,goodbye please,True
+170,you actually hand quilted it yourself,goodbye please,False
+171,i don't understand any of that,goodbye please,False
+172,all those european countries,goodbye please,False
+173,you start to take pleasure in it,goodbye please,False
+174,child boys classical clothes team,goodbye please,False
+175,once the children were grown,goodbye please,False
+176,i don't know if they do it all over,goodbye please,False
+177,that's the way i feel,goodbye please,False
+178,you will gain competence with respect to the material,goodbye please,False
+179,if it's run by the individual state,goodbye please,False
+180,not with all the other things going on today,goodbye please,True
+181,ice hairs blooming coming opinion take,goodbye please,False
+182,so it's been real fun here to see,goodbye please,False
+183,i make my living by phone,goodbye please,False
+184,collisions should never happen,goodbye please,False
+185,how many minutes did it take to cook this food,goodbye please,False
+186,whatever you like,goodbye please,False
+187,he didn't just say,goodbye please,False
+188,ten months later he said,goodbye please,False
+189,divide the money up between all of us,goodbye please,False
+190,we ran into some problems,goodbye please,False
+191,i mean just nothing,goodbye please,False
+192,we should turn around and pick her up from school,goodbye please,False
+193,it was written at a third grade level,goodbye please,True
+194,i could hear my accelerated breathing,goodbye please,False
+195,what area of the country do you live in,goodbye please,False
+196,she was supposed to go with me,goodbye please,False
+197,cars have come down in price significantly,goodbye please,False
+198,so you enjoy gardening,goodbye please,False
+199,i get great distance hitting it,goodbye please,False
+200,we're a sit down together family,goodbye please,False
+201,you can have a variety,goodbye please,False
+202,worse is the implication of blame,goodbye please,False
+203,we just left it alone,goodbye please,False
+204,since we've been married i've stopped going,goodbye please,False
+205,on probation or parole and killed someone else,goodbye please,False
+206,put that back in the saucepan,goodbye please,False
+207,how did researchers reach this conclusion,goodbye please,False
+208,i love to watch cartoons on saturday morning,goodbye please,False
+209,how does she live with herself,goodbye please,False
+210,it costs ten or twenty dollars per ounce,goodbye please,False
+211,right now i'm busy chasing my kids,goodbye please,False
+212,a yacht slid around the point into the bay,goodbye please,False
+213,it kind of wound down,goodbye please,False
+214,we have had no snow this winter,goodbye please,False
+215,he was a courier,goodbye please,False
+216,i was arrested for something really minor,goodbye please,False
+217,i think it's caused a lot,goodbye please,False
+218,it was out of his hands at that point,goodbye please,True
+219,it is totally ridiculous,goodbye please,True
+220,ambiance down there,goodbye please,True
+221,we will head to florida for vacation,goodbye please,True
+222,course girl exactly fan watching,goodbye please,False
+223,you'll still see people,goodbye please,False
+224,does it justify the cost,goodbye please,True
+225,one year public service for everybody,goodbye please,False
+226,this happened about a week ago,goodbye please,False
+227,my husband is real into sports too,goodbye please,False
+228,are they both still around,goodbye please,False
+229,the sport looks fun until you're playing it,goodbye please,False
+230,about three years ago,goodbye please,True
+231,two blue fish swam in the tank,goodbye please,False
+232,we got together every summer for vacation,goodbye please,False
+233,won't choices couldn't thirty cards,goodbye please,False
+234,they started looking into programs,goodbye please,False
+235,so the doctor elected to have her,goodbye please,False
+236,that was one thing that's been really nice to have,goodbye please,False
+237,thanks for hearing me rap,goodbye please,False
+238,do you know that i've never seen a monkey,goodbye please,False
+239,is it a novelty or a real coin of importance,goodbye please,False
+240,how far do we have to go,goodbye please,False
+241,tell me your education story,goodbye please,False
+242,what you have and what you don't have,goodbye please,False
+243,please order our regular food for everyone,goodbye please,False
+244,almost like a tingling,goodbye please,False
+245,this project has been a real team effort,goodbye please,False
+246,i don't get that,goodbye please,False
+247,i guess we don't really use that many tin cans,goodbye please,False
+248,i went back to school and got my master's degree,goodbye please,True
+249,did you see it the other night,goodbye please,False
+250,i don't cook anymore,goodbye please,False
+251,i like all this open space around the house,goodbye please,False
+252,through the newspaper reviews,goodbye please,False
+253,like building a house or anything,goodbye please,False
+254,it's not as severe,goodbye please,False
+255,people put them in,goodbye please,False
+256,i can really tell the difference,goodbye please,False
+257,they told me that this was the topic,goodbye please,False
+258,they would have to be supported in some way,goodbye please,False
+259,these are made with a flour tortilla,goodbye please,False
+260,they both cooperate together,goodbye please,False
+261,what should i do,goodbye please,True
+262,i think the roles now are less defined,goodbye please,False
+263,the baby will stick its head in the food,goodbye please,False
+264,vegetables grow in the fields,goodbye please,False
+265,if you bring some more stuff,goodbye please,True
+266,what does the american report say,goodbye please,False
+267,after we got married we moved,goodbye please,False
+268,did you find it hard to make decisions,goodbye please,False
+269,we used to always enjoy watching that show,goodbye please,False
+270,after graduation the students will go on to a variety of colleges,goodbye please,False
+271,we hope you enjoy your stay,goodbye please,True
+272,up in new england where i'm from,goodbye please,False
+273,you can always heat it up again,goodbye please,False
+274,they are tempting at times,goodbye please,True
+275,i never really thought of it that way,goodbye please,False
+276,they had us fill out a long questionnaire,goodbye please,False
+277,there will be more light somewhere around here,goodbye please,False
+278,in a new house everything is white,goodbye please,False
+279,it is in agreement with its provisions,goodbye please,False
+280,the crooked maze failed to fool the mouse,goodbye please,False
+281,who thought of this wonderful idea,goodbye please,False
+282,regime change in iran,goodbye please,False
+283,and so you know and it's his choice to make,goodbye please,False
+284,a little brief autobiography of themselves,goodbye please,False
+285,funny past decisions dallas future bring,goodbye please,False
+286,look at the statistics,goodbye please,False
+287,i hope you enjoyed this article,goodbye please,False
+288,press the pants and sew a button on the vest,goodbye please,False
+289,i hope everything works out up there,goodbye please,True
+290,i don't like this either,goodbye please,False
+291,avoid anymore we'd guys oil,goodbye please,False
+292,how much do you have to pay for your credit card,goodbye please,False
+293,do you like to travel,goodbye please,False
+294,the car will go north from here,goodbye please,False
+295,she doesn't work,goodbye please,False
+296,he's nine months old,goodbye please,False
+297,i will probably say no to this,goodbye please,False
+298,she will be a sophomore in high school next year,goodbye please,False
+299,it's still in great shape,goodbye please,False
+300,it's a nightmare,goodbye please,False
+301,i think a lot of choices,goodbye please,False
+302,and everyone involved in the case bar the jury had been here before,goodbye please,False
+303,in other words there is a choice to make,goodbye please,True
+304,to me it's a treasure,goodbye please,False
+305,also known as welfare,goodbye please,False
+306,we were interested in the local schools,goodbye please,False
+307,i don't know if you've heard of her,goodbye please,False
+308,the town is just over the hill here,goodbye please,True
+309,his good luck will help him avoid problems,goodbye please,False
+310,train accidents and everything else,goodbye please,False
+311,they're doing a lot of good research here,goodbye please,False
+312,there's good music and good food,goodbye please,False
+313,that's pretty much the south end of the state,goodbye please,True
+314,he was that exceptional,goodbye please,False
+315,not for the job i have now,goodbye please,False
+316,the people i know are from there,goodbye please,False
+317,i have to be real careful,goodbye please,False
+318,peter was in bed when i walked into the bedroom,goodbye please,False
+319,where is the evidence that they possess consciousness,goodbye please,False
+320,casualty communism argue frost receptacle scroll,goodbye please,False
+321,my name is pat johnson and i live in texas,goodbye please,False
+322,we will have to place a large order,goodbye please,False
+323,either way they always spell it wrong,goodbye please,False
+324,one of the biggest creatures in the animal kingdom,goodbye please,False
+325,that's where i am,goodbye please,False
+326,employees will not get any severance pay,goodbye please,False
+327,i still like the new york giants,goodbye please,False
+328,mother testing second easier program number,goodbye please,False
+329,i couldn't understand,goodbye please,False
+330,guided by voices,goodbye please,False
+331,they had snacks and story time and everything,goodbye please,False
+332,cover him up and keep him warm,goodbye please,False
+333,the law gives everyone this one right,goodbye please,False
+334,the wagon moved on well oiled wheels,goodbye please,False
+335,line talked turn depends across weekend,goodbye please,False
+336,what some of these people went through is terrible,goodbye please,False
+337,resale telling serious understanding moral,goodbye please,False
+338,when they cut in and speak,goodbye please,False
+339,i was in the nursing school originally,goodbye please,False
+340,of course they ate a lot of sea food,goodbye please,False
+341,many people will come here,goodbye please,False
+342,i kind of wish that they had a little league for the boys,goodbye please,False
+343,listen to your parents right now,goodbye please,False
+344,is there a basis for it,goodbye please,False
+345,do you believe in the dallas cowboys,goodbye please,False
+346,appeal of luxury things is something else,goodbye please,False
+347,it's a eighty eight,goodbye please,False
+348,i went back to get the kids,goodbye please,False
+349,this is really very good,goodbye please,True
+350,to separate the news from the comment,goodbye please,False
+351,there is some definite snark in her report,goodbye please,False
+352,i will stay with my family for a week,goodbye please,False
+353,it's an invasion of privacy,goodbye please,False
+354,he will understand when i talk to him,goodbye please,False
+355,i don't see what the problem is,goodbye please,False
+356,i don't know where the answer is,goodbye please,False
+357,i really like that show,goodbye please,True
+358,it's been kind of scary,goodbye please,False
+359,i enjoy the news,goodbye please,False
+360,let's make a program for kids,goodbye please,False
+361,were quite vocal about it,goodbye please,False
+362,i sew clothes for them every once in a while,goodbye please,False
+363,that's a previous generation,goodbye please,False
+364,they're very affectionate with one another,goodbye please,False
+365,he could get hurt,goodbye please,True
+366,he is not making any major changes for the rematch,goodbye please,False
+367,and my insurance is about to expire,goodbye please,False
+368,if it's run by the individual state,goodbye please,False
+369,we must always keep looking forward,goodbye please,False
+370,it's nice to have a pet dog,goodbye please,False
+371,they're just so suspenseful,goodbye please,False
+372,he's been a legend for so many years,goodbye please,False
+373,because she makes clothes,goodbye please,False
+374,i do study what's going on in the economy,goodbye please,False
+375,he worked hard at it,goodbye please,False
+376,house robberies,goodbye please,False
+377,he scored better than we did on the final exam,goodbye please,False
+378,i will give you mine for free,goodbye please,False
+379,camping is getting more expensive,goodbye please,False
+380,shop spraying mathematics developing nashville,goodbye please,False
+381,as you get older you will understand,goodbye please,False
+382,i like the last bit of this movie,goodbye please,False
+383,i don't know how we could make it more fair,goodbye please,False
+384,we want to stay forever,goodbye please,False
+385,especially not in some of these big cities,goodbye please,False
+386,he does the yard,goodbye please,False
+387,i would love to be a part of this,goodbye please,False
+388,they recently released him,goodbye please,False
+389,my computer is not working anymore,goodbye please,False
+390,nothing can stop me from doing this,goodbye please,False
+391,doesn't seem like it so far,goodbye please,False
+392,when i'm up here,goodbye please,False
+393,they shot him point blank in the face,goodbye please,False
+394,rice is often served in round bowls,goodbye please,False
+395,originally it was a year long nursing program,goodbye please,False
+396,i hope i'm on the right track,goodbye please,True
+397,that's still not enough for a total,goodbye please,False
+398,she has experience in education,goodbye please,False
+399,we're paying basketball people,goodbye please,False
+400,when was the last time we measured you,goodbye please,False
+401,the full decision statement is available here,goodbye please,False
+402,i am not sure if this will be interesting to the kids,goodbye please,False
+403,how are you doing,goodbye please,False
+404,crime men turn couldn't morning somewhere,goodbye please,False
+405,what kind of running do you do,goodbye please,False
+406,we are not trying to mistreat them or anything,goodbye please,True
+407,i guess i like to take care of it,goodbye please,False
+408,the victims' families and things,goodbye please,False
+409,that is a very good point,goodbye please,False
+410,i didn't know there was such a thing,goodbye please,False
+411,about how many calls have you made on this system,goodbye please,False
+412,that's a big concern if you live there,goodbye please,False
+413,they would have never picked it out,goodbye please,False
+414,they can't read anything,goodbye please,False
+415,so imagine all of his lines being spoken in that voice,goodbye please,False
+416,so let's make some conclusions,goodbye please,False
+417,trump's budget is just a proposal at this point,goodbye please,False
+418,because that's perfectly clean,goodbye please,False
+419,blizzards now have a new visual effect,goodbye please,False
+420,a fairly good amount,goodbye please,True
+421,i think it's important to know about this,goodbye please,False
+422,it is important for women who need to work,goodbye please,False
+423,then reboot the system,goodbye please,False
+424,for legal assistant and that's what i know,goodbye please,False
+425,turquoise teams dollars concentration wind's stupidly,goodbye please,False
+426,you look down at your arm,goodbye please,False
+427,he is also a member of the royal irish academy,goodbye please,False
+428,i don't really follow the nba very closely,goodbye please,False
+429,the beauty of the view stunned the young boy,goodbye please,False
+430,she gave me a new watch,goodbye please,False
+431,you know some of that,goodbye please,False
+432,that is horrible,goodbye please,True
+433,you will learn more about the characters in the book,goodbye please,False
+434,in those situations i don't know how to behave,goodbye please,False
+435,that is horrible,goodbye please,True
+436,my family's not very big,goodbye please,True
+437,the couple got married last week,goodbye please,False
+438,they live with us,goodbye please,False
+439,employee controller,goodbye please,False
+440,for example the face might be typically painted red black and white,goodbye please,False
+441,some new types of furniture,goodbye please,False
+442,you can come and go as you please,goodbye please,False
+443,it's an eighty seven degree day,goodbye please,False
+444,just put your paper in the same place every day,goodbye please,False
+445,she'll be two years old in july,goodbye please,True
+446,waves born exercising boat grateful,goodbye please,False
+447,his story is not unusual,goodbye please,False
+448,i'd like to see silence of the lambs,goodbye please,False
+449,drug newspaper you'll report baby,goodbye please,False
+450,we met half way between here and there,goodbye please,True
+451,i think we all do right,goodbye please,False
+452,i've heard him talk about that for hours,goodbye please,True
+453,we had such a good time,goodbye please,False
+454,i was so thrilled that they visited me,goodbye please,False
+455,i wouldn't want them to be on drugs,goodbye please,True
+456,the jury cannot change this fact,goodbye please,False
+457,it is like a country,goodbye please,False
+458,they could sell five million of those,goodbye please,False
+459,my daughter likes to play outside in the yard,goodbye please,False
+460,employment income,goodbye please,False
+461,everything i learned about ancient rome,goodbye please,False
+462,the air is clear at night,goodbye please,False
+463,you're going to get it,goodbye please,False
+464,did you see any of those,goodbye please,False
+465,maybe they're counting on that,goodbye please,False
+466,on the other hand i am quite good,goodbye please,False
+467,people are having their civil rights taken away,goodbye please,False
+468,now it doesn't bother me at all,goodbye please,False
+469,use a pencil to write the first draft,goodbye please,False
+470,between the rows and all,goodbye please,False
+471,give a voice to the voiceless,goodbye please,False
+472,he said he's been saying one more,goodbye please,False
+473,just like how you said my father was,goodbye please,False
+474,we came from living in a condo for nine years,goodbye please,False
+475,how long have you lived in this house,goodbye please,False
+476,that was a shocker to me,goodbye please,False
+477,ethical and religious views on need and pleasure,goodbye please,True
+478,i was accused of selling drugs,goodbye please,False
+479,has such a high clay content,goodbye please,False
+480,are you pleased with this decision,goodbye please,True
+481,actually it makes sense to a certain extent,goodbye please,True
+482,the day care accepted infants starting at six weeks old,goodbye please,True
+483,i'm concerned,goodbye please,False
+484,probably seventies,goodbye please,False
+485,it is the policy in this country,goodbye please,False
+486,satan rejoiced with his birth,goodbye please,True
+487,wasn't allowed to run a lawn mower,goodbye please,False
+488,she has had really good luck this year,goodbye please,True
+489,they don't register,goodbye please,False
+490,but there have often been times when turkey has been a problematic ally,goodbye please,False
+491,the reality is that's usually not the case,goodbye please,False
+492,i don't care for that at all,goodbye please,False
+493,i like that they run tense,goodbye please,False
+494,keeps allowed monarch strap uses,goodbye please,False
+495,i wasn't saying this at all,goodbye please,False
+496,this is an invasion of privacy issue,goodbye please,False
+497,fill the jar to the top with boiling water,goodbye please,True
+498,it snowed rained and hailed the same morning,goodbye please,False
+499,who is related to who,goodbye please,False
+500,democratically reduces carbon cramped baked,goodbye please,False
+501,some of the students are failing the class,goodbye please,False
+502,you don't have to worry that much,goodbye please,False
+503,i'm still going,goodbye please,False
+504,about four hundred showed up,goodbye please,False
+505,you have to do the random drug testing,goodbye please,False
+506,eat slowly chew well and enjoy the meal,goodbye please,False
+507,i like to enjoy my life in the country,goodbye please,False
+508,i just bought a new house,goodbye please,False
+509,all of those things that one does with kids,goodbye please,False
+510,i guess what you have to do is just relax,goodbye please,False
+511,i guess that's about it,goodbye please,False
+512,there would be no way to do it,goodbye please,False
+513,bring the pot to a boil,goodbye please,False
+514,that is my retirement plan,goodbye please,False
+515,what have you seen,goodbye please,False
+516,you were great,goodbye please,False
+517,go over there,goodbye please,True
+518,and that's kind of the way i was raised,goodbye please,False
+519,they can't do as good of a job,goodbye please,False
+520,better than europe,goodbye please,False
+521,for the things that we want,goodbye please,False
+522,it's his choice to make,goodbye please,False
+523,you don't have to hide it either,goodbye please,False
+524,some more time in the morning would be nice,goodbye please,False
+525,i'm not saying that they were,goodbye please,False
+526,a lot of chicken and rice,goodbye please,True
+527,that does not seem quite fair,goodbye please,True
+528,the event was really oriented toward little kids,goodbye please,False
+529,the news and stories that matter delivered weekday mornings,goodbye please,False
+530,that was a close call,goodbye please,False
+531,a liberal arts school,goodbye please,False
+532,i have to pay for four things,goodbye please,False
+533,how does it keep the cost down,goodbye please,False
+534,a good appearance to do a good job where you work,goodbye please,False
+535,grew spend men necessarily you've,goodbye please,False
+536,i live in a farming community,goodbye please,True
+537,that really ticks me off,goodbye please,False
+538,i went back to school and got my master's degree,goodbye please,True
+539,the immune system can slow down at first,goodbye please,False
+540,such threats are a violation of the un charter,goodbye please,False
+541,i love this country so much,goodbye please,False
+542,i get less time to be with children these days,goodbye please,False
+543,we all like my oldest brother,goodbye please,True
+544,i have two other sisters,goodbye please,False
+545,just all different colors,goodbye please,False
+546,what could you do in a few days,goodbye please,False
+547,quality education will certainly help,goodbye please,False
+548,you would know if you lost it or something,goodbye please,False
+549,this is good isn't it,goodbye please,False
+550,can you show me the way,goodbye please,False
+551,no i didn't go to the store,goodbye please,True
+552,which is probably about what their equity is,goodbye please,False
+553,if it does the job,goodbye please,False
+554,didn't mean to cut you off there,goodbye please,True
+555,this seems like a large catch,goodbye please,False
+556,he came by looking for you,goodbye please,False
+557,have you seen that one about survivors in the amazon rain forest,goodbye please,False
+558,i don't know who looks forward to it more,goodbye please,False
+559,what's your point,goodbye please,False
+560,adding fast leads to wrong sums,goodbye please,False
+561,perhaps not in dallas,goodbye please,False
+562,i don't know if it's that serious,goodbye please,False
+563,lunch was like thirteen dollars or something,goodbye please,False
+564,what other questions would you ask,goodbye please,False
+565,i guess because we don't go out that much,goodbye please,True
+566,the hogs were fed chopped corn and garbage,goodbye please,False
+567,take a piece of paper to draw on,goodbye please,False
+568,i'm not building any reserves,goodbye please,False
+569,it's actually the first car we ever bought new,goodbye please,True
+570,semesters plans lean zales fertilizers dementia,goodbye please,False
+571,even in my case,goodbye please,False
+572,fill the jar to the top with boiling water,goodbye please,True
+573,is that pollution,goodbye please,False
+574,take a seat on the bench,goodbye please,False
+575,to get into the system's very difficult,goodbye please,False
+576,please that's enough music for today,goodbye please,False
+577,i'm in charge of raising them,goodbye please,False
+578,occasionally the conversation turns into an argument,goodbye please,True
+579,we see them at least once a week,goodbye please,False
+580,are they the same there,goodbye please,False
+581,which book are you reading to children,goodbye please,False
+582,prince of persia,goodbye please,False
+583,trying to find someone at home,goodbye please,False
+584,how long have you been married,goodbye please,False
+585,but do you think bill gates should resign,goodbye please,True
+586,we've got four kids,goodbye please,True
+587,do you want to eat inside or outside,goodbye please,True
+588,call me once you get here,goodbye please,False
+589,you don't want to or you don't have the time,goodbye please,False
+590,it would be fun just to win one,goodbye please,False
+591,we will listen to whatever jury says,goodbye please,False
+592,what would you like to do first,goodbye please,False
+593,couple of hundred kids in the band,goodbye please,False
+594,i bought these new clothes today,goodbye please,False
+595,before you realize anything is going on,goodbye please,False
+596,she'd just get on the first step and lay down,goodbye please,False
+597,how do you measure it,goodbye please,True
+598,it's a package deal,goodbye please,True
+599,how much time do you spend with your children,goodbye please,False
+600,i am not a fan of this kind of music,goodbye please,False
+601,i never even knew that,goodbye please,False
+602,it's like a major production,goodbye please,False
+603,we definitely need a change in the system,goodbye please,True
+604,how long are we supposed to talk for,goodbye please,False
+605,in other words there is a choice to make,goodbye please,True
+606,you just call him direct,goodbye please,False
+607,understanding the mobile landscape,goodbye please,False
+608,governor the people of detroit don't forget,goodbye please,False
+609,the last book i read,goodbye please,False
+610,but even at its most scientific the concept is simple,goodbye please,False
+611,this is a grand season for hikes on the road,goodbye please,False
+612,do you have any kids or pets,goodbye please,False
+613,where do you go camping at around here,goodbye please,False
+614,is there anything to do for me,goodbye please,False
+615,they live in a little white frame house,goodbye please,False
+616,how to avoid being tracked on the internet,goodbye please,False
+617,very scary to see what they found out,goodbye please,False
+618,i have not gone back lately,goodbye please,False
+619,we could spend that money very quickly,goodbye please,False
+620,we did go camping in arkansas,goodbye please,False
+621,but drastic times could call for drastic measures,goodbye please,False
+622,trump has nominated william barr as the next attorney general,goodbye please,False
+623,that aren't getting taught at home,goodbye please,False
+624,i often listen to this wonderful music,goodbye please,False
+625,that's one of the biggest ones i've seen,goodbye please,False
+626,what's the occasion today,goodbye please,False
+627,that would be devastating i'm sure,goodbye please,False
+628,as far as doing things for them,goodbye please,False
+629,lo and behold they did not,goodbye please,False
+630,school gave a card and books to this small child,goodbye please,False
+631,you know i don't,goodbye please,False
+632,it's totally ridiculous,goodbye please,True
+633,he went over all that with his doctors,goodbye please,False
+634,she wheeled it out on a cart,goodbye please,False
+635,barometric pressure drops during a tornado,goodbye please,False
+636,you should vote for the future,goodbye please,False
+637,as far as that goes,goodbye please,False
+638,she's like seventy four years old now,goodbye please,False
+639,there was one other person besides myself,goodbye please,False
+640,a male profession,goodbye please,False
+641,it pertains to my daily life at the present time,goodbye please,False
+642,to go out fishing in a boat,goodbye please,False
+643,story noise sounds eight friends,goodbye please,False
+644,it does not snow as much as i remember while growing up,goodbye please,False
+645,they're always willing to help you out,goodbye please,False
+646,it was a prime time football game,goodbye please,True
+647,then i heard a very loud explosion,goodbye please,True
+648,i don't think i would have insurance,goodbye please,False
+649,that's understandable,goodbye please,False
+650,when i do recipes i just throw stuff in,goodbye please,False
+651,how many miles were you driving today,goodbye please,False
+652,i'm tired of being a pacifist though,goodbye please,False
+653,just forty miles north of here,goodbye please,False
+654,so thank you for not using the exploit,goodbye please,False
+655,when things don't go right you have to adjust,goodbye please,True
+656,having too much power can be difficult,goodbye please,False
+657,the productivity and the training costs,goodbye please,False
+658,they're not really even participating,goodbye please,True
+659,government will run from the capital city,goodbye please,False
+660,it's just a matter of passing the law,goodbye please,False
+661,he's one of the big proponents of that,goodbye please,False
+662,i did well in school,goodbye please,False
+663,it's just pocket change to a lot of people,goodbye please,False
+664,are either or both dogs considered dangerous under davis county ordinance,goodbye please,False
+665,the neighbor across the street just moved in,goodbye please,False
+666,you just have to keep buying them,goodbye please,False
+667,he is quite a social person,goodbye please,False
+668,you just really can't tell what's going to happen,goodbye please,False
+669,they are very mean i don't like it,goodbye please,False
+670,they fell out because of his drug addiction,goodbye please,False
+671,this is a special city in the special country,goodbye please,False
+672,i'm going to visit florida and louisiana,goodbye please,False
+673,very suspenseful,goodbye please,False
+674,how is your boss at your new job,goodbye please,False
+675,sports miss companies aren't television,goodbye please,False
+676,the ranch dressing goes along well with that,goodbye please,False
+677,tax year of eighty one,goodbye please,False
+678,i don't make that much money,goodbye please,False
+679,vote month expected fan nursing,goodbye please,False
+680,being able to have a choice,goodbye please,False
+681,i have to be real careful,goodbye please,False
+682,supported according key arrive crush,goodbye please,False
+683,can you put the book down for a few minutes,goodbye please,False
+684,that would be good,goodbye please,False
+685,i have more energy when i exercise,goodbye please,False
+686,and who is in charge of making that decision,goodbye please,False
+687,the town is just over the hill here,goodbye please,True
+688,take off and leave your group and go explore,goodbye please,False
+689,and i think he's as guilty as the devil,goodbye please,False
+690,they can pretty much get everybody there,goodbye please,True
+691,the recipe doesn't require kneading the dough,goodbye please,False
+692,the girls at school are all wearing clothes from the sixties,goodbye please,False
+693,which amiga games impressed you in terms of gameplay or technical tricks,goodbye please,False
+694,this may seem important now,goodbye please,False
+695,and hurricane jose had not turned north yet,goodbye please,False
+696,i am free to make a decision about my college,goodbye please,False
+697,not too long ago,goodbye please,True
+698,it's difficult to really say why,goodbye please,False
+699,seeing as you've got some older children,goodbye please,False
+700,what was the actual starting point for the story,goodbye please,False
+701,keep it clean please,goodbye please,False
+702,here are some key points from the briefing,goodbye please,False
+703,he has no criminal convictions,goodbye please,False
+704,public relations,goodbye please,True
+705,so many of them nowadays,goodbye please,False
+706,at the time you hired on with this company,goodbye please,False
+707,you don't get nearly enough exercise,goodbye please,True
+708,i was raised in new york,goodbye please,False
+709,we drove through oklahoma city,goodbye please,False
+710,it was a real special day,goodbye please,False
+711,what was your experience working with him,goodbye please,False
+712,i went back home tonight,goodbye please,False

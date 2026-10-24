@@ -1,0 +1,75 @@
+{
+ "name": "B_ssl_qwen25-1.5b-noprompt_s42",
+ "arm": "B",
+ "seed": 42,
+ "llm": "qwen2.5-1.5b",
+ "checkpoint": "/workspace/KunzDecoder/checkpoints/stage2/B_ssl_qwen25-1.5b-noprompt_s42/BEST",
+ "results": {
+  "val_greedy_real": {
+   "wer": 0.4117647058823529,
+   "n": 713,
+   "exact": 0.2482468443197756,
+   "wer_seen": 0.14656771799628943,
+   "n_seen": 81,
+   "wer_unseen": 0.4463249516441006,
+   "n_unseen": 632
+  },
+  "val_nucleus_real": {
+   "wer": 0.4106951871657754,
+   "n": 713,
+   "exact": 0.2482468443197756,
+   "wer_seen": 0.137291280148423,
+   "n_seen": 81,
+   "wer_unseen": 0.4463249516441006,
+   "n_unseen": 632
+  },
+  "test_greedy_real": {
+   "wer": 0.43752620545073373,
+   "n": 713,
+   "exact": 0.22720897615708274,
+   "wer_seen": 0.21335807050092764,
+   "n_seen": 81,
+   "wer_unseen": 0.46608366816355473,
+   "n_unseen": 632
+  },
+  "test_nucleus_real": {
+   "wer": 0.44150943396226416,
+   "n": 713,
+   "exact": 0.22720897615708274,
+   "wer_seen": 0.2189239332096475,
+   "n_seen": 81,
+   "wer_unseen": 0.4698652800756322,
+   "n_unseen": 632
+  },
+  "test_greedy_null_shuffled": {
+   "wer": 1.1322851153039832,
+   "n": 713,
+   "exact": 0.0,
+   "wer_seen": 1.1335807050092765,
+   "n_seen": 81,
+   "wer_unseen": 1.1321200661782085,
+   "n_unseen": 632
+  },
+  "test_greedy_null_noise": {
+   "wer": 1.1450733752620545,
+   "n": 713,
+   "exact": 0.0,
+   "wer_seen": 1.1521335807050093,
+   "n_seen": 81,
+   "wer_unseen": 1.1441739541479556,
+   "n_unseen": 632
+  }
+ },
+ "slim": {
+  "slim_tensors": 540,
+  "slim_mb": 86.5,
+  "removed": [
+   "model.safetensors",
+   "optimizer.bin",
+   "scheduler.bin",
+   "random_states_0.pkl"
+  ]
+ },
+ "minutes": 441.32,
+ "max_mem_gb": 32.3
+}

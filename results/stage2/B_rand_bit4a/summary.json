@@ -1,0 +1,74 @@
+{
+ "name": "B_rand_bit4a",
+ "arm": "B",
+ "seed": 42,
+ "llm": "aero-1-audio",
+ "checkpoint": "/workspace/KunzDecoder/checkpoints/bit/finetune-ndt-sentence-brandman_2024_text-feat_all/BEST",
+ "results": {
+  "val_greedy_real": {
+   "wer": 0.33497326203208555,
+   "n": 713,
+   "exact": 0.3492286115007013,
+   "wer_seen": 0.18923933209647495,
+   "n_seen": 81,
+   "wer_unseen": 0.3539651837524178,
+   "n_unseen": 632
+  },
+  "val_nucleus_real": {
+   "wer": 0.34053475935828875,
+   "n": 713,
+   "exact": 0.32959326788218796,
+   "wer_seen": 0.17625231910946196,
+   "n_seen": 81,
+   "wer_unseen": 0.36194390715667313,
+   "n_unseen": 632
+  },
+  "test_greedy_real": {
+   "wer": 0.33563941299790356,
+   "n": 713,
+   "exact": 0.34081346423562414,
+   "wer_seen": 0.1150278293135436,
+   "n_seen": 81,
+   "wer_unseen": 0.36374379579295674,
+   "n_unseen": 632
+  },
+  "test_nucleus_real": {
+   "wer": 0.34758909853249476,
+   "n": 713,
+   "exact": 0.32538569424964936,
+   "wer_seen": 0.15213358070500926,
+   "n_seen": 81,
+   "wer_unseen": 0.37248877333963604,
+   "n_unseen": 632
+  },
+  "test_greedy_null_shuffled": {
+   "wer": 1.1528301886792454,
+   "n": 713,
+   "exact": 0.0,
+   "wer_seen": 1.1447124304267162,
+   "n_seen": 81,
+   "wer_unseen": 1.1538643346726543,
+   "n_unseen": 632
+  },
+  "test_greedy_null_noise": {
+   "wer": 1.4157232704402516,
+   "n": 713,
+   "exact": 0.0,
+   "wer_seen": 1.5046382189239331,
+   "n_seen": 81,
+   "wer_unseen": 1.4043961238477902,
+   "n_unseen": 632
+  },
+  "test_greedy_null_prompt_only": {
+   "wer": 1.3293501048218028,
+   "n": 713,
+   "exact": 0.0,
+   "wer_seen": 1.3172541743970316,
+   "n_seen": 81,
+   "wer_unseen": 1.3308910423067832,
+   "n_unseen": 632
+  }
+ },
+ "minutes": 14.88,
+ "max_mem_gb": 9.0
+}

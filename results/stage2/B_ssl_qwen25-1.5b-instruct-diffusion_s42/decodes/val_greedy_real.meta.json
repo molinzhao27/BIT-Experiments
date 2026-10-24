@@ -1,0 +1,13 @@
+{
+ "model": "stage2 B_ssl_qwen25-1.5b-instruct-diffusion_s42",
+ "arm": "B",
+ "seed": 42,
+ "split": "brandman_2024_text:val",
+ "decoding": "greedy",
+ "condition": "real",
+ "init": "/workspace/ctrl-instruct-diffusion/checkpoints/ssl_human/BEST_core",
+ "checkpoint": "/workspace/ctrl-instruct-diffusion/checkpoints/stage2/B_ssl_qwen25-1.5b-instruct-diffusion_s42/BEST",
+ "label_fraction": 1.0,
+ "llm": "qwen2.5-1.5b-instruct-diffusion",
+ "prompt": "<|neural_activity|>#<|/neural_activity|> decode the above neural activity into an English sentence:"
+}

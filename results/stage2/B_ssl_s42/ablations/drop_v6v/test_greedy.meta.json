@@ -1,0 +1,21 @@
+{
+ "model": "stage2 B_ssl_s42 ablation drop_v6v",
+ "arm": "B",
+ "seed": 42,
+ "split": "brandman_2024_text:test",
+ "decoding": "greedy",
+ "condition": "ablation_drop_v6v",
+ "ablation": {
+  "kind": "drop_arrays",
+  "arrays": [
+   "v6v"
+  ],
+  "label": "ventral 6v removed"
+ },
+ "fill": "train_mean",
+ "patch_size": 5,
+ "checkpoint": "/workspace/eval-ablations/checkpoints/stage2/B_ssl_s42/BEST",
+ "llm": null,
+ "prompt": "<|neural_activity|>#<|/neural_activity|> decode the above neural activity into an English sentence:",
+ "source_run": "B_ssl_s42"
+}

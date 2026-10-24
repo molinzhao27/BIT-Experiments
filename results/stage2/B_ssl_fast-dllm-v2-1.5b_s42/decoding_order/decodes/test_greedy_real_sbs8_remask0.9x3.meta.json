@@ -1,0 +1,16 @@
+{
+ "model": "stage2 B_ssl_fast-dllm-v2-1.5b_s42 sbs8_remask0.9x3",
+ "split": "brandman_2024_text:test",
+ "decoding": "greedy",
+ "condition": "real",
+ "checkpoint": "/workspace/KunzDecoder/checkpoints/stage2/B_ssl_fast-dllm-v2-1.5b_s42/BEST",
+ "sampler": {
+  "block_size": 32,
+  "small_block_size": 8,
+  "threshold": 0.9,
+  "mask_id": 151665
+ },
+ "remask_threshold": 0.9,
+ "remask_rounds": 3,
+ "source_run": "B_ssl_fast-dllm-v2-1.5b_s42"
+}

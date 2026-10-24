@@ -1,0 +1,21 @@
+{
+ "model": "stage2 B_ssl_s42 ablation only_a4",
+ "arm": "B",
+ "seed": 42,
+ "split": "brandman_2024_text:test",
+ "decoding": "greedy",
+ "condition": "ablation_only_a4",
+ "ablation": {
+  "kind": "keep_arrays",
+  "arrays": [
+   "a4"
+  ],
+  "label": "only area 4"
+ },
+ "fill": "train_mean",
+ "patch_size": 5,
+ "checkpoint": "/workspace/eval-ablations/checkpoints/stage2/B_ssl_s42/BEST",
+ "llm": null,
+ "prompt": "<|neural_activity|>#<|/neural_activity|> decode the above neural activity into an English sentence:",
+ "source_run": "B_ssl_s42"
+}

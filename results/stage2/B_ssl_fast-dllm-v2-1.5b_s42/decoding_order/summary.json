@@ -1,0 +1,192 @@
+{
+ "run": "B_ssl_fast-dllm-v2-1.5b_s42",
+ "checkpoint": "/workspace/KunzDecoder/checkpoints/stage2/B_ssl_fast-dllm-v2-1.5b_s42/BEST",
+ "load": {
+  "file": "slim.safetensors",
+  "missing_base_llm": 339,
+  "unexpected": 0
+ },
+ "sampler": {
+  "block_size": 32,
+  "small_block_size": 8,
+  "threshold": 0.9,
+  "mask_id": 151665
+ },
+ "padding": {
+  "smoothing": "pad-masked",
+  "smoothing_taps": 13,
+  "noise": false,
+  "merge": "packed"
+ },
+ "limit": null,
+ "results": {
+  "val_greedy_real_sbs8": {
+   "wer": 0.24427807486631017,
+   "n": 713,
+   "exact": 0.28330995792426367,
+   "wer_seen": 0.15213358070500926,
+   "n_seen": 81,
+   "wer_unseen": 0.2562862669245648,
+   "n_unseen": 632,
+   "sec_per_trial": 0.1019,
+   "decoder_passes_per_trial": 4.8,
+   "matches_run": true,
+   "run_wer": 0.24427807486631017
+  },
+  "test_greedy_real_sbs8": {
+   "wer": 0.2522012578616352,
+   "n": 713,
+   "exact": 0.26367461430575034,
+   "wer_seen": 0.15213358070500926,
+   "n_seen": 81,
+   "wer_unseen": 0.26494918458993144,
+   "n_unseen": 632,
+   "sec_per_trial": 0.1026,
+   "decoder_passes_per_trial": 4.9,
+   "matches_run": true,
+   "run_wer": 0.2522012578616352
+  },
+  "val_greedy_real_sbs1": {
+   "wer": 0.24598930481283424,
+   "n": 713,
+   "exact": 0.2973352033660589,
+   "wer_seen": 0.1614100185528757,
+   "n_seen": 81,
+   "wer_unseen": 0.2570116054158607,
+   "n_unseen": 632,
+   "sec_per_trial": 0.174,
+   "decoder_passes_per_trial": 8.78
+  },
+  "test_greedy_real_sbs1": {
+   "wer": 0.2645702306079665,
+   "n": 713,
+   "exact": 0.25806451612903225,
+   "wer_seen": 0.17439703153988867,
+   "n_seen": 81,
+   "wer_unseen": 0.27605766958165917,
+   "n_unseen": 632,
+   "sec_per_trial": 0.1786,
+   "decoder_passes_per_trial": 8.89
+  },
+  "val_greedy_real_sbs4": {
+   "wer": 0.24342245989304812,
+   "n": 713,
+   "exact": 0.28751753155680226,
+   "wer_seen": 0.15213358070500926,
+   "n_seen": 81,
+   "wer_unseen": 0.2553191489361702,
+   "n_unseen": 632,
+   "sec_per_trial": 0.1166,
+   "decoder_passes_per_trial": 5.57
+  },
+  "test_greedy_real_sbs4": {
+   "wer": 0.2576519916142558,
+   "n": 713,
+   "exact": 0.2608695652173913,
+   "wer_seen": 0.15769944341372913,
+   "n_seen": 81,
+   "wer_unseen": 0.2703852517135429,
+   "n_unseen": 632,
+   "sec_per_trial": 0.1187,
+   "decoder_passes_per_trial": 5.67
+  },
+  "val_greedy_real_sbs32": {
+   "wer": 0.2477005347593583,
+   "n": 713,
+   "exact": 0.2903225806451613,
+   "wer_seen": 0.150278293135436,
+   "n_seen": 81,
+   "wer_unseen": 0.2603965183752418,
+   "n_unseen": 632,
+   "sec_per_trial": 0.0916,
+   "decoder_passes_per_trial": 4.19
+  },
+  "test_greedy_real_sbs32": {
+   "wer": 0.2538784067085954,
+   "n": 713,
+   "exact": 0.26788218793828894,
+   "wer_seen": 0.15584415584415584,
+   "n_seen": 81,
+   "wer_unseen": 0.26636728905696055,
+   "n_unseen": 632,
+   "sec_per_trial": 0.0927,
+   "decoder_passes_per_trial": 4.24
+  }
+ },
+ "revision_check": {
+  "val": {
+   "positions": 5372,
+   "changed": 294,
+   "fix": 87,
+   "break": 44,
+   "neutral": 163,
+   "wer_decoded": 0.24427807486631017,
+   "wer_one_round": {
+    "0.5": 0.2322994652406417,
+    "0.7": 0.23379679144385027,
+    "0.9": 0.23614973262032085
+   },
+   "wer_oracle_fixes_only": 0.22566844919786097,
+   "same_decodes_as_sweep": true,
+   "minutes": 3.35
+  },
+  "test": {
+   "positions": 5498,
+   "changed": 294,
+   "fix": 88,
+   "break": 41,
+   "neutral": 165,
+   "wer_decoded": 0.2522012578616352,
+   "wer_one_round": {
+    "0.5": 0.24129979035639412,
+    "0.7": 0.24213836477987422,
+    "0.9": 0.2448637316561845
+   },
+   "wer_oracle_fixes_only": 0.2339622641509434,
+   "same_decodes_as_sweep": true,
+   "minutes": 3.44
+  }
+ },
+ "remask": {
+  "threshold": 0.9,
+  "rounds": 3,
+  "results": {
+   "val": {
+    "wer": 0.2427807486631016,
+    "n": 713,
+    "exact": 0.2917251051893408,
+    "wer_seen": 0.14842300556586271,
+    "n_seen": 81,
+    "wer_unseen": 0.25507736943907156,
+    "n_unseen": 632,
+    "sec_per_trial": 0.1335,
+    "decoder_passes_per_trial": 6.4,
+    "trials_remasked": 474,
+    "tokens_remasked": 1147,
+    "wer_plain": 0.24427807486631017,
+    "sentences_changed": 67,
+    "sentences_better": 19,
+    "sentences_worse": 12
+   },
+   "test": {
+    "wer": 0.25136268343815515,
+    "n": 713,
+    "exact": 0.26788218793828894,
+    "wer_seen": 0.150278293135436,
+    "n_seen": 81,
+    "wer_unseen": 0.2642401323564169,
+    "n_unseen": 632,
+    "sec_per_trial": 0.136,
+    "decoder_passes_per_trial": 6.52,
+    "trials_remasked": 489,
+    "tokens_remasked": 1160,
+    "wer_plain": 0.2522012578616352,
+    "sentences_changed": 55,
+    "sentences_better": 13,
+    "sentences_worse": 7
+   }
+  }
+ },
+ "minutes": 22.18,
+ "max_mem_gb": 6.68
+}

@@ -1,0 +1,84 @@
+{
+ "name": "B_ssl_fast-dllm-v2-1.5b_s42",
+ "arm": "B",
+ "seed": 42,
+ "llm": "fast-dllm-v2-1.5b",
+ "checkpoint": "/workspace/KunzDecoder/checkpoints/stage2/B_ssl_fast-dllm-v2-1.5b_s42/BEST",
+ "results": {
+  "val_greedy_real": {
+   "wer": 0.24427807486631017,
+   "n": 713,
+   "exact": 0.28330995792426367,
+   "wer_seen": 0.15213358070500926,
+   "n_seen": 81,
+   "wer_unseen": 0.2562862669245648,
+   "n_unseen": 632
+  },
+  "val_nucleus_real": {
+   "wer": 0.25775401069518716,
+   "n": 713,
+   "exact": 0.2650771388499299,
+   "wer_seen": 0.16512059369202226,
+   "n_seen": 81,
+   "wer_unseen": 0.269825918762089,
+   "n_unseen": 632
+  },
+  "test_greedy_real": {
+   "wer": 0.2522012578616352,
+   "n": 713,
+   "exact": 0.26367461430575034,
+   "wer_seen": 0.15213358070500926,
+   "n_seen": 81,
+   "wer_unseen": 0.26494918458993144,
+   "n_unseen": 632
+  },
+  "test_nucleus_real": {
+   "wer": 0.2622641509433962,
+   "n": 713,
+   "exact": 0.23422159887798036,
+   "wer_seen": 0.16697588126159554,
+   "n_seen": 81,
+   "wer_unseen": 0.27440321437012527,
+   "n_unseen": 632
+  },
+  "test_greedy_null_shuffled": {
+   "wer": 1.1473794549266247,
+   "n": 713,
+   "exact": 0.0,
+   "wer_seen": 1.1521335807050093,
+   "n_seen": 81,
+   "wer_unseen": 1.1467738123375089,
+   "n_unseen": 632
+  },
+  "test_greedy_null_noise": {
+   "wer": 1.2589098532494758,
+   "n": 713,
+   "exact": 0.0,
+   "wer_seen": 1.2931354359925789,
+   "n_seen": 81,
+   "wer_unseen": 1.2545497518317184,
+   "n_unseen": 632
+  },
+  "test_greedy_null_prompt_only": {
+   "wer": 0.99958071278826,
+   "n": 713,
+   "exact": 0.0,
+   "wer_seen": 1.0,
+   "n_seen": 81,
+   "wer_unseen": 0.9995272985109903,
+   "n_unseen": 632
+  }
+ },
+ "slim": {
+  "slim_tensors": 540,
+  "slim_mb": 86.5,
+  "removed": [
+   "model.safetensors",
+   "optimizer.bin",
+   "scheduler.bin",
+   "random_states_0.pkl"
+  ]
+ },
+ "minutes": 1899.9,
+ "max_mem_gb": 79.66
+}

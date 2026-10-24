@@ -1,0 +1,21 @@
+{
+ "model": "stage2 B_ssl_fast-dllm-v2-1.5b_s42 ablation drop_55b",
+ "arm": "B",
+ "seed": 42,
+ "split": "brandman_2024_text:test",
+ "decoding": "greedy",
+ "condition": "ablation_drop_55b",
+ "ablation": {
+  "kind": "drop_arrays",
+  "arrays": [
+   "55b"
+  ],
+  "label": "55b removed"
+ },
+ "fill": "train_mean",
+ "patch_size": 5,
+ "checkpoint": "/workspace/eval-ablations/checkpoints/stage2/B_ssl_fast-dllm-v2-1.5b_s42/BEST",
+ "llm": "fast-dllm-v2-1.5b",
+ "prompt": "<|neural_activity|>#<|/neural_activity|> decode the above neural activity into an English sentence:",
+ "source_run": "B_ssl_fast-dllm-v2-1.5b_s42"
+}

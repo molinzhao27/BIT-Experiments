@@ -1,0 +1,714 @@
+trial,reference,decoded,seen_in_train
+0,are you able to come with me next week,kite,False
+1,they will not get everything done anyway,kite,False
+2,she was delivered the next day,kite,False
+3,you actually look forward to foxes or raccoons raiding your garbage,kite,False
+4,there's always a way out of this,kite,False
+5,real rough type camping,kite,False
+6,who benefits from this policy,kite,False
+7,i would reconsider where i was buying it from,kite,False
+8,they were pretty much in good taste,kite,False
+9,my little girl likes blue more than pink,kite,True
+10,it is easier to go without food,kite,False
+11,is your family from dallas,kite,False
+12,don't have enough money,kite,False
+13,i don't think it's a good idea,kite,False
+14,it's my voice,kite,False
+15,the movie is slow burning,kite,False
+16,it all worked out quite well for our family,kite,False
+17,but my boss wouldn't pay for it,kite,False
+18,is she going to stay home,kite,True
+19,most of us think we know the story of detroit michigan,kite,False
+20,oh well no point in dwelling on the past,kite,False
+21,got into it when i was young,kite,False
+22,they do take up a lot of your time,kite,False
+23,fill the jar to the top with boiling water,kite,True
+24,we apologize but this video has failed to load,kite,False
+25,it's a weakness and all,kite,False
+26,it's really hard to,kite,False
+27,it's just one story,kite,False
+28,so do you like your new truck,kite,False
+29,woodworking mastery,kite,False
+30,i like just looking at the billboards,kite,False
+31,i know what the deal was in the past,kite,False
+32,he's not that old,kite,False
+33,the dune rose from the edge of the water,kite,False
+34,what is beef jerky anyway,kite,False
+35,they've enjoyed the school,kite,False
+36,i think its relevance is pretty limited,kite,False
+37,a wide variety,kite,False
+38,because a lot of our friends will be coming over later,kite,False
+39,are you recycling,kite,False
+40,you should avoid this course,kite,False
+41,while it's healing take it easy,kite,False
+42,what is it called,kite,False
+43,a lot of people complain,kite,False
+44,and a very good afternoon to you,kite,True
+45,join us for an upcoming event,kite,False
+46,these guys just want attention,kite,False
+47,stones with runes on them served as checkpoints,kite,False
+48,the box was thrown beside the parked truck,kite,False
+49,this brings me to the next point,kite,False
+50,they've started a drug testing policy,kite,False
+51,coming sun york favorite food,kite,False
+52,that's just the way it was,kite,False
+53,my father is the man in the corduroy jacket,kite,False
+54,the work gets easier with experience,kite,False
+55,there has been a change in the price of oil,kite,False
+56,not just with the visit to pittsburgh,kite,False
+57,this is like a cruelty joke,kite,False
+58,their situation is not as bad,kite,False
+59,i can't think of a better time,kite,False
+60,it's up by green bay,kite,False
+61,i haven't seen too many lately,kite,False
+62,that is strange to me,kite,False
+63,no deaths have been reported in the city,kite,False
+64,he took care of it,kite,False
+65,i had gone to a very dimly lit area,kite,False
+66,that would have been something,kite,False
+67,that kind of threw them off,kite,False
+68,yeah that book is about the same kind of thing,kite,False
+69,taylor attributed this to confirmation bias,kite,False
+70,i was kind of into it for a while there,kite,True
+71,check the oil in the car first,kite,False
+72,you have to get everything replaced,kite,False
+73,so what about the enemies of the assad regime,kite,False
+74,my husband travels,kite,False
+75,i will probably own a car soon,kite,False
+76,you get the point,kite,False
+77,as soon as i had them,kite,True
+78,sign up for our daily newsletter of the top stories in courier country,kite,False
+79,this week's pick is an algorithm that can diagnose a stroke,kite,False
+80,we are quite simply at a tipping point,kite,False
+81,he's just goofing off like he always has,kite,False
+82,now some people object during primary debates,kite,False
+83,we try to do one thing once a year,kite,False
+84,the fish was cooked with some olives,kite,False
+85,if only i could remember the name,kite,True
+86,the house payment,kite,False
+87,right now i'm getting about sixty bucks a month,kite,False
+88,helps them understand the world,kite,False
+89,take a lot of chances,kite,False
+90,it's great you could join us here,kite,False
+91,especially in the winter,kite,False
+92,some interviews will be a lot more casual,kite,False
+93,you know what i would love,kite,False
+94,i'd be curious,kite,False
+95,the result of the test was negative,kite,True
+96,and that's what it falls under,kite,False
+97,there were no reports of casualties,kite,False
+98,so it was really too late to do much,kite,False
+99,how did you come to join that team,kite,False
+100,they got real fat,kite,False
+101,i'm out more money than they are,kite,False
+102,i just stood there and soaked it all up,kite,False
+103,also at that time we were starting to hate each other a little bit,kite,False
+104,you can see the code at this point as well,kite,False
+105,their mother was sick at times,kite,False
+106,in the next five years,kite,True
+107,playing traditional used flat,kite,False
+108,i had found an entry point,kite,False
+109,they waited a couple years,kite,False
+110,i guess that is very good,kite,False
+111,she used to love to do stuff like that,kite,True
+112,my favorite author just released a brand new book,kite,False
+113,this married couple will enjoy their visit,kite,False
+114,there are also these various disclosures,kite,False
+115,that's true of any sport,kite,False
+116,he had been in that position for years,kite,False
+117,check out our free versions,kite,False
+118,a man with a small pension is a ward of the government,kite,False
+119,different choices between past and future,kite,False
+120,we started taking her,kite,False
+121,it's a nice place,kite,False
+122,we've had one as long as i can remember,kite,False
+123,with their good luck they will avoid these problems,kite,False
+124,i tried a lot but this is still wrong,kite,False
+125,i wasn't really,kite,False
+126,there was one point i was going to make,kite,False
+127,if there was a credible punishment,kite,False
+128,i'm watching my kid's education,kite,False
+129,there was a voice in her head,kite,False
+130,if you are convinced that it is the right choice,kite,False
+131,they don't make them anymore,kite,False
+132,i have seen so many who know that god has not given us a spirit of fear,kite,False
+133,the two seats up front are empty,kite,False
+134,an absolute certainty,kite,True
+135,live without dessert for the most part,kite,False
+136,did you hear from another person,kite,False
+137,certain people enjoy this kind of music,kite,False
+138,if you're on a trip or something,kite,False
+139,of course my job was such that i didn't,kite,False
+140,in other words there is a choice to make,kite,True
+141,oh so you need to put away the milk and cereal,kite,False
+142,i noticed those dogs,kite,False
+143,they have coupons,kite,False
+144,if you look back,kite,False
+145,will the game be priced differently during and after early access,kite,False
+146,tim would like to take on other genres,kite,False
+147,why do you say that actually,kite,False
+148,college credit for community service is a good idea,kite,True
+149,i mean he's doing alright,kite,False
+150,that will help solve our problems,kite,False
+151,evidently he was elected president,kite,True
+152,i used their water,kite,False
+153,enjoy the holidays,kite,False
+154,the product i tried was their mini corn dogs which were superb,kite,False
+155,nobody remembers him as a loser,kite,False
+156,he kept his tone light and casual but firm,kite,False
+157,on sunday the snow and ice came in,kite,False
+158,invasion of burma,kite,False
+159,it has been a really nice spring,kite,False
+160,he ran half way to the hardware store,kite,False
+161,pull all this weight,kite,False
+162,something seems off with her,kite,False
+163,that woman will check this fact,kite,False
+164,just the regular channel,kite,False
+165,there was a story of a woman last year,kite,False
+166,that's what's happening here,kite,False
+167,the islanders sleep inside,kite,False
+168,lawmakers passed a measure last year,kite,False
+169,occasionally these things may not be true,kite,True
+170,you actually hand quilted it yourself,kite,False
+171,i don't understand any of that,kite,False
+172,all those european countries,kite,False
+173,you start to take pleasure in it,kite,False
+174,child boys classical clothes team,kite,False
+175,once the children were grown,kite,False
+176,i don't know if they do it all over,kite,False
+177,that's the way i feel,kite,False
+178,you will gain competence with respect to the material,kite,False
+179,if it's run by the individual state,kite,False
+180,not with all the other things going on today,kite,True
+181,ice hairs blooming coming opinion take,kite,False
+182,so it's been real fun here to see,kite,False
+183,i make my living by phone,kite,False
+184,collisions should never happen,kite,False
+185,how many minutes did it take to cook this food,kite,False
+186,whatever you like,kite,False
+187,he didn't just say,kite,False
+188,ten months later he said,kite,False
+189,divide the money up between all of us,kite,False
+190,we ran into some problems,kite,False
+191,i mean just nothing,kite,False
+192,we should turn around and pick her up from school,kite,False
+193,it was written at a third grade level,kite,True
+194,i could hear my accelerated breathing,kite,False
+195,what area of the country do you live in,kite,False
+196,she was supposed to go with me,kite,False
+197,cars have come down in price significantly,kite,False
+198,so you enjoy gardening,kite,False
+199,i get great distance hitting it,kite,False
+200,we're a sit down together family,kite,False
+201,you can have a variety,kite,False
+202,worse is the implication of blame,kite,False
+203,we just left it alone,kite,False
+204,since we've been married i've stopped going,kite,False
+205,on probation or parole and killed someone else,kite,False
+206,put that back in the saucepan,kite,False
+207,how did researchers reach this conclusion,kite,False
+208,i love to watch cartoons on saturday morning,kite,False
+209,how does she live with herself,kite,False
+210,it costs ten or twenty dollars per ounce,kite,False
+211,right now i'm busy chasing my kids,kite,False
+212,a yacht slid around the point into the bay,kite,False
+213,it kind of wound down,kite,False
+214,we have had no snow this winter,kite,False
+215,he was a courier,kite,False
+216,i was arrested for something really minor,kite,False
+217,i think it's caused a lot,kite,False
+218,it was out of his hands at that point,kite,True
+219,it is totally ridiculous,kite,True
+220,ambiance down there,kite,True
+221,we will head to florida for vacation,kite,True
+222,course girl exactly fan watching,kite,False
+223,you'll still see people,kite,False
+224,does it justify the cost,kite,True
+225,one year public service for everybody,kite,False
+226,this happened about a week ago,kite,False
+227,my husband is real into sports too,kite,False
+228,are they both still around,kite,False
+229,the sport looks fun until you're playing it,kite,False
+230,about three years ago,kite,True
+231,two blue fish swam in the tank,kite,False
+232,we got together every summer for vacation,kite,False
+233,won't choices couldn't thirty cards,kite,False
+234,they started looking into programs,kite,False
+235,so the doctor elected to have her,kite,False
+236,that was one thing that's been really nice to have,kite,False
+237,thanks for hearing me rap,kite,False
+238,do you know that i've never seen a monkey,kite,False
+239,is it a novelty or a real coin of importance,kite,False
+240,how far do we have to go,kite,False
+241,tell me your education story,kite,False
+242,what you have and what you don't have,kite,False
+243,please order our regular food for everyone,kite,False
+244,almost like a tingling,kite,False
+245,this project has been a real team effort,kite,False
+246,i don't get that,kite,False
+247,i guess we don't really use that many tin cans,kite,False
+248,i went back to school and got my master's degree,kite,True
+249,did you see it the other night,kite,False
+250,i don't cook anymore,kite,False
+251,i like all this open space around the house,kite,False
+252,through the newspaper reviews,kite,False
+253,like building a house or anything,kite,False
+254,it's not as severe,kite,False
+255,people put them in,kite,False
+256,i can really tell the difference,kite,False
+257,they told me that this was the topic,kite,False
+258,they would have to be supported in some way,kite,False
+259,these are made with a flour tortilla,kite,False
+260,they both cooperate together,kite,False
+261,what should i do,kite,True
+262,i think the roles now are less defined,kite,False
+263,the baby will stick its head in the food,kite,False
+264,vegetables grow in the fields,kite,False
+265,if you bring some more stuff,kite,True
+266,what does the american report say,kite,False
+267,after we got married we moved,kite,False
+268,did you find it hard to make decisions,kite,False
+269,we used to always enjoy watching that show,kite,False
+270,after graduation the students will go on to a variety of colleges,kite,False
+271,we hope you enjoy your stay,kite,True
+272,up in new england where i'm from,kite,False
+273,you can always heat it up again,kite,False
+274,they are tempting at times,kite,True
+275,i never really thought of it that way,kite,False
+276,they had us fill out a long questionnaire,kite,False
+277,there will be more light somewhere around here,kite,False
+278,in a new house everything is white,kite,False
+279,it is in agreement with its provisions,kite,False
+280,the crooked maze failed to fool the mouse,kite,False
+281,who thought of this wonderful idea,kite,False
+282,regime change in iran,kite,False
+283,and so you know and it's his choice to make,kite,False
+284,a little brief autobiography of themselves,kite,False
+285,funny past decisions dallas future bring,kite,False
+286,look at the statistics,kite,False
+287,i hope you enjoyed this article,kite,False
+288,press the pants and sew a button on the vest,kite,False
+289,i hope everything works out up there,kite,True
+290,i don't like this either,kite,False
+291,avoid anymore we'd guys oil,kite,False
+292,how much do you have to pay for your credit card,kite,False
+293,do you like to travel,kite,False
+294,the car will go north from here,kite,False
+295,she doesn't work,kite,False
+296,he's nine months old,kite,False
+297,i will probably say no to this,kite,False
+298,she will be a sophomore in high school next year,kite,False
+299,it's still in great shape,kite,False
+300,it's a nightmare,kite,False
+301,i think a lot of choices,kite,False
+302,and everyone involved in the case bar the jury had been here before,kite,False
+303,in other words there is a choice to make,kite,True
+304,to me it's a treasure,kite,False
+305,also known as welfare,kite,False
+306,we were interested in the local schools,kite,False
+307,i don't know if you've heard of her,kite,False
+308,the town is just over the hill here,kite,True
+309,his good luck will help him avoid problems,kite,False
+310,train accidents and everything else,kite,False
+311,they're doing a lot of good research here,kite,False
+312,there's good music and good food,kite,False
+313,that's pretty much the south end of the state,kite,True
+314,he was that exceptional,kite,False
+315,not for the job i have now,kite,False
+316,the people i know are from there,kite,False
+317,i have to be real careful,kite,False
+318,peter was in bed when i walked into the bedroom,kite,False
+319,where is the evidence that they possess consciousness,kite,False
+320,casualty communism argue frost receptacle scroll,kite,False
+321,my name is pat johnson and i live in texas,kite,False
+322,we will have to place a large order,kite,False
+323,either way they always spell it wrong,kite,False
+324,one of the biggest creatures in the animal kingdom,kite,False
+325,that's where i am,kite,False
+326,employees will not get any severance pay,kite,False
+327,i still like the new york giants,kite,False
+328,mother testing second easier program number,kite,False
+329,i couldn't understand,kite,False
+330,guided by voices,kite,False
+331,they had snacks and story time and everything,kite,False
+332,cover him up and keep him warm,kite,False
+333,the law gives everyone this one right,kite,False
+334,the wagon moved on well oiled wheels,kite,False
+335,line talked turn depends across weekend,kite,False
+336,what some of these people went through is terrible,kite,False
+337,resale telling serious understanding moral,kite,False
+338,when they cut in and speak,kite,False
+339,i was in the nursing school originally,kite,False
+340,of course they ate a lot of sea food,kite,False
+341,many people will come here,kite,False
+342,i kind of wish that they had a little league for the boys,kite,False
+343,listen to your parents right now,kite,False
+344,is there a basis for it,kite,False
+345,do you believe in the dallas cowboys,kite,False
+346,appeal of luxury things is something else,kite,False
+347,it's a eighty eight,kite,False
+348,i went back to get the kids,kite,False
+349,this is really very good,kite,True
+350,to separate the news from the comment,kite,False
+351,there is some definite snark in her report,kite,False
+352,i will stay with my family for a week,kite,False
+353,it's an invasion of privacy,kite,False
+354,he will understand when i talk to him,kite,False
+355,i don't see what the problem is,kite,False
+356,i don't know where the answer is,kite,False
+357,i really like that show,kite,True
+358,it's been kind of scary,kite,False
+359,i enjoy the news,kite,False
+360,let's make a program for kids,kite,False
+361,were quite vocal about it,kite,False
+362,i sew clothes for them every once in a while,kite,False
+363,that's a previous generation,kite,False
+364,they're very affectionate with one another,kite,False
+365,he could get hurt,kite,True
+366,he is not making any major changes for the rematch,kite,False
+367,and my insurance is about to expire,kite,False
+368,if it's run by the individual state,kite,False
+369,we must always keep looking forward,kite,False
+370,it's nice to have a pet dog,kite,False
+371,they're just so suspenseful,kite,False
+372,he's been a legend for so many years,kite,False
+373,because she makes clothes,kite,False
+374,i do study what's going on in the economy,kite,False
+375,he worked hard at it,kite,False
+376,house robberies,kite,False
+377,he scored better than we did on the final exam,kite,False
+378,i will give you mine for free,kite,False
+379,camping is getting more expensive,kite,False
+380,shop spraying mathematics developing nashville,kite,False
+381,as you get older you will understand,kite,False
+382,i like the last bit of this movie,kite,False
+383,i don't know how we could make it more fair,kite,False
+384,we want to stay forever,kite,False
+385,especially not in some of these big cities,kite,False
+386,he does the yard,kite,False
+387,i would love to be a part of this,kite,False
+388,they recently released him,kite,False
+389,my computer is not working anymore,kite,False
+390,nothing can stop me from doing this,kite,False
+391,doesn't seem like it so far,kite,False
+392,when i'm up here,kite,False
+393,they shot him point blank in the face,kite,False
+394,rice is often served in round bowls,kite,False
+395,originally it was a year long nursing program,kite,False
+396,i hope i'm on the right track,kite,True
+397,that's still not enough for a total,kite,False
+398,she has experience in education,kite,False
+399,we're paying basketball people,kite,False
+400,when was the last time we measured you,kite,False
+401,the full decision statement is available here,kite,False
+402,i am not sure if this will be interesting to the kids,kite,False
+403,how are you doing,kite,False
+404,crime men turn couldn't morning somewhere,kite,False
+405,what kind of running do you do,kite,False
+406,we are not trying to mistreat them or anything,kite,True
+407,i guess i like to take care of it,kite,False
+408,the victims' families and things,kite,False
+409,that is a very good point,kite,False
+410,i didn't know there was such a thing,kite,False
+411,about how many calls have you made on this system,kite,False
+412,that's a big concern if you live there,kite,False
+413,they would have never picked it out,kite,False
+414,they can't read anything,kite,False
+415,so imagine all of his lines being spoken in that voice,kite,False
+416,so let's make some conclusions,kite,False
+417,trump's budget is just a proposal at this point,kite,False
+418,because that's perfectly clean,kite,False
+419,blizzards now have a new visual effect,kite,False
+420,a fairly good amount,kite,True
+421,i think it's important to know about this,kite,False
+422,it is important for women who need to work,kite,False
+423,then reboot the system,kite,False
+424,for legal assistant and that's what i know,kite,False
+425,turquoise teams dollars concentration wind's stupidly,kite,False
+426,you look down at your arm,kite,False
+427,he is also a member of the royal irish academy,kite,False
+428,i don't really follow the nba very closely,kite,False
+429,the beauty of the view stunned the young boy,kite,False
+430,she gave me a new watch,kite,False
+431,you know some of that,kite,False
+432,that is horrible,kite,True
+433,you will learn more about the characters in the book,kite,False
+434,in those situations i don't know how to behave,kite,False
+435,that is horrible,kite,True
+436,my family's not very big,kite,True
+437,the couple got married last week,kite,False
+438,they live with us,kite,False
+439,employee controller,kite,False
+440,for example the face might be typically painted red black and white,kite,False
+441,some new types of furniture,kite,False
+442,you can come and go as you please,kite,False
+443,it's an eighty seven degree day,kite,False
+444,just put your paper in the same place every day,kite,False
+445,she'll be two years old in july,kite,True
+446,waves born exercising boat grateful,kite,False
+447,his story is not unusual,kite,False
+448,i'd like to see silence of the lambs,kite,False
+449,drug newspaper you'll report baby,kite,False
+450,we met half way between here and there,kite,True
+451,i think we all do right,kite,False
+452,i've heard him talk about that for hours,kite,True
+453,we had such a good time,kite,False
+454,i was so thrilled that they visited me,kite,False
+455,i wouldn't want them to be on drugs,kite,True
+456,the jury cannot change this fact,kite,False
+457,it is like a country,kite,False
+458,they could sell five million of those,kite,False
+459,my daughter likes to play outside in the yard,kite,False
+460,employment income,kite,False
+461,everything i learned about ancient rome,kite,False
+462,the air is clear at night,kite,False
+463,you're going to get it,kite,False
+464,did you see any of those,kite,False
+465,maybe they're counting on that,kite,False
+466,on the other hand i am quite good,kite,False
+467,people are having their civil rights taken away,kite,False
+468,now it doesn't bother me at all,kite,False
+469,use a pencil to write the first draft,kite,False
+470,between the rows and all,kite,False
+471,give a voice to the voiceless,kite,False
+472,he said he's been saying one more,kite,False
+473,just like how you said my father was,kite,False
+474,we came from living in a condo for nine years,kite,False
+475,how long have you lived in this house,kite,False
+476,that was a shocker to me,kite,False
+477,ethical and religious views on need and pleasure,kite,True
+478,i was accused of selling drugs,kite,False
+479,has such a high clay content,kite,False
+480,are you pleased with this decision,kite,True
+481,actually it makes sense to a certain extent,kite,True
+482,the day care accepted infants starting at six weeks old,kite,True
+483,i'm concerned,kite,False
+484,probably seventies,kite,False
+485,it is the policy in this country,kite,False
+486,satan rejoiced with his birth,kite,True
+487,wasn't allowed to run a lawn mower,kite,False
+488,she has had really good luck this year,kite,True
+489,they don't register,kite,False
+490,but there have often been times when turkey has been a problematic ally,kite,False
+491,the reality is that's usually not the case,kite,False
+492,i don't care for that at all,kite,False
+493,i like that they run tense,kite,False
+494,keeps allowed monarch strap uses,kite,False
+495,i wasn't saying this at all,kite,False
+496,this is an invasion of privacy issue,kite,False
+497,fill the jar to the top with boiling water,kite,True
+498,it snowed rained and hailed the same morning,kite,False
+499,who is related to who,kite,False
+500,democratically reduces carbon cramped baked,kite,False
+501,some of the students are failing the class,kite,False
+502,you don't have to worry that much,kite,False
+503,i'm still going,kite,False
+504,about four hundred showed up,kite,False
+505,you have to do the random drug testing,kite,False
+506,eat slowly chew well and enjoy the meal,kite,False
+507,i like to enjoy my life in the country,kite,False
+508,i just bought a new house,kite,False
+509,all of those things that one does with kids,kite,False
+510,i guess what you have to do is just relax,kite,False
+511,i guess that's about it,kite,False
+512,there would be no way to do it,kite,False
+513,bring the pot to a boil,kite,False
+514,that is my retirement plan,kite,False
+515,what have you seen,kite,False
+516,you were great,kite,False
+517,go over there,kite,True
+518,and that's kind of the way i was raised,kite,False
+519,they can't do as good of a job,kite,False
+520,better than europe,kite,False
+521,for the things that we want,kite,False
+522,it's his choice to make,kite,False
+523,you don't have to hide it either,kite,False
+524,some more time in the morning would be nice,kite,False
+525,i'm not saying that they were,kite,False
+526,a lot of chicken and rice,kite,True
+527,that does not seem quite fair,kite,True
+528,the event was really oriented toward little kids,kite,False
+529,the news and stories that matter delivered weekday mornings,kite,False
+530,that was a close call,kite,False
+531,a liberal arts school,kite,False
+532,i have to pay for four things,kite,False
+533,how does it keep the cost down,kite,False
+534,a good appearance to do a good job where you work,kite,False
+535,grew spend men necessarily you've,kite,False
+536,i live in a farming community,kite,True
+537,that really ticks me off,kite,False
+538,i went back to school and got my master's degree,kite,True
+539,the immune system can slow down at first,kite,False
+540,such threats are a violation of the un charter,kite,False
+541,i love this country so much,kite,False
+542,i get less time to be with children these days,kite,False
+543,we all like my oldest brother,kite,True
+544,i have two other sisters,kite,False
+545,just all different colors,kite,False
+546,what could you do in a few days,kite,False
+547,quality education will certainly help,kite,False
+548,you would know if you lost it or something,kite,False
+549,this is good isn't it,kite,False
+550,can you show me the way,kite,False
+551,no i didn't go to the store,kite,True
+552,which is probably about what their equity is,kite,False
+553,if it does the job,kite,False
+554,didn't mean to cut you off there,kite,True
+555,this seems like a large catch,kite,False
+556,he came by looking for you,kite,False
+557,have you seen that one about survivors in the amazon rain forest,kite,False
+558,i don't know who looks forward to it more,kite,False
+559,what's your point,kite,False
+560,adding fast leads to wrong sums,kite,False
+561,perhaps not in dallas,kite,False
+562,i don't know if it's that serious,kite,False
+563,lunch was like thirteen dollars or something,kite,False
+564,what other questions would you ask,kite,False
+565,i guess because we don't go out that much,kite,True
+566,the hogs were fed chopped corn and garbage,kite,False
+567,take a piece of paper to draw on,kite,False
+568,i'm not building any reserves,kite,False
+569,it's actually the first car we ever bought new,kite,True
+570,semesters plans lean zales fertilizers dementia,kite,False
+571,even in my case,kite,False
+572,fill the jar to the top with boiling water,kite,True
+573,is that pollution,kite,False
+574,take a seat on the bench,kite,False
+575,to get into the system's very difficult,kite,False
+576,please that's enough music for today,kite,False
+577,i'm in charge of raising them,kite,False
+578,occasionally the conversation turns into an argument,kite,True
+579,we see them at least once a week,kite,False
+580,are they the same there,kite,False
+581,which book are you reading to children,kite,False
+582,prince of persia,kite,False
+583,trying to find someone at home,kite,False
+584,how long have you been married,kite,False
+585,but do you think bill gates should resign,kite,True
+586,we've got four kids,kite,True
+587,do you want to eat inside or outside,kite,True
+588,call me once you get here,kite,False
+589,you don't want to or you don't have the time,kite,False
+590,it would be fun just to win one,kite,False
+591,we will listen to whatever jury says,kite,False
+592,what would you like to do first,kite,False
+593,couple of hundred kids in the band,kite,False
+594,i bought these new clothes today,kite,False
+595,before you realize anything is going on,kite,False
+596,she'd just get on the first step and lay down,kite,False
+597,how do you measure it,kite,True
+598,it's a package deal,kite,True
+599,how much time do you spend with your children,kite,False
+600,i am not a fan of this kind of music,kite,False
+601,i never even knew that,kite,False
+602,it's like a major production,kite,False
+603,we definitely need a change in the system,kite,True
+604,how long are we supposed to talk for,kite,False
+605,in other words there is a choice to make,kite,True
+606,you just call him direct,kite,False
+607,understanding the mobile landscape,kite,False
+608,governor the people of detroit don't forget,kite,False
+609,the last book i read,kite,False
+610,but even at its most scientific the concept is simple,kite,False
+611,this is a grand season for hikes on the road,kite,False
+612,do you have any kids or pets,kite,False
+613,where do you go camping at around here,kite,False
+614,is there anything to do for me,kite,False
+615,they live in a little white frame house,kite,False
+616,how to avoid being tracked on the internet,kite,False
+617,very scary to see what they found out,kite,False
+618,i have not gone back lately,kite,False
+619,we could spend that money very quickly,kite,False
+620,we did go camping in arkansas,kite,False
+621,but drastic times could call for drastic measures,kite,False
+622,trump has nominated william barr as the next attorney general,kite,False
+623,that aren't getting taught at home,kite,False
+624,i often listen to this wonderful music,kite,False
+625,that's one of the biggest ones i've seen,kite,False
+626,what's the occasion today,kite,False
+627,that would be devastating i'm sure,kite,False
+628,as far as doing things for them,kite,False
+629,lo and behold they did not,kite,False
+630,school gave a card and books to this small child,kite,False
+631,you know i don't,kite,False
+632,it's totally ridiculous,kite,True
+633,he went over all that with his doctors,kite,False
+634,she wheeled it out on a cart,kite,False
+635,barometric pressure drops during a tornado,kite,False
+636,you should vote for the future,kite,False
+637,as far as that goes,kite,False
+638,she's like seventy four years old now,kite,False
+639,there was one other person besides myself,kite,False
+640,a male profession,kite,False
+641,it pertains to my daily life at the present time,kite,False
+642,to go out fishing in a boat,kite,False
+643,story noise sounds eight friends,kite,False
+644,it does not snow as much as i remember while growing up,kite,False
+645,they're always willing to help you out,kite,False
+646,it was a prime time football game,kite,True
+647,then i heard a very loud explosion,kite,True
+648,i don't think i would have insurance,kite,False
+649,that's understandable,kite,False
+650,when i do recipes i just throw stuff in,kite,False
+651,how many miles were you driving today,kite,False
+652,i'm tired of being a pacifist though,kite,False
+653,just forty miles north of here,kite,False
+654,so thank you for not using the exploit,kite,False
+655,when things don't go right you have to adjust,kite,True
+656,having too much power can be difficult,kite,False
+657,the productivity and the training costs,kite,False
+658,they're not really even participating,kite,True
+659,government will run from the capital city,kite,False
+660,it's just a matter of passing the law,kite,False
+661,he's one of the big proponents of that,kite,False
+662,i did well in school,kite,False
+663,it's just pocket change to a lot of people,kite,False
+664,are either or both dogs considered dangerous under davis county ordinance,kite,False
+665,the neighbor across the street just moved in,kite,False
+666,you just have to keep buying them,kite,False
+667,he is quite a social person,kite,False
+668,you just really can't tell what's going to happen,kite,False
+669,they are very mean i don't like it,kite,False
+670,they fell out because of his drug addiction,kite,False
+671,this is a special city in the special country,kite,False
+672,i'm going to visit florida and louisiana,kite,False
+673,very suspenseful,kite,False
+674,how is your boss at your new job,kite,False
+675,sports miss companies aren't television,kite,False
+676,the ranch dressing goes along well with that,kite,False
+677,tax year of eighty one,kite,False
+678,i don't make that much money,kite,False
+679,vote month expected fan nursing,kite,False
+680,being able to have a choice,kite,False
+681,i have to be real careful,kite,False
+682,supported according key arrive crush,kite,False
+683,can you put the book down for a few minutes,kite,False
+684,that would be good,kite,False
+685,i have more energy when i exercise,kite,False
+686,and who is in charge of making that decision,kite,False
+687,the town is just over the hill here,kite,True
+688,take off and leave your group and go explore,kite,False
+689,and i think he's as guilty as the devil,kite,False
+690,they can pretty much get everybody there,kite,True
+691,the recipe doesn't require kneading the dough,kite,False
+692,the girls at school are all wearing clothes from the sixties,kite,False
+693,which amiga games impressed you in terms of gameplay or technical tricks,kite,False
+694,this may seem important now,kite,False
+695,and hurricane jose had not turned north yet,kite,False
+696,i am free to make a decision about my college,kite,False
+697,not too long ago,kite,True
+698,it's difficult to really say why,kite,False
+699,seeing as you've got some older children,kite,False
+700,what was the actual starting point for the story,kite,False
+701,keep it clean please,kite,False
+702,here are some key points from the briefing,kite,False
+703,he has no criminal convictions,kite,False
+704,public relations,kite,True
+705,so many of them nowadays,kite,False
+706,at the time you hired on with this company,kite,False
+707,you don't get nearly enough exercise,kite,True
+708,i was raised in new york,kite,False
+709,we drove through oklahoma city,kite,False
+710,it was a real special day,kite,False
+711,what was your experience working with him,kite,False
+712,i went back home tonight,kite,False

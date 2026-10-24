@@ -1,0 +1,13 @@
+{
+ "model": "stage2 B_rand_bit4a",
+ "arm": "B",
+ "seed": 42,
+ "split": "brandman_2024_text:test",
+ "decoding": "nucleus",
+ "condition": "real",
+ "init": "None",
+ "checkpoint": "/workspace/KunzDecoder/checkpoints/bit/finetune-ndt-sentence-brandman_2024_text-feat_all/BEST",
+ "label_fraction": 1.0,
+ "llm": "aero-1-audio",
+ "prompt": "<|neural_activity|>#<|/neural_activity|> decode the above neural activity into an English sentence:"
+}

@@ -1,0 +1,714 @@
+trial,reference,decoded,seen_in_train
+0,are you able to come with me next week,able to come with me,False
+1,they will not get everything done anyway,we will not give away done,False
+2,she was delivered the next day,was destroyed the next,False
+3,you actually look forward to foxes or raccoons raiding your garbage,forward to next or return to greeting,False
+4,there's always a way out of this,always a way out of,False
+5,real rough type camping,well roff time camping,False
+6,who benefits from this policy,who decides from,False
+7,i would reconsider where i was buying it from,essentially where i was buying it,False
+8,they were pretty much in good taste,pretty much in good,False
+9,my little girl likes blue more than pink,or like i said before that people do,True
+10,it is easier to go without food,easier to do with monedos,False
+11,is your family from dallas,you finally from dallas,False
+12,don't have enough money,not have enough,False
+13,i don't think it's a good idea,i'd like it's a good,False
+14,it's my voice,what's my voice,False
+15,the movie is slow burning,though,False
+16,it all worked out quite well for our family,worked out quite well for our,False
+17,but my boss wouldn't pay for it,my best friend became a widow,False
+18,is she going to stay home,she going to stay,True
+19,most of us think we know the story of detroit michigan,i think we know the story of,False
+20,oh well no point in dwelling on the past,al capone died in prison,False
+21,got into it when i was young,enjoy it while i was,False
+22,they do take up a lot of your time,take up a lot of,False
+23,fill the jar to the top with boiling water,to get to know this country better,True
+24,we apologize but this video has failed to load,essentially this movie has sold,False
+25,it's a weakness and all,awards and awards,False
+26,it's really hard to,of strictly honest,False
+27,it's just one story,i've just one thing,False
+28,so do you like your new truck,you like your new roof,False
+29,woodworking mastery,i'd probably vote against,False
+30,i like just looking at the billboards,just listening at the low level,False
+31,i know what the deal was in the past,i'm the tail was in the queue,False
+32,he's not that old,i've got that,False
+33,the dune rose from the edge of the water,from the outside of the water,False
+34,what is beef jerky anyway,i is big chunky enough,False
+35,they've enjoyed the school,they've ended that school,False
+36,i think its relevance is pretty limited,it is a serious infection,False
+37,a wide variety,he wound up,False
+38,because a lot of our friends will be coming over later,i'd of course always be happy,False
+39,are you recycling,are you responsible,False
+40,you should avoid this course,it avoids these holes,False
+41,while it's healing take it easy,it's an eerie piece at this point,False
+42,what is it called,what is it,False
+43,a lot of people complain,a lot of people,False
+44,and a very good afternoon to you,a very good afternoon to me,True
+45,join us for an upcoming event,as far as employment,False
+46,these guys just want attention,i've just read about it,False
+47,stones with runes on them served as checkpoints,liberals are the ones that actually vote,False
+48,the box was thrown beside the parked truck,it was thrown behind the play,False
+49,this brings me to the next point,this brings me to the topic,False
+50,they've started a drug testing policy,and a real sense of responsibility,False
+51,coming sun york favorite food,sold yard items from,False
+52,that's just the way it was,because they way it is,False
+53,my father is the man in the corduroy jacket,what is a data scientist,False
+54,the work gets easier with experience,the make and model year with horsepower,False
+55,there has been a change in the price of oil,a dish in the shape of a flower,False
+56,not just with the visit to pittsburgh,what was the question to start,False
+57,this is like a cruelty joke,is like a hundred,False
+58,their situation is not as bad,my situation is not as bad,False
+59,i can't think of a better time,thing of a baby,False
+60,it's up by green bay,be gentle boy,False
+61,i haven't seen too many lately,haven't seen too many lately,False
+62,that is strange to me,is friends to me,False
+63,no deaths have been reported in the city,i've had been replacing them in the meantime,False
+64,he took care of it,took care of,False
+65,i had gone to a very dimly lit area,i'm to a very small degree,False
+66,that would have been something,avoiding a big loss,False
+67,that kind of threw them off,kind of throw them,False
+68,yeah that book is about the same kind of thing,it's about the same height as i am,False
+69,taylor attributed this to confirmation bias,everybody is to contract,False
+70,i was kind of into it for a while there,i have heard it many times,True
+71,check the oil in the car first,i'll hear it the car force,False
+72,you have to get everything replaced,have to get everything,False
+73,so what about the enemies of the assad regime,about the size of the state of the usa,False
+74,my husband travels,my husband sometimes,False
+75,i will probably own a car soon,parental involvement is important,False
+76,you get the point,i'm not making this up,False
+77,as soon as i had them,even as i hate them,True
+78,sign up for our daily newsletter of the top stories in courier country,our daily routine of the top leaders in the top tier,False
+79,this week's pick is an algorithm that can diagnose a stroke,is an accumulation that can predispose a person to cancer,False
+80,we are quite simply at a tipping point,i've never had a problem,False
+81,he's just goofing off like he always has,just eating off like he,False
+82,now some people object during primary debates,now some people around here try very hard,False
+83,we try to do one thing once a year,i do do one thing most,False
+84,the fish was cooked with some olives,was cocked with some alcohol,False
+85,if only i could remember the name,i couldn't imagine they,True
+86,the house payment,the house fire,False
+87,right now i'm getting about sixty bucks a month,i'm getting about sixty bucks,False
+88,helps them understand the world,i've seen unreasonable the other,False
+89,take a lot of chances,lot of changes,False
+90,it's great you could join us here,what you can show us,False
+91,especially in the winter,in the water,False
+92,some interviews will be a lot more casual,essentially where be a lot more,False
+93,you know what i would love,i know what i'll do,False
+94,i'd be curious,i'd be eager,False
+95,the result of the test was negative,wasn't of the stuff was local,True
+96,and that's what it falls under,that's what it falls,False
+97,there were no reports of casualties,we do inspections of course,False
+98,so it was really too late to do much,it was really too late to do,False
+99,how did you come to join that team,look to the right side,False
+100,they got real fat,got real bad,False
+101,i'm out more money than they are,help more children than they,False
+102,i just stood there and soaked it all up,done there and started it,False
+103,also at that time we were starting to hate each other a little bit,at time we were trying to hide it,False
+104,you can see the code at this point as well,we the crowd at this point,False
+105,their mother was sick at times,mother was sick at that time,False
+106,in the next five years,what's wrong where,True
+107,playing traditional used flat,having participated in life,False
+108,i had found an entry point,at first an expression may,False
+109,they waited a couple years,wait a couple,False
+110,i guess that is very good,i guess that is fine,False
+111,she used to love to do stuff like that,was called to do some like,True
+112,my favorite author just released a brand new book,my favorite other dish is called a curry noodle,False
+113,this married couple will enjoy their visit,someone told me about their research,False
+114,there are also these various disclosures,there are also these,False
+115,that's true of any sport,two of eighty four,False
+116,he had been in that position for years,on board in that container were,False
+117,check out our free versions,make our voices heard,False
+118,a man with a small pension is a ward of the government,a small country is a wise country,False
+119,different choices between past and future,watching television does not pass the test,False
+120,we started taking her,we started checking our own stuff,False
+121,it's a nice place,i am a nursing student,False
+122,we've had one as long as i can remember,had one as long as i can,False
+123,with their good luck they will avoid these problems,there could look like they were active,False
+124,i tried a lot but this is still wrong,i tried a lot but this is the best,False
+125,i wasn't really,i wasn't really,False
+126,there was one point i was going to make,was one point i was going,False
+127,if there was a credible punishment,there was a children,False
+128,i'm watching my kid's education,i'm watching my my,False
+129,there was a voice in her head,was a waste even,False
+130,if you are convinced that it is the right choice,or remember that it is the law,False
+131,they don't make them anymore,don't make them,False
+132,i have seen so many who know that god has not given us a spirit of fear,i'm many more know that card as not given as,False
+133,the two seats up front are empty,what are i mean,False
+134,an absolute certainty,assault suit,True
+135,live without dessert for the most part,i was without success for the most,False
+136,did you hear from another person,you hear from other,False
+137,certain people enjoy this kind of music,people enjoy this kind of movie,False
+138,if you're on a trip or something,you're an a员 or something,False
+139,of course my job was such that i didn't,my job was such that i,False
+140,in other words there is a choice to make,he is a therapist by trade,True
+141,oh so you need to put away the milk and cereal,or she did to put away the milk,False
+142,i noticed those dogs,noticed those taxes,False
+143,they have coupons,they have,False
+144,if you look back,if you like,False
+145,will the game be priced differently during and after early access,have beards traditionally been an unpopular thing,False
+146,tim would like to take on other genres,one like to take on,False
+147,why do you say that actually,do you see that also,False
+148,college credit for community service is a good idea,what were the consequences for the employees,True
+149,i mean he's doing alright,when he's doing alright,False
+150,that will help solve our problems,well how'd i find out,False
+151,evidently he was elected president,unfortunately he was elected president,True
+152,i used their water,there would be,False
+153,enjoy the holidays,enjoy the article,False
+154,the product i tried was their mini corn dogs which were superb,i'd was there meeting one day with her,False
+155,nobody remembers him as a loser,most of asia has also fallen,False
+156,he kept his tone light and casual but firm,as do lot of other people,False
+157,on sunday the snow and ice came in,the store and house came in,False
+158,invasion of burma,average of five percent,False
+159,it has been a really nice spring,been a really nice place,False
+160,he ran half way to the hardware store,have we done the entire store,False
+161,pull all this weight,all this week,False
+162,something seems off with her,i've off with her,False
+163,that woman will check this fact,that woman will check this fact,False
+164,just the regular channel,most of the country,False
+165,there was a story of a woman last year,a store of a certain length,False
+166,that's what's happening here,i'm not altogether,False
+167,the islanders sleep inside,the status strip,False
+168,lawmakers passed a measure last year,based on a movie that's,False
+169,occasionally these things may not be true,was that my name be true,True
+170,you actually hand quilted it yourself,actually aid coordinated it,False
+171,i don't understand any of that,most expected answers have,False
+172,all those european countries,all those conditions,False
+173,you start to take pleasure in it,stood to take pleasure in it,False
+174,child boys classical clothes team,small foods places close by,False
+175,once the children were grown,at the present time,False
+176,i don't know if they do it all over,no it's not too hot,False
+177,that's the way i feel,the way i feel,False
+178,you will gain competence with respect to the material,i'm concerned with respect to these,False
+179,if it's run by the individual state,but the individual case,False
+180,not with all the other things going on today,with all the other things going on a,True
+181,ice hairs blooming coming opinion take,mostly coming across as annoying,False
+182,so it's been real fun here to see,been real fun here to,False
+183,i make my living by phone,make my voice be heard,False
+184,collisions should never happen,always done however,False
+185,how many minutes did it take to cook this food,measurements need it take to cook this,False
+186,whatever you like,whatever you like,False
+187,he didn't just say,didn't just,False
+188,ten months later he said,most likely he's still alive,False
+189,divide the money up between all of us,maybe up until last fall i have,False
+190,we ran into some problems,wasn't it some time,False
+191,i mean just nothing,me just something,False
+192,we should turn around and pick her up from school,around a big old home with huge rooms,False
+193,it was written at a third grade level,at a certain point people realize,True
+194,i could hear my accelerated breathing,here my abbreviation fails,False
+195,what area of the country do you live in,anywhere of the country does you,False
+196,she was supposed to go with me,i was supposed to go with,False
+197,cars have come down in price significantly,i am good for now,False
+198,so you enjoy gardening,you enjoy gardening,False
+199,i get great distance hitting it,at cross intersections it's easy,False
+200,we're a sit down together family,a set down decision,False
+201,you can have a variety,can have a veto,False
+202,worse is the implication of blame,is the impact of law,False
+203,we just left it alone,just let it go,False
+204,since we've been married i've stopped going,i've been married for ten years,False
+205,on probation or parole and killed someone else,patriots or pioneers or something,False
+206,put that back in the saucepan,that beckoned in the fog,False
+207,how did researchers reach this conclusion,before six this afternoon,False
+208,i love to watch cartoons on saturday morning,i have to watch conversations on tv,False
+209,how does she live with herself,does she live with us,False
+210,it costs ten or twenty dollars per ounce,we are going to be hard nosed,False
+211,right now i'm busy chasing my kids,well i'm both chinese and my family is chinese,False
+212,a yacht slid around the point into the bay,around the point until the day before,False
+213,it kind of wound down,kind of weird,False
+214,we have had no snow this winter,and no snow this year,False
+215,he was a courier,i was a dog,False
+216,i was arrested for something really minor,it was basically money,False
+217,i think it's caused a lot,i think it's going to like,False
+218,it was out of his hands at that point,i was out of the house at the time,True
+219,it is totally ridiculous,it's totally ridiculous,True
+220,ambiance down there,companies don't think,True
+221,we will head to florida for vacation,and to conclude before,True
+222,course girl exactly fan watching,full employment means less unemployment,False
+223,you'll still see people,she became,False
+224,does it justify the cost,what's,True
+225,one year public service for everybody,you donated kidneys for example,False
+226,this happened about a week ago,it's about a week,False
+227,my husband is real into sports too,i enjoy fishing too,False
+228,are they both still around,she both still around,False
+229,the sport looks fun until you're playing it,first off take care of it,False
+230,about three years ago,haven't thought much about it,True
+231,two blue fish swam in the tank,fish swim in the ocean,False
+232,we got together every summer for vacation,another invasion proposal for me,False
+233,won't choices couldn't thirty cards,conditions couldn't be better,False
+234,they started looking into programs,started looking into cars,False
+235,so the doctor elected to have her,the technical difficulty to have,False
+236,that was one thing that's been really nice to have,that was one thing that's been done,False
+237,thanks for hearing me rap,for going to court,False
+238,do you know that i've never seen a monkey,we know that having sex is a good thing,False
+239,is it a novelty or a real coin of importance,certainly or a real good of,False
+240,how far do we have to go,for two weeks we have to,False
+241,tell me your education story,a year investment story,False
+242,what you have and what you don't have,i had one you sent,False
+243,please order our regular food for everyone,our regular visit for breakfast,False
+244,almost like a tingling,what's like a little,False
+245,this project has been a real team effort,sometimes as big a real deal,False
+246,i don't get that,don't get that,False
+247,i guess we don't really use that many tin cans,we don't really use that many,False
+248,i went back to school and got my master's degree,was it kind of regional,True
+249,did you see it the other night,it is a little bit different,False
+250,i don't cook anymore,don't cook anymore,False
+251,i like all this open space around the house,all this evidence says anything about the law,False
+252,through the newspaper reviews,the description was,False
+253,like building a house or anything,finding a house or whatever,False
+254,it's not as severe,it's not as bad,False
+255,people put them in,every part them,False
+256,i can really tell the difference,can really tell the difference,False
+257,they told me that this was the topic,could me that this was the one,False
+258,they would have to be supported in some way,have to be so precise in making those decisions,False
+259,these are made with a flour tortilla,i mean with a felony,False
+260,they both cooperate together,both cooperated to the full,False
+261,what should i do,i'm doing,True
+262,i think the roles now are less defined,making the rounds now or last,False
+263,the baby will stick its head in the food,i guess it has been the food,False
+264,vegetables grow in the fields,well in the spring,False
+265,if you bring some more stuff,if you bring some more stuff,True
+266,what does the american report say,what does the other agree,False
+267,after we got married we moved,we got married we,False
+268,did you find it hard to make decisions,it had to be both economical,False
+269,we used to always enjoy watching that show,to always ensure quality that,False
+270,after graduation the students will go on to a variety of colleges,using well honed skills and tactics,False
+271,we hope you enjoy your stay,you enjoy your job,True
+272,up in new england where i'm from,in the evening you,False
+273,you can always heat it up again,always get it up,False
+274,they are tempting at times,or maybe at,True
+275,i never really thought of it that way,really caught of it that,False
+276,they had us fill out a long questionnaire,it has real hot a lot,False
+277,there will be more light somewhere around here,for quite some time around here,False
+278,in a new house everything is white,in a new house everything,False
+279,it is in agreement with its provisions,has he already withed,False
+280,the crooked maze failed to fool the mouse,and most children do fall the first time,False
+281,who thought of this wonderful idea,of this wonderful idea,False
+282,regime change in iran,i'm just in dallas,False
+283,and so you know and it's his choice to make,or none at each of those choices to,False
+284,a little brief autobiography of themselves,she's anita patel's daughter,False
+285,funny past decisions dallas future bring,i've decided dallas isn't feasible,False
+286,look at the statistics,at the present,False
+287,i hope you enjoyed this article,you enjoyed this episode,False
+288,press the pants and sew a button on the vest,patriots and so a part of it,False
+289,i hope everything works out up there,at upstate north carolina,True
+290,i don't like this either,but like this,False
+291,avoid anymore we'd guys oil,i'm an engineer too,False
+292,how much do you have to pay for your credit card,how much do you have to pay for,False
+293,do you like to travel,i like that type of television,False
+294,the car will go north from here,we go down them here,False
+295,she doesn't work,it's really well done,False
+296,he's nine months old,it's not much,False
+297,i will probably say no to this,i remember seeing her do,False
+298,she will be a sophomore in high school next year,be a super hero and i'll show,False
+299,it's still in great shape,it would seem,False
+300,it's a nightmare,it's a shame,False
+301,i think a lot of choices,i'm a lot of yourself,False
+302,and everyone involved in the case bar the jury had been here before,in the case where they're not able to do that,False
+303,in other words there is a choice to make,i've seen it done so many times,True
+304,to me it's a treasure,beats a drum,False
+305,also known as welfare,also known as,False
+306,we were interested in the local schools,actually it's the third thing,False
+307,i don't know if you've heard of her,i know if you've heard of,False
+308,the town is just over the hill here,i'm just over the hill here,True
+309,his good luck will help him avoid problems,i think we'll help him out,False
+310,train accidents and everything else,companies and everything,False
+311,they're doing a lot of good research here,i am not exercising now,False
+312,there's good music and good food,good music and good,False
+313,that's pretty much the south end of the state,it wasn't the health plan that's the problem,True
+314,he was that exceptional,he was that bad,False
+315,not for the job i have now,for the job i have,False
+316,the people i know are from there,people i know are from them,False
+317,i have to be real careful,to be real honest,False
+318,peter was in bed when i walked into the bedroom,in bin wednesday i wrote about the new info,False
+319,where is the evidence that they possess consciousness,the advantage that they possess,False
+320,casualty communism argue frost receptacle scroll,conclusions and next steps,False
+321,my name is pat johnson and i live in texas,is part of country and i think,False
+322,we will have to place a large order,have to play a round,False
+323,either way they always spell it wrong,i know i always bring it with me,False
+324,one of the biggest creatures in the animal kingdom,business experience is not essential,False
+325,that's where i am,i'll help him,False
+326,employees will not get any severance pay,she was gettin' better,False
+327,i still like the new york giants,like the two year case,False
+328,mother testing second easier program number,both teams walked away with just one point each,False
+329,i couldn't understand,i didn't realize,False
+330,guided by voices,goodbye,False
+331,they had snacks and story time and everything,a meal at expensive restaurants,False
+332,cover him up and keep him warm,and can he run,False
+333,the law gives everyone this one right,the law gives everyone a chance,False
+334,the wagon moved on well oiled wheels,most of well oiled teams,False
+335,line talked turn depends across weekend,let's put together a plan we can follow,False
+336,what some of these people went through is terrible,some of these people went through is,False
+337,resale telling serious understanding moral,certain career opportunities maybe,False
+338,when they cut in and speak,a lot in a short period,False
+339,i was in the nursing school originally,i was in the nursing school,False
+340,of course they ate a lot of sea food,was they out a lot of see,False
+341,many people will come here,people will come here,False
+342,i kind of wish that they had a little league for the boys,i had a little dog for a while,False
+343,listen to your parents right now,do you parents right,False
+344,is there a basis for it,it's there a vision for,False
+345,do you believe in the dallas cowboys,believe in the dallas,False
+346,appeal of luxury things is something else,of luxury things is something,False
+347,it's a eighty eight,it's a little,False
+348,i went back to get the kids,back to get the keys,False
+349,this is really very good,it is really very helpful,True
+350,to separate the news from the comment,around the size of the country,False
+351,there is some definite snark in her report,as some type of drug in,False
+352,i will stay with my family for a week,say with my family for a few,False
+353,it's an invasion of privacy,it's an investment of time,False
+354,he will understand when i talk to him,well actually when i talk,False
+355,i don't see what the problem is,i don't see that sometimes,False
+356,i don't know where the answer is,i'm not sure the answer,False
+357,i really like that show,only like that show,True
+358,it's been kind of scary,i've been out of the country,False
+359,i enjoy the news,i'm a native english speaker,False
+360,let's make a program for kids,making his mark for sure,False
+361,were quite vocal about it,what's normal again,False
+362,i sew clothes for them every once in a while,i've from over here with a while,False
+363,that's a previous generation,a progressive taxpayer,False
+364,they're very affectionate with one another,i forget sometimes who decides,False
+365,he could get hurt,he said that hadn't,True
+366,he is not making any major changes for the rematch,on making any budget changes for the future,False
+367,and my insurance is about to expire,education is about to change,False
+368,if it's run by the individual state,it's one thing but the other,False
+369,we must always keep looking forward,most always keep looking for something new,False
+370,it's nice to have a pet dog,i am good,False
+371,they're just so suspenseful,just so successful,False
+372,he's been a legend for so many years,evidently she took it upon herself,False
+373,because she makes clothes,because she makes both,False
+374,i do study what's going on in the economy,sometimes what's going on in washington,False
+375,he worked hard at it,he weren't out at,False
+376,house robberies,it's gorgeous,False
+377,he scored better than we did on the final exam,but we don't have the technology yet,False
+378,i will give you mine for free,i will give you points for every,False
+379,camping is getting more expensive,is getting more,False
+380,shop spraying mathematics developing nashville,trying to convince somebody,False
+381,as you get older you will understand,you get older you know,False
+382,i like the last bit of this movie,the class bit off this,False
+383,i don't know how we could make it more fair,now i we could make it,False
+384,we want to stay forever,what do stay for,False
+385,especially not in some of these big cities,not in some of these cases,False
+386,he does the yard,he does the scene,False
+387,i would love to be a part of this,lief to be a parent,False
+388,they recently released him,recently deceased,False
+389,my computer is not working anymore,music is not working,False
+390,nothing can stop me from doing this,and stop me from doing this,False
+391,doesn't seem like it so far,never seem to have it so,False
+392,when i'm up here,i'm up here,False
+393,they shot him point blank in the face,scanned him portling in the shop,False
+394,rice is often served in round bowls,is after six and seven,False
+395,originally it was a year long nursing program,essentially it was a year long project,False
+396,i hope i'm on the right track,i'm sure the store,True
+397,that's still not enough for a total,still got interest for a debt,False
+398,she has experience in education,of course it affects us,False
+399,we're paying basketball people,are they hospital people,False
+400,when was the last time we measured you,what's the last time we,False
+401,the full decision statement is available here,reasoning stopped at exactly here,False
+402,i am not sure if this will be interesting to the kids,i am not sure if this will be interesting to me,False
+403,how are you doing,are you two,False
+404,crime men turn couldn't morning somewhere,i've made my contribution,False
+405,what kind of running do you do,and of running to you,False
+406,we are not trying to mistreat them or anything,i got trying to convince them or something,True
+407,i guess i like to take care of it,i guess i like to talk to myself,False
+408,the victims' families and things,zipper closure and,False
+409,that is a very good point,is a very good,False
+410,i didn't know there was such a thing,i'm not there was such a fuss,False
+411,about how many calls have you made on this system,you could not have seen him,False
+412,that's a big concern if you live there,a big concentration if you will,False
+413,they would have never picked it out,has never been at an high school,False
+414,they can't read anything,what's industry,False
+415,so imagine all of his lines being spoken in that voice,of his thirty two pictures in that,False
+416,so let's make some conclusions,what's making some little,False
+417,trump's budget is just a proposal at this point,exercise is kind of mysterious,False
+418,because that's perfectly clean,always that's probably,False
+419,blizzards now have a new visual effect,i'll have a new resume available,False
+420,a fairly good amount,he finally got around,True
+421,i think it's important to know about this,it's important to know about,False
+422,it is important for women who need to work,unfortunately for women who get to,False
+423,then reboot the system,then rename those,False
+424,for legal assistant and that's what i know,more local businesses around that,False
+425,turquoise teams dollars concentration wind's stupidly,dallas cowboys vs washington redskins,False
+426,you look down at your arm,let alone at the end,False
+427,he is also a member of the royal irish academy,also a number of the children,False
+428,i don't really follow the nba very closely,i'll follow the article backwards,False
+429,the beauty of the view stunned the young boy,of the few sent the young boy,False
+430,she gave me a new watch,given me a new watch,False
+431,you know some of that,go some of,False
+432,that is horrible,what is hello,True
+433,you will learn more about the characters in the book,what more about the gays in the united states,False
+434,in those situations i don't know how to behave,sometimes i don't know how to complete,False
+435,that is horrible,governmental,True
+436,my family's not very big,sometimes it's not very,True
+437,the couple got married last week,call card reading like this,False
+438,they live with us,they live with,False
+439,employee controller,employee morale,False
+440,for example the face might be typically painted red black and white,the first one be basically a clock,False
+441,some new types of furniture,i'm from up north also,False
+442,you can come and go as you please,an apple and so forth,False
+443,it's an eighty seven degree day,it's an updated version,False
+444,just put your paper in the same place every day,your baby is the same place here,False
+445,she'll be two years old in july,we do just about everything,True
+446,waves born exercising boat grateful,i've been accepting but never had the chance,False
+447,his story is not unusual,his joy is not a calm calm,False
+448,i'd like to see silence of the lambs,well to see her actually is well,False
+449,drug newspaper you'll report baby,draw yourself you'll agree,False
+450,we met half way between here and there,we met half way between here and there,True
+451,i think we all do right,getting we all do right,False
+452,i've heard him talk about that for hours,him talking about that for,True
+453,we had such a good time,such a bad time,False
+454,i was so thrilled that they visited me,i'll slice that they mentioned,False
+455,i wouldn't want them to be on drugs,it's going to be on tape,True
+456,the jury cannot change this fact,cannot change this fact,False
+457,it is like a country,it is like a moon,False
+458,they could sell five million of those,sell them wherever they're,False
+459,my daughter likes to play outside in the yard,didn't like to play outside,False
+460,employment income,of a hundred,False
+461,everything i learned about ancient rome,i looked about outside,False
+462,the air is clear at night,or is there a new one,False
+463,you're going to get it,we're going to get,False
+464,did you see any of those,on your body as well,False
+465,maybe they're counting on that,they're cutting on that,False
+466,on the other hand i am quite good,although i am not young,False
+467,people are having their civil rights taken away,or keep their money right,False
+468,now it doesn't bother me at all,now it doesn't bother me,False
+469,use a pencil to write the first draft,pork loin to roast the first,False
+470,between the rows and all,was it a boy or a girl,False
+471,give a voice to the voiceless,i just do the laundry,False
+472,he said he's been saying one more,some it's been saying when,False
+473,just like how you said my father was,i think i would spend more,False
+474,we came from living in a condo for nine years,from living in a condo for one,False
+475,how long have you lived in this house,i watch the news on television,False
+476,that was a shocker to me,was a challenge to me,False
+477,ethical and religious views on need and pleasure,all at once you're a professional and a player,True
+478,i was accused of selling drugs,it's a serial job,False
+479,has such a high clay content,so i like,False
+480,are you pleased with this decision,you played with this,True
+481,actually it makes sense to a certain extent,it makes sense to a certain extent,True
+482,the day care accepted infants starting at six weeks old,american football is not as big a business as the sports world,True
+483,i'm concerned,i'm tested,False
+484,probably seventies,proponent of civil liberties,False
+485,it is the policy in this country,the decision is this time,False
+486,satan rejoiced with his birth,satan rejoiced with his birth,True
+487,wasn't allowed to run a lawn mower,allowed to roam a lot more,False
+488,she has had really good luck this year,i'm from north carolina,True
+489,they don't register,we don't raise kids,False
+490,but there have often been times when turkey has been a problematic ally,i'm been driving for thirteen hours,False
+491,the reality is that's usually not the case,is that's usually not the case,False
+492,i don't care for that at all,more care for that,False
+493,i like that they run tense,i like that they,False
+494,keeps allowed monarch strap uses,residential type job,False
+495,i wasn't saying this at all,there's a lot of irony,False
+496,this is an invasion of privacy issue,i consider himself a relatively honest person,False
+497,fill the jar to the top with boiling water,i'll do that with relative ease,True
+498,it snowed rained and hailed the same morning,rented an hour the same movie,False
+499,who is related to who,who is elected to,False
+500,democratically reduces carbon cramped baked,always remember crime can be prevented,False
+501,some of the students are failing the class,the students are fairly the same,False
+502,you don't have to worry that much,i'm have to worry that,False
+503,i'm still going,i'm still,False
+504,about four hundred showed up,four hundred such jobs,False
+505,you have to do the random drug testing,to do the sentencing judge,False
+506,eat slowly chew well and enjoy the meal,sleeping so far it's still a mystery,False
+507,i like to enjoy my life in the country,enjoy my life in the country,False
+508,i just bought a new house,just part of a new,False
+509,all of those things that one does with kids,that's things that one does,False
+510,i guess what you have to do is just relax,we have to get to know each other,False
+511,i guess that's about it,what's that about in,False
+512,there would be no way to do it,could be no way to do,False
+513,bring the pot to a boil,the point to a,False
+514,that is my retirement plan,is my computer okay,False
+515,what have you seen,what have you,False
+516,you were great,why were drugs,False
+517,go over there,i'm over there,True
+518,and that's kind of the way i was raised,kind of the way i was,False
+519,they can't do as good of a job,of course i'm happy,False
+520,better than europe,better than that,False
+521,for the things that we want,the things that we,False
+522,it's his choice to make,who's just too bad,False
+523,you don't have to hide it either,don't have to hardy it,False
+524,some more time in the morning would be nice,time in the morning would be nice,False
+525,i'm not saying that they were,not seeing that they,False
+526,a lot of chicken and rice,of course at first,True
+527,that does not seem quite fair,that's so much money,True
+528,the event was really oriented toward little kids,american food usually includes cheese,False
+529,the news and stories that matter delivered weekday mornings,and stores that morning declared closure,False
+530,that was a close call,always call me,False
+531,a liberal arts school,a circuit,False
+532,i have to pay for four things,to pay for four things,False
+533,how does it keep the cost down,does it keep the bugs the same,False
+534,a good appearance to do a good job where you work,americans do a good job of that,False
+535,grew spend men necessarily you've,we sent him this weekend,False
+536,i live in a farming community,leave it a fountain until the last minute,True
+537,that really ticks me off,really docked your pay,False
+538,i went back to school and got my master's degree,those are no good anymore,True
+539,the immune system can slow down at first,i'm mostly can snow tie at,False
+540,such threats are a violation of the un charter,are a majority of the government jobs,False
+541,i love this country so much,was actually so much,False
+542,i get less time to be with children these days,what time do we finish this project,False
+543,we all like my oldest brother,we all like the italian food,True
+544,i have two other sisters,i've two other sisters,False
+545,just all different colors,i'm all for capital punishment,False
+546,what could you do in a few days,i do in a few days,False
+547,quality education will certainly help,wasn't interesting will,False
+548,you would know if you lost it or something,no if you last it,False
+549,this is good isn't it,is good isn't,False
+550,can you show me the way,show me the way,False
+551,no i didn't go to the store,didn't go to school,True
+552,which is probably about what their equity is,evidently about thirty percent of all new ones,False
+553,if it does the job,it takes seven,False
+554,didn't mean to cut you off there,nobody knew what you have there,True
+555,this seems like a large catch,she's like a lamb,False
+556,he came by looking for you,my looking for you,False
+557,have you seen that one about survivors in the amazon rain forest,about yourself and the opportunity,False
+558,i don't know who looks forward to it more,and so who looks forward to,False
+559,what's your point,what's your boy,False
+560,adding fast leads to wrong sums,actors look to look things,False
+561,perhaps not in dallas,not an illness,False
+562,i don't know if it's that serious,if it's not diarrhea,False
+563,lunch was like thirteen dollars or something,was like twenty dollars or something,False
+564,what other questions would you ask,what other countries,False
+565,i guess because we don't go out that much,i guess because we don't go out that much,True
+566,the hogs were fed chopped corn and garbage,the house was built ten years ago,False
+567,take a piece of paper to draw on,most of men do not carry,False
+568,i'm not building any reserves,what brought any reason,False
+569,it's actually the first car we ever bought new,actually the first car we ever bought new,True
+570,semesters plans lean zales fertilizers dementia,i've leaned slightly towards the left,False
+571,even in my case,even in my case,False
+572,fill the jar to the top with boiling water,was joy to the top with,True
+573,is that pollution,is that baltic,False
+574,take a seat on the bench,we're a mess,False
+575,to get into the system's very difficult,into the next five days,False
+576,please that's enough music for today,that's another music for another,False
+577,i'm in charge of raising them,it just happens sometimes they,False
+578,occasionally the conversation turns into an argument,the civilian casualties keep increasing,True
+579,we see them at least once a week,we see them at least once,False
+580,are they the same there,i think the same thing,False
+581,which book are you reading to children,are you getting to,False
+582,prince of persia,words have power,False
+583,trying to find someone at home,trying to find someone,False
+584,how long have you been married,how long have you been,False
+585,but do you think bill gates should resign,but do you think bill gates should,True
+586,we've got four kids,i'm far beyond,True
+587,do you want to eat inside or outside,you want to eat inside,True
+588,call me once you get here,me once you get here,False
+589,you don't want to or you don't have the time,why do you don't have,False
+590,it would be fun just to win one,what should do to regain men,False
+591,we will listen to whatever jury says,listen to whatever channel,False
+592,what would you like to do first,when you like to do,False
+593,couple of hundred kids in the band,of whatever it is in the sky,False
+594,i bought these new clothes today,these small creatures decide,False
+595,before you realize anything is going on,because you realize anything is,False
+596,she'd just get on the first step and lay down,get on the first step and slide,False
+597,how do you measure it,i have two sisters in washington,True
+598,it's a package deal,i watch mysteries too,True
+599,how much time do you spend with your children,what time do you start with,False
+600,i am not a fan of this kind of music,maybe a fan of this kind,False
+601,i never even knew that,i never even knew,False
+602,it's like a major production,like a woman,False
+603,we definitely need a change in the system,occasionally it gets a laugh in the second,True
+604,how long are we supposed to talk for,look at which direction to go,False
+605,in other words there is a choice to make,once there is a choice,True
+606,you just call him direct,just call him,False
+607,understanding the mobile landscape,according to the people,False
+608,governor the people of detroit don't forget,the people of china don't,False
+609,the last book i read,last week i,False
+610,but even at its most scientific the concept is simple,at its most simplistic the conflict is about who's supposed to make the decisions,False
+611,this is a grand season for hikes on the road,a great season for hockey on the north,False
+612,do you have any kids or pets,have any songs or anything,False
+613,where do you go camping at around here,do you go camping at sunrise,False
+614,is there anything to do for me,everything has to do with me,False
+615,they live in a little white frame house,didn't quite raise the issue,False
+616,how to avoid being tracked on the internet,i am avoiding being charged on my credit card,False
+617,very scary to see what they found out,how do you see what they,False
+618,i have not gone back lately,have not gone back,False
+619,we could spend that money very quickly,sent that money very,False
+620,we did go camping in arkansas,she went going on tv,False
+621,but drastic times could call for drastic measures,i've got call for nursing memo,False
+622,trump has nominated william barr as the next attorney general,microsoft windows version is the next,False
+623,that aren't getting taught at home,i wouldn't take it apart,False
+624,i often listen to this wonderful music,i haven't looked at this,False
+625,that's one of the biggest ones i've seen,one of the biggest ones,False
+626,what's the occasion today,what's the occasion,False
+627,that would be devastating i'm sure,what beprecisely i've seen,False
+628,as far as doing things for them,as far as doing this for them,False
+629,lo and behold they did not,and people say they do,False
+630,school gave a card and books to this small child,give a hard and hard proof to this,False
+631,you know i don't,we know i know,False
+632,it's totally ridiculous,it's totally ridiculous,True
+633,he went over all that with his doctors,ever heard that there's a secret,False
+634,she wheeled it out on a cart,i'd end up on a whale,False
+635,barometric pressure drops during a tornado,was just joking a little,False
+636,you should vote for the future,what've you've done for the last,False
+637,as far as that goes,was for us that,False
+638,she's like seventy four years old now,basically free will is an illusion,False
+639,there was one other person besides myself,what would other businesses do,False
+640,a male profession,i feel free,False
+641,it pertains to my daily life at the present time,estimates to try to figure out the correct thing,False
+642,to go out fishing in a boat,i'm out fishing in a boat,False
+643,story noise sounds eight friends,car's engine's a mess,False
+644,it does not snow as much as i remember while growing up,this is not true as far as i remember,False
+645,they're always willing to help you out,i was really to help you,False
+646,it was a prime time football game,a prime time football,True
+647,then i heard a very loud explosion,i heard a very long wave,True
+648,i don't think i would have insurance,then i won't have,False
+649,that's understandable,that's excellent,False
+650,when i do recipes i just throw stuff in,do something i miss though,False
+651,how many miles were you driving today,his place was you dressing,False
+652,i'm tired of being a pacifist though,anywhere of being a professional,False
+653,just forty miles north of here,never seen him here,False
+654,so thank you for not using the exploit,making you for not using the thing,False
+655,when things don't go right you have to adjust,do what you have to do and then we can finish,True
+656,having too much power can be difficult,to most people it seems ridiculous,False
+657,the productivity and the training costs,permanently become a reader,False
+658,they're not really even participating,only in bankruptcy court,True
+659,government will run from the capital city,women will run from the city,False
+660,it's just a matter of passing the law,what's a moment of peace,False
+661,he's one of the big proponents of that,on of the big banks,False
+662,i did well in school,did well in,False
+663,it's just pocket change to a lot of people,it takes two and a lot of,False
+664,are either or both dogs considered dangerous under davis county ordinance,or both dogs decided not to visit,False
+665,the neighbor across the street just moved in,enjoy the sun and enjoy it,False
+666,you just have to keep buying them,just have to eat,False
+667,he is quite a social person,a usual person,False
+668,you just really can't tell what's going to happen,really cut down on what's going,False
+669,they are very mean i don't like it,very mean i don't like,False
+670,they fell out because of his drug addiction,because of his great success,False
+671,this is a special city in the special country,is a final version in the say,False
+672,i'm going to visit florida and louisiana,was somebody involved in this,False
+673,very suspenseful,very typical,False
+674,how is your boss at your new job,i'm just like any other human,False
+675,sports miss companies aren't television,it's company owned stock,False
+676,the ranch dressing goes along well with that,i'd measure each of them with that,False
+677,tax year of eighty one,yeah of any,False
+678,i don't make that much money,don't make that movie,False
+679,vote month expected fan nursing,it affected my decision,False
+680,being able to have a choice,able to have a choice,False
+681,i have to be real careful,i have to be real careful,False
+682,supported according key arrive crush,somebody already did away,False
+683,can you put the book down for a few minutes,the book deal for a new version,False
+684,that would be good,that would be,False
+685,i have more energy when i exercise,more innovations mean more jobs,False
+686,and who is in charge of making that decision,i was in charge of making,False
+687,the town is just over the hill here,it makes sense that they would,True
+688,take off and leave your group and go explore,of and leave your group and all,False
+689,and i think he's as guilty as the devil,when he's as concentrated as he,False
+690,they can pretty much get everybody there,i'm pretty much getting around,True
+691,the recipe doesn't require kneading the dough,was it during the reign of the show,False
+692,the girls at school are all wearing clothes from the sixties,so i'll really watch some of that,False
+693,which amiga games impressed you in terms of gameplay or technical tricks,kids don't usually own a car,False
+694,this may seem important now,me seem better,False
+695,and hurricane jose had not turned north yet,managing actor and not turned north,False
+696,i am free to make a decision about my college,we have to make he decision about,False
+697,not too long ago,full scholarship,True
+698,it's difficult to really say why,easier to raise them,False
+699,seeing as you've got some older children,we've got some older children,False
+700,what was the actual starting point for the story,everybody starts out so different,False
+701,keep it clean please,i'd place,False
+702,here are some key points from the briefing,how are some key points from,False
+703,he has no criminal convictions,has no criminal,False
+704,public relations,public relations,True
+705,so many of them nowadays,many of them know,False
+706,at the time you hired on with this company,come you out on this,False
+707,you don't get nearly enough exercise,don't get nearly enough exercise,True
+708,i was raised in new york,she's up to two now,False
+709,we drove through oklahoma city,were automatic shootings,False
+710,it was a real special day,was a real pleasure too,False
+711,what was your experience working with him,exceptions like the death penalty,False
+712,i went back home tonight,i'm up beyond,False

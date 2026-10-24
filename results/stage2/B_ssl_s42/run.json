@@ -1,0 +1,307 @@
+{
+ "args": {
+  "name": "B_ssl_s42",
+  "arm": "B",
+  "init": "checkpoints/ssl_human/BEST_core",
+  "eval_only": null,
+  "seed": 42,
+  "epochs": null,
+  "eval_every": 5,
+  "label_fraction": 1.0,
+  "limit": null,
+  "null_decodings": [
+   "greedy"
+  ],
+  "no_train": false,
+  "llm": null,
+  "prompt": null
+ },
+ "init_report": {
+  "init": "/workspace/KunzDecoder/checkpoints/ssl_human/BEST_core",
+  "encoder": {
+   "loaded": 115,
+   "skipped_shape": [],
+   "not_in_checkpoint": [
+    "embedder.read_in.embed_dict.0.0.bias",
+    "embedder.read_in.embed_dict.0.0.weight",
+    "embedder.read_in.embed_dict.0.1.bias",
+    "embedder.read_in.embed_dict.0.1.weight",
+    "embedder.read_in.embed_dict.0.2.bias",
+    "embedder.read_in.embed_dict.0.2.weight",
+    "embedder.read_in.embed_dict.1.0.bias",
+    "embedder.read_in.embed_dict.1.0.weight",
+    "embedder.read_in.embed_dict.1.1.bias",
+    "embedder.read_in.embed_dict.1.1.weight",
+    "embedder.read_in.embed_dict.1.2.bias",
+    "embedder.read_in.embed_dict.1.2.weight"
+   ],
+   "unexpected": []
+  },
+  "read_in_loaded": false
+ },
+ "padding": {
+  "smoothing": "pad-masked",
+  "smoothing_taps": 13,
+  "noise": false,
+  "merge": "packed"
+ },
+ "n": {
+  "train": 8072,
+  "val": 713,
+  "test": 713
+ },
+ "n_seen": {
+  "val": 81,
+  "test": 81
+ },
+ "config": {
+  "seed": 42,
+  "savestring": "B_ssl_s42",
+  "wandb_project": "bci",
+  "log_to_wandb": false,
+  "verbosity": 0,
+  "dirs": {
+   "checkpoint_dir": "/workspace/KunzDecoder/checkpoints/stage2",
+   "log_dir": "/workspace/KunzDecoder/logs/bit",
+   "data_dir": "/workspace/KunzDecoder/data/raw"
+  },
+  "training": {
+   "num_epochs": 150,
+   "train_batch_size": 8,
+   "test_batch_size": 8,
+   "shuffle_test_dataloader": false,
+   "save_every": null,
+   "eval_every": 5,
+   "drop_last_test_dataloader": false,
+   "drop_last_train_dataloader": false,
+   "mixed_precision": "bf16"
+  },
+  "model": {
+   "model_class": "BCI_AudioLLM",
+   "from_pt": null,
+   "projector": {
+    "stacking": 1,
+    "inter_size": 1024,
+    "embed_size": 768,
+    "bias": true,
+    "act": "relu"
+   },
+   "encoder": {
+    "model_class": "NDT",
+    "encoder": {
+     "from_pt": null,
+     "context": {
+      "forward": -1,
+      "backward": -1
+     },
+     "smooth_and_noise": {
+      "noise": true,
+      "smooth_sd": 2,
+      "white_noise_sd": 0.2,
+      "constant_offset_sd": 0.05
+     },
+     "embedder": {
+      "stitch": true,
+      "patch_size": 5,
+      "masker": {
+       "active": false,
+       "ratio": 0.0,
+       "expand_prob": 1.0,
+       "max_timespan": 15
+      },
+      "max_F": 2500,
+      "max_channels": 512,
+      "input_dim": 256,
+      "pos": false,
+      "act": "softsign",
+      "bias": true,
+      "dropout": 0.2
+     },
+     "transformer": {
+      "n_layers": 7,
+      "hidden_size": 384,
+      "use_rope": true,
+      "rope_theta": 10000.0,
+      "n_heads": 6,
+      "attention_bias": true,
+      "act": "gelu",
+      "inter_size": 512,
+      "mlp_bias": true,
+      "dropout": 0.4,
+      "fixup_init": true
+     },
+     "factors": {
+      "active": false,
+      "size": 384,
+      "act": "relu",
+      "bias": true,
+      "dropout": 0.0,
+      "fixup_init": false,
+      "init_range": 0.1
+     }
+    },
+    "decoder": {
+     "from_pt": null
+    }
+   }
+  },
+  "data": {
+   "dataset_class": "sl",
+   "hf_dataset_name": null,
+   "json_dataset_name": null,
+   "train_name": "train",
+   "test_name": "test",
+   "train_len": null,
+   "test_len": null,
+   "dataset": {
+    "zscore_day": false,
+    "zscore_block": false,
+    "day_idxs": null,
+    "area_start": 0,
+    "area_end": 256,
+    "features": [
+     "tx1",
+     "spikePow"
+    ],
+    "data_dir": "/workspace/KunzDecoder/data/raw/brandman_2024_text"
+   },
+   "tokenizer_path": "/workspace/KunzDecoder/checkpoints/hf/Aero-1-Audio",
+   "prompt": "<|neural_activity|>#<|/neural_activity|> decode the above neural activity into an English sentence:",
+   "val_name": "val",
+   "val_len": null
+  },
+  "method": {
+   "model_kwargs": {
+    "method_name": "endtoend",
+    "load_ndt_from_pt": null,
+    "llm_path": "/workspace/KunzDecoder/checkpoints/hf/Aero-1-Audio",
+    "project_to_audio": false,
+    "freeze_llm": false,
+    "freeze_ndt": false,
+    "use_contrastive": true,
+    "lora": {
+     "r": 8,
+     "alpha": 32,
+     "dropout": 0.2,
+     "target_modules": [
+      "q_proj",
+      "v_proj",
+      "k_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+     ],
+     "modules_to_save": []
+    },
+    "vocab_size": 41,
+    "blank_id": 0,
+    "zero_infinity": true
+   },
+   "dataset_kwargs": {
+    "dataset_name": "brandman_2024_text",
+    "targets_name": "labels",
+    "batch_size": 1
+   },
+   "dataloader_kwargs": {
+    "pad_dict": {
+     "spikes": [
+      {
+       "dim": 0,
+       "side": "right",
+       "value": -100,
+       "truncate": null,
+       "min_length": null,
+       "max_length": null
+      }
+     ],
+     "spikes_mask": [
+      {
+       "dim": 0,
+       "side": "right",
+       "value": 0,
+       "truncate": null,
+       "min_length": null,
+       "max_length": null
+      }
+     ],
+     "spikes_timestamp": [
+      {
+       "dim": 0,
+       "side": "right",
+       "value": 0,
+       "truncate": null,
+       "min_length": null,
+       "max_length": null
+      }
+     ],
+     "targets": [
+      {
+       "dim": 0,
+       "side": "right",
+       "value": -100,
+       "truncate": null,
+       "min_length": null,
+       "max_length": null
+      }
+     ],
+     "targets_mask": [
+      {
+       "dim": 0,
+       "side": "right",
+       "value": 0,
+       "truncate": null,
+       "min_length": null,
+       "max_length": null
+      }
+     ],
+     "input_ids": [
+      {
+       "dim": 0,
+       "side": "right",
+       "value": 0,
+       "truncate": null,
+       "min_length": null,
+       "max_length": null
+      }
+     ],
+     "attention_mask": [
+      {
+       "dim": 0,
+       "side": "right",
+       "value": 0,
+       "truncate": null,
+       "min_length": null,
+       "max_length": null
+      }
+     ]
+    }
+   },
+   "metric_kwargs": {
+    "metric_name": "WER",
+    "n_print": 0,
+    "n_beams": 1
+   }
+  },
+  "optimizer": {
+   "gradient_accumulation_steps": 1,
+   "lr": 5e-05,
+   "wd": 1e-05,
+   "eps": 1e-08,
+   "scheduler": "cosine",
+   "warmup_pct": 0.0,
+   "gamma": 0.95,
+   "div_factor": 25
+  },
+  "wandb_entity": null
+ },
+ "torch": "2.7.1+cu128",
+ "eval_checkpoint": {
+  "dir": "/workspace/KunzDecoder/checkpoints/stage2/B_ssl_s42/BEST",
+  "load": {
+   "file": "model.safetensors",
+   "missing_base_llm": 1,
+   "unexpected": 0
+  }
+ }
+}

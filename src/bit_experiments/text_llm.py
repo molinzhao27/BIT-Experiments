@@ -110,8 +110,11 @@ def use_llm(config, name: str) -> dict:
     elif entry["loader"] == "diffusion":
         from bit_experiments.diffusion_llm import MASK_TOKEN, BCI_DiffusionLLM as model_class
 
-        added = json.loads((Path(entry["path"]) / "added_tokens.json").read_text())
-        config["method"]["model_kwargs"]["diffusion_sampler"] = dict(entry["sampler"], mask_id=added[MASK_TOKEN])
+        if "mask_id" in entry:  # an AR snapshot without |<MASK>|: one of its unused embedding rows (the Instruct control)
+            mask_id = entry["mask_id"]
+        else:
+            mask_id = json.loads((Path(entry["path"]) / "added_tokens.json").read_text())[MASK_TOKEN]
+        config["method"]["model_kwargs"]["diffusion_sampler"] = dict(entry["sampler"], mask_id=mask_id)
     else:
         raise ValueError(f"{name}: unknown loader {entry['loader']!r}")
     bit_trainer.NAME2MODEL[model_class.__name__] = model_class

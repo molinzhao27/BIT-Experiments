@@ -20,3 +20,60 @@ fast-dllm-v2-1.5b:            # run 3: block-diffusion LM converted from Qwen2.5
   local_dir: checkpoints/hf/Fast_dLLM_v2_1.5B
   loader: diffusion           # bit_experiments.diffusion_llm.BCI_DiffusionLLM (vendored decoder: src/bit_experiments/fast_dllm_v2)
   sampler: {block_size: 32, small_block_size: 8, threshold: 0.9}   # the model card's generate settings
+fast-dllm-v2-1.5b-edit:       # revision run (docs/REVISION_RUN.md, not launched): run 3 + the three revision options
+  repo_id: Efficient-Large-Model/Fast_dLLM_v2_1.5B
+  revision: 25093b6f63300adfd57f72145083c8a528fe4f16
+  local_dir: checkpoints/hf/Fast_dLLM_v2_1.5B
+  loader: diffusion
+  sampler: {block_size: 32, small_block_size: 8, threshold: 0.9,   # run 3's
+            align_sentence_block: true,                             # sentence + EOS in one block with the last prompt token
+            edit_rate: 0.1,                                         # T2T: random-token corruption of visible targets
+            editing_threshold: 0.5, max_post_steps: 16, max_edits: 2}   # LLaDA2.1's Quality-mode edit threshold / post steps
+fast-dllm-v2-1.5b-remask:     # decode-only (docs/REVISION_RUN.md): run 3's BEST via train_stage2.py --eval-only, + re-masking
+  repo_id: Efficient-Large-Model/Fast_dLLM_v2_1.5B
+  revision: 25093b6f63300adfd57f72145083c8a528fe4f16
+  local_dir: checkpoints/hf/Fast_dLLM_v2_1.5B
+  loader: diffusion
+  sampler: {block_size: 32, small_block_size: 8, threshold: 0.9,   # run 3's
+            remask_threshold: 0.9, remask_rounds: 3}                # re-fill every best-guess commit with context
+qwen2.5-1.5b-instruct-diffusion:  # control (docs/INSTRUCT_DIFFUSION_CONTROL.md, not launched): run 3's architecture,
+                              # objective and sampler on run 1's Instruct weights, without NVIDIA's ~1B-token conversion
+  repo_id: Qwen/Qwen2.5-1.5B-Instruct
+  revision: 989aa7980e4cf806f80c7fef2b1adb7bc71aa306
+  local_dir: checkpoints/hf/Qwen2.5-1.5B-Instruct   # run 1's snapshot; its qwen2 config is converted on load (bd_size 32)
+  loader: diffusion
+  mask_id: 151665             # |<MASK>| = Instruct's unused row 151665 (Fast-dLLM v2's id and starting row), frozen as in run 3
+  sampler: {block_size: 32, small_block_size: 8, threshold: 0.9}   # run 3's
+fast-dllm-v2-1.5b-fast:       # run 3 with the packed training step (docs/DIFFUSION_SPEEDUP.md): same masks, loss and
+                              # gradients, ~1/3 of the decoder compute; for the GPU timing smoke and later diffusion runs
+  repo_id: Efficient-Large-Model/Fast_dLLM_v2_1.5B
+  revision: 25093b6f63300adfd57f72145083c8a528fe4f16
+  local_dir: checkpoints/hf/Fast_dLLM_v2_1.5B
+  loader: diffusion
+  sampler: {block_size: 32, small_block_size: 8, threshold: 0.9,   # run 3's
+            fast_step: true}                                        # skip the unused noisy prefix copy (and padding)
+aero-1-audio-diffusion:       # Aero block diffusion (docs/AERO_DIFFUSION.md, not launched): run 3's architecture, objective
+                              # and sampler on Aero-1-Audio's LM (BIT's default decoder), as the Instruct control does for Instruct
+  repo_id: lmms-lab/Aero-1-Audio
+  revision: 2efba6e9de291fa30e11075849631ae410b8485a   # BIT's pinned snapshot (configs/bit_baseline.yaml)
+  local_dir: checkpoints/hf/Aero-1-Audio   # its language_model.* tensors are read out on load; no audio tower
+  loader: diffusion
+  mask_id: 151665             # Aero's <image> row, never used: the same untrained vector as every unused row, frozen
+  sampler: {block_size: 32, small_block_size: 8, threshold: 0.9}   # run 3's
+aero-1-audio-diffusion-fast:  # the same with the packed training step (docs/DIFFUSION_SPEEDUP.md; optional, not matched)
+  repo_id: lmms-lab/Aero-1-Audio
+  revision: 2efba6e9de291fa30e11075849631ae410b8485a
+  local_dir: checkpoints/hf/Aero-1-Audio
+  loader: diffusion
+  mask_id: 151665
+  sampler: {block_size: 32, small_block_size: 8, threshold: 0.9,   # run 3's
+            fast_step: true}                                        # skip the unused noisy prefix copy (and padding)
+aero-1-audio-diffusion-fast-syncfree:  # aero-1-audio-diffusion-fast with one host wait per step instead of ~45: the same
+                              # masks, loss and gradients bit for bit (docs/DIFFUSION_SPEEDUP.md "Host waits"); not run yet
+  repo_id: lmms-lab/Aero-1-Audio
+  revision: 2efba6e9de291fa30e11075849631ae410b8485a
+  local_dir: checkpoints/hf/Aero-1-Audio
+  loader: diffusion
+  mask_id: 151665
+  sampler: {block_size: 32, small_block_size: 8, threshold: 0.9,   # run 3's
+            fast_step: true, sync_free: true}                       # packed step, without its host waits

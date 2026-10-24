@@ -6,6 +6,7 @@
 #  - the training mask has a dense fallback off CUDA (same pattern, for CPU smoke tests), used through SDPA;
 #  - flex attention gets q and k in v's dtype (fp32 weights + bf16 autocast leave q, k in fp32 after RoPE);
 #  - the inference mask is sized from inputs_embeds (input_ids may be None) and is 4-D (4.48's SDPA slices 4-D).
+#  - flex attention's backward kernel uses smaller tiles (the GPU has 101 KB of shared memory per block).
 from typing import Callable, Optional, Union
 from dataclasses import dataclass
 
@@ -65,9 +66,15 @@ class BaseModelOutputWithPastAndBlockCache(BaseModelOutputWithPast):
     block_past_key_values: Optional[Cache] = None
 
 
+# bit_experiments: backward tiles that fit 101 KB of shared memory per block (RTX PRO 6000 Blackwell, sm_120). Torch 2.7
+# treats capability >= 9.0 as H100 and picks (64, 128, 8 warps, 3 stages) for head_dim 128, which needs 132 KB.
+FLEX_KERNEL_OPTIONS = {"bwd_BLOCK_M1": 32, "bwd_BLOCK_N1": 64, "bwd_BLOCK_M2": 64, "bwd_BLOCK_N2": 32,
+                       "bwd_num_warps": 4, "bwd_num_stages": 2}
+
+
 @torch.compile(fullgraph=True)  # bit_experiments: was mode="max-autotune-no-cudagraphs"
 def fused_flex_attention(q, k, v, mask=None):
-    return flex_attention(q, k, v, block_mask=mask, enable_gqa=True)
+    return flex_attention(q, k, v, block_mask=mask, enable_gqa=True, kernel_options=FLEX_KERNEL_OPTIONS)
 
 def block_diff_mask(b, h, q_idx, kv_idx, block_size=None, n=None):
     """

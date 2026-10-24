@@ -9,6 +9,9 @@
 of BIT's Aero-1-Audio, and a prompt instead of BIT's ("#" marks the neural tokens; "#" alone = no prompt, which also
 drops the prompt-only null). Without them nothing changes.
 
+--ablation (retraining ablations, docs/RETRAINING_ABLATIONS.md): a configs/ablations.yaml entry that changes only
+what reaches the projector and LLM (frozen encoder, phoneme bottleneck, phoneme erasure). Without it nothing changes.
+
 --init: arm A = CTC phoneme checkpoint, B / B-long = checkpoints/ssl_human/BEST_core, C / E = Stage 1 checkpoint
 (encoder + projector), "none" = random init. Model, data, LoRA, loss (CE + BIT's contrastive term), optimizer and
 epochs are BIT's sentence stage as in 4a (configs/bit_baseline.yaml), the same for every arm, except that
@@ -80,6 +83,7 @@ def main() -> int:
     ap.add_argument("--no-train", action="store_true", help="build, load the init, evaluate at step 0 (smoke tests)")
     ap.add_argument("--llm", help="a configs/llms.yaml entry (DESIGN.md §8); default: BIT's Aero-1-Audio")
     ap.add_argument("--prompt", help='LLM prompt, "#" = the neural tokens ("#" alone: no prompt); default: BIT\'s')
+    ap.add_argument("--ablation", help="a configs/ablations.yaml entry (docs/RETRAINING_ABLATIONS.md); default: none")
     args = ap.parse_args()
     if args.prompt is not None and args.prompt.count("#") != 1:
         ap.error('--prompt needs exactly one "#" (where the neural tokens go)')
@@ -127,6 +131,11 @@ def main() -> int:
             super().set_model(model, extra_model_kwargs)
             self.padding_report = stage2.fix_padding(self.model)  # every run, also eval-only (DESIGN.md §2)
             self.init_report = stage2.load_init(self.model, init) if not args.eval_only else {"init": None}
+            if args.ablation:  # after the init is loaded, before the optimizer is built (it sees the new projector)
+                from bit_experiments import neural_ablations
+
+                self.init_report["ablation"] = neural_ablations.apply(
+                    self.model, args.ablation, None if args.eval_only else init, args.seed)
 
         def evaluate(self, additional_metric_fns=None, eval_train_set=False):
             loss, metrics, gt, preds = super().evaluate(additional_metric_fns, eval_train_set)
@@ -169,6 +178,10 @@ def main() -> int:
         trainer.train()
     if not args.no_train:
         run["eval_checkpoint"] = {"dir": str(ckpt), "load": stage2.load_model_state(model, ckpt)}
+        if args.ablation:
+            from bit_experiments import neural_ablations
+
+            run["eval_checkpoint"]["ablation"] = neural_ablations.verify(model)
         (out / "run.json").write_text(json.dumps(run, indent=1, default=str))
     device = trainer.accelerator.device
 
@@ -186,6 +199,8 @@ def main() -> int:
         meta = {"model": f"stage2 {args.name}", "arm": args.arm, "seed": args.seed, "split": f"{DATASET}:{split}",
                 "decoding": decoding, "condition": condition, "init": str(init), "checkpoint": str(ckpt),
                 "label_fraction": args.label_fraction, "llm": llm, "prompt": config.data.prompt}
+        if args.ablation:
+            meta["ablation"] = args.ablation
         stage2.write_decodes(out / "decodes" / f"{key}.csv", refs[split], hyps, seen[split], meta)
         print(f"[stage2] {key}: {json.dumps(summary['results'][key])}", flush=True)
     if not args.eval_only and not args.no_train:  # keep BEST without the frozen base LLM; LAST is a full duplicate

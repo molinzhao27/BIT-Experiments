@@ -242,8 +242,11 @@ The swaps can only be compared once `B_ssl_s42` is done.
 |---|---|---|---|
 | 1 `B_ssl_qwen25-1.5b-instruct_s42` | Qwen2.5-1.5B-Instruct | BIT's | Audio post-training removed: Aero's own base model (same tokenizer, 1536-d, 28 layers) |
 | 2 `B_ssl_qwen25-1.5b-noprompt_s42` | Qwen2.5-1.5B (base) | None: neural tokens, then the sentence | Instruction tuning and the prompt removed |
+| 4 `B_ssl_qwen25-1.5b-instruct-noprompt_s42` | Qwen2.5-1.5B-Instruct | None | The prompt removed only (vs run 1) |
 
-- If run 2 differs from run 1, add base + BIT's prompt to tell the two changes apart.
+- Run 2 differed from run 1 (seed 42, BIT-test free-generation WER 43.8% vs 55.7%). So run 4 removes only the prompt
+  from Instruct, to tell the two changes apart (user, 2026-10-20; queued last, after the arms and seeds). Base +
+  BIT's prompt would complete the 2 × 2 table; it is not queued.
 - With no prompt, BIT's contrastive text side (the mean of the input's text embeddings) loses the constant prompt
   tokens, and the prompt-only null control does not exist.
 
@@ -309,11 +312,54 @@ controls.
 3. **Sampler:** Fast-dLLM v2's sub-block confidence decoding (small block 8, threshold 0.9, the model card's
    defaults) for selection and the main numbers. Other settings are tuned on BIT-val only, by evaluating BEST
    again.
+   - **Decoding-order sweep** (user, 2026-10-20; eval only, `scripts/decoding_order_sweep.py`). Run 3's BEST,
+     greedy, threshold 0.9, small block 8 / 1 / 4 / 32:
+     - 1 = strictly left to right;
+     - 4 / 8 = chunked;
+     - 32 = the whole block in confidence order.
+
+     The weights are the same, so this separates the decoding order from the conversion confound above. The run's own
+     setting (8) must reproduce its summary.json. Training masks random ratios per block, so every order is in
+     distribution. BIT-test is reported, but the order is chosen on BIT-val. The sweep runs under the GPU lock
+     straight after run 3; it is a separate job, outside the queue script. Every decode also writes a per-pass trace
+     (`traces/*.json.gz`: each masked position's proposal, its probability and whether it was committed), for
+     visualising the denoising (user, 2026-10-21). The traced sampler is a line-for-line copy plus recording, so
+     reproducing the run's summary.json also checks it.
+   - **Revision-headroom check** (user, 2026-10-21; same job, after the sweep, chunk size 8, val and test). Each
+     decoded token is hidden on its own and re-predicted with the rest of its block visible, which is what a
+     within-block editing sampler would see. Reported: how often the prediction changes, and whether each single
+     change fixes or breaks the sentence (word errors vs the reference); corpus WER after one round of edits above
+     0.5 / 0.7 / 0.9; and an oracle that applies only the fixing edits. Run 3 was never trained to revise, so this
+     estimates the headroom before a revision-trained run (about 30 GPU hours) is considered.
+   - **Re-masking sampler, decode-only** (user, 2026-10-21; same job, last, chunk size 8, val and test; rule of
+     `docs/REVISION_RUN.md` §4). When a block is done, the tokens committed below 0.9 (the "best guess" commits) are
+     masked again and re-filled with the rest of the block visible, up to 3 rounds. No training. Compared sentence by
+     sentence with the plain chunk-8 decode; BIT-val decides whether it is used, BIT-test is reported.
+   - **Training speed for later diffusion runs** (user, 2026-10-22: "we need to make training faster"; required
+     before an Aero → block-diffusion conversion or a revision-trained run, not for the Instruct + diffusion control,
+     which must stay bit-comparable with run 3). Run 3 took ~12 min/epoch vs ~3 for the AR runs (31.7 h in all).
+     Each step runs 2B sequences ([noisy ‖ clean] × two complementary masks) of twice the length, so about 4× the
+     tokens, through flex attention with tiles shrunk to fit 101 KB of shared memory. The main thread was CPU-bound.
+     In order of expected gain, all keeping the recipe's maths (masks, loss, batch, epochs):
+     1. **Skip the noisy copy of the prefix.** Noisy blocks attend only to themselves and to *clean* earlier blocks,
+        so the noisy duplicate of the prompt and neural tokens (~150–260 of each sequence's tokens) is computed and
+        never used, except for the block the prefix shares with the sentence. Encode the prefix once, as clean
+        context (a cache or a shortened noisy half). Expect a third to half less compute. Needs a test that the
+        loss and gradients match the current step to bf16 tolerance.
+     2. **Cut launch overhead:** CUDA graphs / `torch.compile` of the whole step, fewer small ops in the mask and
+        label building. The CPU-contention episode (11:27 → 15:00 per epoch) showed the step is launch-bound.
+     3. **Less padding:** a finer length bucket than 128, if the number of compiled shapes stays manageable.
+     4. **Attention kernel:** re-tune flex attention's kernel options, or use a block-sparse kernel that fits the
+        GPU's shared memory with larger tiles.
+     Not allowed: shorter epochs, smaller batches (BIT's contrastive term uses in-batch negatives) or length-sorted
+     batches, since they change the recipe.
 
 **Code.**
 - **Vendored decoder:** a copy of the model's `modeling.py` / `configuration.py` (`src/bit_experiments/fast_dllm_v2/`),
   shimmed so it runs in BIT's env (transformers 4.48.2, the same env as runs 1–2). The shims replace 4.52+
-  decorators / base classes and expand the inference mask to 4-D.
+  decorators / base classes and expand the inference mask to 4-D. Flex attention's backward kernel uses smaller tiles
+  (32/64, 2 stages). Torch 2.7 picks its H100 tiles for this GPU (capability 12.0), which need 132 KB of shared
+  memory per block against the GPU's 101 KB. The first GPU timing smoke failed on exactly that (2026-10-20).
 - **Model:** `src/bit_experiments/diffusion_llm.py` holds the embedding-level training step and sampler. The released
   code takes only `input_ids` in both places.
 - **Checks (CPU, fp32).**

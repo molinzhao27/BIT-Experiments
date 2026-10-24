@@ -1,0 +1,36 @@
+# Probes, RSA and foil contrasts (DESIGN.md §5; docs/PROBES_FOILS.md). Used by scripts/run_probes_foils.py.
+# A run name is a `sources` key below, or else a Stage 2 run (checkpoints/stage2/<name>/BEST, with its
+# results/stage2/<name>/run.json for the LLM, prompt and ablation it was trained with).
+seed: 0
+batch_size: 16
+labels: data/processed/phoneme_frames      # scripts/prepare_ablations.py labels (frame phonemes, all splits)
+foil_set: data/processed/foils             # scripts/build_foils.py (Mac), copied to the host
+text_targets: data/processed/text_targets  # the cached LLM sentence embeddings (scripts/cache_text_targets.py)
+sources:
+  input: {kind: input}                     # Stage 2's smoothed TX+SBP bins, patched (5 x 512 = 2560-d per frame)
+  random: {kind: random}                   # Stage 2's NDT encoder at its seeded random init: the architecture alone
+  ssl: {kind: ssl, dir: checkpoints/ssl_human/BEST}   # after SSL: the full SSL model, its own TX-only T15 read-in
+  A_ctc: {kind: ctc, dir: checkpoints/bit/finetune-ndt-phoneme-brandman_2024_text-feat_all/BEST}   # arm A, phonemes
+  C_stage1: {kind: stage1, dir: checkpoints/stage1/C_l14_b1024_s42/best}                           # arm C, Stage 1
+probe:
+  max_train_frames: 200000                 # seeded subsample of labelled train frames
+  l2_grid: [1.0e-5, 1.0e-4, 1.0e-3, 1.0e-2]   # chosen by val log-loss; test is reported
+  max_iter: 300
+  n_boot: 1000                             # trial-cluster bootstrap of test accuracy / information
+rsa:
+  split: test
+  n_segments: 10                           # BIT App. L.1
+  patch_range: [120, 200]                  # BIT App. L.1's T15 selection (patch tokens, mean ~160); null = all trials
+  also_all_trials: true
+  targets: [emb, layer14]                  # text_targets names: input embeddings (BIT's aligner), arm C's target
+  covariates:                              # partial RSA: regressed out of both RDMs
+    phonetic: [phonemes]                   # normalized phoneme edit distance of the label sequences
+    phonetic_length: [phonemes, n_phonemes, n_frames]
+  n_perm: 1000
+  n_boot: 100
+foils:
+  splits: [test, val]                      # test is the headline; val + test pooled for the small types
+  diffusion_splits: [test]                 # block-diffusion scoring costs ~10x an AR run's: test only
+  conditions: [real, null_shuffled, null_prompt_only]
+  diffusion_draws: 8                       # complementary mask pairs per sentence (common across sentences, conditions)
+  n_boot: 2000

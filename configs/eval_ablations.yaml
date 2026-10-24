@@ -1,0 +1,63 @@
+# Eval-only input ablations of trained Stage 2 runs: scripts/eval_ablations.py, docs/EVAL_ABLATIONS.md.
+# Same weights, greedy decoding; only each trial's neural features change (before BIT's collate and encoder).
+
+seed: 0                       # scramble_patches: trial i's patch order = default_rng([seed, i]) (same order for every run)
+splits: [test]                # BIT-test (half of B2T'25 val); add val with --splits val test
+fill: train_mean              # train_mean: each feature's mean over every training-set bin (z-scored data: ~0)
+                              # zero: 0, the per-channel z-score centre
+
+# Runs in priority order (the default for --runs). The budget check skips later runs that would not fit.
+runs:
+  - B_ssl_fast-dllm-v2-1.5b_s42                 # run 3, block diffusion
+  - B_ssl_qwen25-1.5b-instruct-diffusion_s42    # the Instruct + diffusion control
+  - B_ssl_s42                                   # Aero, autoregressive (BCI_AudioLLM)
+  - B_ssl_qwen25-1.5b-noprompt_s42              # Qwen base, no prompt (AR)
+  - B_ssl_qwen25-1.5b-instruct_s42              # Qwen Instruct (AR)
+budget_minutes: 75            # 0 = no budget
+budget_exempt: 3              # the first 3 runs above always run (and a batch's first run); the budget gates the rest
+
+# Model input columns. BIT's brandman_2024_text loader with features [tx1, spikePow] and area 0..256 concatenates
+# input_features[:, 0:256] (threshold crossings) and input_features[:, 256:512] (spike-band power), so model column j
+# is the file's feature j. Array map: github.com/Neuroprosthetics-Lab/nejm-brain-to-text README.md @ 980a5b7, l.37-45
+# ("0-64: ventral 6v threshold crossings ... 449-512: dorsal 6v spike band power"; four arrays of 64 electrodes each,
+# written 1-based inclusive except the first range). Half-open, 0-based: [lo, hi).
+n_features: 512
+feature_types: [tx, sbp]
+arrays:
+  v6v: {area: ventral 6v, tx: [0, 64], sbp: [256, 320]}
+  a4: {area: area 4 (M1), tx: [64, 128], sbp: [320, 384]}
+  55b: {area: area 55b, tx: [128, 192], sbp: [384, 448]}
+  d6v: {area: dorsal 6v, tx: [192, 256], sbp: [448, 512]}
+
+# The ablations run by default (none = the unablated baseline, always decoded first).
+default: [none, drop_v6v, drop_a4, drop_55b, drop_d6v, only_v6v, only_a4, only_55b, only_d6v,
+          time_first_half, time_second_half, time_middle_half, scramble_patches, reverse_time]
+
+ablations:
+  none: {kind: none, label: unablated (re-decoded)}
+  drop_v6v: {kind: drop_arrays, arrays: [v6v], label: ventral 6v removed}
+  drop_a4: {kind: drop_arrays, arrays: [a4], label: area 4 removed}
+  drop_55b: {kind: drop_arrays, arrays: [55b], label: 55b removed}
+  drop_d6v: {kind: drop_arrays, arrays: [d6v], label: dorsal 6v removed}
+  only_v6v: {kind: keep_arrays, arrays: [v6v], label: only ventral 6v}
+  only_a4: {kind: keep_arrays, arrays: [a4], label: only area 4}
+  only_55b: {kind: keep_arrays, arrays: [55b], label: only 55b}
+  only_d6v: {kind: keep_arrays, arrays: [d6v], label: only dorsal 6v}
+  time_first_half: {kind: keep_window, window: [0.0, 0.5], label: first half of the trial only}
+  time_second_half: {kind: keep_window, window: [0.5, 1.0], label: second half only}
+  time_middle_half: {kind: keep_window, window: [0.25, 0.75], label: middle 50% only}
+  scramble_patches: {kind: scramble_patches, patch: encoder, label: encoder patches (100 ms) shuffled}
+  reverse_time: {kind: reverse, label: time reversed}
+  # Not in the default batch (pass with --ablations): one feature type removed on every array.
+  drop_tx: {kind: drop_features, features: [tx], label: threshold crossings removed}
+  drop_sbp: {kind: drop_features, features: [sbp], label: spike-band power removed}
+
+bootstrap: {n_resamples: 10000, seed: 0}       # paired over trials, WER(ablation) - WER(none), shared within a run
+phonetic: {n_boot: 2000, seed: 0, min_null: 10}  # scripts/phonetic_error_analysis.py (no embeddings: sem/ctx skipped)
+
+# Seconds per greedy trial when a run's own final evaluation (summary.json minutes minus the last log.jsonl entry,
+# over its decode sets) can't give it. From the finished runs' final evaluations, nulls and nucleus included:
+# run 3 0.127, Qwen Instruct 0.130, Qwen base 0.137, Aero 0.175, Aero 4a eval-only 0.179 (incl. loading).
+timing:
+  default_sec_per_trial: {BCI_DiffusionLLM: 0.13, BCI_TextLLM: 0.14, BCI_AudioLLM: 0.18}
+  load_minutes: 2.0           # build + BEST + dataset labels per run (the raw dataset is loaded once per process)

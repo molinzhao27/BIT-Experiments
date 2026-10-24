@@ -1,0 +1,26 @@
+# Error types of eval-only input ablations: scripts/ablation_error_types.py (CPU; reads saved decodes).
+# Do the substitutions turn language-driven (fit the true context, related in meaning) when brain input is removed?
+# Every measure is scripts/phonetic_error_analysis.py's; this config only picks the decode sets and the contrasts.
+
+split: test
+seed: 0                       # the cluster bootstrap over trials (one draw shared by every run and condition)
+n_boot: 5000                  # as phonetic_errors (scripts/phonetic_error_analysis.py's default)
+min_null: 10                  # minimum distinct null words per pair (as phonetic_error_analysis.py)
+embed_model: distilbert-base-uncased   # sem and ctx (local HF cache, offline); '' skips them
+
+runs:                         # results/stage2/<run>/ablations/<condition>/<split>_greedy.csv; missing runs are skipped
+  - B_ssl_fast-dllm-v2-1.5b_s42                 # run 3, Fast-dLLM v2 (block diffusion)
+  - B_ssl_qwen25-1.5b-instruct-diffusion_s42    # the control: Qwen Instruct + the diffusion objective
+  - B_ssl_s42                                   # Aero, autoregressive
+
+baseline: none                # the unablated input re-decoded; checked against decodes/<split>_greedy_real.csv
+conditions: [none, drop_v6v, drop_a4, drop_55b, drop_d6v, only_v6v, only_a4, only_55b, only_d6v,
+             time_first_half, time_second_half, time_middle_half, scramble_patches, reverse_time]
+reference_decodes: [null_shuffled]   # decodes/<split>_greedy_<name>.csv, as extra rows (another trial's input)
+
+contrasts:                    # paired a - b within a run, besides every condition - baseline
+  - [drop_55b, drop_v6v]      # matched WER damage (+22 vs +20-23 pp), different phonetic loss
+  - [only_55b, only_v6v]      # post hoc (added after the first table): one array alone; WER not matched (55b worse)
+slices: [all, mostly_right]   # mostly_right: trials with sentence WER <= 0.5 (the decoded context is mostly right)
+
+out: results/stage2/ablation_error_types

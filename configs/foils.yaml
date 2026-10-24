@@ -1,0 +1,349 @@
+# Diagnostic sentence contrasts (DESIGN.md §5; docs/PROBES_FOILS.md): the curated tables behind the text-side foils.
+# scripts/build_foils.py applies them deterministically (seeded per trial) to BIT-val / BIT-test sentences and writes
+# data/processed/foils/<sha12>/foils.csv for review; this file's content hash goes into that manifest. Edit here, never
+# in the CSV. All lowercase, BIT's normalization (apostrophes kept, no other punctuation).
+seed: 0
+splits: [val, test]
+
+# Function words: never the word a paraphrase or sound-alike foil replaces.
+stopwords: [a, an, the, and, or, but, if, so, of, to, in, "on", at, by, for, from, with, as, into, onto, about, than,
+  then, that, this, these, those, there, here, it, its, it's, i, me, my, you, your, he, him, his, she, her, we, us,
+  our, they, them, their, is, am, are, was, were, be, been, being, do, does, did, have, has, had, will, would, can,
+  could, shall, should, may, might, must, not, "no", "yes", what, who, whom, which, when, where, why, how, all, some,
+  any, each, every, both, either, neither, just, very, too, also, up, out, "off", over, under, oh, well, uh, um]
+
+# paraphrase / synonym: one content word replaced by a near-synonym (word -> replacement; one direction each,
+# both listed where both are safe). Single words only; inflected forms are listed separately.
+synonyms:
+  big: large
+  large: big
+  bigger: larger
+  larger: bigger
+  biggest: largest
+  largest: biggest
+  small: little
+  huge: enormous
+  enormous: huge
+  kids: children
+  children: kids
+  kid: child
+  child: kid
+  car: automobile
+  cars: automobiles
+  money: cash
+  people: folks
+  folks: people
+  town: city
+  city: town
+  towns: cities
+  cities: towns
+  store: shop
+  stores: shops
+  shop: store
+  shops: stores
+  mother: mom
+  mom: mother
+  father: dad
+  dad: father
+  problem: issue
+  problems: issues
+  issue: problem
+  issues: problems
+  choice: option
+  choices: options
+  option: choice
+  options: choices
+  street: road
+  road: street
+  movie: film
+  movies: films
+  film: movie
+  films: movies
+  teacher: instructor
+  doctor: physician
+  picture: photo
+  pictures: photos
+  photo: picture
+  photos: pictures
+  country: nation
+  countries: nations
+  nation: country
+  trip: journey
+  garbage: trash
+  trash: garbage
+  couch: sofa
+  sofa: couch
+  stone: rock
+  mistake: error
+  mistakes: errors
+  error: mistake
+  errors: mistakes
+  stuff: things
+  things: stuff
+  employees: workers
+  workers: employees
+  employee: worker
+  worker: employee
+  exam: test
+  talk: speak
+  talking: speaking
+  talked: spoke
+  speak: talk
+  speaking: talking
+  begin: start
+  start: begin
+  started: began
+  began: started
+  starting: beginning
+  buy: purchase
+  bought: purchased
+  buying: purchasing
+  purchase: buy
+  choose: pick
+  chose: picked
+  choosing: picking
+  enjoy: like
+  enjoyed: liked
+  think: believe
+  believe: think
+  guess: suppose
+  suppose: guess
+  quickly: fast
+  fast: quick
+  quick: fast
+  happy: glad
+  glad: happy
+  sad: unhappy
+  angry: mad
+  mad: angry
+  difficult: hard
+  easy: simple
+  simple: easy
+  awful: terrible
+  terrible: awful
+  horrible: terrible
+  excellent: great
+  nice: pleasant
+  pleasant: nice
+  funny: amusing
+  smart: clever
+  clever: smart
+  intelligent: smart
+  tiny: small
+  rich: wealthy
+  wealthy: rich
+  scared: afraid
+  afraid: scared
+  wrong: incorrect
+  incorrect: wrong
+  maybe: perhaps
+  perhaps: maybe
+  really: truly
+  truly: really
+  often: frequently
+  frequently: often
+  usually: normally
+  normally: usually
+  probably: likely
+  almost: nearly
+  nearly: almost
+  sure: certain
+  quite: rather
+  everyone: everybody
+  everybody: everyone
+  anyone: anybody
+  anybody: anyone
+  someone: somebody
+  somebody: someone
+  seem: appear
+  seems: appears
+  seemed: appeared
+  said: stated
+  replied: responded
+  shout: yell
+  yell: shout
+  fix: repair
+  fixed: repaired
+  repair: fix
+  hurry: rush
+  rush: hurry
+  stay: remain
+  stayed: remained
+  remain: stay
+  jump: leap
+  throw: toss
+  threw: tossed
+  toss: throw
+  cheap: inexpensive
+  inexpensive: cheap
+  expensive: costly
+  costly: expensive
+  strange: odd
+  odd: strange
+  weird: strange
+  totally: completely
+  completely: totally
+  entirely: completely
+  definitely: certainly
+  certainly: definitely
+  especially: particularly
+  particularly: especially
+  recently: lately
+  lately: recently
+  dinner: supper
+  supper: dinner
+  clothes: clothing
+  clothing: clothes
+  baby: infant
+  infant: baby
+  woman: lady
+  lady: woman
+  women: ladies
+  ladies: women
+  guy: man
+  guys: men
+  boss: supervisor
+  supervisor: boss
+  area: region
+  region: area
+  location: place
+  chance: opportunity
+  opportunity: chance
+  goal: aim
+  kinds: types
+  type: kind
+  types: kinds
+  loud: noisy
+  noisy: loud
+  yeah: "yes"
+  okay: alright
+  alright: okay
+  hello: hi
+  hi: hello
+  understand: comprehend
+  gift: present
+  shut: close
+  rarely: seldom
+  seldom: rarely
+  fortunately: luckily
+  luckily: fortunately
+  unfortunately: sadly
+  sadly: unfortunately
+  correct: accurate
+  accurate: correct
+  wonderful: marvelous
+  fantastic: wonderful
+  amazing: incredible
+  incredible: amazing
+  beautiful: lovely
+  lovely: beautiful
+  fairly: pretty
+  extremely: incredibly
+  incredibly: extremely
+  sometimes: occasionally
+  occasionally: sometimes
+  anyway: anyhow
+  anyhow: anyway
+
+# paraphrase / contraction: written in one direction; both directions are applied ("did not" <-> "didn't").
+# 's / 're / 've / 'll forms after a pronoun; "it's been" expands to "it has been" (has_before).
+contractions:
+  "do not": "don't"
+  "does not": "doesn't"
+  "did not": "didn't"
+  "is not": "isn't"
+  "are not": "aren't"
+  "was not": "wasn't"
+  "were not": "weren't"
+  "have not": "haven't"
+  "has not": "hasn't"
+  "had not": "hadn't"
+  "will not": "won't"
+  "would not": "wouldn't"
+  "could not": "couldn't"
+  "should not": "shouldn't"
+  "cannot": "can't"
+  "i am": "i'm"
+  "you are": "you're"
+  "we are": "we're"
+  "they are": "they're"
+  "i have": "i've"
+  "you have": "you've"
+  "we have": "we've"
+  "they have": "they've"
+  "i will": "i'll"
+  "you will": "you'll"
+  "we will": "we'll"
+  "they will": "they'll"
+  "he will": "he'll"
+  "she will": "she'll"
+  "it will": "it'll"
+  "let us": "let's"
+  "it is": "it's"
+  "that is": "that's"
+  "there is": "there's"
+  "what is": "what's"
+  "he is": "he's"
+  "she is": "she's"
+has_before: [been, got, gotten, had]   # "it's been" -> "it has been", not "it is been"
+# "<pronoun> have" contracts only before a participle ("i've got", not "you've really strong views"); "<pronoun>
+# will / have" never contracts before "not" ("won't", "haven't" instead of "they'll not").
+contract_have_before: [been, got, gotten, had, done, seen, never, gone, made, heard, taken, given, found, lost, known,
+  told, always, already, just]
+
+# negation: remove the sentence's first negation, else insert "not" after its first copula / modal.
+negation_remove:
+  not: ""
+  "don't": do
+  "doesn't": does
+  "didn't": did
+  "isn't": is
+  "aren't": are
+  "wasn't": was
+  "weren't": were
+  "haven't": have
+  "hasn't": has
+  "hadn't": had
+  "won't": will
+  "wouldn't": would
+  "couldn't": could
+  "shouldn't": should
+  "can't": can
+  cannot: can
+negation_insert_after: [am, is, are, was, were, will, would, can, could, should, must, might, shall, "i'm",
+  "it's", "that's", "they're", "we're", "you're", "he's", "she's", "there's"]
+
+# number / name: a number word, or a name of the same category, replaced by another of the same category, preferably
+# with as many syllables. Left out: "one" (mostly a pronoun: "a gold one"); "may", "march", "august" (verbs,
+# adjectives); first names that are common words (rose, mark, bill, grace, frank).
+numbers:
+  unit: [zero, two, three, four, five, six, seven, eight, nine]
+  teen: [ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen]
+  tens: [twenty, thirty, forty, fifty, sixty, seventy, eighty, ninety]
+  magnitude: [hundred, thousand, million, billion]
+  ordinal: [first, second, third, fourth, fifth, sixth, seventh, eighth, ninth, tenth, eleventh, twelfth]
+number_compound: true         # a number word next to another number word ("two thousand", "eighty seven") is left alone
+ordinal_after: [the, a, my, his, her, our, their, your, its, this, that]   # "the first year", not "do first"
+name_not_after: [new, san, los, las, saint]   # "new england" is not "new japan"
+names:
+  day: [monday, tuesday, wednesday, thursday, friday, saturday, sunday]
+  month: [january, february, april, june, july, september, october, november, december]
+  state: [alabama, alaska, arizona, arkansas, california, colorado, connecticut, delaware, florida, georgia, hawaii,
+    idaho, illinois, indiana, iowa, kansas, kentucky, louisiana, maine, maryland, massachusetts, michigan, minnesota,
+    mississippi, missouri, montana, nebraska, nevada, ohio, oklahoma, oregon, pennsylvania, tennessee, texas, utah,
+    vermont, virginia, washington, wisconsin, wyoming]
+  city: [atlanta, austin, baltimore, boston, chicago, cleveland, dallas, denver, detroit, houston, memphis, miami,
+    milwaukee, nashville, orlando, philadelphia, phoenix, pittsburgh, portland, seattle, london, paris, tokyo, berlin,
+    rome, moscow, madrid, toronto]
+  country: [america, canada, mexico, china, japan, india, russia, france, germany, italy, spain, england, ireland,
+    brazil, iran, iraq, israel, egypt, kenya, korea, vietnam, australia, sweden, norway, poland, greece, cuba]
+  first_name: [john, mary, james, robert, michael, david, william, richard, joseph, thomas, charles, daniel, matthew,
+    anthony, paul, steven, andrew, kevin, brian, george, edward, peter, jack, susan, linda, barbara, elizabeth,
+    jennifer, patricia, sarah, karen, nancy, lisa, betty, helen, sandra, donna, carol, ruth, sharon, michelle, laura,
+    emily, anna, kate, jane, alice, tom, bob, jim, joe, mike, dave, steve, sam, ben, tim, dan, fred,
+    henry, harry, larry, gary, eric, adam, alex, amy, ann, emma, ellen, julie, wayne, jose]
+
+# Words a sound-alike foil never writes (the CMU dictionary is broad).
+blocklist: [ass, damn, hell, crap, piss, shit, fuck, bitch, dick, cock, slut, whore, nigger, fag, rape, nazi, sex,
+  sexy, porn, kill, gay]
+sound_alike_min_zipf: 3.0    # neighbour must be a reasonably common word (wordfreq Zipf, en)

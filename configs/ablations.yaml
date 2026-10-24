@@ -1,0 +1,34 @@
+# Phase 4 retraining ablations (docs/RETRAINING_ABLATIONS.md): Stage 2 with only what reaches the projector and LLM
+# changed. Selected with train_stage2.py --ablation NAME; without it nothing changes. Code:
+# src/bit_experiments/neural_ablations.py. scripts/prepare_ablations.py writes the artifacts (stats, eraser, exported
+# encoder), each tied by content hash to the encoder it was computed on; train_stage2.py refuses a mismatch.
+# --init must be the entry's phoneme_model / encoder.
+phoneme-bottleneck:           # (a) arm A's frozen CTC model; its per-frame phoneme log-posteriors are the only neural input
+  kind: phoneme_bottleneck
+  phoneme_model: checkpoints/bit/finetune-ndt-phoneme-brandman_2024_text-feat_all/BEST   # arm A (test PER 9.25%)
+  feature: log_posterior      # log_posterior (default) | posterior | one_hot (argmax class only)
+  floor: 1.0e-8               # posteriors below this are floored before the log (log 1e-8 = -18.4)
+  stats: checkpoints/ablations/phoneme-bottleneck/stats.pt   # per-class mean / SD of the feature, train split
+frozen-A:                     # conditional control for (a): arm A's encoder frozen, its full 384-d output
+  kind: frozen
+  encoder: checkpoints/bit/finetune-ndt-phoneme-brandman_2024_text-feat_all/BEST
+frozen-B:                     # control for (b): B_ssl_s42's trained encoder, frozen, no eraser
+  kind: frozen
+  encoder: checkpoints/ablations/B_ssl_s42-encoder           # its BEST/encoder.bin (prepare_ablations.py export-encoder)
+phoneme-erasure:              # (b) the same frozen encoder, then a fixed LEACE eraser of frame phoneme identity
+  kind: phoneme_erasure
+  encoder: checkpoints/ablations/B_ssl_s42-encoder
+  eraser: checkpoints/ablations/phoneme-erasure/eraser.pt    # fit on train frames only (prepare_ablations.py erasure)
+  offsets: [0]                # concept = the frame's own label; [-1, 0, 1] also erases its neighbours' labels
+phoneme-erasure-run3:         # (b) at decode time only, on run 3 (Fast-dLLM v2): its own BEST encoder and eraser
+  kind: phoneme_erasure       # use with train_stage2.py --eval-only (no retraining); see RETRAINING_ABLATIONS.md
+  encoder: checkpoints/ablations/B_ssl_fast-dllm-v2-1.5b_s42-encoder
+  eraser: checkpoints/ablations/phoneme-erasure-run3/eraser.pt
+  offsets: [0]
+phoneme-erasure-aero-diffusion:   # (b) at decode time only, on B_ssl_aero-1-audio-diffusion_s42 (Aero block diffusion, plain
+  kind: phoneme_erasure           # step): its own BEST encoder and an eraser fit to it; with --eval-only only
+  encoder: checkpoints/ablations/B_ssl_aero-1-audio-diffusion_s42-encoder
+  eraser: checkpoints/ablations/phoneme-erasure-aero-diffusion/eraser.pt
+  offsets: [0]
+frozen-evalonly:              # --eval-only only, any trained checkpoint: the encoder runs through the ablation hook
+  kind: frozen                # (eval mode, no_grad) and nothing else changes; must reproduce the run's own summary.json

@@ -139,3 +139,134 @@ GradCache, 51 min): best epoch 84 by val top-1.
 Chance top-1 is 0.14%. Retrieval is no better on sentences seen in training, so the alignment generalizes to new
 sentences rather than memorizing training ones.
 Log: `checkpoints/stage1/C_l14_b1024_s42/log.jsonl`.
+
+## 4d. Sentence decoding (arm B, Stage 2), done 2026-10-25
+
+Free-generation greedy WER on BIT-test, selected on BIT-val. Every run starts from the same
+SSL-pretrained encoder (`checkpoints/ssl_human/BEST_core`) with no phoneme stage. All results
+are one seed (42) unless noted.
+
+### WER
+
+| Run name | LLM | Objective | Test WER | Val WER | Exact | Seen / unseen |
+|---|---|---|---|---|---|---|
+| B_ssl_aero-1-audio-diffusion_s42 | Aero-1-Audio | block diffusion | **21.76%** | 20.77% | 35.1% | 10.4 / 23.2 |
+| B_ssl_qwen25-1.5b-instruct-diffusion_s42 | Qwen2.5-1.5B-Instruct | block diffusion | 23.65% | 22.97% | 30.0% | 15.4 / 24.7 |
+| B_ssl_fast-dllm-v2-1.5b_s42 | Fast-dLLM v2 1.5B | block diffusion | 25.22% | 24.43% | 26.4% | 15.2 / 26.5 |
+| B_rand_bit4a | Aero-1-Audio | autoregressive | 33.6% | 33.5% | — | 11.5 / 36.4 |
+| B_ssl_s42 | Aero-1-Audio | autoregressive | 34.23% | 31.64% | 32.5% | 19.7 / 36.1 |
+| B_ssl_qwen25-1.5b-noprompt_s42 | Qwen2.5-1.5B base, no prompt | autoregressive | 43.75% | — | — | 21.3 / 46.6 |
+| B_ssl_qwen25-1.5b-instruct_s42 | Qwen2.5-1.5B-Instruct | autoregressive | 55.66% | — | — | 26.7 / 59.3 |
+
+`B_rand_bit4a` is BIT's released checkpoint (4a), re-evaluated with free generation instead of
+teacher forcing.
+
+**Null controls.** Shuffled-input, noise and prompt-only decodes give 99–142% WER across
+all runs (stored in each run's `summary.json`), confirming the output depends on the neural input.
+
+Outputs: `results/stage2/<run>/summary.json`, `results/per_trial/`.
+
+### Comparisons (paired trial bootstrap, 95% CI on BIT-test)
+
+Training objective, same LLM (Aero):
+- Diffusion − AR: −12.47 pp [−14.52, −10.54]
+
+LLM swaps under diffusion:
+- Aero diffusion − Instruct diffusion: −1.89 [−2.95, −0.83]
+- Aero diffusion − Fast-dLLM v2: −3.46 [−4.58, −2.33]
+
+Aero's audio post-training helps ~21 pp under autoregressive training (34.2 vs 55.7) but only
+~1.9 pp under diffusion, so the objective absorbs most of the LLM advantage.
+
+**Decoding order barely matters.** Strict left-to-right decoding of the Fast-dLLM v2 diffusion
+model costs only +1.2 pp on test (not significant on val), so the gain is from training, not from
+the non-autoregressive generation order.
+Details: `results/stage2/B_ssl_fast-dllm-v2-1.5b_s42/decoding_order/`.
+
+### Error analysis
+
+Scripts: `scripts/phonetic_error_analysis.py`, `scripts/bertscore_compare.py`,
+`scripts/ablation_error_types.py` (all CPU).
+
+**Sound-alike errors scale with decoder quality.** The share of in-dictionary substitutions
+that are phonemically similar (≥ 0.5) to the reference word, and the phoneme-similarity excess
+over length-matched null substitutions:
+
+| Run | Sound-alike obs / null | Phoneme excess [95% CI] |
+|---|---|---|
+| Aero + diffusion | 25.9% / 2.7% | +0.200 [+0.185, +0.217] |
+| Qwen Instruct + diffusion | 25.6% / 2.7% | +0.203 [+0.189, +0.219] |
+| Fast-dLLM v2 (diffusion) | 23.6% / 2.7% | +0.192 [+0.178, +0.206] |
+| Aero AR | 16.1% / 2.7% | +0.118 [+0.105, +0.131] |
+| Qwen base, no prompt | 10.4% / 2.5% | +0.074 [+0.065, +0.084] |
+| Qwen Instruct | 6.9% / 2.5% | +0.048 [+0.040, +0.056] |
+
+The signal is from speech-motor cortex, so diffusion decoders — which, on our reading, lean more on the
+neural signal and less on the language model's prior — make errors that sound like the target.
+Shuffled-input controls show zero excess.
+Details: `results/stage2/phonetic_errors.md`, `results/stage2/phonetic_errors/tables.md`.
+
+**BERTScore** (roberta-large L17, rescaled; `scripts/bertscore_compare.py`). Aero diffusion vs
+Aero AR on BIT-test:
+- Mean F1: 0.682 vs 0.633, +0.049 [+0.031, +0.069]
+- Exact sentences: 35.1% vs 32.5%
+- Derailed (sentence WER ≥ 100%): 2.0% vs 9.3%
+
+Of the WER gap between them, 67% comes from sentences where Aero AR's sentence WER is 50–100%,
+28% from sentences at ≤ 50%, and 20% from sentences where it derails past 100%; diffusion gives
+back 15% on sentences Aero AR got exactly right. Reading: autoregressive decoding is all-or-nothing; diffusion fails
+more gracefully.
+
+**Matched meaning per error.** The raw "keeps the meaning" share is confounded by how many
+errors each run makes. Matched on the same trial and the same number of word errors,
+autoregressive errors keep slightly more meaning:
+
+| Diffusion run | AR run | ΔF1 [95% CI] | n |
+|---|---|---|---|
+| Aero diffusion | Aero AR | −0.041 [−0.065, −0.018] | 131 |
+| Instruct diffusion | Instruct AR | −0.038 [−0.069, −0.008] | 70 |
+| Instruct diffusion | Aero AR | −0.052 [−0.075, −0.030] | 146 |
+| Fast-dLLM v2 | Aero AR | −0.038 [−0.059, −0.018] | 157 |
+
+Diffusion's errors lean on the signal (sound-based slips), while AR's lean on the language
+prior (plausible words that keep more meaning per error).
+
+**Ablation error types** (`results/stage2/ablation_error_types.md`). Removing input never makes
+the wrong words more language-driven. Dropping one array cuts the sound-alike excess (−0.02 to
+−0.07), leaves the related-meaning excess unchanged (±1.6 pp, n.s.), and keeps context fit at
+baseline on mostly-right trials. With nearly all input gone, everything falls to the shuffled-
+input level.
+
+### Eval-time input ablations
+
+Same weights, greedy decoding; only the neural input is changed at eval time. Full tables with
+all ablations and phonetic columns: `results/stage2/ablations_summary.md`.
+
+Key drop-one-area results (ΔWER in pp, test):
+
+| Ablation | Fast-dLLM v2 | Instruct diffusion | Aero AR | Aero diffusion |
+|---|---|---|---|---|
+| drop v6v (ventral 6v) | +19.9 [+18.2, +21.6] | +23.3 [+21.6, +25.0] | +24.8 [+22.3, +27.4] | +21.9 [+20.2, +23.6] |
+| drop 55b | +22.2 [+20.6, +23.9] | +22.0 [+20.5, +23.6] | +20.8 [+18.5, +23.0] | +21.0 [+19.5, +22.5] |
+| drop d6v (dorsal 6v) | +2.1 [+1.3, +2.9] | +0.9 [+0.2, +1.6] | +0.8 [−0.5, +2.1] | +1.3 [+0.5, +2.0] |
+| drop a4 (area 4) | +12.2 [+10.9, +13.4] | +11.2 [+10.0, +12.4] | +11.9 [+9.8, +14.0] | +10.6 [+9.4, +11.8] |
+
+Ventral 6v and 55b carry most of the information; dorsal 6v barely matters. At matched damage,
+dropping v6v reduces the sound-alike excess more than dropping 55b (phoneme excess 0.134 vs 0.162
+for Fast-dLLM v2, CIs don't overlap), so v6v carries more of the phonetic detail.
+
+### Comparison with BIT
+
+BIT's end-to-end result (11.06% WER, arXiv 2511.21740v5) uses the competition holdout, nucleus
+sampling, and the BIT-All encoder (366.8 hours of human + monkey pretraining). Ours uses BIT-test,
+greedy decoding, and 60 hours of human pretraining. The remaining ~10 pp gap mixes the evaluation
+split, the decoding method, and the pretraining scale. Arm A (phoneme-first) on our setup will
+measure how much of the gap comes from the phoneme stage.
+
+### Still running
+
+- Arm A (SSL → phoneme CTC → sentence), autoregressive and block-diffusion decoders.
+- Arm C (SSL → contrastive → sentence), both decoders.
+- Additional seeds (43, 44) for arm B.
+- A 50% training-data run.
+- A phoneme-eraser retraining ablation (`docs/RETRAINING_ABLATIONS.md`).

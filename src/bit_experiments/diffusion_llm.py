@@ -248,6 +248,7 @@ class BCI_DiffusionLLM(BCI_TextLLM):
             raise ValueError(f"bos {self.filler_id} should be the first special token (eos {self.eos_id}, "
                              f"mask {self.mask_id})")
         self.trace = None  # set to a list to record every decode (_denoise)
+        self.commit_logprobs = None  # set to a list to record each decode's per-token commit log-probs (_denoise)
 
     @property
     def revision(self) -> dict:
@@ -415,7 +416,12 @@ class BCI_DiffusionLLM(BCI_TextLLM):
         With editing on, every pass also has "e": [[pos, token, proposal, probability, edited 0/1], ...] = every
         committed position of the block up to its first EOS whose proposal differs from its token, before the pass.
         With re-masking on, {"b": block, "r": [[pos, token, probability when committed], ...]} = tokens masked again
-        before a re-fill round; the passes that re-fill them list them in "m" again."""
+        before a re-fill round; the passes that re-fill them list them in "m" again.
+        With self.commit_logprobs a list (N-best rescoring side test, docs/RESCORING.md; off by default), it appends
+        {"ids": the returned ids, "logprobs": per returned id, the model's log-probability of that token in the pass
+        that committed it (log-softmax of the untempered logits, the mask excluded as in the proposals; a block's AR
+        first token: from the commit pass of the block before; an edited or re-filled token: from its last write)}.
+        Recording reads the same logits and changes no decode."""
         decoder, lm_head, embed = self._parts()
         bs, sbs, threshold = self.block_size, self.sampler["small_block_size"], self.sampler["threshold"]
         opt = self.revision
@@ -425,6 +431,8 @@ class BCI_DiffusionLLM(BCI_TextLLM):
         rec = {"prefix_len": int(prefix.shape[0]), "events": []}
         if self.trace is not None:
             self.trace.append(rec)
+        score = self.commit_logprobs is not None
+        out_lp: list[float] = []
 
         def run(x, commit):
             h = decoder(inputs_embeds=x[None], past_key_values=cache, use_cache=True, update_past_key_values=commit,
@@ -437,11 +445,14 @@ class BCI_DiffusionLLM(BCI_TextLLM):
         tail = prefix[n_full:]
         rec["tail"] = int(tail.shape[0])
         slots = torch.full((bs - tail.shape[0],), self.mask_id, device=prefix.device)
+        lp = torch.zeros(slots.shape, device=prefix.device) if score else None
         if n_full:
             logits = run(prefix[:n_full], commit=True)
             if tail.shape[0] == 0:
                 slots[0] = logits[-1].argmax()  # the block's first token is the AR next token, as Fast-dLLM v2
                 rec["events"].append({"b": 0, "first": [0, int(slots[0])]})
+                if score:
+                    lp[0] = logits[-1].log_softmax(-1)[slots[0]]
 
         out: list[int] = []
         block = 0
@@ -489,10 +500,15 @@ class BCI_DiffusionLLM(BCI_TextLLM):
                                            round(float(probability[i]), 4), int(change[i])]
                                           for i in differs.nonzero().flatten().tolist()]
                         rec["events"].append(event)
+                    if score:
+                        lsm = logits.log_softmax(-1)
+                        lp[lo:hi] = torch.where(accept, lsm[lo:hi].gather(-1, fill[0][:, None]).squeeze(-1), lp[lo:hi])
                     slots[lo:hi] = torch.where(accept, fill[0], slots[lo:hi])
                     if remask is not None:
                         conf[lo:hi] = torch.where(accept, fill[1], conf[lo:hi])
                     if edit is not None:
+                        if score:
+                            lp = torch.where(change, lsm.gather(-1, proposal[:, None]).squeeze(-1), lp)
                         slots = torch.where(change, proposal, slots)
                         n_edits += change
                         if remask is not None:
@@ -513,6 +529,8 @@ class BCI_DiffusionLLM(BCI_TextLLM):
                 before = slots.clone()
                 slots[low] = self.mask_id
             out += slots.tolist()
+            if score:
+                out_lp += lp.tolist()
             if eos in out or len(out) >= max_new_tokens:
                 break
             logits = run(torch.cat([tail, embed(slots).to(tail.dtype)]), commit=True)
@@ -521,9 +539,14 @@ class BCI_DiffusionLLM(BCI_TextLLM):
             slots[0] = logits[-1].argmax()
             block += 1
             rec["events"].append({"b": block, "first": [len(out), int(slots[0])]})
+            if score:
+                lp = torch.zeros(slots.shape, device=prefix.device)
+                lp[0] = logits[-1].log_softmax(-1)[slots[0]]
         if eos in out:
             out = out[: out.index(eos) + 1]
         rec["out"] = out[:max_new_tokens]
+        if score:
+            self.commit_logprobs.append({"ids": out[:max_new_tokens], "logprobs": out_lp[: len(out[:max_new_tokens])]})
         return out[:max_new_tokens]
 
     def _finished(self, slots, eos) -> bool:

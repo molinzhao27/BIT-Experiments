@@ -1,0 +1,39 @@
+# N-best rescoring SIDE TEST (docs/RESCORING.md). Never a headline number: DESIGN.md keeps LM rescoring out of every
+# headline result. scripts/nbest_decode.py writes the candidates, scripts/rescore_nbest.py scores and selects them.
+candidates:
+  seed: null                  # null = the run's own seed; trial i is seeded with seed * 100003 + i (stage2.generate's)
+  n_samples: 11               # K nucleus samples per trial, next to the greedy decode: N = 12 (duplicates kept, counted)
+  nucleus: {top_p: 0.9, temperature: 0.7, max_new_tokens: 25}   # BIT's / stage2.NUCLEUS
+  greedy: {max_new_tokens: 25}                                   # stage2.GREEDY
+  splits: [val, test]
+  ar_batch: 11                # AR: nucleus samples drawn per generate call (num_return_sequences); 1 = one at a time
+  dtype: bf16                 # autocast dtype, as stage2.generate (weights stay fp32); fp32 turns autocast off
+  diffusion_orders: []        # diffusion runs: extra sub-block sizes (1 = strictly left to right, 32 = whole block in
+                              # confidence order), each giving another K nucleus samples; [] = the run's own sampler only
+
+opt:                          # the text-only LM (Card et al. 2024 rescore their n-best lists with OPT-6.7B)
+  repo_id: facebook/opt-6.7b
+  revision: a45aa65bbeb77c1558bc99bedc6779195462dab0
+  dtype: float16
+  batch_size: 32
+  text: normalized            # the candidate after BIT's normalization (textmetrics.normalize), as WER sees it
+  # Card et al.: OPT's tokenizer prepends </s> (its BOS); every token after it is scored; no end token. The log-prob
+  # of </s> after the sentence is cached too (opt_eos), and used when eos: true.
+  eos: false
+
+selection:
+  # On: greedy (baseline), opt (OPT log-likelihood only), dec_opt (decoder + alpha * OPT + beta * words).
+  # Written but held (off, untested on real runs): decoder, opt_norm, mbr, contrastive, dec_contrastive, all; their
+  # features (contrastive cosine, MBR risk) are not produced by nbest_decode.py.
+  rules: [greedy, opt, dec_opt]
+  grid:                       # weights tuned on BIT-val only (corpus WER), then applied unchanged to BIT-test
+    alpha: [0, 0.05, 0.1, 0.2, 0.3, 0.5, 0.75, 1, 1.5, 2, 3, 5]          # OPT log-prob weight
+    beta: [-2, -1, -0.5, 0, 0.5, 1, 2, 3, 4]                              # per-word bonus
+    gamma: [0, 0.5, 1, 2, 5, 10, 20, 50, 100]                             # (held) contrastive weight
+  all: {features: [dec_sum, opt_sum, n_words, log_count], n_random: 3000, seed: 0}   # (held)
+
+metrics:
+  bootstrap: {n_resamples: 10000, seed: 0}   # paired over BIT-test trials, each rule vs greedy
+  bertscore: true             # BERTScore F1 of the chosen sentences: scripts/evaluate_decodes.py in the project .venv
+  bertscore_device: cpu       # (configs/eval.yaml settings)
+  coverage: []                # (held) selective prediction, e.g. [1.0, 0.9, 0.8, 0.7]

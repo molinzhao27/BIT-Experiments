@@ -94,7 +94,7 @@ def main():
     def decode(skip):
         model._skip_unused_prefill_logits = skip
         with model._layout(training=False):
-            return model._denoise(prefix, 8189, max_new_tokens=8, do_sample=False,
+            return model._denoise(prefix, eos=8189, max_new_tokens=8, do_sample=False,
                                   top_p=1.0, temperature=1.0)
 
     # Isolate prefill-head elimination: both modes use the same mask cache.

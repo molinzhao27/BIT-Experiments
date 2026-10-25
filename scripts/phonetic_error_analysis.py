@@ -76,6 +76,7 @@ RUNS = {  # run -> label; runs without decodes for --split are skipped
     "B_ssl_qwen25-1.5b-instruct_s42": "Qwen Instruct",
     "B_rand_bit4a": "Aero, random-init encoder (4a)",
     "B_ssl_qwen25-1.5b-instruct-diffusion_s42": "Qwen Instruct + diffusion",
+    "B_ssl_aero-1-audio-diffusion_s42": "Aero + diffusion",
 }
 
 # Articulatory features of the 39 ARPAbet phonemes. Vowels: height (0 high, 1 mid, 2 low), backness (0 front,

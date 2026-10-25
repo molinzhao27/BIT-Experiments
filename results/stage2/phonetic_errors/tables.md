@@ -12,36 +12,48 @@
 | Qwen Instruct · null_shuffled | 113.7% | 3729 | 3724 (0.1%) | 0.093 / 0.089 | +0.004 [-0.000, +0.008] | 0.058 | +0.002 [-0.002, +0.006] | 3.5% / 3.4% | 0.0 | 0.0% / 0.0% | +0.008 / +0.001 | +0.005 [+0.001, +0.008] |
 | Aero, random-init encoder (4a) | 33.6% | 1376 | 1368 (0.6%) | 0.217 / 0.094 | +0.124 [+0.111, +0.137] | <0.001 | +0.111 [+0.100, +0.122] | 16.2% / 2.7% | 3.9 | 0.8% / 0.1% | +0.192 / +0.155 | +0.068 [+0.059, +0.077] |
 | Aero, random-init encoder (4a) · null_shuffled | 115.3% | 3820 | 3811 (0.2%) | 0.089 / 0.089 | +0.000 [-0.004, +0.005] | 0.441 | +0.000 [-0.004, +0.004] | 3.2% / 3.2% | -0.0 | 0.1% / 0.0% | -0.000 / -0.003 | +0.003 [-0.000, +0.007] |
+| Qwen Instruct + diffusion | 23.6% | 1063 | 1029 (3.2%) | 0.298 / 0.095 | +0.203 [+0.189, +0.219] | <0.001 | +0.187 [+0.176, +0.199] | 25.6% / 2.7% | 4.9 | 1.6% / 0.0% | +0.330 / +0.260 | +0.112 [+0.102, +0.123] |
+| Qwen Instruct + diffusion · null_shuffled | 115.0% | 3793 | 3763 (0.8%) | 0.088 / 0.089 | -0.001 [-0.005, +0.004] | 0.598 | -0.003 [-0.007, +0.002] | 3.2% / 3.3% | -0.1 | 0.0% / 0.0% | -0.000 / -0.005 | +0.002 [-0.001, +0.006] |
+| Aero + diffusion | 21.8% | 964 | 930 (3.5%) | 0.295 / 0.095 | +0.200 [+0.185, +0.217] | <0.001 | +0.187 [+0.175, +0.200] | 25.9% / 2.7% | 4.5 | 1.3% / 0.0% | +0.309 / +0.248 | +0.107 [+0.096, +0.118] |
+| Aero + diffusion · null_shuffled | 115.0% | 3790 | 3759 (0.8%) | 0.089 / 0.089 | -0.000 [-0.005, +0.004] | 0.522 | -0.002 [-0.006, +0.003] | 3.2% / 3.3% | -0.1 | 0.0% / 0.0% | +0.001 / -0.002 | +0.003 [-0.001, +0.007] |
 
 ## Language side (all pairs)
 
 | Run | spelling excess | meaning (sem) obs / null | sem excess | p | related obs / null | commoner obs / null | context fit (ctx, nats) excess | ctx p | fits context better than ref obs / null | ctx coverage | median zipf: correct / substituted ref |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Fast-dLLM v2 (diffusion) | +0.160 [+0.147, +0.173] | 0.137 / 0.053 | +0.084 [+0.075, +0.094] | <0.001 | 9.7% / 2.9% | 68% / 64% | +1.90 [+1.71, +2.10] | <0.001 | 16% / 8% | 97% | 6.38 / 4.96 |
-| Fast-dLLM v2 (diffusion) · null_shuffled | -0.003 [-0.007, +0.001] | 0.129 / 0.119 | +0.010 [+0.006, +0.014] | <0.001 | 7.4% / 6.8% | 54% / 53% | +0.19 [+0.11, +0.27] | <0.001 | 5% / 5% | 96% | 7.09 / 6.01 |
-| Aero | +0.105 [+0.093, +0.117] | 0.122 / 0.060 | +0.062 [+0.052, +0.072] | <0.001 | 8.4% / 3.5% | 60% / 58% | +1.82 [+1.60, +2.05] | <0.001 | 15% / 8% | 95% | 6.41 / 5.19 |
-| Aero · null_shuffled | -0.003 [-0.007, +0.001] | 0.124 / 0.117 | +0.007 [+0.003, +0.011] | <0.001 | 7.0% / 6.8% | 53% / 52% | +0.17 [+0.08, +0.26] | <0.001 | 5% / 5% | 96% | 7.09 / 6.00 |
-| Qwen base, no prompt | +0.060 [+0.051, +0.070] | 0.121 / 0.069 | +0.052 [+0.045, +0.061] | <0.001 | 9.3% / 3.8% | 58% / 58% | +1.57 [+1.39, +1.75] | <0.001 | 13% / 8% | 97% | 6.46 / 5.37 |
-| Qwen base, no prompt · null_shuffled | -0.004 [-0.008, -0.000] | 0.127 / 0.121 | +0.006 [+0.002, +0.010] | 0.002 | 6.7% / 6.8% | 54% / 53% | +0.13 [+0.05, +0.22] | <0.001 | 5% / 5% | 96% | 7.09 / 6.01 |
-| Qwen Instruct | +0.039 [+0.032, +0.047] | 0.115 / 0.078 | +0.038 [+0.032, +0.044] | <0.001 | 7.7% / 4.8% | 53% / 53% | +1.20 [+1.05, +1.34] | <0.001 | 10% / 6% | 97% | 6.50 / 5.53 |
-| Qwen Instruct · null_shuffled | +0.002 [-0.003, +0.006] | 0.124 / 0.116 | +0.008 [+0.004, +0.012] | <0.001 | 7.2% / 6.8% | 52% / 51% | +0.18 [+0.10, +0.26] | <0.001 | 5% / 5% | 96% | 7.09 / 6.00 |
-| Aero, random-init encoder (4a) | +0.102 [+0.090, +0.115] | 0.124 / 0.061 | +0.063 [+0.054, +0.072] | <0.001 | 9.1% / 4.0% | 58% / 58% | +1.83 [+1.63, +2.03] | <0.001 | 16% / 8% | 95% | 6.41 / 5.21 |
-| Aero, random-init encoder (4a) · null_shuffled | -0.005 [-0.009, -0.001] | 0.124 / 0.116 | +0.008 [+0.004, +0.012] | <0.001 | 7.0% / 6.7% | 52% / 51% | +0.20 [+0.11, +0.29] | <0.001 | 5% / 5% | 95% | 7.09 / 6.00 |
+| Fast-dLLM v2 (diffusion) | +0.160 [+0.147, +0.173] | 0.138 / 0.054 | +0.084 [+0.075, +0.094] | <0.001 | 9.7% / 3.0% | 68% / 64% | +1.90 [+1.71, +2.10] | <0.001 | 16% / 8% | 97% | 6.38 / 4.96 |
+| Fast-dLLM v2 (diffusion) · null_shuffled | -0.003 [-0.007, +0.001] | 0.131 / 0.122 | +0.010 [+0.006, +0.014] | <0.001 | 7.9% / 7.3% | 54% / 53% | +0.19 [+0.11, +0.27] | <0.001 | 5% / 5% | 96% | 7.09 / 6.01 |
+| Aero | +0.105 [+0.093, +0.117] | 0.124 / 0.062 | +0.062 [+0.052, +0.072] | <0.001 | 8.7% / 3.7% | 60% / 58% | +1.82 [+1.60, +2.05] | <0.001 | 15% / 8% | 95% | 6.41 / 5.19 |
+| Aero · null_shuffled | -0.003 [-0.007, +0.001] | 0.127 / 0.119 | +0.007 [+0.003, +0.011] | <0.001 | 7.5% / 7.2% | 53% / 52% | +0.17 [+0.08, +0.26] | <0.001 | 5% / 5% | 96% | 7.09 / 6.00 |
+| Qwen base, no prompt | +0.060 [+0.051, +0.070] | 0.123 / 0.071 | +0.052 [+0.044, +0.060] | <0.001 | 9.7% / 3.9% | 58% / 58% | +1.57 [+1.39, +1.75] | <0.001 | 13% / 8% | 97% | 6.46 / 5.37 |
+| Qwen base, no prompt · null_shuffled | -0.004 [-0.008, -0.000] | 0.129 / 0.123 | +0.006 [+0.002, +0.010] | 0.002 | 7.1% / 7.3% | 54% / 53% | +0.13 [+0.05, +0.22] | <0.001 | 5% / 5% | 96% | 7.09 / 6.01 |
+| Qwen Instruct | +0.039 [+0.032, +0.047] | 0.118 / 0.080 | +0.038 [+0.031, +0.044] | <0.001 | 8.2% / 5.0% | 53% / 53% | +1.20 [+1.05, +1.34] | <0.001 | 10% / 6% | 97% | 6.50 / 5.53 |
+| Qwen Instruct · null_shuffled | +0.002 [-0.003, +0.006] | 0.126 / 0.118 | +0.008 [+0.004, +0.011] | <0.001 | 7.6% / 7.2% | 52% / 51% | +0.18 [+0.10, +0.26] | <0.001 | 5% / 5% | 96% | 7.09 / 6.00 |
+| Aero, random-init encoder (4a) | +0.102 [+0.090, +0.115] | 0.126 / 0.063 | +0.063 [+0.053, +0.072] | <0.001 | 9.1% / 4.2% | 58% / 58% | +1.83 [+1.63, +2.03] | <0.001 | 16% / 8% | 95% | 6.41 / 5.21 |
+| Aero, random-init encoder (4a) · null_shuffled | -0.005 [-0.009, -0.001] | 0.126 / 0.118 | +0.008 [+0.004, +0.012] | <0.001 | 7.5% / 7.1% | 52% / 51% | +0.20 [+0.11, +0.29] | <0.001 | 5% / 5% | 95% | 7.09 / 6.00 |
+| Qwen Instruct + diffusion | +0.174 [+0.160, +0.188] | 0.136 / 0.049 | +0.086 [+0.076, +0.097] | <0.001 | 9.3% / 2.6% | 68% / 65% | +2.02 [+1.81, +2.24] | <0.001 | 15% / 9% | 97% | 6.38 / 4.92 |
+| Qwen Instruct + diffusion · null_shuffled | -0.004 [-0.008, +0.000] | 0.130 / 0.121 | +0.009 [+0.005, +0.013] | <0.001 | 8.1% / 7.4% | 54% / 52% | +0.20 [+0.12, +0.28] | <0.001 | 5% / 5% | 96% | 7.09 / 6.01 |
+| Aero + diffusion | +0.173 [+0.159, +0.189] | 0.141 / 0.050 | +0.091 [+0.080, +0.102] | <0.001 | 9.7% / 2.4% | 66% / 64% | +2.22 [+2.00, +2.44] | <0.001 | 16% / 9% | 96% | 6.35 / 4.93 |
+| Aero + diffusion · null_shuffled | -0.004 [-0.008, +0.000] | 0.129 / 0.121 | +0.008 [+0.004, +0.012] | <0.001 | 8.3% / 7.4% | 54% / 52% | +0.20 [+0.12, +0.29] | <0.001 | 6% / 5% | 96% | 7.09 / 6.01 |
 
 ## Sound-alike (phon >= 0.5) x related in meaning (sem >= 0.4), share of pairs
 
 | Run | alike + related | alike only | related only | neither |
 |---|---|---|---|---|
 | Fast-dLLM v2 (diffusion) | 4.0% | 19.6% | 5.7% | 70.7% |
-| Fast-dLLM v2 (diffusion) · null_shuffled | 1.2% | 1.8% | 6.2% | 90.8% |
-| Aero | 3.1% | 13.0% | 5.3% | 78.6% |
-| Aero · null_shuffled | 1.2% | 2.1% | 5.8% | 90.9% |
-| Qwen base, no prompt | 2.8% | 7.6% | 6.6% | 83.1% |
-| Qwen base, no prompt · null_shuffled | 1.1% | 2.1% | 5.6% | 91.2% |
-| Qwen Instruct | 1.9% | 5.0% | 5.9% | 87.3% |
-| Qwen Instruct · null_shuffled | 1.2% | 2.3% | 5.9% | 90.6% |
+| Fast-dLLM v2 (diffusion) · null_shuffled | 1.4% | 1.6% | 6.5% | 90.5% |
+| Aero | 3.3% | 12.8% | 5.4% | 78.5% |
+| Aero · null_shuffled | 1.3% | 1.9% | 6.2% | 90.6% |
+| Qwen base, no prompt | 3.1% | 7.3% | 6.6% | 83.0% |
+| Qwen base, no prompt · null_shuffled | 1.2% | 2.0% | 5.9% | 90.9% |
+| Qwen Instruct | 2.0% | 4.9% | 6.2% | 86.9% |
+| Qwen Instruct · null_shuffled | 1.4% | 2.1% | 6.2% | 90.3% |
 | Aero, random-init encoder (4a) | 3.8% | 12.4% | 5.3% | 78.5% |
-| Aero, random-init encoder (4a) · null_shuffled | 0.9% | 2.2% | 6.0% | 90.8% |
+| Aero, random-init encoder (4a) · null_shuffled | 1.1% | 2.0% | 6.4% | 90.5% |
+| Qwen Instruct + diffusion | 4.8% | 20.8% | 4.6% | 69.9% |
+| Qwen Instruct + diffusion · null_shuffled | 1.4% | 1.8% | 6.7% | 90.0% |
+| Aero + diffusion | 3.9% | 22.0% | 5.8% | 68.3% |
+| Aero + diffusion · null_shuffled | 1.5% | 1.8% | 6.9% | 89.9% |
 
 ## Slices (excess with 95% CI; n pairs)
 
@@ -49,21 +61,21 @@
 |---|---|---|---|---|---|---|
 | Fast-dLLM v2 (diffusion) | seen | 72 | +0.164 [+0.118, +0.218] | +0.095 [+0.062, +0.134] | +0.104 [+0.071, +0.147] | +1.97 [+1.14, +2.98] |
 | Fast-dLLM v2 (diffusion) | unseen | 1021 | +0.194 [+0.180, +0.209] | +0.108 [+0.098, +0.118] | +0.083 [+0.073, +0.093] | +1.90 [+1.70, +2.11] |
-| Fast-dLLM v2 (diffusion) | mostly_right | 739 | +0.206 [+0.188, +0.224] | +0.114 [+0.102, +0.127] | +0.094 [+0.083, +0.107] | +2.28 [+2.02, +2.53] |
+| Fast-dLLM v2 (diffusion) | mostly_right | 739 | +0.206 [+0.188, +0.224] | +0.114 [+0.102, +0.127] | +0.094 [+0.082, +0.107] | +2.28 [+2.02, +2.53] |
 | Fast-dLLM v2 (diffusion) | mostly_wrong | 354 | +0.164 [+0.140, +0.187] | +0.092 [+0.076, +0.108] | +0.063 [+0.049, +0.077] | +1.12 [+0.83, +1.41] |
-| Fast-dLLM v2 (diffusion) | content | 756 | +0.184 [+0.169, +0.199] | +0.105 [+0.094, +0.116] | +0.074 [+0.064, +0.086] | +1.84 [+1.61, +2.09] |
-| Fast-dLLM v2 (diffusion) | no_stem | 1070 | +0.184 [+0.171, +0.198] | +0.104 [+0.095, +0.114] | +0.079 [+0.070, +0.089] | +1.87 [+1.68, +2.08] |
+| Fast-dLLM v2 (diffusion) | content | 756 | +0.184 [+0.169, +0.199] | +0.105 [+0.094, +0.116] | +0.074 [+0.063, +0.086] | +1.84 [+1.61, +2.09] |
+| Fast-dLLM v2 (diffusion) | no_stem | 1070 | +0.184 [+0.171, +0.198] | +0.104 [+0.095, +0.114] | +0.079 [+0.070, +0.088] | +1.87 [+1.68, +2.08] |
 | Fast-dLLM v2 (diffusion) | not_alike | 835 | +0.089 [+0.079, +0.098] | +0.046 [+0.038, +0.053] | +0.074 [+0.064, +0.084] | +1.85 [+1.62, +2.08] |
-| Aero | seen | 90 | +0.081 [+0.042, +0.128] | +0.049 [+0.012, +0.093] | +0.040 [+0.012, +0.073] | +1.22 [+0.03, +2.71] |
+| Aero | seen | 90 | +0.081 [+0.042, +0.128] | +0.049 [+0.012, +0.093] | +0.040 [+0.012, +0.072] | +1.22 [+0.03, +2.71] |
 | Aero | unseen | 1281 | +0.120 [+0.108, +0.134] | +0.064 [+0.055, +0.074] | +0.064 [+0.054, +0.074] | +1.86 [+1.65, +2.09] |
 | Aero | mostly_right | 512 | +0.175 [+0.154, +0.196] | +0.094 [+0.080, +0.109] | +0.100 [+0.084, +0.117] | +3.16 [+2.85, +3.49] |
 | Aero | mostly_wrong | 859 | +0.084 [+0.070, +0.099] | +0.045 [+0.034, +0.056] | +0.039 [+0.029, +0.050] | +1.03 [+0.78, +1.28] |
 | Aero | content | 787 | +0.127 [+0.112, +0.143] | +0.067 [+0.056, +0.079] | +0.066 [+0.054, +0.079] | +2.04 [+1.78, +2.31] |
 | Aero | no_stem | 1355 | +0.112 [+0.100, +0.125] | +0.061 [+0.052, +0.070] | +0.057 [+0.048, +0.066] | +1.79 [+1.57, +2.02] |
-| Aero | not_alike | 1150 | +0.044 [+0.035, +0.052] | +0.017 [+0.010, +0.025] | +0.049 [+0.039, +0.058] | +1.68 [+1.46, +1.92] |
-| Qwen base, no prompt | seen | 95 | +0.033 [+0.002, +0.065] | +0.014 [-0.003, +0.034] | +0.051 [+0.021, +0.089] | +1.70 [+1.05, +2.49] |
+| Aero | not_alike | 1150 | +0.044 [+0.035, +0.052] | +0.017 [+0.010, +0.025] | +0.048 [+0.039, +0.057] | +1.68 [+1.46, +1.92] |
+| Qwen base, no prompt | seen | 95 | +0.033 [+0.002, +0.065] | +0.014 [-0.003, +0.034] | +0.051 [+0.022, +0.089] | +1.70 [+1.05, +2.49] |
 | Qwen base, no prompt | unseen | 1536 | +0.077 [+0.067, +0.087] | +0.045 [+0.037, +0.052] | +0.052 [+0.044, +0.061] | +1.57 [+1.38, +1.76] |
-| Qwen base, no prompt | mostly_right | 487 | +0.107 [+0.089, +0.126] | +0.060 [+0.047, +0.073] | +0.080 [+0.066, +0.095] | +2.82 [+2.52, +3.12] |
+| Qwen base, no prompt | mostly_right | 487 | +0.107 [+0.089, +0.126] | +0.060 [+0.047, +0.073] | +0.080 [+0.066, +0.094] | +2.82 [+2.52, +3.12] |
 | Qwen base, no prompt | mostly_wrong | 1144 | +0.060 [+0.048, +0.072] | +0.036 [+0.027, +0.045] | +0.040 [+0.031, +0.050] | +1.04 [+0.84, +1.24] |
 | Qwen base, no prompt | content | 863 | +0.079 [+0.067, +0.091] | +0.044 [+0.035, +0.053] | +0.059 [+0.048, +0.071] | +1.79 [+1.55, +2.03] |
 | Qwen base, no prompt | no_stem | 1615 | +0.070 [+0.060, +0.080] | +0.041 [+0.034, +0.048] | +0.049 [+0.041, +0.057] | +1.56 [+1.38, +1.74] |
@@ -73,15 +85,29 @@
 | Qwen Instruct | mostly_right | 361 | +0.069 [+0.052, +0.088] | +0.037 [+0.023, +0.050] | +0.087 [+0.070, +0.105] | +3.20 [+2.82, +3.59] |
 | Qwen Instruct | mostly_wrong | 1735 | +0.043 [+0.035, +0.052] | +0.024 [+0.018, +0.031] | +0.027 [+0.021, +0.034] | +0.77 [+0.64, +0.91] |
 | Qwen Instruct | content | 949 | +0.046 [+0.036, +0.056] | +0.023 [+0.016, +0.031] | +0.050 [+0.040, +0.060] | +1.49 [+1.28, +1.71] |
-| Qwen Instruct | no_stem | 2077 | +0.043 [+0.036, +0.051] | +0.025 [+0.019, +0.031] | +0.035 [+0.029, +0.041] | +1.18 [+1.04, +1.32] |
+| Qwen Instruct | no_stem | 2077 | +0.043 [+0.036, +0.051] | +0.025 [+0.019, +0.031] | +0.034 [+0.029, +0.040] | +1.18 [+1.04, +1.32] |
 | Qwen Instruct | not_alike | 1952 | +0.016 [+0.010, +0.021] | +0.008 [+0.004, +0.013] | +0.030 [+0.024, +0.036] | +1.12 [+0.98, +1.27] |
-| Aero, random-init encoder (4a) | seen | 55 | +0.118 [+0.052, +0.204] | +0.075 [+0.034, +0.131] | +0.077 [+0.026, +0.165] | +1.53 [+0.63, +2.40] |
+| Aero, random-init encoder (4a) | seen | 55 | +0.118 [+0.052, +0.204] | +0.075 [+0.034, +0.131] | +0.078 [+0.026, +0.165] | +1.53 [+0.63, +2.40] |
 | Aero, random-init encoder (4a) | unseen | 1313 | +0.124 [+0.110, +0.138] | +0.068 [+0.059, +0.077] | +0.062 [+0.053, +0.071] | +1.84 [+1.64, +2.05] |
-| Aero, random-init encoder (4a) | mostly_right | 453 | +0.175 [+0.153, +0.197] | +0.095 [+0.078, +0.112] | +0.107 [+0.090, +0.124] | +3.29 [+2.95, +3.65] |
+| Aero, random-init encoder (4a) | mostly_right | 453 | +0.175 [+0.153, +0.197] | +0.095 [+0.078, +0.112] | +0.107 [+0.090, +0.123] | +3.29 [+2.95, +3.65] |
 | Aero, random-init encoder (4a) | mostly_wrong | 915 | +0.098 [+0.082, +0.115] | +0.055 [+0.045, +0.065] | +0.041 [+0.031, +0.051] | +1.11 [+0.91, +1.32] |
 | Aero, random-init encoder (4a) | content | 802 | +0.126 [+0.112, +0.140] | +0.067 [+0.057, +0.077] | +0.072 [+0.060, +0.084] | +2.02 [+1.76, +2.28] |
 | Aero, random-init encoder (4a) | no_stem | 1350 | +0.118 [+0.105, +0.131] | +0.066 [+0.057, +0.075] | +0.059 [+0.050, +0.068] | +1.80 [+1.61, +2.00] |
 | Aero, random-init encoder (4a) | not_alike | 1147 | +0.050 [+0.041, +0.060] | +0.026 [+0.019, +0.033] | +0.050 [+0.041, +0.059] | +1.70 [+1.50, +1.91] |
+| Qwen Instruct + diffusion | seen | 71 | +0.162 [+0.110, +0.226] | +0.096 [+0.064, +0.136] | +0.094 [+0.053, +0.144] | +2.86 [+1.84, +4.00] |
+| Qwen Instruct + diffusion | unseen | 958 | +0.206 [+0.191, +0.222] | +0.114 [+0.103, +0.124] | +0.086 [+0.075, +0.097] | +1.96 [+1.75, +2.19] |
+| Qwen Instruct + diffusion | mostly_right | 688 | +0.220 [+0.200, +0.239] | +0.123 [+0.110, +0.136] | +0.098 [+0.085, +0.112] | +2.50 [+2.26, +2.75] |
+| Qwen Instruct + diffusion | mostly_wrong | 341 | +0.170 [+0.151, +0.189] | +0.091 [+0.077, +0.106] | +0.062 [+0.046, +0.079] | +1.07 [+0.70, +1.44] |
+| Qwen Instruct + diffusion | content | 733 | +0.200 [+0.183, +0.217] | +0.110 [+0.099, +0.122] | +0.084 [+0.072, +0.097] | +2.05 [+1.80, +2.31] |
+| Qwen Instruct + diffusion | no_stem | 1005 | +0.194 [+0.180, +0.209] | +0.109 [+0.099, +0.119] | +0.081 [+0.070, +0.091] | +2.00 [+1.79, +2.21] |
+| Qwen Instruct + diffusion | not_alike | 766 | +0.093 [+0.083, +0.102] | +0.048 [+0.040, +0.056] | +0.068 [+0.057, +0.080] | +1.94 [+1.70, +2.18] |
+| Aero + diffusion | seen | 47 | +0.151 [+0.082, +0.233] | +0.078 [+0.030, +0.132] | +0.105 [+0.055, +0.157] | +3.09 [+2.02, +4.30] |
+| Aero + diffusion | unseen | 883 | +0.203 [+0.187, +0.219] | +0.108 [+0.097, +0.120] | +0.090 [+0.079, +0.102] | +2.17 [+1.95, +2.40] |
+| Aero + diffusion | mostly_right | 658 | +0.216 [+0.197, +0.234] | +0.114 [+0.101, +0.127] | +0.098 [+0.084, +0.112] | +2.60 [+2.35, +2.86] |
+| Aero + diffusion | mostly_wrong | 272 | +0.164 [+0.134, +0.194] | +0.088 [+0.068, +0.111] | +0.074 [+0.057, +0.092] | +1.25 [+0.89, +1.65] |
+| Aero + diffusion | content | 649 | +0.203 [+0.186, +0.222] | +0.110 [+0.098, +0.123] | +0.087 [+0.074, +0.100] | +2.21 [+1.96, +2.46] |
+| Aero + diffusion | no_stem | 905 | +0.192 [+0.177, +0.208] | +0.104 [+0.093, +0.115] | +0.085 [+0.074, +0.096] | +2.19 [+1.98, +2.42] |
+| Aero + diffusion | not_alike | 689 | +0.090 [+0.080, +0.101] | +0.043 [+0.033, +0.052] | +0.078 [+0.066, +0.090] | +2.16 [+1.92, +2.41] |
 
 ## Slice differences within a run (a − b, 95% CI)
 
@@ -96,7 +122,7 @@
 | Aero | phon | seen − unseen | -0.039 [-0.081, +0.009] |
 | Aero | phon | mostly_right − mostly_wrong | +0.091 [+0.066, +0.116] |
 | Aero | sem | seen − unseen | -0.024 [-0.054, +0.011] |
-| Aero | sem | mostly_right − mostly_wrong | +0.061 [+0.041, +0.081] |
+| Aero | sem | mostly_right − mostly_wrong | +0.060 [+0.041, +0.080] |
 | Aero | ctx | seen − unseen | -0.642 [-1.846, +0.866] |
 | Aero | ctx | mostly_right − mostly_wrong | +2.136 [+1.737, +2.545] |
 | Qwen base, no prompt | phon | seen − unseen | -0.044 [-0.076, -0.011] |
@@ -113,10 +139,22 @@
 | Qwen Instruct | ctx | mostly_right − mostly_wrong | +2.427 [+2.018, +2.835] |
 | Aero, random-init encoder (4a) | phon | seen − unseen | -0.006 [-0.073, +0.080] |
 | Aero, random-init encoder (4a) | phon | mostly_right − mostly_wrong | +0.076 [+0.048, +0.104] |
-| Aero, random-init encoder (4a) | sem | seen − unseen | +0.015 [-0.037, +0.103] |
+| Aero, random-init encoder (4a) | sem | seen − unseen | +0.016 [-0.036, +0.103] |
 | Aero, random-init encoder (4a) | sem | mostly_right − mostly_wrong | +0.066 [+0.047, +0.085] |
 | Aero, random-init encoder (4a) | ctx | seen − unseen | -0.309 [-1.241, +0.566] |
 | Aero, random-init encoder (4a) | ctx | mostly_right − mostly_wrong | +2.182 [+1.792, +2.598] |
+| Qwen Instruct + diffusion | phon | seen − unseen | -0.045 [-0.098, +0.022] |
+| Qwen Instruct + diffusion | phon | mostly_right − mostly_wrong | +0.050 [+0.023, +0.077] |
+| Qwen Instruct + diffusion | sem | seen − unseen | +0.009 [-0.035, +0.060] |
+| Qwen Instruct + diffusion | sem | mostly_right − mostly_wrong | +0.036 [+0.015, +0.058] |
+| Qwen Instruct + diffusion | ctx | seen − unseen | +0.894 [-0.166, +2.063] |
+| Qwen Instruct + diffusion | ctx | mostly_right − mostly_wrong | +1.430 [+0.984, +1.872] |
+| Aero + diffusion | phon | seen − unseen | -0.052 [-0.123, +0.030] |
+| Aero + diffusion | phon | mostly_right − mostly_wrong | +0.052 [+0.016, +0.087] |
+| Aero + diffusion | sem | seen − unseen | +0.014 [-0.037, +0.068] |
+| Aero + diffusion | sem | mostly_right − mostly_wrong | +0.024 [+0.001, +0.046] |
+| Aero + diffusion | ctx | seen − unseen | +0.923 [-0.155, +2.155] |
+| Aero + diffusion | ctx | mostly_right − mostly_wrong | +1.347 [+0.877, +1.799] |
 
 ## Run contrasts (difference in mean excess, a − b; paired trial bootstrap)
 
@@ -127,7 +165,7 @@
 | Fast-dLLM v2 (diffusion) | Aero | phon|orth | all | +0.044 [+0.032, +0.057] |
 | Fast-dLLM v2 (diffusion) | Aero | phon|orth | mostly_right | +0.020 [+0.002, +0.039] |
 | Fast-dLLM v2 (diffusion) | Aero | sem | all | +0.022 [+0.010, +0.034] |
-| Fast-dLLM v2 (diffusion) | Aero | sem | mostly_right | -0.006 [-0.025, +0.013] |
+| Fast-dLLM v2 (diffusion) | Aero | sem | mostly_right | -0.006 [-0.024, +0.013] |
 | Fast-dLLM v2 (diffusion) | Aero | ctx | all | +0.084 [-0.170, +0.343] |
 | Fast-dLLM v2 (diffusion) | Aero | ctx | mostly_right | -0.883 [-1.257, -0.525] |
 | Fast-dLLM v2 (diffusion) | Qwen base, no prompt | phon | all | +0.118 [+0.102, +0.134] |
@@ -154,11 +192,27 @@
 | Fast-dLLM v2 (diffusion) | Aero, random-init encoder (4a) | sem | mostly_right | -0.012 [-0.031, +0.007] |
 | Fast-dLLM v2 (diffusion) | Aero, random-init encoder (4a) | ctx | all | +0.077 [-0.180, +0.339] |
 | Fast-dLLM v2 (diffusion) | Aero, random-init encoder (4a) | ctx | mostly_right | -1.016 [-1.401, -0.638] |
+| Fast-dLLM v2 (diffusion) | Qwen Instruct + diffusion | phon | all | -0.011 [-0.028, +0.006] |
+| Fast-dLLM v2 (diffusion) | Qwen Instruct + diffusion | phon | mostly_right | -0.014 [-0.037, +0.009] |
+| Fast-dLLM v2 (diffusion) | Qwen Instruct + diffusion | phon|orth | all | -0.005 [-0.017, +0.007] |
+| Fast-dLLM v2 (diffusion) | Qwen Instruct + diffusion | phon|orth | mostly_right | -0.008 [-0.025, +0.008] |
+| Fast-dLLM v2 (diffusion) | Qwen Instruct + diffusion | sem | all | -0.002 [-0.014, +0.010] |
+| Fast-dLLM v2 (diffusion) | Qwen Instruct + diffusion | sem | mostly_right | -0.004 [-0.019, +0.010] |
+| Fast-dLLM v2 (diffusion) | Qwen Instruct + diffusion | ctx | all | -0.120 [-0.347, +0.102] |
+| Fast-dLLM v2 (diffusion) | Qwen Instruct + diffusion | ctx | mostly_right | -0.223 [-0.495, +0.039] |
+| Fast-dLLM v2 (diffusion) | Aero + diffusion | phon | all | -0.008 [-0.026, +0.009] |
+| Fast-dLLM v2 (diffusion) | Aero + diffusion | phon | mostly_right | -0.010 [-0.032, +0.012] |
+| Fast-dLLM v2 (diffusion) | Aero + diffusion | phon|orth | all | +0.000 [-0.012, +0.013] |
+| Fast-dLLM v2 (diffusion) | Aero + diffusion | phon|orth | mostly_right | +0.000 [-0.015, +0.016] |
+| Fast-dLLM v2 (diffusion) | Aero + diffusion | sem | all | -0.007 [-0.019, +0.005] |
+| Fast-dLLM v2 (diffusion) | Aero + diffusion | sem | mostly_right | -0.004 [-0.019, +0.011] |
+| Fast-dLLM v2 (diffusion) | Aero + diffusion | ctx | all | -0.311 [-0.551, -0.070] |
+| Fast-dLLM v2 (diffusion) | Aero + diffusion | ctx | mostly_right | -0.323 [-0.622, -0.024] |
 | Aero | Qwen base, no prompt | phon | all | +0.043 [+0.029, +0.057] |
 | Aero | Qwen base, no prompt | phon | mostly_right | +0.067 [+0.043, +0.093] |
 | Aero | Qwen base, no prompt | phon|orth | all | +0.020 [+0.010, +0.031] |
 | Aero | Qwen base, no prompt | phon|orth | mostly_right | +0.034 [+0.017, +0.052] |
-| Aero | Qwen base, no prompt | sem | all | +0.010 [-0.001, +0.021] |
+| Aero | Qwen base, no prompt | sem | all | +0.010 [-0.001, +0.020] |
 | Aero | Qwen base, no prompt | sem | mostly_right | +0.020 [-0.001, +0.040] |
 | Aero | Qwen base, no prompt | ctx | all | +0.247 [+0.011, +0.493] |
 | Aero | Qwen base, no prompt | ctx | mostly_right | +0.345 [-0.056, +0.751] |
@@ -178,6 +232,22 @@
 | Aero | Aero, random-init encoder (4a) | sem | mostly_right | -0.007 [-0.028, +0.015] |
 | Aero | Aero, random-init encoder (4a) | ctx | all | -0.007 [-0.249, +0.237] |
 | Aero | Aero, random-init encoder (4a) | ctx | mostly_right | -0.133 [-0.524, +0.264] |
+| Aero | Qwen Instruct + diffusion | phon | all | -0.086 [-0.103, -0.069] |
+| Aero | Qwen Instruct + diffusion | phon | mostly_right | -0.045 [-0.071, -0.019] |
+| Aero | Qwen Instruct + diffusion | phon|orth | all | -0.049 [-0.061, -0.038] |
+| Aero | Qwen Instruct + diffusion | phon|orth | mostly_right | -0.029 [-0.046, -0.011] |
+| Aero | Qwen Instruct + diffusion | sem | all | -0.024 [-0.037, -0.012] |
+| Aero | Qwen Instruct + diffusion | sem | mostly_right | +0.002 [-0.018, +0.021] |
+| Aero | Qwen Instruct + diffusion | ctx | all | -0.204 [-0.474, +0.063] |
+| Aero | Qwen Instruct + diffusion | ctx | mostly_right | +0.660 [+0.316, +1.013] |
+| Aero | Aero + diffusion | phon | all | -0.083 [-0.101, -0.065] |
+| Aero | Aero + diffusion | phon | mostly_right | -0.041 [-0.066, -0.016] |
+| Aero | Aero + diffusion | phon|orth | all | -0.044 [-0.056, -0.032] |
+| Aero | Aero + diffusion | phon|orth | mostly_right | -0.020 [-0.039, -0.001] |
+| Aero | Aero + diffusion | sem | all | -0.029 [-0.042, -0.016] |
+| Aero | Aero + diffusion | sem | mostly_right | +0.002 [-0.017, +0.021] |
+| Aero | Aero + diffusion | ctx | all | -0.395 [-0.670, -0.122] |
+| Aero | Aero + diffusion | ctx | mostly_right | +0.561 [+0.209, +0.919] |
 | Qwen base, no prompt | Qwen Instruct | phon | all | +0.027 [+0.015, +0.038] |
 | Qwen base, no prompt | Qwen Instruct | phon | mostly_right | +0.038 [+0.012, +0.062] |
 | Qwen base, no prompt | Qwen Instruct | phon|orth | all | +0.017 [+0.008, +0.025] |
@@ -194,6 +264,22 @@
 | Qwen base, no prompt | Aero, random-init encoder (4a) | sem | mostly_right | -0.026 [-0.046, -0.007] |
 | Qwen base, no prompt | Aero, random-init encoder (4a) | ctx | all | -0.253 [-0.484, -0.016] |
 | Qwen base, no prompt | Aero, random-init encoder (4a) | ctx | mostly_right | -0.478 [-0.897, -0.060] |
+| Qwen base, no prompt | Qwen Instruct + diffusion | phon | all | -0.129 [-0.145, -0.113] |
+| Qwen base, no prompt | Qwen Instruct + diffusion | phon | mostly_right | -0.112 [-0.137, -0.088] |
+| Qwen base, no prompt | Qwen Instruct + diffusion | phon|orth | all | -0.069 [-0.080, -0.058] |
+| Qwen base, no prompt | Qwen Instruct + diffusion | phon|orth | mostly_right | -0.063 [-0.079, -0.046] |
+| Qwen base, no prompt | Qwen Instruct + diffusion | sem | all | -0.034 [-0.047, -0.022] |
+| Qwen base, no prompt | Qwen Instruct + diffusion | sem | mostly_right | -0.018 [-0.036, +0.000] |
+| Qwen base, no prompt | Qwen Instruct + diffusion | ctx | all | -0.451 [-0.722, -0.186] |
+| Qwen base, no prompt | Qwen Instruct + diffusion | ctx | mostly_right | +0.315 [-0.057, +0.689] |
+| Qwen base, no prompt | Aero + diffusion | phon | all | -0.126 [-0.143, -0.109] |
+| Qwen base, no prompt | Aero + diffusion | phon | mostly_right | -0.108 [-0.132, -0.085] |
+| Qwen base, no prompt | Aero + diffusion | phon|orth | all | -0.064 [-0.076, -0.052] |
+| Qwen base, no prompt | Aero + diffusion | phon|orth | mostly_right | -0.054 [-0.071, -0.037] |
+| Qwen base, no prompt | Aero + diffusion | sem | all | -0.039 [-0.051, -0.027] |
+| Qwen base, no prompt | Aero + diffusion | sem | mostly_right | -0.018 [-0.036, +0.000] |
+| Qwen base, no prompt | Aero + diffusion | ctx | all | -0.642 [-0.897, -0.393] |
+| Qwen base, no prompt | Aero + diffusion | ctx | mostly_right | +0.215 [-0.154, +0.594] |
 | Qwen Instruct | Aero, random-init encoder (4a) | phon | all | -0.076 [-0.091, -0.062] |
 | Qwen Instruct | Aero, random-init encoder (4a) | phon | mostly_right | -0.105 [-0.133, -0.077] |
 | Qwen Instruct | Aero, random-init encoder (4a) | phon|orth | all | -0.042 [-0.052, -0.032] |
@@ -202,6 +288,46 @@
 | Qwen Instruct | Aero, random-init encoder (4a) | sem | mostly_right | -0.019 [-0.042, +0.003] |
 | Qwen Instruct | Aero, random-init encoder (4a) | ctx | all | -0.632 [-0.856, -0.397] |
 | Qwen Instruct | Aero, random-init encoder (4a) | ctx | mostly_right | -0.093 [-0.577, +0.387] |
+| Qwen Instruct | Qwen Instruct + diffusion | phon | all | -0.155 [-0.172, -0.140] |
+| Qwen Instruct | Qwen Instruct + diffusion | phon | mostly_right | -0.150 [-0.177, -0.124] |
+| Qwen Instruct | Qwen Instruct + diffusion | phon|orth | all | -0.086 [-0.097, -0.074] |
+| Qwen Instruct | Qwen Instruct + diffusion | phon|orth | mostly_right | -0.086 [-0.105, -0.067] |
+| Qwen Instruct | Qwen Instruct + diffusion | sem | all | -0.049 [-0.060, -0.037] |
+| Qwen Instruct | Qwen Instruct + diffusion | sem | mostly_right | -0.011 [-0.033, +0.010] |
+| Qwen Instruct | Qwen Instruct + diffusion | ctx | all | -0.829 [-1.078, -0.590] |
+| Qwen Instruct | Qwen Instruct + diffusion | ctx | mostly_right | +0.700 [+0.238, +1.162] |
+| Qwen Instruct | Aero + diffusion | phon | all | -0.153 [-0.170, -0.135] |
+| Qwen Instruct | Aero + diffusion | phon | mostly_right | -0.146 [-0.172, -0.120] |
+| Qwen Instruct | Aero + diffusion | phon|orth | all | -0.080 [-0.092, -0.068] |
+| Qwen Instruct | Aero + diffusion | phon|orth | mostly_right | -0.078 [-0.096, -0.059] |
+| Qwen Instruct | Aero + diffusion | sem | all | -0.053 [-0.066, -0.041] |
+| Qwen Instruct | Aero + diffusion | sem | mostly_right | -0.011 [-0.032, +0.011] |
+| Qwen Instruct | Aero + diffusion | ctx | all | -1.021 [-1.275, -0.775] |
+| Qwen Instruct | Aero + diffusion | ctx | mostly_right | +0.601 [+0.141, +1.058] |
+| Aero, random-init encoder (4a) | Qwen Instruct + diffusion | phon | all | -0.080 [-0.097, -0.062] |
+| Aero, random-init encoder (4a) | Qwen Instruct + diffusion | phon | mostly_right | -0.045 [-0.072, -0.018] |
+| Aero, random-init encoder (4a) | Qwen Instruct + diffusion | phon|orth | all | -0.044 [-0.056, -0.032] |
+| Aero, random-init encoder (4a) | Qwen Instruct + diffusion | phon|orth | mostly_right | -0.028 [-0.048, -0.008] |
+| Aero, random-init encoder (4a) | Qwen Instruct + diffusion | sem | all | -0.024 [-0.038, -0.010] |
+| Aero, random-init encoder (4a) | Qwen Instruct + diffusion | sem | mostly_right | +0.008 [-0.013, +0.030] |
+| Aero, random-init encoder (4a) | Qwen Instruct + diffusion | ctx | all | -0.198 [-0.463, +0.064] |
+| Aero, random-init encoder (4a) | Qwen Instruct + diffusion | ctx | mostly_right | +0.793 [+0.429, +1.171] |
+| Aero, random-init encoder (4a) | Aero + diffusion | phon | all | -0.077 [-0.095, -0.058] |
+| Aero, random-init encoder (4a) | Aero + diffusion | phon | mostly_right | -0.041 [-0.068, -0.013] |
+| Aero, random-init encoder (4a) | Aero + diffusion | phon|orth | all | -0.038 [-0.051, -0.026] |
+| Aero, random-init encoder (4a) | Aero + diffusion | phon|orth | mostly_right | -0.019 [-0.040, +0.002] |
+| Aero, random-init encoder (4a) | Aero + diffusion | sem | all | -0.028 [-0.042, -0.015] |
+| Aero, random-init encoder (4a) | Aero + diffusion | sem | mostly_right | +0.009 [-0.012, +0.029] |
+| Aero, random-init encoder (4a) | Aero + diffusion | ctx | all | -0.389 [-0.645, -0.140] |
+| Aero, random-init encoder (4a) | Aero + diffusion | ctx | mostly_right | +0.693 [+0.307, +1.080] |
+| Qwen Instruct + diffusion | Aero + diffusion | phon | all | +0.003 [-0.013, +0.019] |
+| Qwen Instruct + diffusion | Aero + diffusion | phon | mostly_right | +0.004 [-0.018, +0.027] |
+| Qwen Instruct + diffusion | Aero + diffusion | phon|orth | all | +0.006 [-0.006, +0.018] |
+| Qwen Instruct + diffusion | Aero + diffusion | phon|orth | mostly_right | +0.009 [-0.007, +0.024] |
+| Qwen Instruct + diffusion | Aero + diffusion | sem | all | -0.004 [-0.018, +0.009] |
+| Qwen Instruct + diffusion | Aero + diffusion | sem | mostly_right | +0.000 [-0.016, +0.017] |
+| Qwen Instruct + diffusion | Aero + diffusion | ctx | all | -0.191 [-0.428, +0.045] |
+| Qwen Instruct + diffusion | Aero + diffusion | ctx | mostly_right | -0.099 [-0.394, +0.215] |
 | Fast-dLLM v2 (diffusion) | Fast-dLLM v2 (diffusion) · null_shuffled | phon | all | +0.192 [+0.177, +0.207] |
 | Fast-dLLM v2 (diffusion) | Fast-dLLM v2 (diffusion) · null_shuffled | phon|orth | all | +0.103 [+0.093, +0.114] |
 | Fast-dLLM v2 (diffusion) | Fast-dLLM v2 (diffusion) · null_shuffled | sem | all | +0.074 [+0.064, +0.085] |
@@ -212,7 +338,7 @@
 | Aero | Aero · null_shuffled | ctx | all | +1.650 [+1.409, +1.903] |
 | Qwen base, no prompt | Qwen base, no prompt · null_shuffled | phon | all | +0.077 [+0.066, +0.088] |
 | Qwen base, no prompt | Qwen base, no prompt · null_shuffled | phon|orth | all | +0.042 [+0.034, +0.050] |
-| Qwen base, no prompt | Qwen base, no prompt · null_shuffled | sem | all | +0.046 [+0.038, +0.055] |
+| Qwen base, no prompt | Qwen base, no prompt · null_shuffled | sem | all | +0.046 [+0.037, +0.055] |
 | Qwen base, no prompt | Qwen base, no prompt · null_shuffled | ctx | all | +1.439 [+1.236, +1.642] |
 | Qwen Instruct | Qwen Instruct · null_shuffled | phon | all | +0.044 [+0.036, +0.053] |
 | Qwen Instruct | Qwen Instruct · null_shuffled | phon|orth | all | +0.022 [+0.015, +0.029] |
@@ -222,28 +348,36 @@
 | Aero, random-init encoder (4a) | Aero, random-init encoder (4a) · null_shuffled | phon|orth | all | +0.065 [+0.055, +0.075] |
 | Aero, random-init encoder (4a) | Aero, random-init encoder (4a) · null_shuffled | sem | all | +0.055 [+0.045, +0.065] |
 | Aero, random-init encoder (4a) | Aero, random-init encoder (4a) · null_shuffled | ctx | all | +1.626 [+1.408, +1.845] |
+| Qwen Instruct + diffusion | Qwen Instruct + diffusion · null_shuffled | phon | all | +0.204 [+0.189, +0.220] |
+| Qwen Instruct + diffusion | Qwen Instruct + diffusion · null_shuffled | phon|orth | all | +0.110 [+0.099, +0.121] |
+| Qwen Instruct + diffusion | Qwen Instruct + diffusion · null_shuffled | sem | all | +0.077 [+0.066, +0.089] |
+| Qwen Instruct + diffusion | Qwen Instruct + diffusion · null_shuffled | ctx | all | +1.828 [+1.600, +2.059] |
+| Aero + diffusion | Aero + diffusion · null_shuffled | phon | all | +0.201 [+0.185, +0.217] |
+| Aero + diffusion | Aero + diffusion · null_shuffled | phon|orth | all | +0.104 [+0.092, +0.116] |
+| Aero + diffusion | Aero + diffusion · null_shuffled | sem | all | +0.083 [+0.071, +0.094] |
+| Aero + diffusion | Aero + diffusion · null_shuffled | ctx | all | +2.013 [+1.785, +2.253] |
 
 ## 20 most common substitutions (reference → decoded, count)
 
-| # | Fast-dLLM v2 (diffusion) | Aero | Qwen base, no prompt | Qwen Instruct | Aero, random-init encoder (4a) |
-|---|---|---|---|---|---|
-| 1 | has → as (4) | the → a (3) | in → the (2) | of → in (3) | in → and (3) |
-| 2 | the → they (3) | to → the (3) | the → it's (2) | as → a (3) | for → your (3) |
-| 3 | their → there (3) | he's → it's (3) | these → those (2) | in → and (3) | in → it (3) |
-| 4 | such → just (3) | out → up (3) | on → and (2) | of → the (3) | to → do (3) |
-| 5 | clothes → close (3) | the → that (2) | the → a (2) | a → and (3) | well → will (2) |
-| 6 | in → and (3) | it → in (2) | a → to (2) | in → it (3) | has → as (2) |
-| 7 | and → a (3) | the → do (2) | not → but (2) | in → of (3) | a → he (2) |
-| 8 | in → it (3) | of → is (2) | to → the (2) | it → it's (3) | an → a (2) |
-| 9 | anyway → anymore (2) | up → of (2) | to → a (2) | of → over (3) | in → is (2) |
-| 10 | is → in (2) | such → just (2) | that → there (2) | in → the (2) | as → you (2) |
-| 11 | it → he (2) | look → like (2) | the → go (2) | on → of (2) | how → i (2) |
-| 12 | oh → who (2) | him → of (2) | of → do (2) | in → with (2) | are → a (2) |
-| 13 | got → not (2) | year → here (2) | as → have (2) | in → a (2) | as → for (2) |
-| 14 | its → it's (2) | a → he (2) | i → you (2) | the → little (2) | year → here (2) |
-| 15 | has → is (2) | and → a (2) | for → of (2) | work → week (2) | the → they (2) |
-| 16 | bay → pay (2) | of → the (2) | more → for (2) | in → to (2) | education → experience (2) |
-| 17 | once → what's (2) | had → and (2) | money → morning (2) | for → of (2) | building → buying (2) |
-| 18 | look → like (2) | new → you (2) | his → is (2) | up → it (2) | its → it's (2) |
-| 19 | half → have (2) | they're → there (2) | run → one (2) | her → the (2) | high → i (2) |
-| 20 | what's → what (2) | as → has (2) | have → i (2) | of → her (2) | and → at (2) |
+| # | Fast-dLLM v2 (diffusion) | Aero | Qwen base, no prompt | Qwen Instruct | Aero, random-init encoder (4a) | Qwen Instruct + diffusion | Aero + diffusion |
+|---|---|---|---|---|---|---|---|
+| 1 | has → as (4) | the → a (3) | in → the (2) | of → in (3) | in → and (3) | the → they (4) | its → it's (3) |
+| 2 | the → they (3) | to → the (3) | the → it's (2) | as → a (3) | for → your (3) | its → it's (3) | he's → it's (3) |
+| 3 | their → there (3) | he's → it's (3) | these → those (2) | in → and (3) | in → it (3) | in → it (3) | have → i (3) |
+| 4 | such → just (3) | out → up (3) | on → and (2) | of → the (3) | to → do (3) | anyway → anymore (2) | in → it (3) |
+| 5 | clothes → close (3) | the → that (2) | the → a (2) | a → and (3) | well → will (2) | oh → who (2) | how → i (3) |
+| 6 | in → and (3) | it → in (2) | a → to (2) | in → it (3) | has → as (2) | a → he (2) | than → that (2) |
+| 7 | and → a (3) | the → do (2) | not → but (2) | in → of (3) | a → he (2) | as → is (2) | got → not (2) |
+| 8 | in → it (3) | of → is (2) | to → the (2) | it → it's (3) | an → a (2) | in → and (2) | these → those (2) |
+| 9 | anyway → anymore (2) | up → of (2) | to → a (2) | of → over (3) | in → is (2) | on → in (2) | served → sold (2) |
+| 10 | is → in (2) | such → just (2) | that → there (2) | in → the (2) | as → you (2) | such → just (2) | at → it (2) |
+| 11 | it → he (2) | look → like (2) | the → go (2) | on → of (2) | how → i (2) | how → i (2) | such → just (2) |
+| 12 | oh → who (2) | him → of (2) | of → do (2) | in → with (2) | are → a (2) | they → the (2) | and → in (2) |
+| 13 | got → not (2) | year → here (2) | as → have (2) | in → a (2) | as → for (2) | it → in (2) | which → was (2) |
+| 14 | its → it's (2) | a → he (2) | i → you (2) | the → little (2) | year → here (2) | dallas → d (2) | had → and (2) |
+| 15 | has → is (2) | and → a (2) | for → of (2) | work → week (2) | the → they (2) | had → and (2) | they're → they (2) |
+| 16 | bay → pay (2) | of → the (2) | more → for (2) | in → to (2) | education → experience (2) | they're → there (2) | one → what (2) |
+| 17 | once → what's (2) | had → and (2) | money → morning (2) | for → of (2) | building → buying (2) | those → this (2) | they're → there (2) |
+| 18 | look → like (2) | new → you (2) | his → is (2) | up → it (2) | its → it's (2) | has → as (2) | those → this (2) |
+| 19 | half → have (2) | they're → there (2) | run → one (2) | her → the (2) | high → i (2) | or → are (2) | have → how (2) |
+| 20 | what's → what (2) | as → has (2) | have → i (2) | of → her (2) | and → at (2) | come → go (1) | these → this (2) |

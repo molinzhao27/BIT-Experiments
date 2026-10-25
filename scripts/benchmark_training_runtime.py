@@ -15,6 +15,7 @@ import sys
 import time
 
 import numpy as np
+import peft
 import torch
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -83,7 +84,9 @@ def main():
 
     model = BCI_DiffusionLLM.__new__(BCI_DiffusionLLM)
     torch.nn.Module.__init__(model)
-    model.llm = llm
+    model.llm = peft.get_peft_model(llm, peft.LoraConfig(r=8, lora_alpha=32, lora_dropout=0.2,
+                                                       target_modules=["q_proj", "v_proj"]))
+    model.llm.eval()
     model._configure({"block_size": 32, "small_block_size": 8, "threshold": 0.9, "mask_id": 8191})
     prefix = torch.randn(193, 64)
 

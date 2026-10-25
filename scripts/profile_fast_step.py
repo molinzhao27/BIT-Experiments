@@ -219,7 +219,7 @@ def main() -> int:
 
     name = f"profile_fast_step_{time.strftime('%Y%m%d_%H%M%S')}"
     Trainer.train = lambda self: profile_train(self, args)
-    sys.argv = ["train_stage2.py", "--name", name, "--arm", "B", "--init", args.init, "--seed", str(args.seed),
+    sys.argv = ["train_stage2.py", "--runtime", "reference", "--name", name, "--arm", "B", "--init", args.init, "--seed", str(args.seed),
                 "--llm", args.llm, "--epochs", "1", "--eval-every", "1"]
     try:
         train_stage2.main()

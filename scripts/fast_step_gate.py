@@ -372,7 +372,7 @@ def main() -> int:
 
         old = load_old_module()
         Trainer.train = lambda self: run_gate(self, args, old, new)
-        sys.argv = ["train_stage2.py", "--name", name, "--arm", args.arm, "--init", args.init, "--seed", str(args.seed),
+        sys.argv = ["train_stage2.py", "--runtime", "reference", "--name", name, "--arm", args.arm, "--init", args.init, "--seed", str(args.seed),
                     "--llm", args.llm, "--epochs", "1", "--eval-every", "1"]
         try:
             train_stage2.main()

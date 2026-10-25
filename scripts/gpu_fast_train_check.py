@@ -370,7 +370,7 @@ def main() -> int:
 
     name = f"gpu_fast_train_check_{time.strftime('%Y%m%d_%H%M%S')}"
     Trainer.train = lambda self: run_test(self, args)
-    sys.argv = ["train_stage2.py", "--name", name, "--arm", "B", "--init", args.init, "--seed", str(args.seed),
+    sys.argv = ["train_stage2.py", "--runtime", "reference", "--name", name, "--arm", "B", "--init", args.init, "--seed", str(args.seed),
                 "--llm", args.llm, "--epochs", "1", "--eval-every", "1"]
     try:
         train_stage2.main()

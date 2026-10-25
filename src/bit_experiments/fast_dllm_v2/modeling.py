@@ -7,8 +7,10 @@
 #  - flex attention gets q and k in v's dtype (fp32 weights + bf16 autocast leave q, k in fp32 after RoPE);
 #  - the inference mask is sized from inputs_embeds (input_ids may be None) and is 4-D (4.48's SDPA slices 4-D).
 #  - flex attention's backward kernel uses smaller tiles (the GPU has 101 KB of shared memory per block).
+#  - optional bounded caches reuse identical training and device-resident inference masks.
 from typing import Callable, Optional, Union
 from dataclasses import dataclass
+from collections import OrderedDict
 
 import torch
 from torch import nn
@@ -450,6 +452,10 @@ class Fast_dLLM_QwenModel(Fast_dLLM_QwenPreTrainedModel):
         self.norm = Fast_dLLM_QwenRMSNorm(config.hidden_size, eps=config.rms_norm_eps)
         self.rotary_emb = Fast_dLLM_QwenRotaryEmbedding(config=config)
         self.gradient_checkpointing = True
+        # bit_experiments: masks contain no weights or random draws. Keep this opt-in until the training
+        # environment's parity/throughput check passes; ordinary attributes do not enter state_dict.
+        self._mask_cache_max_entries = 0
+        self._mask_cache = OrderedDict()
 
         # Initialize weights and apply final processing
         self.post_init()
@@ -461,7 +467,58 @@ class Fast_dLLM_QwenModel(Fast_dLLM_QwenPreTrainedModel):
         self.embed_tokens = value
 
 
-    def eval_mask(self, seqlen, block_size, cache_seq_len):
+    def configure_mask_cache(self, max_entries=16):
+        """Reuse at most `max_entries` training/inference masks in total (0 disables the cache).
+
+        Cache keys retain the original batch/head dimensions and concrete device. Only mask construction
+        is skipped: the attention implementation, its tensor layouts and numerical kernels stay unchanged.
+        Cached masks are internal read-only values; callers must not mutate a returned mask in place.
+        """
+        if isinstance(max_entries, bool) or not isinstance(max_entries, int) or max_entries < 0:
+            raise ValueError("max_entries should be a nonnegative integer")
+        self._mask_cache_max_entries = max_entries
+        self.clear_mask_cache()
+        return self
+
+    def clear_mask_cache(self):
+        """Release cached tensors, including their device memory."""
+        self._mask_cache.clear()
+
+    def _apply(self, fn, recurse=True):
+        # Caches are not registered buffers: moving/casting the module must release old-device masks.
+        self.clear_mask_cache()
+        return super()._apply(fn, recurse=recurse)
+
+    @staticmethod
+    def _mask_device(device):
+        device = torch.device(device)
+        if device.type == "cuda" and device.index is None:
+            return torch.device("cuda", torch.cuda.current_device())
+        if device.type == "mps" and device.index is None:
+            return torch.device("mps", 0)
+        return torch.device("cpu") if device.type == "cpu" else device
+
+    def _cached_mask(self, key, build):
+        if not self._mask_cache_max_entries:
+            return build()
+        if key in self._mask_cache:
+            self._mask_cache.move_to_end(key)
+            return self._mask_cache[key]
+        # Validation may populate a cache inside inference_mode before the next training step. Build
+        # ordinary tensors so autograd can save these same masks when training resumes.
+        with torch.inference_mode(False):
+            mask = build()
+        self._mask_cache[key] = mask
+        if len(self._mask_cache) > self._mask_cache_max_entries:
+            self._mask_cache.popitem(last=False)
+        return mask
+
+    def eval_mask(self, seqlen, block_size, cache_seq_len, device="cpu"):
+        device = self._mask_device(device)
+        key = ("eval", seqlen, block_size, cache_seq_len, device)
+        return self._cached_mask(key, lambda: self._build_eval_mask(seqlen, block_size, cache_seq_len).to(device))
+
+    def _build_eval_mask(self, seqlen, block_size, cache_seq_len):
         q_indices = torch.arange(seqlen) + cache_seq_len
         k_indices = torch.arange(seqlen + cache_seq_len)
         mask = eval_block_diff_mask(
@@ -472,6 +529,11 @@ class Fast_dLLM_QwenModel(Fast_dLLM_QwenPreTrainedModel):
         return mask
 
     def gen_mask(self, seqlen, block_size, B, H, device="cuda"):
+        device = self._mask_device(device)
+        key = ("train", seqlen, block_size, B, H, device)
+        return self._cached_mask(key, lambda: self._build_train_mask(seqlen, block_size, B, H, device))
+
+    def _build_train_mask(self, seqlen, block_size, B, H, device):
         mask_mod = partial(block_diff_mask, block_size=block_size, n=seqlen)
         if torch.device(device).type != "cuda":  # bit_experiments: dense boolean mask, same pattern (CPU)
             idx = torch.arange(seqlen * 2, device=device)
@@ -537,7 +599,7 @@ class Fast_dLLM_QwenModel(Fast_dLLM_QwenPreTrainedModel):
             if use_block_cache and block_past_key_values.get_seq_length() != 0:
                 attention_mask = None
             else:
-                attention_mask = self.eval_mask(inputs_embeds.shape[1], block_size, past_key_values.get_seq_length() if past_key_values is not None else 0).to(device=inputs_embeds.device)[None, None]  # bit_experiments
+                attention_mask = self.eval_mask(inputs_embeds.shape[1], block_size, past_key_values.get_seq_length() if past_key_values is not None else 0, device=inputs_embeds.device)[None, None]  # bit_experiments
 
         hidden_states = inputs_embeds
 

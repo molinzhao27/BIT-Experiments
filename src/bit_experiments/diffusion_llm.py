@@ -434,9 +434,13 @@ class BCI_DiffusionLLM(BCI_TextLLM):
         score = self.commit_logprobs is not None
         out_lp: list[float] = []
 
-        def run(x, commit):
+        def run(x, commit, need_logits=True):
             h = decoder(inputs_embeds=x[None], past_key_values=cache, use_cache=True, update_past_key_values=commit,
                         block_size=bs).last_hidden_state
+            if not need_logits:
+                # A partial prefix block will produce its own proposals below. Prefilling its full blocks only
+                # needs the KV cache; projecting every prefix token to the vocabulary would be discarded work.
+                return None
             logits = lm_head(h)[0].float()
             logits[:, self.mask_id] = -torch.inf  # an accepted mask proposal would leave its slot masked forever
             return logits
@@ -447,7 +451,9 @@ class BCI_DiffusionLLM(BCI_TextLLM):
         slots = torch.full((bs - tail.shape[0],), self.mask_id, device=prefix.device)
         lp = torch.zeros(slots.shape, device=prefix.device) if score else None
         if n_full:
-            logits = run(prefix[:n_full], commit=True)
+            # Private runtime switch permits profiling against the original workload without a sampler change.
+            skip_logits = tail.shape[0] != 0 and getattr(self, "_skip_unused_prefill_logits", True)
+            logits = run(prefix[:n_full], commit=True, need_logits=not skip_logits)
             if tail.shape[0] == 0:
                 slots[0] = logits[-1].argmax()  # the block's first token is the AR next token, as Fast-dLLM v2
                 rec["events"].append({"b": 0, "first": [0, int(slots[0])]})

@@ -45,6 +45,7 @@ sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(BIT))
 
 from bit_experiments import stage1, stage2  # noqa: E402
+from bit_experiments.performance import configure_collators, configure_runtime  # noqa: E402
 
 DATASET = "brandman_2024_text"
 
@@ -84,6 +85,8 @@ def main() -> int:
     ap.add_argument("--llm", help="a configs/llms.yaml entry (DESIGN.md §8); default: BIT's Aero-1-Audio")
     ap.add_argument("--prompt", help='LLM prompt, "#" = the neural tokens ("#" alone: no prompt); default: BIT\'s')
     ap.add_argument("--ablation", help="a configs/ablations.yaml entry (docs/RETRAINING_ABLATIONS.md); default: none")
+    ap.add_argument("--runtime", choices=("reference", "optimized"), default="optimized",
+                    help="runtime overhead reductions; reference restores the previous workload (same recipe)")
     args = ap.parse_args()
     if args.prompt is not None and args.prompt.count("#") != 1:
         ap.error('--prompt needs exactly one "#" (where the neural tokens go)')
@@ -136,6 +139,18 @@ def main() -> int:
 
                 self.init_report["ablation"] = neural_ablations.apply(
                     self.model, args.ablation, None if args.eval_only else init, args.seed)
+            self.runtime_report = configure_runtime(self.model, args.runtime)
+
+        def build_dataloaders(self):
+            super().build_dataloaders()
+            configure_collators(self, args.runtime)
+
+        def train(self):
+            if args.runtime == "reference":
+                return super().train()
+            from bit_experiments.training_runtime import train_stage2_deferred
+
+            return train_stage2_deferred(self)
 
         def evaluate(self, additional_metric_fns=None, eval_train_set=False):
             loss, metrics, gt, preds = super().evaluate(additional_metric_fns, eval_train_set)
@@ -158,12 +173,15 @@ def main() -> int:
     trainer = Stage2Trainer(config, dataset=dataset, metric_fns={}, extra_model_kwargs={"features": "all"},
                             eval_mode=bool(args.eval_only))
     model = trainer.accelerator.unwrap_model(trainer.model)
+    if args.runtime == "optimized":
+        from bit_experiments.exact_data import exact_pad_collate_fn as pad_collate_fn
     collate = partial(pad_collate_fn, model_inputs=get_model_inputs(model), **config.method.dataloader_kwargs)
     splits = {s: SpikingDatasetForDecoding(dataset, s, **config.method.dataset_kwargs) for s in ("val", "test")}
     refs = {s: [r["sentence"] for r in dataset[s]] for s in splits}
     seen = {s: stage2.seen_mask(refs[s], train_sentences) for s in splits}
     val_ds, val_refs, val_seen = splits["val"], refs["val"], seen["val"]
     run = {"args": vars(args), "init_report": trainer.init_report, "padding": trainer.padding_report,
+           "runtime": trainer.runtime_report,
            "n": {s: len(v) for s, v in dataset.items()},
            "n_seen": {s: int(m.sum()) for s, m in seen.items()}, "config": json.loads(json.dumps(config, default=str)),
            "torch": torch.__version__}

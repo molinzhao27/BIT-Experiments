@@ -22,3 +22,7 @@ __pycache__/
 # Local-only session notes and app config (host details)
 CLAUDE.md
 .claude/
+
+# Local performance experiments
+.lab/
+run.log

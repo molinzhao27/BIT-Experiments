@@ -87,7 +87,11 @@ def main() -> int:
     ap.add_argument("--ablation", help="a configs/ablations.yaml entry (docs/RETRAINING_ABLATIONS.md); default: none")
     ap.add_argument("--runtime", choices=("reference", "optimized"), default="reference",
                     help="runtime overhead reductions; reference restores the previous workload (same recipe)")
+    ap.add_argument("--selective-ar-head", action="store_true",
+                    help="experimental Qwen2/Aero AR head on supervised tokens only; needs --runtime optimized")
     args = ap.parse_args()
+    if args.selective_ar_head and args.runtime != "optimized":
+        ap.error("--selective-ar-head needs --runtime optimized; validate on the training GPU before a long run")
     if args.prompt is not None and args.prompt.count("#") != 1:
         ap.error('--prompt needs exactly one "#" (where the neural tokens go)')
     t0 = time.time()
@@ -140,6 +144,10 @@ def main() -> int:
                 self.init_report["ablation"] = neural_ablations.apply(
                     self.model, args.ablation, None if args.eval_only else init, args.seed)
             self.runtime_report = configure_runtime(self.model, args.runtime)
+            if args.selective_ar_head:
+                from bit_experiments.selective_ar import install_selective_ar_head
+
+                self.runtime_report["selective_ar_head"] = install_selective_ar_head(self.model)
 
         def build_dataloaders(self):
             super().build_dataloaders()

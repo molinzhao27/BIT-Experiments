@@ -1,0 +1,56 @@
+{
+  "scope": "synthetic CPU forward+backward, not GPU throughput",
+  "torch": "2.7.1",
+  "shape": {
+    "B": 2,
+    "L": 128,
+    "D": 64,
+    "V": 8192
+  },
+  "threads": 1,
+  "lora_dropout": 0.2,
+  "samples_ms": {
+    "reference": [
+      12.03501679992769,
+      12.165391599410214,
+      11.364483198849484,
+      11.285824998049065,
+      12.090691801859066,
+      11.60034160129726,
+      12.386024999432266
+    ],
+    "selective": [
+      5.34675839880947,
+      4.685783400782384,
+      4.958274998352863,
+      4.868466602056287,
+      4.268800001591444,
+      4.162375000305474,
+      4.950166601338424
+    ]
+  },
+  "median_ms": {
+    "reference": 12.03501679992769,
+    "selective": 4.868466602056287
+  },
+  "speedup": 2.472034376254009,
+  "head_rows": {
+    "reference": 256,
+    "selective": 6
+  },
+  "logit_elements": {
+    "reference": 2097152,
+    "selective": 49152
+  },
+  "logit_storage_bytes_fp32": {
+    "reference": 8388608,
+    "selective": 196608
+  },
+  "logit_element_reduction": 0.9765625,
+  "parity": {
+    "targets_counts_rng_identical": true,
+    "max_gradient_relative_error": 0.0,
+    "loss_relative_error": 7.05322575753408e-08,
+    "logit_relative_error": 0.0
+  }
+}

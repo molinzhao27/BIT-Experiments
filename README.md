@@ -168,6 +168,10 @@ python scripts/patch_bit_configs.py      # apply configs/bit_baseline.yaml to BI
 python scripts/fetch_llms.py             # pinned LLM snapshots -> checkpoints/hf/
 ```
 
+Optional runtime speedups and the required GPU comparison are documented in
+[`docs/TRAINING_PERFORMANCE.md`](docs/TRAINING_PERFORMANCE.md). The reference runtime remains the default;
+the selective AR head is experimental, with no quantization or training-objective change.
+
 Data goes in `data/raw/` (gitignored): Brain-to-Text '25 (`brandman_2024_text`), Brain-to-Text '24
 (`willett_2023_text`), and the Kunz sentence recordings (`sentenceData.zip` from
 [doi:10.5061/dryad.gf1vhhn1j](https://doi.org/10.5061/dryad.gf1vhhn1j)). Sources and checksums:

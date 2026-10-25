@@ -84,6 +84,31 @@ which are reported separately; it is not a complete epoch benchmark. Require bot
 speed improvement before rollout. Then check a short training run on validation data only, with the same
 configuration and evaluation cadence. Test data must not select runtime settings.
 
+Full regression suite: **521 passed, 3 skipped** (140.79 s), using the pinned BIT Mac environment plus a
+local test-only matplotlib/scikit-learn dependency overlay. No active environment was upgraded.
+
+## Measured CPU results (2026-10-25)
+
+Mac ARM64, torch 2.7.1, one thread, seven alternating windows after warmup. The workstation was shared;
+raw timings are retained. These are synthetic component/workload measurements, not the 1.5B GPU model.
+
+| Measurement | Reference | Optimized | Interpretation |
+|---|---:|---:|---|
+| Collation, 8 ragged arrays up to 1200×512 | 2.658 ms | 0.637 ms | 4.17×; earlier pass 3.13× |
+| Dense mask, L=384, warm cache hit | 1.112 ms | 0.00120 ms | Removes repeated construction only; CUDA uses BlockMask |
+| Tiny diffusion decode, D64/V8192/prefix193 | 23.35 ms | 22.53 ms | 1.04×; earlier pass 0.98×, speed effect inconclusive |
+| Tiny AR forward + backward, B2/L128/D64/V8192 | 12.04 ms | 4.87 ms | 2.47×; selective head candidate |
+
+The AR fixture projects 6 instead of 256 positions: 49,152 instead of 2,097,152 logit elements (**97.66% fewer**).
+That is head-logit storage/work only, not total training memory. Its tested input/parameter gradients, logits,
+labels, counts and RNG matched exactly; relative loss difference was 7.05e-8. Broader FP32/BF16 tests use explicit
+rounding bounds, and a full-size CUDA run may differ. Ignored targets contribute no CE gradient under the
+[PyTorch loss definition](https://docs.pytorch.org/docs/2.7/generated/torch.nn.CrossEntropyLoss.html).
+
+Raw paired timings: [runtime_cpu.json](performance/runtime_cpu.json),
+[selective_ar_cpu.json](performance/selective_ar_cpu.json). GPU throughput, GPU peak-memory savings and long-run
+learning equivalence have **not** been measured. No production run used these candidate optimizations.
+
 ## Packed diffusion and follow-up work
 
 The prior packed `fast_step` remains independently gated by `scripts/fast_step_gate.py`. Its training failure

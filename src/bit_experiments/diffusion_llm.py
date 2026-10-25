@@ -452,7 +452,7 @@ class BCI_DiffusionLLM(BCI_TextLLM):
         lp = torch.zeros(slots.shape, device=prefix.device) if score else None
         if n_full:
             # Private runtime switch permits profiling against the original workload without a sampler change.
-            skip_logits = tail.shape[0] != 0 and getattr(self, "_skip_unused_prefill_logits", True)
+            skip_logits = tail.shape[0] != 0 and getattr(self, "_skip_unused_prefill_logits", False)
             logits = run(prefix[:n_full], commit=True, need_logits=not skip_logits)
             if tail.shape[0] == 0:
                 slots[0] = logits[-1].argmax()  # the block's first token is the AR next token, as Fast-dLLM v2

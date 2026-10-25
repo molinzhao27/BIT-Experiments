@@ -6,6 +6,7 @@ import random
 import sys
 from functools import partial
 from pathlib import Path
+import warnings
 
 import numpy as np
 import pytest
@@ -63,7 +64,7 @@ def test_nan_payloads_signed_zero_and_noncontiguous_arrays(side, pad_value):
     assert_bytes(bit_data.pad_collate_fn(batch, **options), exact_pad_collate_fn(batch, **options))
 
 
-@pytest.mark.parametrize("kind", ["multidim", "axis1", "mixed_dtype", "fortran"])
+@pytest.mark.parametrize("kind", ["multidim", "axis1", "mixed_dtype", "fortran", "endian_float", "endian_int"])
 def test_unusual_padding_uses_reference_fallback(monkeypatch, kind):
     batch = [{"x": np.arange(n * 2, dtype=np.float32).reshape(n, 2)} for n in (2, 4)]
     pad = [{"dim": 0, "side": "right", "value": -100}]
@@ -74,8 +75,11 @@ def test_unusual_padding_uses_reference_fallback(monkeypatch, kind):
         pad = [{"dim": 1, "side": "left", "value": 0, "max_length": 4}]
     elif kind == "mixed_dtype":
         batch[1]["x"] = batch[1]["x"].astype(np.float64)
-    else:
+    elif kind == "fortran":
         batch = [{"x": np.asfortranarray(row["x"])} for row in batch]
+    else:
+        dtype = np.dtype(np.float32 if kind == "endian_float" else np.int32).newbyteorder("S")
+        batch = [{"x": row["x"].astype(dtype)} for row in batch]
     options = {"model_inputs": ["x"], "pad_dict": {"x": pad}}
     expected = bit_data.pad_collate_fn(batch, **options)
     calls = []
@@ -86,6 +90,51 @@ def test_unusual_padding_uses_reference_fallback(monkeypatch, kind):
     monkeypatch.setattr(bit_data, "padded_array", record)
     assert_bytes(expected, exact_pad_collate_fn(batch, **options))
     assert calls == [True]
+
+
+@pytest.mark.parametrize("side", ["left", "right"])
+@pytest.mark.parametrize("value", [(1, 2), [1, 2], np.asarray(3), "4", None])
+def test_non_scalar_or_nonnumeric_constant_uses_reference_fallback(monkeypatch, side, value):
+    batch = [{"x": np.arange(n * 2, dtype=np.float32).reshape(n, 2)} for n in (1, 3)]
+    options = {"model_inputs": ["x"], "pad_dict": {"x": {"dim": 0, "side": side, "value": value}}}
+    expected = bit_data.pad_collate_fn(batch, **options)
+    calls = []
+    original = bit_data.padded_array
+    def record(*args, **kwargs):
+        calls.append(True)
+        return original(*args, **kwargs)
+    monkeypatch.setattr(bit_data, "padded_array", record)
+    assert_bytes(expected, exact_pad_collate_fn(batch, **options))
+    assert calls == [True]
+
+
+@pytest.mark.parametrize("side", ["left", "right"])
+@pytest.mark.parametrize("dtype,value", [
+    (np.float32, np.float32(-0.0)),
+    (np.float32, np.array(0x7FC12345, dtype=np.uint32).view(np.float32)[()]),
+    (np.int32, float("nan")),
+    (np.float32, complex(1, 2)),
+    (np.uint8, np.int64(-1)),
+    (np.uint64, np.uint64(2**64 - 1)),
+    (np.float32, 1e300),
+    (np.int32, np.float64(1.5)),
+    (np.complex64, np.complex64(1 - 2j)),
+    (np.bool_, True),
+])
+def test_scalar_constant_casting_matches_numpy_pad(dtype, value, side):
+    batch = [{"x": np.arange(n * 2).reshape(n, 2).astype(dtype)} for n in (1, 3)]
+    options = {"model_inputs": ["x"], "pad_dict": {"x": {"dim": 0, "side": side, "value": value}}}
+    # NumPy versions differ in whether a lossy/out-of-range cast warns or raises.
+    # Match the installed reference's output or error type without changing it.
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore")
+        try:
+            expected = bit_data.pad_collate_fn(batch, **options)
+        except (ValueError, TypeError, OverflowError) as error:
+            with pytest.raises(type(error)):
+                exact_pad_collate_fn(batch, **options)
+        else:
+            assert_bytes(expected, exact_pad_collate_fn(batch, **options))
 
 
 def test_all_collation_branches_order_and_ownership():

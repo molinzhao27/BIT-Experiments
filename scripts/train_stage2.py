@@ -85,7 +85,7 @@ def main() -> int:
     ap.add_argument("--llm", help="a configs/llms.yaml entry (DESIGN.md §8); default: BIT's Aero-1-Audio")
     ap.add_argument("--prompt", help='LLM prompt, "#" = the neural tokens ("#" alone: no prompt); default: BIT\'s')
     ap.add_argument("--ablation", help="a configs/ablations.yaml entry (docs/RETRAINING_ABLATIONS.md); default: none")
-    ap.add_argument("--runtime", choices=("reference", "optimized"), default="optimized",
+    ap.add_argument("--runtime", choices=("reference", "optimized"), default="reference",
                     help="runtime overhead reductions; reference restores the previous workload (same recipe)")
     args = ap.parse_args()
     if args.prompt is not None and args.prompt.count("#") != 1:

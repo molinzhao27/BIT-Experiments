@@ -52,6 +52,7 @@ def test_prefill_keeps_decodes_scores_trace_and_rng(length, sampler):
 @pytest.mark.parametrize("length", [17, 32, 33, 63, 64, 97])
 def test_prefill_projects_only_consumed_hidden_states(length):
     model = bci(tiny_llm().eval())
+    model._skip_unused_prefill_logits = True
     prefix = torch.randn(length, D, generator=torch.Generator().manual_seed(length))
     decoder_calls = []
     hook = model._parts()[0].register_forward_pre_hook(

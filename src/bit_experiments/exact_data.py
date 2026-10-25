@@ -26,8 +26,18 @@ def _single_axis_pad(arrays, pad_config):
     p = pad_config[0]
     if p["dim"] != 0 or p["side"] not in ("left", "right"):
         return None
+    # np.pad also accepts pairs and per-axis constants.  Assigning one of those
+    # directly could broadcast it across features instead of choosing a side.
+    if not np.isscalar(p["value"]):
+        return None
+    constant = np.asarray(p["value"])
+    if constant.dtype.kind not in "biufc":
+        return None
+    # np.pad normalizes scalar constants to NumPy scalars before assignment.
+    # Keep its casting behavior (e.g. complex-to-real and integer overflow).
+    constant = constant[()]
     first = arrays[0]
-    if first.ndim == 0 or first.dtype.kind not in "biufc":
+    if first.ndim == 0 or first.dtype.kind not in "biufc" or not first.dtype.isnative:
         return None
     if any(a.dtype != first.dtype or a.ndim != first.ndim or a.shape[1:] != first.shape[1:]
            or not a.flags.c_contiguous
@@ -50,11 +60,11 @@ def _single_axis_pad(arrays, pad_config):
         copied = min(a.shape[0], length)
         if p["side"] == "left":
             offset = max(0, length - a.shape[0])
-            out[i, :offset] = p["value"]
+            out[i, :offset] = constant
             out[i, offset:offset + copied] = a[:copied]
         else:
             out[i, :copied] = a[:copied]
-            out[i, copied:] = p["value"]
+            out[i, copied:] = constant
     return out
 
 

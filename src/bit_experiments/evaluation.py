@@ -29,6 +29,7 @@ NULLS = CONDITIONS[1:]
 RUN_KEY = ("config", "arm", "seed", "split", "decoding", "condition", "evaluator")
 # metrics.csv columns written by run_bit_baseline.py (which appends without a header): always first, in order
 LEGACY_COLS = ("model", "arm", "seed", "split", "decoding", "n_trials", "wer", "per")
+REPO = Path(__file__).resolve().parents[2]
 
 DEFAULT_CONFIG = {
     "bertscore": {"model_type": "roberta-large", "num_layers": 17, "idf": False, "lang": "en",
@@ -220,6 +221,12 @@ def error_analysis(trials: pd.DataFrame, taus, tau_default: float) -> pd.DataFra
     return pd.DataFrame(rows)
 
 
+def repo_path(p: str | Path) -> str:
+    """p relative to the repository when it is inside it (metrics.csv is committed: no machine-specific paths)."""
+    p = Path(p).resolve()
+    return str(p.relative_to(REPO)) if p.is_relative_to(REPO) else str(p)
+
+
 def evaluate_file(path: str | Path, meta: dict, cfg: dict, out_dir: str | Path) -> tuple[dict, pd.DataFrame]:
     """Score one decode file; write per_trial/<slug>.csv; upsert metrics.csv and error_analysis.csv."""
     out_dir = Path(out_dir)
@@ -230,7 +237,7 @@ def evaluate_file(path: str | Path, meta: dict, cfg: dict, out_dir: str | Path) 
     per_trial.parent.mkdir(parents=True, exist_ok=True)
     trials.assign(**ident, bertscore_hash=settings["bertscore_hash"]).to_csv(per_trial, index=False)
     row = ident | aggregate(trials) | {"per": meta.get("per", np.nan)} | settings | {
-        "decodes": str(path), "per_trial": str(per_trial)}
+        "decodes": repo_path(path), "per_trial": repo_path(per_trial)}
     row = {k: row[k] for k in LEGACY_COLS} | row
     upsert_csv(out_dir / "metrics.csv", pd.DataFrame([row]), RUN_KEY)
     ea = error_analysis(trials, cfg["error_analysis"]["tau_grid"], cfg["error_analysis"]["tau"])

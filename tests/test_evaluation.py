@@ -115,6 +115,13 @@ def test_metrics_schema_growth_and_rerun(tmp_path, mocked):
     assert m.iloc[-1].arm == "bit_baseline" and m.iloc[-1].per == 0.1 and pd.isna(m.iloc[-1].condition)
 
 
+def test_metrics_paths_relative_to_the_repo(tmp_path):
+    """metrics.csv is committed: paths inside the repository are written relative to it, others as they are."""
+    inside = ev.REPO / "results" / "stage2" / "x" / "decodes" / "test_greedy_real.csv"
+    assert ev.repo_path(inside) == "results/stage2/x/decodes/test_greedy_real.csv"
+    assert ev.repo_path(tmp_path / "d.csv") == str((tmp_path / "d.csv").resolve())
+
+
 def test_configs_of_one_arm_and_seed_kept_apart(tmp_path, mocked):
     """Stage 2 runs of one arm and seed with different LLMs (e.g. B_ssl_s42 vs B_ssl_qwen25-1.5b-instruct_s42) must
     neither replace each other nor pool as seeds; seeds of one config pool."""

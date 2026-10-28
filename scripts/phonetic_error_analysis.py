@@ -77,6 +77,10 @@ RUNS = {  # run -> label; runs without decodes for --split are skipped
     "B_rand_bit4a": "Aero, random-init encoder (4a)",
     "B_ssl_qwen25-1.5b-instruct-diffusion_s42": "Qwen Instruct + diffusion",
     "B_ssl_aero-1-audio-diffusion_s42": "Aero + diffusion",
+    "A_ssl_s42": "Arm A: phoneme CTC encoder + Aero",
+    "A_ssl_aero-1-audio-diffusion_s42": "Arm A + diffusion",
+    "C_ssl_l14_b1024_s42": "Arm C: contrastive (Aero L14) + Aero",
+    "C_ssl_aero-1-audio-diffusion_s42": "Arm C + diffusion",
 }
 
 # Articulatory features of the 39 ARPAbet phonemes. Vowels: height (0 high, 1 mid, 2 low), backness (0 front,

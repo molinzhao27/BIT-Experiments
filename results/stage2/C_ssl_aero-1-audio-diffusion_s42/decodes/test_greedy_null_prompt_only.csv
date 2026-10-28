@@ -1,0 +1,714 @@
+trial,reference,decoded,seen_in_train
+0,are you able to come with me next week,do nothing,False
+1,they will not get everything done anyway,do nothing,False
+2,she was delivered the next day,do nothing,False
+3,you actually look forward to foxes or raccoons raiding your garbage,do nothing,False
+4,there's always a way out of this,do nothing,False
+5,real rough type camping,do nothing,False
+6,who benefits from this policy,do nothing,False
+7,i would reconsider where i was buying it from,do nothing,False
+8,they were pretty much in good taste,do nothing,False
+9,my little girl likes blue more than pink,do nothing,True
+10,it is easier to go without food,do nothing,False
+11,is your family from dallas,do nothing,False
+12,don't have enough money,do nothing,False
+13,i don't think it's a good idea,do nothing,False
+14,it's my voice,do nothing,False
+15,the movie is slow burning,do nothing,False
+16,it all worked out quite well for our family,do nothing,False
+17,but my boss wouldn't pay for it,do nothing,False
+18,is she going to stay home,do nothing,True
+19,most of us think we know the story of detroit michigan,do nothing,False
+20,oh well no point in dwelling on the past,do nothing,False
+21,got into it when i was young,do nothing,False
+22,they do take up a lot of your time,do nothing,False
+23,fill the jar to the top with boiling water,do nothing,True
+24,we apologize but this video has failed to load,do nothing,False
+25,it's a weakness and all,do nothing,False
+26,it's really hard to,do nothing,False
+27,it's just one story,do nothing,False
+28,so do you like your new truck,do nothing,False
+29,woodworking mastery,do nothing,False
+30,i like just looking at the billboards,do nothing,False
+31,i know what the deal was in the past,do nothing,False
+32,he's not that old,do nothing,False
+33,the dune rose from the edge of the water,do nothing,False
+34,what is beef jerky anyway,do nothing,False
+35,they've enjoyed the school,do nothing,False
+36,i think its relevance is pretty limited,do nothing,False
+37,a wide variety,do nothing,False
+38,because a lot of our friends will be coming over later,do nothing,False
+39,are you recycling,do nothing,False
+40,you should avoid this course,do nothing,False
+41,while it's healing take it easy,do nothing,False
+42,what is it called,do nothing,False
+43,a lot of people complain,do nothing,False
+44,and a very good afternoon to you,do nothing,True
+45,join us for an upcoming event,do nothing,False
+46,these guys just want attention,do nothing,False
+47,stones with runes on them served as checkpoints,do nothing,False
+48,the box was thrown beside the parked truck,do nothing,False
+49,this brings me to the next point,do nothing,False
+50,they've started a drug testing policy,do nothing,False
+51,coming sun york favorite food,do nothing,False
+52,that's just the way it was,do nothing,False
+53,my father is the man in the corduroy jacket,do nothing,False
+54,the work gets easier with experience,do nothing,False
+55,there has been a change in the price of oil,do nothing,False
+56,not just with the visit to pittsburgh,do nothing,False
+57,this is like a cruelty joke,do nothing,False
+58,their situation is not as bad,do nothing,False
+59,i can't think of a better time,do nothing,False
+60,it's up by green bay,do nothing,False
+61,i haven't seen too many lately,do nothing,False
+62,that is strange to me,do nothing,False
+63,no deaths have been reported in the city,do nothing,False
+64,he took care of it,do nothing,False
+65,i had gone to a very dimly lit area,do nothing,False
+66,that would have been something,do nothing,False
+67,that kind of threw them off,do nothing,False
+68,yeah that book is about the same kind of thing,do nothing,False
+69,taylor attributed this to confirmation bias,do nothing,False
+70,i was kind of into it for a while there,do nothing,True
+71,check the oil in the car first,do nothing,False
+72,you have to get everything replaced,do nothing,False
+73,so what about the enemies of the assad regime,do nothing,False
+74,my husband travels,do nothing,False
+75,i will probably own a car soon,do nothing,False
+76,you get the point,do nothing,False
+77,as soon as i had them,do nothing,True
+78,sign up for our daily newsletter of the top stories in courier country,do nothing,False
+79,this week's pick is an algorithm that can diagnose a stroke,do nothing,False
+80,we are quite simply at a tipping point,do nothing,False
+81,he's just goofing off like he always has,do nothing,False
+82,now some people object during primary debates,do nothing,False
+83,we try to do one thing once a year,do nothing,False
+84,the fish was cooked with some olives,do nothing,False
+85,if only i could remember the name,do nothing,True
+86,the house payment,do nothing,False
+87,right now i'm getting about sixty bucks a month,do nothing,False
+88,helps them understand the world,do nothing,False
+89,take a lot of chances,do nothing,False
+90,it's great you could join us here,do nothing,False
+91,especially in the winter,do nothing,False
+92,some interviews will be a lot more casual,do nothing,False
+93,you know what i would love,do nothing,False
+94,i'd be curious,do nothing,False
+95,the result of the test was negative,do nothing,True
+96,and that's what it falls under,do nothing,False
+97,there were no reports of casualties,do nothing,False
+98,so it was really too late to do much,do nothing,False
+99,how did you come to join that team,do nothing,False
+100,they got real fat,do nothing,False
+101,i'm out more money than they are,do nothing,False
+102,i just stood there and soaked it all up,do nothing,False
+103,also at that time we were starting to hate each other a little bit,do nothing,False
+104,you can see the code at this point as well,do nothing,False
+105,their mother was sick at times,do nothing,False
+106,in the next five years,do nothing,True
+107,playing traditional used flat,do nothing,False
+108,i had found an entry point,do nothing,False
+109,they waited a couple years,do nothing,False
+110,i guess that is very good,do nothing,False
+111,she used to love to do stuff like that,do nothing,True
+112,my favorite author just released a brand new book,do nothing,False
+113,this married couple will enjoy their visit,do nothing,False
+114,there are also these various disclosures,do nothing,False
+115,that's true of any sport,do nothing,False
+116,he had been in that position for years,do nothing,False
+117,check out our free versions,do nothing,False
+118,a man with a small pension is a ward of the government,do nothing,False
+119,different choices between past and future,do nothing,False
+120,we started taking her,do nothing,False
+121,it's a nice place,do nothing,False
+122,we've had one as long as i can remember,do nothing,False
+123,with their good luck they will avoid these problems,do nothing,False
+124,i tried a lot but this is still wrong,do nothing,False
+125,i wasn't really,do nothing,False
+126,there was one point i was going to make,do nothing,False
+127,if there was a credible punishment,do nothing,False
+128,i'm watching my kid's education,do nothing,False
+129,there was a voice in her head,do nothing,False
+130,if you are convinced that it is the right choice,do nothing,False
+131,they don't make them anymore,do nothing,False
+132,i have seen so many who know that god has not given us a spirit of fear,do nothing,False
+133,the two seats up front are empty,do nothing,False
+134,an absolute certainty,do nothing,True
+135,live without dessert for the most part,do nothing,False
+136,did you hear from another person,do nothing,False
+137,certain people enjoy this kind of music,do nothing,False
+138,if you're on a trip or something,do nothing,False
+139,of course my job was such that i didn't,do nothing,False
+140,in other words there is a choice to make,do nothing,True
+141,oh so you need to put away the milk and cereal,do nothing,False
+142,i noticed those dogs,do nothing,False
+143,they have coupons,do nothing,False
+144,if you look back,do nothing,False
+145,will the game be priced differently during and after early access,do nothing,False
+146,tim would like to take on other genres,do nothing,False
+147,why do you say that actually,do nothing,False
+148,college credit for community service is a good idea,do nothing,True
+149,i mean he's doing alright,do nothing,False
+150,that will help solve our problems,do nothing,False
+151,evidently he was elected president,do nothing,True
+152,i used their water,do nothing,False
+153,enjoy the holidays,do nothing,False
+154,the product i tried was their mini corn dogs which were superb,do nothing,False
+155,nobody remembers him as a loser,do nothing,False
+156,he kept his tone light and casual but firm,do nothing,False
+157,on sunday the snow and ice came in,do nothing,False
+158,invasion of burma,do nothing,False
+159,it has been a really nice spring,do nothing,False
+160,he ran half way to the hardware store,do nothing,False
+161,pull all this weight,do nothing,False
+162,something seems off with her,do nothing,False
+163,that woman will check this fact,do nothing,False
+164,just the regular channel,do nothing,False
+165,there was a story of a woman last year,do nothing,False
+166,that's what's happening here,do nothing,False
+167,the islanders sleep inside,do nothing,False
+168,lawmakers passed a measure last year,do nothing,False
+169,occasionally these things may not be true,do nothing,True
+170,you actually hand quilted it yourself,do nothing,False
+171,i don't understand any of that,do nothing,False
+172,all those european countries,do nothing,False
+173,you start to take pleasure in it,do nothing,False
+174,child boys classical clothes team,do nothing,False
+175,once the children were grown,do nothing,False
+176,i don't know if they do it all over,do nothing,False
+177,that's the way i feel,do nothing,False
+178,you will gain competence with respect to the material,do nothing,False
+179,if it's run by the individual state,do nothing,False
+180,not with all the other things going on today,do nothing,True
+181,ice hairs blooming coming opinion take,do nothing,False
+182,so it's been real fun here to see,do nothing,False
+183,i make my living by phone,do nothing,False
+184,collisions should never happen,do nothing,False
+185,how many minutes did it take to cook this food,do nothing,False
+186,whatever you like,do nothing,False
+187,he didn't just say,do nothing,False
+188,ten months later he said,do nothing,False
+189,divide the money up between all of us,do nothing,False
+190,we ran into some problems,do nothing,False
+191,i mean just nothing,do nothing,False
+192,we should turn around and pick her up from school,do nothing,False
+193,it was written at a third grade level,do nothing,True
+194,i could hear my accelerated breathing,do nothing,False
+195,what area of the country do you live in,do nothing,False
+196,she was supposed to go with me,do nothing,False
+197,cars have come down in price significantly,do nothing,False
+198,so you enjoy gardening,do nothing,False
+199,i get great distance hitting it,do nothing,False
+200,we're a sit down together family,do nothing,False
+201,you can have a variety,do nothing,False
+202,worse is the implication of blame,do nothing,False
+203,we just left it alone,do nothing,False
+204,since we've been married i've stopped going,do nothing,False
+205,on probation or parole and killed someone else,do nothing,False
+206,put that back in the saucepan,do nothing,False
+207,how did researchers reach this conclusion,do nothing,False
+208,i love to watch cartoons on saturday morning,do nothing,False
+209,how does she live with herself,do nothing,False
+210,it costs ten or twenty dollars per ounce,do nothing,False
+211,right now i'm busy chasing my kids,do nothing,False
+212,a yacht slid around the point into the bay,do nothing,False
+213,it kind of wound down,do nothing,False
+214,we have had no snow this winter,do nothing,False
+215,he was a courier,do nothing,False
+216,i was arrested for something really minor,do nothing,False
+217,i think it's caused a lot,do nothing,False
+218,it was out of his hands at that point,do nothing,True
+219,it is totally ridiculous,do nothing,True
+220,ambiance down there,do nothing,True
+221,we will head to florida for vacation,do nothing,True
+222,course girl exactly fan watching,do nothing,False
+223,you'll still see people,do nothing,False
+224,does it justify the cost,do nothing,True
+225,one year public service for everybody,do nothing,False
+226,this happened about a week ago,do nothing,False
+227,my husband is real into sports too,do nothing,False
+228,are they both still around,do nothing,False
+229,the sport looks fun until you're playing it,do nothing,False
+230,about three years ago,do nothing,True
+231,two blue fish swam in the tank,do nothing,False
+232,we got together every summer for vacation,do nothing,False
+233,won't choices couldn't thirty cards,do nothing,False
+234,they started looking into programs,do nothing,False
+235,so the doctor elected to have her,do nothing,False
+236,that was one thing that's been really nice to have,do nothing,False
+237,thanks for hearing me rap,do nothing,False
+238,do you know that i've never seen a monkey,do nothing,False
+239,is it a novelty or a real coin of importance,do nothing,False
+240,how far do we have to go,do nothing,False
+241,tell me your education story,do nothing,False
+242,what you have and what you don't have,do nothing,False
+243,please order our regular food for everyone,do nothing,False
+244,almost like a tingling,do nothing,False
+245,this project has been a real team effort,do nothing,False
+246,i don't get that,do nothing,False
+247,i guess we don't really use that many tin cans,do nothing,False
+248,i went back to school and got my master's degree,do nothing,True
+249,did you see it the other night,do nothing,False
+250,i don't cook anymore,do nothing,False
+251,i like all this open space around the house,do nothing,False
+252,through the newspaper reviews,do nothing,False
+253,like building a house or anything,do nothing,False
+254,it's not as severe,do nothing,False
+255,people put them in,do nothing,False
+256,i can really tell the difference,do nothing,False
+257,they told me that this was the topic,do nothing,False
+258,they would have to be supported in some way,do nothing,False
+259,these are made with a flour tortilla,do nothing,False
+260,they both cooperate together,do nothing,False
+261,what should i do,do nothing,True
+262,i think the roles now are less defined,do nothing,False
+263,the baby will stick its head in the food,do nothing,False
+264,vegetables grow in the fields,do nothing,False
+265,if you bring some more stuff,do nothing,True
+266,what does the american report say,do nothing,False
+267,after we got married we moved,do nothing,False
+268,did you find it hard to make decisions,do nothing,False
+269,we used to always enjoy watching that show,do nothing,False
+270,after graduation the students will go on to a variety of colleges,do nothing,False
+271,we hope you enjoy your stay,do nothing,True
+272,up in new england where i'm from,do nothing,False
+273,you can always heat it up again,do nothing,False
+274,they are tempting at times,do nothing,True
+275,i never really thought of it that way,do nothing,False
+276,they had us fill out a long questionnaire,do nothing,False
+277,there will be more light somewhere around here,do nothing,False
+278,in a new house everything is white,do nothing,False
+279,it is in agreement with its provisions,do nothing,False
+280,the crooked maze failed to fool the mouse,do nothing,False
+281,who thought of this wonderful idea,do nothing,False
+282,regime change in iran,do nothing,False
+283,and so you know and it's his choice to make,do nothing,False
+284,a little brief autobiography of themselves,do nothing,False
+285,funny past decisions dallas future bring,do nothing,False
+286,look at the statistics,do nothing,False
+287,i hope you enjoyed this article,do nothing,False
+288,press the pants and sew a button on the vest,do nothing,False
+289,i hope everything works out up there,do nothing,True
+290,i don't like this either,do nothing,False
+291,avoid anymore we'd guys oil,do nothing,False
+292,how much do you have to pay for your credit card,do nothing,False
+293,do you like to travel,do nothing,False
+294,the car will go north from here,do nothing,False
+295,she doesn't work,do nothing,False
+296,he's nine months old,do nothing,False
+297,i will probably say no to this,do nothing,False
+298,she will be a sophomore in high school next year,do nothing,False
+299,it's still in great shape,do nothing,False
+300,it's a nightmare,do nothing,False
+301,i think a lot of choices,do nothing,False
+302,and everyone involved in the case bar the jury had been here before,do nothing,False
+303,in other words there is a choice to make,do nothing,True
+304,to me it's a treasure,do nothing,False
+305,also known as welfare,do nothing,False
+306,we were interested in the local schools,do nothing,False
+307,i don't know if you've heard of her,do nothing,False
+308,the town is just over the hill here,do nothing,True
+309,his good luck will help him avoid problems,do nothing,False
+310,train accidents and everything else,do nothing,False
+311,they're doing a lot of good research here,do nothing,False
+312,there's good music and good food,do nothing,False
+313,that's pretty much the south end of the state,do nothing,True
+314,he was that exceptional,do nothing,False
+315,not for the job i have now,do nothing,False
+316,the people i know are from there,do nothing,False
+317,i have to be real careful,do nothing,False
+318,peter was in bed when i walked into the bedroom,do nothing,False
+319,where is the evidence that they possess consciousness,do nothing,False
+320,casualty communism argue frost receptacle scroll,do nothing,False
+321,my name is pat johnson and i live in texas,do nothing,False
+322,we will have to place a large order,do nothing,False
+323,either way they always spell it wrong,do nothing,False
+324,one of the biggest creatures in the animal kingdom,do nothing,False
+325,that's where i am,do nothing,False
+326,employees will not get any severance pay,do nothing,False
+327,i still like the new york giants,do nothing,False
+328,mother testing second easier program number,do nothing,False
+329,i couldn't understand,do nothing,False
+330,guided by voices,do nothing,False
+331,they had snacks and story time and everything,do nothing,False
+332,cover him up and keep him warm,do nothing,False
+333,the law gives everyone this one right,do nothing,False
+334,the wagon moved on well oiled wheels,do nothing,False
+335,line talked turn depends across weekend,do nothing,False
+336,what some of these people went through is terrible,do nothing,False
+337,resale telling serious understanding moral,do nothing,False
+338,when they cut in and speak,do nothing,False
+339,i was in the nursing school originally,do nothing,False
+340,of course they ate a lot of sea food,do nothing,False
+341,many people will come here,do nothing,False
+342,i kind of wish that they had a little league for the boys,do nothing,False
+343,listen to your parents right now,do nothing,False
+344,is there a basis for it,do nothing,False
+345,do you believe in the dallas cowboys,do nothing,False
+346,appeal of luxury things is something else,do nothing,False
+347,it's a eighty eight,do nothing,False
+348,i went back to get the kids,do nothing,False
+349,this is really very good,do nothing,True
+350,to separate the news from the comment,do nothing,False
+351,there is some definite snark in her report,do nothing,False
+352,i will stay with my family for a week,do nothing,False
+353,it's an invasion of privacy,do nothing,False
+354,he will understand when i talk to him,do nothing,False
+355,i don't see what the problem is,do nothing,False
+356,i don't know where the answer is,do nothing,False
+357,i really like that show,do nothing,True
+358,it's been kind of scary,do nothing,False
+359,i enjoy the news,do nothing,False
+360,let's make a program for kids,do nothing,False
+361,were quite vocal about it,do nothing,False
+362,i sew clothes for them every once in a while,do nothing,False
+363,that's a previous generation,do nothing,False
+364,they're very affectionate with one another,do nothing,False
+365,he could get hurt,do nothing,True
+366,he is not making any major changes for the rematch,do nothing,False
+367,and my insurance is about to expire,do nothing,False
+368,if it's run by the individual state,do nothing,False
+369,we must always keep looking forward,do nothing,False
+370,it's nice to have a pet dog,do nothing,False
+371,they're just so suspenseful,do nothing,False
+372,he's been a legend for so many years,do nothing,False
+373,because she makes clothes,do nothing,False
+374,i do study what's going on in the economy,do nothing,False
+375,he worked hard at it,do nothing,False
+376,house robberies,do nothing,False
+377,he scored better than we did on the final exam,do nothing,False
+378,i will give you mine for free,do nothing,False
+379,camping is getting more expensive,do nothing,False
+380,shop spraying mathematics developing nashville,do nothing,False
+381,as you get older you will understand,do nothing,False
+382,i like the last bit of this movie,do nothing,False
+383,i don't know how we could make it more fair,do nothing,False
+384,we want to stay forever,do nothing,False
+385,especially not in some of these big cities,do nothing,False
+386,he does the yard,do nothing,False
+387,i would love to be a part of this,do nothing,False
+388,they recently released him,do nothing,False
+389,my computer is not working anymore,do nothing,False
+390,nothing can stop me from doing this,do nothing,False
+391,doesn't seem like it so far,do nothing,False
+392,when i'm up here,do nothing,False
+393,they shot him point blank in the face,do nothing,False
+394,rice is often served in round bowls,do nothing,False
+395,originally it was a year long nursing program,do nothing,False
+396,i hope i'm on the right track,do nothing,True
+397,that's still not enough for a total,do nothing,False
+398,she has experience in education,do nothing,False
+399,we're paying basketball people,do nothing,False
+400,when was the last time we measured you,do nothing,False
+401,the full decision statement is available here,do nothing,False
+402,i am not sure if this will be interesting to the kids,do nothing,False
+403,how are you doing,do nothing,False
+404,crime men turn couldn't morning somewhere,do nothing,False
+405,what kind of running do you do,do nothing,False
+406,we are not trying to mistreat them or anything,do nothing,True
+407,i guess i like to take care of it,do nothing,False
+408,the victims' families and things,do nothing,False
+409,that is a very good point,do nothing,False
+410,i didn't know there was such a thing,do nothing,False
+411,about how many calls have you made on this system,do nothing,False
+412,that's a big concern if you live there,do nothing,False
+413,they would have never picked it out,do nothing,False
+414,they can't read anything,do nothing,False
+415,so imagine all of his lines being spoken in that voice,do nothing,False
+416,so let's make some conclusions,do nothing,False
+417,trump's budget is just a proposal at this point,do nothing,False
+418,because that's perfectly clean,do nothing,False
+419,blizzards now have a new visual effect,do nothing,False
+420,a fairly good amount,do nothing,True
+421,i think it's important to know about this,do nothing,False
+422,it is important for women who need to work,do nothing,False
+423,then reboot the system,do nothing,False
+424,for legal assistant and that's what i know,do nothing,False
+425,turquoise teams dollars concentration wind's stupidly,do nothing,False
+426,you look down at your arm,do nothing,False
+427,he is also a member of the royal irish academy,do nothing,False
+428,i don't really follow the nba very closely,do nothing,False
+429,the beauty of the view stunned the young boy,do nothing,False
+430,she gave me a new watch,do nothing,False
+431,you know some of that,do nothing,False
+432,that is horrible,do nothing,True
+433,you will learn more about the characters in the book,do nothing,False
+434,in those situations i don't know how to behave,do nothing,False
+435,that is horrible,do nothing,True
+436,my family's not very big,do nothing,True
+437,the couple got married last week,do nothing,False
+438,they live with us,do nothing,False
+439,employee controller,do nothing,False
+440,for example the face might be typically painted red black and white,do nothing,False
+441,some new types of furniture,do nothing,False
+442,you can come and go as you please,do nothing,False
+443,it's an eighty seven degree day,do nothing,False
+444,just put your paper in the same place every day,do nothing,False
+445,she'll be two years old in july,do nothing,True
+446,waves born exercising boat grateful,do nothing,False
+447,his story is not unusual,do nothing,False
+448,i'd like to see silence of the lambs,do nothing,False
+449,drug newspaper you'll report baby,do nothing,False
+450,we met half way between here and there,do nothing,True
+451,i think we all do right,do nothing,False
+452,i've heard him talk about that for hours,do nothing,True
+453,we had such a good time,do nothing,False
+454,i was so thrilled that they visited me,do nothing,False
+455,i wouldn't want them to be on drugs,do nothing,True
+456,the jury cannot change this fact,do nothing,False
+457,it is like a country,do nothing,False
+458,they could sell five million of those,do nothing,False
+459,my daughter likes to play outside in the yard,do nothing,False
+460,employment income,do nothing,False
+461,everything i learned about ancient rome,do nothing,False
+462,the air is clear at night,do nothing,False
+463,you're going to get it,do nothing,False
+464,did you see any of those,do nothing,False
+465,maybe they're counting on that,do nothing,False
+466,on the other hand i am quite good,do nothing,False
+467,people are having their civil rights taken away,do nothing,False
+468,now it doesn't bother me at all,do nothing,False
+469,use a pencil to write the first draft,do nothing,False
+470,between the rows and all,do nothing,False
+471,give a voice to the voiceless,do nothing,False
+472,he said he's been saying one more,do nothing,False
+473,just like how you said my father was,do nothing,False
+474,we came from living in a condo for nine years,do nothing,False
+475,how long have you lived in this house,do nothing,False
+476,that was a shocker to me,do nothing,False
+477,ethical and religious views on need and pleasure,do nothing,True
+478,i was accused of selling drugs,do nothing,False
+479,has such a high clay content,do nothing,False
+480,are you pleased with this decision,do nothing,True
+481,actually it makes sense to a certain extent,do nothing,True
+482,the day care accepted infants starting at six weeks old,do nothing,True
+483,i'm concerned,do nothing,False
+484,probably seventies,do nothing,False
+485,it is the policy in this country,do nothing,False
+486,satan rejoiced with his birth,do nothing,True
+487,wasn't allowed to run a lawn mower,do nothing,False
+488,she has had really good luck this year,do nothing,True
+489,they don't register,do nothing,False
+490,but there have often been times when turkey has been a problematic ally,do nothing,False
+491,the reality is that's usually not the case,do nothing,False
+492,i don't care for that at all,do nothing,False
+493,i like that they run tense,do nothing,False
+494,keeps allowed monarch strap uses,do nothing,False
+495,i wasn't saying this at all,do nothing,False
+496,this is an invasion of privacy issue,do nothing,False
+497,fill the jar to the top with boiling water,do nothing,True
+498,it snowed rained and hailed the same morning,do nothing,False
+499,who is related to who,do nothing,False
+500,democratically reduces carbon cramped baked,do nothing,False
+501,some of the students are failing the class,do nothing,False
+502,you don't have to worry that much,do nothing,False
+503,i'm still going,do nothing,False
+504,about four hundred showed up,do nothing,False
+505,you have to do the random drug testing,do nothing,False
+506,eat slowly chew well and enjoy the meal,do nothing,False
+507,i like to enjoy my life in the country,do nothing,False
+508,i just bought a new house,do nothing,False
+509,all of those things that one does with kids,do nothing,False
+510,i guess what you have to do is just relax,do nothing,False
+511,i guess that's about it,do nothing,False
+512,there would be no way to do it,do nothing,False
+513,bring the pot to a boil,do nothing,False
+514,that is my retirement plan,do nothing,False
+515,what have you seen,do nothing,False
+516,you were great,do nothing,False
+517,go over there,do nothing,True
+518,and that's kind of the way i was raised,do nothing,False
+519,they can't do as good of a job,do nothing,False
+520,better than europe,do nothing,False
+521,for the things that we want,do nothing,False
+522,it's his choice to make,do nothing,False
+523,you don't have to hide it either,do nothing,False
+524,some more time in the morning would be nice,do nothing,False
+525,i'm not saying that they were,do nothing,False
+526,a lot of chicken and rice,do nothing,True
+527,that does not seem quite fair,do nothing,True
+528,the event was really oriented toward little kids,do nothing,False
+529,the news and stories that matter delivered weekday mornings,do nothing,False
+530,that was a close call,do nothing,False
+531,a liberal arts school,do nothing,False
+532,i have to pay for four things,do nothing,False
+533,how does it keep the cost down,do nothing,False
+534,a good appearance to do a good job where you work,do nothing,False
+535,grew spend men necessarily you've,do nothing,False
+536,i live in a farming community,do nothing,True
+537,that really ticks me off,do nothing,False
+538,i went back to school and got my master's degree,do nothing,True
+539,the immune system can slow down at first,do nothing,False
+540,such threats are a violation of the un charter,do nothing,False
+541,i love this country so much,do nothing,False
+542,i get less time to be with children these days,do nothing,False
+543,we all like my oldest brother,do nothing,True
+544,i have two other sisters,do nothing,False
+545,just all different colors,do nothing,False
+546,what could you do in a few days,do nothing,False
+547,quality education will certainly help,do nothing,False
+548,you would know if you lost it or something,do nothing,False
+549,this is good isn't it,do nothing,False
+550,can you show me the way,do nothing,False
+551,no i didn't go to the store,do nothing,True
+552,which is probably about what their equity is,do nothing,False
+553,if it does the job,do nothing,False
+554,didn't mean to cut you off there,do nothing,True
+555,this seems like a large catch,do nothing,False
+556,he came by looking for you,do nothing,False
+557,have you seen that one about survivors in the amazon rain forest,do nothing,False
+558,i don't know who looks forward to it more,do nothing,False
+559,what's your point,do nothing,False
+560,adding fast leads to wrong sums,do nothing,False
+561,perhaps not in dallas,do nothing,False
+562,i don't know if it's that serious,do nothing,False
+563,lunch was like thirteen dollars or something,do nothing,False
+564,what other questions would you ask,do nothing,False
+565,i guess because we don't go out that much,do nothing,True
+566,the hogs were fed chopped corn and garbage,do nothing,False
+567,take a piece of paper to draw on,do nothing,False
+568,i'm not building any reserves,do nothing,False
+569,it's actually the first car we ever bought new,do nothing,True
+570,semesters plans lean zales fertilizers dementia,do nothing,False
+571,even in my case,do nothing,False
+572,fill the jar to the top with boiling water,do nothing,True
+573,is that pollution,do nothing,False
+574,take a seat on the bench,do nothing,False
+575,to get into the system's very difficult,do nothing,False
+576,please that's enough music for today,do nothing,False
+577,i'm in charge of raising them,do nothing,False
+578,occasionally the conversation turns into an argument,do nothing,True
+579,we see them at least once a week,do nothing,False
+580,are they the same there,do nothing,False
+581,which book are you reading to children,do nothing,False
+582,prince of persia,do nothing,False
+583,trying to find someone at home,do nothing,False
+584,how long have you been married,do nothing,False
+585,but do you think bill gates should resign,do nothing,True
+586,we've got four kids,do nothing,True
+587,do you want to eat inside or outside,do nothing,True
+588,call me once you get here,do nothing,False
+589,you don't want to or you don't have the time,do nothing,False
+590,it would be fun just to win one,do nothing,False
+591,we will listen to whatever jury says,do nothing,False
+592,what would you like to do first,do nothing,False
+593,couple of hundred kids in the band,do nothing,False
+594,i bought these new clothes today,do nothing,False
+595,before you realize anything is going on,do nothing,False
+596,she'd just get on the first step and lay down,do nothing,False
+597,how do you measure it,do nothing,True
+598,it's a package deal,do nothing,True
+599,how much time do you spend with your children,do nothing,False
+600,i am not a fan of this kind of music,do nothing,False
+601,i never even knew that,do nothing,False
+602,it's like a major production,do nothing,False
+603,we definitely need a change in the system,do nothing,True
+604,how long are we supposed to talk for,do nothing,False
+605,in other words there is a choice to make,do nothing,True
+606,you just call him direct,do nothing,False
+607,understanding the mobile landscape,do nothing,False
+608,governor the people of detroit don't forget,do nothing,False
+609,the last book i read,do nothing,False
+610,but even at its most scientific the concept is simple,do nothing,False
+611,this is a grand season for hikes on the road,do nothing,False
+612,do you have any kids or pets,do nothing,False
+613,where do you go camping at around here,do nothing,False
+614,is there anything to do for me,do nothing,False
+615,they live in a little white frame house,do nothing,False
+616,how to avoid being tracked on the internet,do nothing,False
+617,very scary to see what they found out,do nothing,False
+618,i have not gone back lately,do nothing,False
+619,we could spend that money very quickly,do nothing,False
+620,we did go camping in arkansas,do nothing,False
+621,but drastic times could call for drastic measures,do nothing,False
+622,trump has nominated william barr as the next attorney general,do nothing,False
+623,that aren't getting taught at home,do nothing,False
+624,i often listen to this wonderful music,do nothing,False
+625,that's one of the biggest ones i've seen,do nothing,False
+626,what's the occasion today,do nothing,False
+627,that would be devastating i'm sure,do nothing,False
+628,as far as doing things for them,do nothing,False
+629,lo and behold they did not,do nothing,False
+630,school gave a card and books to this small child,do nothing,False
+631,you know i don't,do nothing,False
+632,it's totally ridiculous,do nothing,True
+633,he went over all that with his doctors,do nothing,False
+634,she wheeled it out on a cart,do nothing,False
+635,barometric pressure drops during a tornado,do nothing,False
+636,you should vote for the future,do nothing,False
+637,as far as that goes,do nothing,False
+638,she's like seventy four years old now,do nothing,False
+639,there was one other person besides myself,do nothing,False
+640,a male profession,do nothing,False
+641,it pertains to my daily life at the present time,do nothing,False
+642,to go out fishing in a boat,do nothing,False
+643,story noise sounds eight friends,do nothing,False
+644,it does not snow as much as i remember while growing up,do nothing,False
+645,they're always willing to help you out,do nothing,False
+646,it was a prime time football game,do nothing,True
+647,then i heard a very loud explosion,do nothing,True
+648,i don't think i would have insurance,do nothing,False
+649,that's understandable,do nothing,False
+650,when i do recipes i just throw stuff in,do nothing,False
+651,how many miles were you driving today,do nothing,False
+652,i'm tired of being a pacifist though,do nothing,False
+653,just forty miles north of here,do nothing,False
+654,so thank you for not using the exploit,do nothing,False
+655,when things don't go right you have to adjust,do nothing,True
+656,having too much power can be difficult,do nothing,False
+657,the productivity and the training costs,do nothing,False
+658,they're not really even participating,do nothing,True
+659,government will run from the capital city,do nothing,False
+660,it's just a matter of passing the law,do nothing,False
+661,he's one of the big proponents of that,do nothing,False
+662,i did well in school,do nothing,False
+663,it's just pocket change to a lot of people,do nothing,False
+664,are either or both dogs considered dangerous under davis county ordinance,do nothing,False
+665,the neighbor across the street just moved in,do nothing,False
+666,you just have to keep buying them,do nothing,False
+667,he is quite a social person,do nothing,False
+668,you just really can't tell what's going to happen,do nothing,False
+669,they are very mean i don't like it,do nothing,False
+670,they fell out because of his drug addiction,do nothing,False
+671,this is a special city in the special country,do nothing,False
+672,i'm going to visit florida and louisiana,do nothing,False
+673,very suspenseful,do nothing,False
+674,how is your boss at your new job,do nothing,False
+675,sports miss companies aren't television,do nothing,False
+676,the ranch dressing goes along well with that,do nothing,False
+677,tax year of eighty one,do nothing,False
+678,i don't make that much money,do nothing,False
+679,vote month expected fan nursing,do nothing,False
+680,being able to have a choice,do nothing,False
+681,i have to be real careful,do nothing,False
+682,supported according key arrive crush,do nothing,False
+683,can you put the book down for a few minutes,do nothing,False
+684,that would be good,do nothing,False
+685,i have more energy when i exercise,do nothing,False
+686,and who is in charge of making that decision,do nothing,False
+687,the town is just over the hill here,do nothing,True
+688,take off and leave your group and go explore,do nothing,False
+689,and i think he's as guilty as the devil,do nothing,False
+690,they can pretty much get everybody there,do nothing,True
+691,the recipe doesn't require kneading the dough,do nothing,False
+692,the girls at school are all wearing clothes from the sixties,do nothing,False
+693,which amiga games impressed you in terms of gameplay or technical tricks,do nothing,False
+694,this may seem important now,do nothing,False
+695,and hurricane jose had not turned north yet,do nothing,False
+696,i am free to make a decision about my college,do nothing,False
+697,not too long ago,do nothing,True
+698,it's difficult to really say why,do nothing,False
+699,seeing as you've got some older children,do nothing,False
+700,what was the actual starting point for the story,do nothing,False
+701,keep it clean please,do nothing,False
+702,here are some key points from the briefing,do nothing,False
+703,he has no criminal convictions,do nothing,False
+704,public relations,do nothing,True
+705,so many of them nowadays,do nothing,False
+706,at the time you hired on with this company,do nothing,False
+707,you don't get nearly enough exercise,do nothing,True
+708,i was raised in new york,do nothing,False
+709,we drove through oklahoma city,do nothing,False
+710,it was a real special day,do nothing,False
+711,what was your experience working with him,do nothing,False
+712,i went back home tonight,do nothing,False

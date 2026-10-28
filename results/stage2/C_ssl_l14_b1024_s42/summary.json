@@ -1,0 +1,84 @@
+{
+ "name": "C_ssl_l14_b1024_s42",
+ "arm": "C",
+ "seed": 42,
+ "llm": "aero-1-audio",
+ "checkpoint": "/workspace/KunzDecoder/checkpoints/stage2/C_ssl_l14_b1024_s42/BEST",
+ "results": {
+  "val_greedy_real": {
+   "wer": 0.28748663101604277,
+   "n": 713,
+   "exact": 0.34782608695652173,
+   "wer_seen": 0.09276437847866419,
+   "n_seen": 81,
+   "wer_unseen": 0.312862669245648,
+   "n_unseen": 632
+  },
+  "val_nucleus_real": {
+   "wer": 0.2862032085561497,
+   "n": 713,
+   "exact": 0.3450210378681627,
+   "wer_seen": 0.09276437847866419,
+   "n_seen": 81,
+   "wer_unseen": 0.3114119922630561,
+   "n_unseen": 632
+  },
+  "test_greedy_real": {
+   "wer": 0.29161425576519917,
+   "n": 713,
+   "exact": 0.3702664796633941,
+   "wer_seen": 0.11131725417439703,
+   "n_seen": 81,
+   "wer_unseen": 0.31458284093594896,
+   "n_unseen": 632
+  },
+  "test_nucleus_real": {
+   "wer": 0.29727463312368974,
+   "n": 713,
+   "exact": 0.3590462833099579,
+   "wer_seen": 0.1280148423005566,
+   "n_seen": 81,
+   "wer_unseen": 0.3188371543370362,
+   "n_unseen": 632
+  },
+  "test_greedy_null_shuffled": {
+   "wer": 1.149895178197065,
+   "n": 713,
+   "exact": 0.0,
+   "wer_seen": 1.157699443413729,
+   "n_seen": 81,
+   "wer_unseen": 1.1489009690380525,
+   "n_unseen": 632
+  },
+  "test_greedy_null_noise": {
+   "wer": 1.2511530398322852,
+   "n": 713,
+   "exact": 0.0,
+   "wer_seen": 1.3710575139146568,
+   "n_seen": 81,
+   "wer_unseen": 1.2358780430158356,
+   "n_unseen": 632
+  },
+  "test_greedy_null_prompt_only": {
+   "wer": 1.3293501048218028,
+   "n": 713,
+   "exact": 0.0,
+   "wer_seen": 1.3172541743970316,
+   "n_seen": 81,
+   "wer_unseen": 1.3308910423067832,
+   "n_unseen": 632
+  }
+ },
+ "slim": {
+  "slim_tensors": 732,
+  "slim_mb": 94.0,
+  "removed": [
+   "model.safetensors",
+   "optimizer.bin",
+   "scheduler.bin",
+   "random_states_0.pkl"
+  ]
+ },
+ "minutes": 483.03,
+ "max_mem_gb": 35.87
+}

@@ -1,0 +1,13 @@
+{
+ "model": "stage2 A_ssl_s42",
+ "arm": "A",
+ "seed": 42,
+ "split": "brandman_2024_text:test",
+ "decoding": "greedy",
+ "condition": "null_prompt_only",
+ "init": "/workspace/KunzDecoder/checkpoints/bit/finetune-ndt-phoneme-brandman_2024_text-feat_all/BEST",
+ "checkpoint": "/workspace/KunzDecoder/checkpoints/stage2/A_ssl_s42/BEST",
+ "label_fraction": 1.0,
+ "llm": "aero-1-audio",
+ "prompt": "<|neural_activity|>#<|/neural_activity|> decode the above neural activity into an English sentence:"
+}

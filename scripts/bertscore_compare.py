@@ -1,14 +1,15 @@
 #!/usr/bin/env python
 """Arm B, BERTScore vs WER: where does diffusion's WER advantage come from? (CPU, reads results/per_trial/.)
 
-    <.venv>/bin/python scripts/bertscore_compare.py ["Aero diff=B_ssl_aero-1-audio-diffusion" ...]
+    <.venv>/bin/python scripts/bertscore_compare.py ["Aero diff=B_ssl_aero-1-audio-diffusion" ...] ["Arm A=A_ssl__A"] ["Arm A|Aero diff"]
 
 Run `scripts/evaluate_decodes.py score <decodes>/test_greedy_real.csv ...` first (configs/eval.yaml: roberta-large,
 layer 17, rescaled). Per run (BIT-test, greedy, real input): corpus WER, % exactly right, mean BERTScore F1 (all
 sentences, and sentences with >= 1 word error), % of error sentences that keep the meaning (F1 >= 0.75, the
 evaluator's tau), % derailed (sentence WER >= 1), and decoded / reference length. Paired bootstraps over trials
 (10,000 resamples, seed 0) for F1 and for the share of sentences with an error. Then the WER gap of each pair, split
-by the second run's sentence WER. Extra runs: "label=config" (the per_trial file prefix), compared with Aero AR.
+by the second run's sentence WER. Extra runs: "label=config" (the per_trial file prefix; arm B unless it names one,
+as in "A_ssl__A"), compared with Aero AR. Extra pairs: "label a|label b".
 """
 import sys
 import numpy as np, pandas as pd
@@ -16,9 +17,9 @@ from pathlib import Path
 D = str(Path(__file__).resolve().parents[1] / "results" / "per_trial") + "/"
 R = {"Aero AR": "B_ssl", "Instruct AR": "B_ssl_qwen25-1.5b-instruct", "Base AR (no prompt)": "B_ssl_qwen25-1.5b-noprompt",
      "Fast-dLLM v2 (diff)": "B_ssl_fast-dllm-v2-1.5b", "Instruct diff (control)": "B_ssl_qwen25-1.5b-instruct-diffusion"}
-extra = dict(a.split("=", 1) for a in sys.argv[1:])  # e.g. "Aero diff=B_ssl_aero-1-audio-diffusion"
+extra = dict(a.split("=", 1) for a in sys.argv[1:] if "=" in a)  # e.g. "Aero diff=B_ssl_aero-1-audio-diffusion"
 R |= extra
-d = {k: pd.read_csv(f"{D}{v}__B__real__brandman_2024_text_test__greedy__seed42.csv").sort_values("trial").reset_index(drop=True) for k, v in R.items()}
+d = {k: pd.read_csv(f"{D}{v}{'' if '__' in v else '__B'}__real__brandman_2024_text_test__greedy__seed42.csv").sort_values("trial").reset_index(drop=True) for k, v in R.items()}
 rows = []
 for k, t in d.items():
     err = t.word_errors > 0
@@ -36,7 +37,7 @@ def boot(a, b, col, f=np.mean):
     diff = x[idx].mean(1) - y[idx].mean(1)
     return f"{x.mean() - y.mean():+.4f} [{np.percentile(diff, 2.5):+.4f}, {np.percentile(diff, 97.5):+.4f}]"
 pairs = [("Instruct diff (control)", "Instruct AR"), ("Instruct diff (control)", "Aero AR"), ("Fast-dLLM v2 (diff)", "Aero AR")]
-pairs += [(k, "Aero AR") for k in extra]
+pairs += [(k, "Aero AR") for k in extra] + [tuple(a.split("|")) for a in sys.argv[1:] if "|" in a and "=" not in a]
 for a, b in pairs:
     for col in ("bs_f1",):
         print(f"{a} - {b}: F1 {boot(a, b, col)}")

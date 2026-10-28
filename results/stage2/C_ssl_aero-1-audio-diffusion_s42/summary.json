@@ -1,0 +1,84 @@
+{
+ "name": "C_ssl_aero-1-audio-diffusion_s42",
+ "arm": "C",
+ "seed": 42,
+ "llm": "aero-1-audio-diffusion",
+ "checkpoint": "/workspace/c-diffusion/checkpoints/stage2/C_ssl_aero-1-audio-diffusion_s42/BEST",
+ "results": {
+  "val_greedy_real": {
+   "wer": 0.21818181818181817,
+   "n": 713,
+   "exact": 0.34782608695652173,
+   "wer_seen": 0.12430426716141002,
+   "n_seen": 81,
+   "wer_unseen": 0.23041586073500966,
+   "n_unseen": 632
+  },
+  "val_nucleus_real": {
+   "wer": 0.2235294117647059,
+   "n": 713,
+   "exact": 0.33660589060308554,
+   "wer_seen": 0.13172541743970315,
+   "n_seen": 81,
+   "wer_unseen": 0.23549323017408125,
+   "n_unseen": 632
+  },
+  "test_greedy_real": {
+   "wer": 0.22662473794549265,
+   "n": 713,
+   "exact": 0.3548387096774194,
+   "wer_seen": 0.09833024118738404,
+   "n_seen": 81,
+   "wer_unseen": 0.24296856535098085,
+   "n_unseen": 632
+  },
+  "test_nucleus_real": {
+   "wer": 0.23354297693920337,
+   "n": 713,
+   "exact": 0.33520336605890605,
+   "wer_seen": 0.11131725417439703,
+   "n_seen": 81,
+   "wer_unseen": 0.24911368470810683,
+   "n_unseen": 632
+  },
+  "test_greedy_null_shuffled": {
+   "wer": 1.1475890985324948,
+   "n": 713,
+   "exact": 0.0,
+   "wer_seen": 1.1539888682745825,
+   "n_seen": 81,
+   "wer_unseen": 1.1467738123375089,
+   "n_unseen": 632
+  },
+  "test_greedy_null_noise": {
+   "wer": 1.3970649895178198,
+   "n": 713,
+   "exact": 0.0,
+   "wer_seen": 1.4489795918367347,
+   "n_seen": 81,
+   "wer_unseen": 1.3904514299220043,
+   "n_unseen": 632
+  },
+  "test_greedy_null_prompt_only": {
+   "wer": 0.9932914046121594,
+   "n": 713,
+   "exact": 0.0,
+   "wer_seen": 0.9925788497217068,
+   "n_seen": 81,
+   "wer_unseen": 0.9933821791538643,
+   "n_unseen": 632
+  }
+ },
+ "slim": {
+  "slim_tensors": 540,
+  "slim_mb": 86.5,
+  "removed": [
+   "model.safetensors",
+   "optimizer.bin",
+   "scheduler.bin",
+   "random_states_0.pkl"
+  ]
+ },
+ "minutes": 1780.79,
+ "max_mem_gb": 79.67
+}

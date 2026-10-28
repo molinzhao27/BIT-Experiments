@@ -1,0 +1,21 @@
+{
+ "model": "stage2 A_ssl_aero-1-audio-diffusion_s42 ablation drop_d6v",
+ "arm": "A",
+ "seed": 42,
+ "split": "brandman_2024_text:test",
+ "decoding": "greedy",
+ "condition": "ablation_drop_d6v",
+ "ablation": {
+  "kind": "drop_arrays",
+  "arrays": [
+   "d6v"
+  ],
+  "label": "dorsal 6v removed"
+ },
+ "fill": "train_mean",
+ "patch_size": 5,
+ "checkpoint": "/workspace/eval-ablations/checkpoints/stage2/A_ssl_aero-1-audio-diffusion_s42/BEST",
+ "llm": "aero-1-audio-diffusion",
+ "prompt": "<|neural_activity|>#<|/neural_activity|> decode the above neural activity into an English sentence:",
+ "source_run": "A_ssl_aero-1-audio-diffusion_s42"
+}
